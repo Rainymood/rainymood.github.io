@@ -15,3 +15,7 @@ gems:
 
 #Others
 markdown: kramdown
+
+# Google services
+google_analytics: UA-78697215-1
+
