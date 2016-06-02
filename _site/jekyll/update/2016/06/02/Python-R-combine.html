@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>Jan Meppe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+
+  
+
+</head>
+
+<!---
+In the future, when building your Jekyll project with jekyll build, you will need to
+prefix the command with JEKYLL_ENV=production like this
+
+    JEKYLL_ENV=production jekyll build
+-->
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">Jan Meppe</h1>
+  <h2 class="project-tagline">
+    "Any sufficiently advanced technology is indistinguishable from magic." - Arthur
+    C. Clarke
+  </h2>
+  <a href="http://rainymood.github.io/" class="btn">Home</a>
+  <a href="https://github.com/Rainymood/" class="btn">My Github</a>
+  <a href="#" class="btn">About me </a>
+  <!--<h2 class="project-tagline"></h2>-->
+</section>
+
+
+    <section class="main-content">
+      
+      <h2>Python + R = Simpler life</h2>
+<p class="meta">02 Jun 2016</p>
+
+<h2 id="r">R</h2>
+
+<p>In this post I want to show how I use Python to make my life a little bit easier
+sometimes. For my MSc thesis I am working in R and dealing with a large amount
+of technical indicators which I calculate in R as follows</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># Rate of change
+roc1  &lt;- ROC(data_$closing_price, n=1)
+roc2  &lt;- ROC(data_$closing_price, n=2)
+roc3  &lt;- ROC(data_$closing_price, n=3)
+roc4  &lt;- ROC(data_$closing_price, n=4)
+roc5  &lt;- ROC(data_$closing_price, n=5)
+roc10 &lt;- ROC(data_$closing_price, n=10)
+roc15 &lt;- ROC(data_$closing_price, n=15)
+roc20 &lt;- ROC(data_$closing_price, n=20)
+roc50 &lt;- ROC(data_$closing_price, n=50)
+
+# Simple Moving Average % Change
+SMAchange5  &lt;- (data_$closing_price - SMA(data_$closing_price,
+n=5))/SMA(data_$closing_price, n=5)*100
+SMAchange10 &lt;- (data_$closing_price - SMA(data_$closing_price,
+n=10))/SMA(data_$closing_price, n=10)*100
+SMAchange20 &lt;- (data_$closing_price - SMA(data_$closing_price,
+n=20))/SMA(data_$closing_price, n=20)*100
+SMAchange50 &lt;- (data_$closing_price - SMA(data_$closing_price,
+n=50))/SMA(data_$closing_price, n=50)*100
+
+# Exponential Moving Average % Change
+EMAchange5  &lt;- (data_$closing_price - EMA(data_$closing_price,
+n=5))/EMA(data_$closing_price, n=5)*100
+EMAchange10 &lt;- (data_$closing_price - EMA(data_$closing_price,
+n=10))/EMA(data_$closing_price, n=10)*100
+EMAchange20 &lt;- (data_$closing_price - EMA(data_$closing_price,
+n=20))/EMA(data_$closing_price, n=20)*100
+EMAchange50 &lt;- (data_$closing_price - EMA(data_$closing_price,
+n=50))/EMA(data_$closing_price, n=50)*100
+
+# Relative Strength Index
+rsi5  &lt;- RSI(data_$avg_price, n=5)
+rsi10 &lt;- RSI(data_$avg_price, n=10)
+rsi20 &lt;- RSI(data_$avg_price, n=20)
+
+# Chande Momentum Osillator
+CMO5  &lt;-  CMO(data_$closing_price, n= 5)
+CMO10 &lt;- CMO(data_$closing_price, n=10)
+CMO20 &lt;- CMO(data_$closing_price, n=20)
+CMO50 &lt;- CMO(data_$closing_price, n=50)
+
+# Aroon oscillator
+Aroon5  &lt;- aroon(data_$closing_price, n=5 )[,3]
+Aroon10 &lt;- aroon(data_$closing_price, n=10)[,3]
+Aroon20 &lt;- aroon(data_$closing_price, n=20)[,3]
+Aroon50 &lt;- aroon(data_$closing_price, n=50)[,3]
+</code></pre>
+</div>
+
+<p>Previously I added these together like this</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>technicals.unscaled &lt;- data.frame(
+    rsi5, rsi10, rsi20,
+    roc1, roc5, roc10, roc20, roc50,
+    SMAchange5, SMAchange10, SMAchange20, SMAchange50,
+    EMAchange5, EMAchange10, EMAchange20, EMAchange50
+    )
+</code></pre>
+</div>
+
+<p>I figured that if I add more and more
+indicators I have to add more and more of them by hand. I
+thought this was very cumbersome and I figured this would be a perfect to hone
+my Python-fu.</p>
+
+<p>My goal is to write a little script that accepts input pasted from R in a text
+file (like the first snippet) and generates output like the second snippet.</p>
+
+<h2 id="python">Python</h2>
+
+<p>I first copied the whole first snippet</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Contents of indicators.txt
+
+# Rate of change
+roc1  &lt;- ROC(data_$closing_price, n=1)
+roc2  &lt;- ROC(data_$closing_price, n=2)
+...
+Aroon20 &lt;- aroon(data_$closing_price, n=20)[,3]
+Aroon50 &lt;- aroon(data_$closing_price, n=50)[,3]
+</code></pre>
+</div>
+
+<p>to a file called <code class="highlighter-rouge">indicators.txt</code>. Lets open this file in Python and
+see what we can find</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>with open('indicators.txt','r') as file:
+    for line in file.readlines():
+        print line
+</code></pre>
+</div>
+
+<p>Running this results in</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>...
+CMO20 &lt;- CMO(data_$closing_price, n=20)
+CMO50 &lt;- CMO(data_$closing_price, n=50)
+
+# Aroon oscillator
+Aroon5  &lt;- aroon(data_$closing_price, n=5 )[,3]
+Aroon10 &lt;- aroon(data_$closing_price, n=10)[,3]
+Aroon20 &lt;- aroon(data_$closing_price, n=20)[,3]
+Aroon50 &lt;- aroon(data_$closing_price, n=50)[,3]
+</code></pre>
+</div>
+
+<p>Note that the lines we actually want are the lines that contain <code class="highlighter-rouge">&lt;-</code> which is
+the assignment operator in R. Looping over only those lines with</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>with open('indicators.txt','r') as file:
+    for line in file.readlines():
+        if '&lt;-' in line:
+            print line
+        else:
+            pass
+</code></pre>
+</div>
+
+<p>results in</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>...
+rsi20 &lt;- RSI(data_$avg_price, n=20)
+CMO5  &lt;-  CMO(data_$closing_price, n= 5)
+CMO10 &lt;- CMO(data_$closing_price, n=10)
+CMO20 &lt;- CMO(data_$closing_price, n=20)
+CMO50 &lt;- CMO(data_$closing_price, n=50)
+Aroon5  &lt;- aroon(data_$closing_price, n=5 )[,3]
+Aroon10 &lt;- aroon(data_$closing_price, n=10)[,3]
+Aroon20 &lt;- aroon(data_$closing_price, n=20)[,3]
+Aroon50 &lt;- aroon(data_$closing_price, n=50)[,3]
+</code></pre>
+</div>
+
+<p>if we now apply the standard <code class="highlighter-rouge">.split()</code> function to each line</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>...
+[CMO20', '&lt;-', 'CMO(data_$closing_price,', 'n=20)']
+['CMO50', '&lt;-', 'CMO(data_$closing_price,', 'n=50)']
+['Aroon5', '&lt;-', 'aroon(data_$closing_price,', 'n=5', ')[,3]']
+['Aroon10', '&lt;-', 'aroon(data_$closing_price,', 'n=10)[,3]']
+['Aroon20', '&lt;-', 'aroon(data_$closing_price,', 'n=20)[,3]']
+['Aroon50', '&lt;-', 'aroon(data_$closing_price,', 'n=50)[,3]']
+</code></pre>
+</div>
+
+<p>we see that all we have to do is to grab the first word after applying the split
+function.  Starting from an empty string, we keep appending (<code class="highlighter-rouge">+=</code>) the first
+word of each line we find with a comma and an enter in between as follows</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>s = ""
+with open('indicators.txt','r') as file:
+    for line in file.readlines(): 
+        if "&lt;-" in line:
+            s += line.split()[0] + "," + "\n"
+        else:
+            pass
+print s
+</code></pre>
+</div>
+
+<p>This running this results in</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>roc1,
+roc2,
+roc3,
+...
+CMO50,
+Aroon5,
+Aroon10,
+Aroon20,
+Aroon50,\n
+</code></pre>
+</div>
+
+<p>Which is <em>almost</em> what we want. But, there is something wrong. Actually
+there are 2 things still wrong. The last two characters (you can’t actually see
+the <code class="highlighter-rouge">\n</code> in the output) need to be trimmed off. Trimming these off and wrapping
+this in parentheses and the correct syntax we arrive at our final piece of code</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>s = "technicals.unscaled &lt;- data.frame("
+
+with open('indicators.txt','r') as file:
+    for line in file.readlines(): 
+        if "&lt;-" in line:
+            s += line.split()[0] + "," + "\n"
+        else:
+            pass
+
+s = s[:-2]+")" # remove the last "," and "\n"
+print s
+</code></pre>
+</div>
+
+<p>Running this gives the following output</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>technicals.unscaled &lt;- data.frame(roc1,
+roc2,
+roc3,
+...
+CMO20,
+CMO50,
+Aroon5,
+Aroon10,
+Aroon20,
+Aroon50)
+</code></pre>
+</div>
+
+<p>which is exactly the output we want. This can be copy pasted directly back into
+RStudio!</p>
+
+<p>If you have any questions or spot any errors, do not hestitate to reach out!</p>
+
+
+
+      <footer class="site-footer">
+  <span class="site-footer-credits">
+        Blog by: <a href="https://github.com/rainymood">Jan Meppe</a><br>
+        Theme: <a href="https://github.com/pietromenna/jekyll-cayman-theme">Cayman</a>
+  </span>
+</footer>
+
+
+    </section>
+
+  </body>
+</html>

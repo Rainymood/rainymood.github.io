@@ -1,0 +1,54 @@
+
+<h1 id="vim-solarized-dark-terminal">Vim solarized-dark terminal</h1>
+
+<p>18-05-2016: first draft</p>
+
+<p>tl;dr (1) Download iterm2 configuration (2) Add stuff to your .vimrc</p>
+
+<p>I finally got my solarized-dark colorscheme working on my terminal again. As of
+18-05-2016 on iTerm 2.1.4 Mac OSX Yosemite 10.10.3 and Vim 7.3.</p>
+
+<p>Does your Vim in the terminal look like this?</p>
+
+<p>image-of-vim.jpg</p>
+
+<p>A lot of people on the internet suggested to add</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+</code></pre>
+</div>
+
+<p>But I found out later that that was actually the <em>cause</em> of my problems. To fix
+this ugly monstrosity, first follow this link</p>
+
+<p><em>link</em></p>
+
+<p>And import them into your iterm2 like this</p>
+
+<p><em>image</em></p>
+
+<p>and make sure to actually set the colorscheme as follows</p>
+
+<p><em>image</em></p>
+
+<p>Then add this to your ~/.vimrc</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>if !has("gui_running")
+    " These options fixed my solarized-dark problems
+    let g:solarized_termcolors = 16
+    let g:solarized_termtrans  = 16
+    let g:solarized_contrast   = "high"
+    let g:solarized_visibility = "high"
+endif
+set background=dark
+colorscheme solarized
+</code></pre>
+</div>
+
+<p>I am not exactly sure what is happening, but my terminal vim now looks like this</p>
+
+<p><em>image</em></p>
+
+<p>which I am very pleased with.</p>
+
