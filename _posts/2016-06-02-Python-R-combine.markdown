@@ -9,7 +9,7 @@ categories: jekyll update
 
 In this post I want to show how I use Python to make my life a little bit easier
 sometimes. For my MSc thesis I am working in R and dealing with a large amount
-of technical indicators which I calculate in R as follows
+of technical indicators which I calculate in R as follows 
 
     # Rate of change
     roc1  <- ROC(data_$closing_price, n=1)
