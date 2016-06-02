@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Scraping flashcards for Anki with Python"
-date:   2016-05-26 14:01:29 +0200
+date:   2016-04-26 14:01:29 +0200
 categories: jekyll update
 ---
 
