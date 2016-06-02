@@ -5,7 +5,7 @@ date:   2016-06-02 16:00:00 +0200
 categories: jekyll update
 ---
 
-## R
+## R 
 
 In this post I want to show how I use Python to make my life a little bit easier
 sometimes. For my MSc thesis I am working in R and dealing with a large amount
