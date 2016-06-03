@@ -16,6 +16,9 @@ gems:
 #Others
 markdown: kramdown
 
+# Syntax highlighting
+highlighter: rouge
+
 # Google services
 google_analytics: UA-78697215-1
 
