@@ -7,3 +7,15 @@ categories: jekyll update
 
 Hello world! 
 
+edit:
+
+```c
+int a = 10; 
+
+int main(void)
+{
+    return a
+}
+
+```
+
