@@ -24,3 +24,6 @@ google_analytics: UA-78697215-1
 
 # So you can post in the future ... post not visible
 # future: true
+
+# Google analytics 
+safe: true
