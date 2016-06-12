@@ -28,11 +28,11 @@ Alright, what do we do now? I forgot how to use BeautifulSoup (BS4) so I had to
 look it up. Stack Overflow to the [rescue](http://stackoverflow.com/questions/15797861/using-beautifulsoup-and-urllib2-in-python-how-can-i-find-the-data-surrounded-by). 
 The code found on Stack Overflow was given as follows
 
-``` python
+```python
 import urllib2
 from bs4 import BeautifulSoup
 html = urllib2.urlopen( "http://www.google.com" ).read()
-soup = BeautifulSoup( html )
+soup = BeautifulSoup(html)
 ```
 
 Modifying that we find

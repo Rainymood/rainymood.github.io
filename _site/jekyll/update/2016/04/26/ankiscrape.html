@@ -69,12 +69,12 @@ import urllib2
 look it up. Stack Overflow to the <a href="http://stackoverflow.com/questions/15797861/using-beautifulsoup-and-urllib2-in-python-how-can-i-find-the-data-surrounded-by">rescue</a>. 
 The code found on Stack Overflow was given as follows</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>import urllib2
+<p><code class="highlighter-rouge">python
+import urllib2
 from bs4 import BeautifulSoup
 html = urllib2.urlopen( "http://www.google.com" ).read()
-soup = BeautifulSoup( html )
-</code></pre>
-</div>
+soup = BeautifulSoup(html)
+</code></p>
 
 <p>Modifying that we find</p>
 

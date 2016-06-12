@@ -13,11 +13,12 @@ author:
 gems:
   - jekyll-paginate
 
-#Others
+
+# highlighter 
+highlighter: rouge
 markdown: kramdown
 
 # Syntax highlighting
-highlighter: rouge
 kramdown:
     input: GFM 
     syntax_highlighter: rouge
