@@ -20,6 +20,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
     input: GFM 
+    syntax_highlighter: rouge
 
 # Google services
 google_analytics: UA-78697215-1
