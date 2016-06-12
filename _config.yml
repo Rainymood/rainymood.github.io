@@ -18,6 +18,8 @@ markdown: kramdown
 
 # Syntax highlighting
 highlighter: rouge
+kramdown:
+    input: GFM 
 
 # Google services
 google_analytics: UA-78697215-1
