@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Title here!"
-date:   2016-05-26 14:00:00 +0200
+title:  "INSERT TITLE HERE ?"
+date:   2016-05-29 00:00:00 +0200
 categories: jekyll update
 ---
 
-Copy this file 
+Rest goes here 
