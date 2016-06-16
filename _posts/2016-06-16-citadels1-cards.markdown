@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writing a cardgame in Python part 1 - cards"
-date:   2016-06-16 17:18:00 
+date:   2016-06-16 17:00:00 +0002
 categories: jekyll update
 ---
 
