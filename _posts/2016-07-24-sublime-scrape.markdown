@@ -5,6 +5,13 @@ date:   2016-07-24 20:04:00 +0200
 categories: jekyll update
 ---
 
+tl;dr Used Python to find all the songs played a radio station that I really
+like. 
+
+tl;dr image version:
+
+![tl;dr gif version](/assets/sublime-tldr.gif){:class="img-responsive"}
+
 I don't listen to radio often, but when I do, it's on
 [sublime.fm](http://sublime.fm/).  Sublime.fm describes itself as 'fresh jazzy
 sounds' and it basically plays a lot of jazzy funky music which is great to
