@@ -5,10 +5,11 @@ date:   2016-07-24 20:04:00 +0200
 categories: jekyll update
 ---
 
-I don't listen to radio often, but when I do, it's on sublime.fm. 
-Sublime.fm plays a lot of jazzy funky music which is great
-to groove out to once in a while. About a week ago I asked my girlfriend what
-song was playing and she told me to check the site which shows the song that is
+I don't listen to radio often, but when I do, it's on
+[sublime.fm](http://sublime.fm/).  Sublime.fm describes itself as 'fresh jazzy
+sounds' and it basically plays a lot of jazzy funky music which is great to
+groove out to once in a while. About a week ago I asked my girlfriend what song
+was playing and she told me to check the site which shows the song that is
 playing. 
 
 I suddenly found myself wanting more, and wanting to figure out a way to get to
