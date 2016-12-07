@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Understanding Necessary and Sufficient Conditions"
-date:   2016-12-06 00:00:00 +0200
+date:   2016-12-07 00:00:00 +0200
 categories: jekyll update
 ---
 
