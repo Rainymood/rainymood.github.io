@@ -108,10 +108,10 @@ First, I now claim that:
 
 f'(x) = 0 is a necessary condition for a maximum.
 
-Is this true? If this is true then we have to check whether NOT f'(x) =/= 0 implies
-NOT having a maximum. We see that this is the case. If the first
-derivative is not equal to zero, then we will never find a maximum. Hence
-the statement is indeed necessary. 
+Is this true? If this is true then we have to check whether NOT f'(x) = 0
+implies NOT having a maximum. This is true because if the first derivative is
+not equal to zero then we will never find a maximum. Hence the statement is
+indeed necessary. 
 
 However, it is not 
 sufficient because having only the first derivative equal to zero does not
