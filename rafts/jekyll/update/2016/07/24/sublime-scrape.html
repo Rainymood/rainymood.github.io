@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>Jan Meppe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+
+  
+
+</head>
+
+<!---
+In the future, when building your Jekyll project with jekyll build, you will need to
+prefix the command with JEKYLL_ENV=production like this
+
+    JEKYLL_ENV=production jekyll build
+-->
+
+
+  <body>
+
+    <section class="page-header">
+  <h1 class="project-name">Jan Meppe</h1>
+  <h2 class="project-tagline">
+    "Any sufficiently advanced technology is indistinguishable from magic." - Arthur
+    C. Clarke
+  </h2>
+  <a href="http://rainymood.github.io/" class="btn">Home</a>
+  <a href="https://github.com/Rainymood/" class="btn">My Github</a>
+  <a href="#" class="btn">About me </a>
+  <!--<h2 class="project-tagline"></h2>-->
+</section>
+
+
+    <section class="main-content">
+      
+      <h2>Scraping all songs played on sublime.fm in the last 30 days with Python!</h2>
+<p class="meta">24 Jul 2016</p>
+
+<p>tl;dr Used Python to find all the songs played on a radio station that I really
+like.</p>
+
+<p>tl;dr image version:</p>
+
+<p><img src="/assets/sublime-tldr.gif" alt="tl;dr gif version" class="img-responsive" /></p>
+
+<p>I don’t listen to radio often, but when I do, it’s on
+<a href="http://sublime.fm/">sublime.fm</a>.  Sublime.fm describes itself as ‘fresh jazzy
+sounds’ and it basically plays a lot of jazzy funky music which is great to
+groove out to once in a while. About a week ago I asked my girlfriend what song
+was playing and she told me to check the site which shows the song that is
+playing.</p>
+
+<p>I suddenly found myself wanting more, and wanting to figure out a way to get to
+know all the songs that were played in the past or maybe figure out a way to
+keep an updated list on the songs they have played in the past.  I felt like
+this was a perfect opportunity to hone my Python-fu and keep it sharp.</p>
+
+<p>My first idea was to scrape the sublime.fm website itself. However, the website
+only shows the current song that is playing. It turns out that there is a
+website (www.playlist24.nl) that actually keeps track of all these songs and
+arranges them into playlists on their website.</p>
+
+<p>So basically, to figure out what songs have been playing in the last 30 days I
+just have to check out that website, instead of the sublime.fm website itself.
+My plan of attack is as follows:</p>
+
+<ol>
+  <li>Make it work for a single day (ex. 15-07-2016)</li>
+  <li>Figure out a way to make it work for multiple days</li>
+</ol>
+
+<p>Let’s get started! Let’s first import some modules. For the scraping I use
+BeautifulSoup and for obvious reasons we need datetime and urllib2 (although the
+requests library could also be used)</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">urllib2</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span> <span class="c"># prettyprint inside Jupyter notebook</span>
+</code></pre>
+</div>
+<p>Step 1 says that we have to make it work for a single day, so let’s hardcode the
+date first and later on make it variable. I’m using urllib2 to read in the
+contents and then use BS4 to make it a soup which we can process later on.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">url</span> <span class="o">=</span> <span class="s">"http://playlist24.nl/sublime-fm/15-07-2016.html"</span>
+<span class="n">content</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Taking a quick peek in the source code of the webpage we find this</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/titel/2662/corinne-bailey-rae/trouble-sleeping.html"</span><span class="nt">&gt;</span>Trouble Sleeping<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;br/&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"artist"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/artiest/2639/corinne-bailey-rae.html"</span><span class="nt">&gt;</span>Corinne Bailey Rae<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+</code></pre>
+</div>
+
+<p>Which means that all we have to do is simply grab the text between the span
+class ‘title’ and the span class ‘artist’. It turns out that I had some code
+lying around which does exactly that.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># find list of all span elements containing the words and definitions</span>
+<span class="n">titlespan</span>  <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'span'</span><span class="p">,</span> <span class="p">{</span><span class="s">'class'</span> <span class="p">:</span> <span class="s">'title'</span><span class="p">})</span>
+<span class="n">artistspan</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'span'</span><span class="p">,</span> <span class="p">{</span><span class="s">'class'</span> <span class="p">:</span> <span class="s">'artist'</span><span class="p">})</span>
+
+<span class="c"># Create lists of lines corresponding to the element texts </span>
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="n">span</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span><span class="s">'ignore'</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">span</span> <span class="ow">in</span> <span class="n">titlespan</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<span class="n">artists</span> <span class="o">=</span> <span class="p">[</span><span class="n">span</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span><span class="s">'ignore'</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">span</span> <span class="ow">in</span> <span class="n">artistspan</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+</code></pre>
+</div>
+
+<p>This method of using <code class="highlighter-rouge">.encode('ascii','ignore')</code> is actually not that safe and
+results in some trouble which I have not yet found the time to fix. For example
+<code class="highlighter-rouge">Beyoncé</code> gets changed to <code class="highlighter-rouge">Beyonc</code>. But this is an issue for later. Let’s first
+get a working prototype up and realize that we have made this little mistake
+here. Taking a look at what <code class="highlighter-rouge">titles</code> and <code class="highlighter-rouge">artists</code> now look like</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">print</span> <span class="n">titles</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">artists</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>['Trouble Sleeping', 'Never Never Gonna Give You Up', "He Won't Go"]
+['Corinne Bailey Rae', 'Barry White', 'Adele']
+</code></pre>
+</div>
+
+<p>The reason the <code class="highlighter-rouge">[1:]</code> on both lines is because the first matches of the span
+class were <code class="highlighter-rouge">titel</code> and <code class="highlighter-rouge">artiest</code> (the dutch words for title and artist). Adding <code class="highlighter-rouge">[1:]</code>
+pops off the first element of a list in Python.</p>
+
+<p>Zipping these together to create
+tuples we can <strong>extend</strong> them to our final songlist. Note the <code class="highlighter-rouge">extend</code> and not
+<code class="highlighter-rouge">append</code>. If we’d <code class="highlighter-rouge">append([1,2,3], [4,5])</code> the result would be <code class="highlighter-rouge">[1,2,3,[4,5]]</code>.
+What we really want is <code class="highlighter-rouge">[1,2,4,5]</code> obviously.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">songlist</span> <span class="o">=</span> <span class="p">[]</span> 
+<span class="n">songlist</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">artists</span><span class="p">,</span> <span class="n">titles</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">songlist</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[('Corinne Bailey Rae', 'Trouble Sleeping'),
+ ('Barry White', 'Never Never Gonna Give You Up'),
+ ('Adele', "He Won't Go"),
+ ('4 Hero', 'Star Chasers'),
+ ('Shalamar', 'The Second Time Around'),
+ ('Jason Mraz', 'Hello, You Beautiful Thing'),
+ ('Sly And The Family Stone', 'Everyday People'),
+ ('Anita Baker', 'Caught Up In The Rapture'),
+ ('Lenny Kravitz', 'I Belong To You'),
+ ('Chaka Khan', 'We Can Work It Out')]
+</code></pre>
+</div>
+
+<p>That seems to work! Exciting! That basically wraps up Step 1, doesn’t it? Now let’s make this bad boy work for multiple days. To do so we need a list of dates like <code class="highlighter-rouge">["24-07-2016","23-07-2016", ... ]</code> etc.</p>
+
+<p>I figured that because yesterday is completely over (i.e. all songs have been
+played) we should work back from yesterday instead of today. After asking Google
+what to do, I found that yesterday can be represented by the following datetime
+object (if that is the correct terminology) as follows</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">yesterday</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>We can now create a list of days starting at yesterday with the following list comprehension. Obviously, <code class="highlighter-rouge">numdays</code> can be set to any number, but it only makes sense if the page exists (i.e. playlist24.nl/sublime-fm/dd-mm-yyyy.html) so we can scrape it, but let’s keep it small for now.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">numdays</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">date_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">yesterday</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">numdays</span><span class="p">)]</span>
+</code></pre>
+</div>
+
+<p>Note that <code class="highlighter-rouge">date_list</code> is not a list of dates but rather a list of some sort of datelike objects which do not have the right representation yet.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">display</span><span class="p">(</span><span class="n">date_list</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[datetime.datetime(2016, 7, 23, 19, 45, 33, 29389),
+ datetime.datetime(2016, 7, 22, 19, 45, 33, 29389)]
+</code></pre>
+</div>
+
+<p>See? So let’s make the date variable! Remember the URL that we souped the contents of?</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">url</span> <span class="o">=</span> <span class="s">"http://playlist24.nl/sublime-fm/15-07-2016.html"</span>
+</code></pre>
+</div>
+
+<p>We can use use <code class="highlighter-rouge">strftime(...)</code> to turn the objects in <code class="highlighter-rouge">date_list</code> into the proper format (i.e. dd-mm-yyyy like the good Europeans we are).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">date</span> <span class="o">=</span> <span class="n">date_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">Y'</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>'23-07-2016'
+</code></pre>
+</div>
+
+<p>Refactoring the <code class="highlighter-rouge">url</code> has now become trivial</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">url</span> <span class="o">=</span> <span class="s">"http://playlist24.nl/sublime-fm/{}.html"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Putting it all together with some added print statements we get the following piece of code</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">urllib2</span>
+
+<span class="n">yesterday</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">numdays</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">date_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">yesterday</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">numdays</span><span class="p">)]</span>
+<span class="n">songlist</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">date</span> <span class="ow">in</span> <span class="n">date_list</span><span class="p">:</span>
+    <span class="n">date</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">Y'</span><span class="p">)</span>
+
+    <span class="k">print</span> <span class="s">"Scraping {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s">"http://playlist24.nl/sublime-fm/{}.html"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s">"Fetching content ..."</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+    <span class="c"># find list of all span elements containing the words and definitions</span>
+    <span class="k">print</span> <span class="s">"Finding titles and artists ..."</span>
+    <span class="n">titlespan</span>  <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'span'</span><span class="p">,</span> <span class="p">{</span><span class="s">'class'</span> <span class="p">:</span> <span class="s">'title'</span><span class="p">})</span>
+    <span class="n">artistspan</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'span'</span><span class="p">,</span> <span class="p">{</span><span class="s">'class'</span> <span class="p">:</span> <span class="s">'artist'</span><span class="p">})</span>
+
+    <span class="c"># Create lists of lines corresponding to the element texts </span>
+    <span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="n">span</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span><span class="s">'ignore'</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">span</span> <span class="ow">in</span> <span class="n">titlespan</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="n">artists</span> <span class="o">=</span> <span class="p">[</span><span class="n">span</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span><span class="s">'ignore'</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">span</span> <span class="ow">in</span> <span class="n">artistspan</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+
+    <span class="k">print</span> <span class="s">"Appending to songlist ... "</span> 
+    <span class="n">songlist</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">artists</span><span class="p">,</span> <span class="n">titles</span><span class="p">))</span> <span class="c"># different than append! </span>
+</code></pre>
+</div>
+
+<p>Running this results in</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Scraping 23-07-2016
+Fetching content ...
+Finding titles and artists ...
+Appending to songlist ... 
+Scraping 22-07-2016
+Fetching content ...
+Finding titles and artists ...
+Appending to songlist ... 
+</code></pre>
+</div>
+
+<p>The songlist looks promising</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">display</span><span class="p">(</span><span class="n">songlist</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[('Michael Jackson', 'Gone Too Soon'),
+ ('Fkj &amp; Jordan Rakei', 'Learn To Fly'),
+ ('Lyn Collins &amp; James Brown', "It's Alright"),
+ ('Rose Royce', 'Car Wash'),
+ ('Sergio Mendes &amp; John Legend', "Please Baby Don't"),
+ ('Leela James', 'Fall For You'),
+ ('Curtis Stigers', 'I Wonder Why'),
+ ('Al Jarreau', "We're In This Love Together"),
+ ('Jill Scott', 'Back Together'),
+ ('Caro Emerald', 'Back It Up (New Mix)')]
+</code></pre>
+</div>
+
+<p>But I know for a fact that they often play the same song so we also need to remove the duplicates from the songlist. <code class="highlighter-rouge">set()</code> takes care of that for us! Saving the original songlist with the duplicates we can figure out how many duplicates were removed.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">songlist_with_duplicates</span> <span class="o">=</span> <span class="n">songlist</span>
+<span class="n">songlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">songlist</span><span class="p">))</span> <span class="c"># remove EXACT duplicates</span>
+<span class="k">print</span> <span class="s">"Removed {} duplicates"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">songlist_with_duplicates</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">songlist</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Removed 0 duplicates
+</code></pre>
+</div>
+
+<p>All that’s left is to save the output into a properly formatted <code class="highlighter-rouge">.txt</code> file and we’re all set!</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">outfile_name</span> <span class="o">=</span> <span class="s">"songlist-back-to-"</span> <span class="o">+</span> <span class="n">date_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">Y'</span><span class="p">)</span> <span class="o">+</span> <span class="s">".txt"</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile_name</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">combination</span> <span class="ow">in</span> <span class="n">songlist</span><span class="p">:</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">','</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="p">(</span><span class="s">"</span><span class="se">\"</span><span class="s">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\"</span><span class="s">"</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">combination</span><span class="p">)</span> <span class="o">+</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">"Saving output in {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">outfile_name</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Results in</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Saving output in songlist-back-to-22-07-2016.txt
+</code></pre>
+</div>
+
+<p>We’re done! The complete code piece is then as follows</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">urllib2</span>
+
+<span class="n">yesterday</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">numdays</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">date_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">yesterday</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">numdays</span><span class="p">)]</span>
+<span class="n">songlist</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">date</span> <span class="ow">in</span> <span class="n">date_list</span><span class="p">:</span>
+    <span class="n">date</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">Y'</span><span class="p">)</span>
+
+    <span class="k">print</span> <span class="s">"Scraping {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s">"http://playlist24.nl/sublime-fm/{}.html"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+    <span class="k">print</span> <span class="s">"Fetching content ..."</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+
+    <span class="c"># find list of all span elements containing the words and definitions</span>
+    <span class="k">print</span> <span class="s">"Finding titles and artists ..."</span>
+    <span class="n">titlespan</span>  <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'span'</span><span class="p">,</span> <span class="p">{</span><span class="s">'class'</span> <span class="p">:</span> <span class="s">'title'</span><span class="p">})</span>
+    <span class="n">artistspan</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'span'</span><span class="p">,</span> <span class="p">{</span><span class="s">'class'</span> <span class="p">:</span> <span class="s">'artist'</span><span class="p">})</span>
+
+    <span class="c"># Create lists of lines corresponding to the element texts </span>
+    <span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="n">span</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span><span class="s">'ignore'</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">span</span> <span class="ow">in</span> <span class="n">titlespan</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="n">artists</span> <span class="o">=</span> <span class="p">[</span><span class="n">span</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span><span class="s">'ignore'</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">span</span> <span class="ow">in</span> <span class="n">artistspan</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+
+    <span class="k">print</span> <span class="s">"Appending to songlist ... "</span> 
+    <span class="n">songlist</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">artists</span><span class="p">,</span> <span class="n">titles</span><span class="p">))</span> <span class="c"># different than append! </span>
+
+<span class="k">print</span> <span class="s">"Removing duplicates"</span>
+<span class="n">songlist_with_duplicates</span> <span class="o">=</span> <span class="n">songlist</span>
+<span class="n">songlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">songlist</span><span class="p">))</span> <span class="c"># remove EXACT duplicates</span>
+<span class="k">print</span> <span class="s">"Removed {} duplicates"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">songlist_with_duplicates</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">songlist</span><span class="p">))</span>
+
+<span class="n">outfile_name</span> <span class="o">=</span> <span class="s">"songlist-back-to-"</span> <span class="o">+</span> <span class="n">date_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">Y'</span><span class="p">)</span> <span class="o">+</span> <span class="s">".txt"</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile_name</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">combination</span> <span class="ow">in</span> <span class="n">songlist</span><span class="p">:</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">','</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="p">(</span><span class="s">"</span><span class="se">\"</span><span class="s">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\"</span><span class="s">"</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">combination</span><span class="p">)</span> <span class="o">+</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span> 
+<span class="k">print</span> <span class="s">"Saving output in {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">outfile_name</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Running the code with <code class="highlighter-rouge">numdays = 5</code> results in</p>
+
+<pre><code class="language-raw">Scraping 23-07-2016
+Fetching content ...
+Finding titles and artists ...
+Appending to songlist ...
+Scraping 22-07-2016
+Fetching content ...
+Finding titles and artists ...
+Appending to songlist ...
+Scraping 21-07-2016
+Fetching content ...
+Finding titles and artists ...
+Appending to songlist ...
+Scraping 20-07-2016
+Fetching content ...
+Finding titles and artists ...
+Appending to songlist ...
+Scraping 19-07-2016
+Fetching content ...
+Finding titles and artists ...
+Appending to songlist ...
+Removing duplicates
+Removed 518 duplicates
+Saving output in songlist-back-to-19-07-2016.txt
+</code></pre>
+
+<p>with <code class="highlighter-rouge">songlist-back-to-19-07-2016.txt</code> as follows</p>
+
+<pre><code class="language-raw">"Dionne Bromfield Ft Lil Twist","Foolin"
+"Sting","Fragile"
+"Robert Palmer","Best Of Both Worlds"
+"Jocelyn Brown","Somebody Else's Guy"
+"Bob Sinclar &amp; Gary Pine","Love Generation"
+...
+</code></pre>
+
+<p>That’s all for now! I totally agree with you that this is far from perfect but
+it works! Hopefully you’ve enjoyed this small blogpost and
+maybe learned a thing or two. I hope I have made you guys a little bit more
+excited to learn Python perhaps or to do these little side projects yourself.
+I’m looking forward to them! Programming is automation, and it’s awesome!</p>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'janmeppeblog'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+      <footer class="site-footer">
+  <span class="site-footer-credits">
+        Blog by: <a href="https://github.com/rainymood">Jan Meppe</a><br>
+        Theme: <a href="https://github.com/pietromenna/jekyll-cayman-theme">Cayman</a>
+  </span>
+</footer>
+
+
+    </section>
+
+  </body>
+</html>

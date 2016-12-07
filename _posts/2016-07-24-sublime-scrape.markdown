@@ -5,8 +5,8 @@ date:   2016-07-24 20:04:00 +0200
 categories: jekyll update
 ---
 
-tl;dr Used Python to find all the songs played a radio station that I really
-like. 
+tl;dr Used Python to find all the songs played on a radio station that I really
+like.
 
 tl;dr image version:
 
@@ -365,7 +365,7 @@ with `songlist-back-to-19-07-2016.txt` as follows
 ```
 
 That's all for now! I totally agree with you that this is far from perfect but
-it works! Hopefully you've enjoyed this small blog post and
+it works! Hopefully you've enjoyed this small blogpost and
 maybe learned a thing or two. I hope I have made you guys a little bit more
 excited to learn Python perhaps or to do these little side projects yourself.
 I'm looking forward to them! Programming is automation, and it's awesome! 
