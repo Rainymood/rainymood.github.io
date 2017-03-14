@@ -207,11 +207,11 @@ this one up to you. This is left as an exercise for the reader.
 
 ## Conclusion 
 
-In this blog post I first detailed a system to map numbers to
-letters. Then we split the first 10 digits of Pi into pairs, and using the
-system we made a short story. The story goes as follows: imagine a little beatle
-(14) on a pasta (15) inside of a pan (92) on top of a jar of jelly (65)
-surrounded by a bunch of white flour (ml; meel; flour in dutch; 35).
+In this blog post I first detailed a system to map numbers to letters. Then we
+split the first 10 digits of Pi into pairs, and using the system we made a short
+story. The story goes as follows: imagine a little beatle (14) on a pasta (15)
+inside of a pan (92) on top of a jar of jelly (65) surrounded by a bunch of
+white flour (ml; meel; flour in dutch; 35).
 
 This gives us the first 10 decimals of Pi: 3.1415926535.
 
@@ -219,5 +219,4 @@ That's really all there is to it! The only difference between the first 10
 decimals and the first 100 decimals is just the length of the story.
 
 I hope you enjoyed this post! 
-
 

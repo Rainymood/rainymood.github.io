@@ -16,7 +16,9 @@ it yet.
 Here's a timeline of events: 
 
 3-10-2016 started writing this post, memorised the first 26 digits
+
 22-11-2016 memorised the first 42 digits
+
 14-3-2016 (today) can still easily recall the first 37 digits 
 
 I personally think it's amazing that, even after 5 months, I can still recall 37
