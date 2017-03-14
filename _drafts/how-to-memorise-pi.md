@@ -1,54 +1,59 @@
 ---
 layout: post
-title:  "How to memorise the first 42 digits of Pi"
-date:   2016-11-22 00:00:00 +0200
+title:  "How to memorise the first 37 digits of Pi"
+date:   2016-03-14 00:00:00 +0200
 categories: jekyll update
 ---
 
-# How to memorise the first ~~26~~ ~~32~~ 42 digits of Pi
+# How to memorise the first ~~26~~ ~~32~~ ~~42~~ 37 digits of Pi
 
-tl;dr I memorised the first 42 digits of Pi. When I started writing this blog
-post (3-10-2016) I memorised the first 26 digits. I've put off finishing this
-blog post for so long already that I'm currently at the 42nd digit (as of
-22-11-2016). It turns out that memorising a long string of digits takes some
-work but is not that difficult at all. This blog post details how its done and
-how I did it. 
+tl;dr 
+
+Pi day seems like a great day to finally publish this post on memorising the
+first 37 digits of Pi. I wrote this post around 5 months ago but didn't publish
+it yet.
+
+Here's a timeline of events: 
+
+3-10-2016 started writing this post, memorised the first 26 digits
+22-11-2016 memorised the first 42 digits
+14-3-2016 (today) can still easily recall the first 37 digits 
+
+I personally think it's amazing that, even after 5 months, I can still recall 37
+digits with ease! Read on to find out how! 
 
 # Introduction
 
-From the top of my head (you guys will have to take my word for this) the ~~26~~
-~~32~~ 42 decimals of Pi are:
+The first ~~26~~ ~~32~~ ~~42~~ 37 decimals of Pi are: 
 
 ~~3.14159265358979323846264338~~
 
 ~~3.14159265358979323846264338327950~~
 
-3.14159265358979323846264338327950288419716939
+~~3.14159265358979323846264338327950288419716939~~
 
-Neat. 
+3.141592653589793238462643383279502884
 
-Memorising a string of numbers might seem like some completely useless magic
-trick and waste of mental capacity. I did not write blog post to convince you of
-the usefulness, merely to describe how I did it.
+Memorising a large number is quite a useless feat, but I'm sure one can think of
+useful applications of the same technique described here.  In this post I
+will detail (and perhaps even teach you) how to do this! The two main
+ingredients are:
 
-In this blog post I will detail (and perhaps even teach you) how to do this! The
-two main ingredients are:
-
-1. Breaking Pi down into bite-sized pieces. 
+1. Breaking a large problem down into bite-sized pieces. 
 2. A system to map digits to letters. 
 
-The key point I want to emphasise is that your brain is pretty awesome and can do a
-lot more than you think you are capable of. **I firmly believe that (with some
-practice) you can easily remember the first 10 digits after reading this post.**
+The key point I want to emphasise is the brain is pretty awesome and can do a
+lot more than you think you are capable of. I firmly believe that (with some
+practice) you can easily remember the first 10 digits after reading this post.
 
-The question I most get asked is: "... why?"
+When I tell people I memorised the first 37 digits of Pi the question I get
+asked most is "Why?" So let me elaborate on that down below. 
 
 # What started it all
 
 The story actually goes back to 2012: My sister introduced me to the book
-*Moonwalking With Einstein* by Joshua Fouer and I finished it relatively quickly
-because I liked it a lot. As if God himself had planned it, two girls came into our
-drawing class the next day (the day after I finished the book) and wanted to do some
+*Moonwalking With Einstein* by Joshua Fouer. In what in retrospect seems like an extremely unlikely turn of events, the day after finishing the book 
+two students burst into our art class the next day (the day after I finished the book) and wanted to do some
 psychological tests. 
 
 The test was as follows: here is a list of 50 words and you have 5 minutes to
@@ -200,9 +205,9 @@ inside a pan (92) on top of a jar of jelly (65).
 The last pair (9th and 10th decimals) is 35. This translates to "ml". I leave
 this one up to you. This is left as an exercise for the reader.
 
-## In conclusion
+## Conclusion 
 
-Summarizing, in this blog post I first detailed a system to map numbers to
+In this blog post I first detailed a system to map numbers to
 letters. Then we split the first 10 digits of Pi into pairs, and using the
 system we made a short story. The story goes as follows: imagine a little beatle
 (14) on a pasta (15) inside of a pan (92) on top of a jar of jelly (65)
