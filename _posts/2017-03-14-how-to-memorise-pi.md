@@ -160,7 +160,7 @@ of Pi in pairs
     14, 15, 92, 65, 35, ... 
     
 The number 14 contains the numbers 1 and 4. Using the system above this
-translates to "tr". I put an "o" in there and you get the word "tor" (beatle in Dutch). 
+translates to "tr". I put an "o" in there and you get the word "tor" (beetle in Dutch). 
 
     14 => "tr" => "tor" (beatle)
     
@@ -171,7 +171,7 @@ rules, but rules are meant to be broken.
     15 => "tl" => "tortelinni"
 
 Try now to really visualise in your mind a little pasta laying around with a
-cute beatle on top.
+cute beetle on top.
     
 The third pair is the number 92. 92 translates to "pn". This one is easy, isn't
 it? Just imagine a pan. So pan means 92 ...
@@ -190,7 +190,7 @@ So, what do we have so far?
 
 We have a *beatle* (tor => tr => 14) standing on top of a little *tortellini*
 (tl => 15) inside a *pan* (pn = 92). To find the digits of Pi we now "invert"
-our story. Beatle, pasta, pan: 3.141592. Bam! That's already 6 decimals down!
+our story. Beetle, pasta, pan: 3.141592. Bam! That's already 6 decimals down!
 Two more pairs and we're at 10 decimals, exciting!
 
 The next number is 65. Translating 65 gives "jl". You could translate this to
@@ -199,9 +199,9 @@ with jelly.
 
     65 => "jl" => "jelly"
     
-65, jelly. 65, jelly. 65, jelly. Okay we had a beatle on a little pasta 
+65, jelly. 65, jelly. 65, jelly. Okay we had a beetle on a little pasta 
 inside a pan. Instead of the pan being on the stove, imagine the pan
-standing on top of a jar of jelly, which means 65. Beatle (14) on a pasta (15)
+standing on top of a jar of jelly, which means 65. Beetle (14) on a pasta (15)
 inside a pan (92) on top of a jar of jelly (65).
 
 The last pair (9th and 10th decimals) is 35. This translates to "ml". I leave
@@ -211,7 +211,7 @@ this one up to you. This is left as an exercise for the reader.
 
 In this blog post I first detailed a system to map numbers to
 letters. Then we split the first 10 digits of Pi into pairs, and using the
-system we made a short story. The story goes as follows: imagine a little beatle
+system we made a short story. The story goes as follows: imagine a little beetle
 (14) on a pasta (15) inside of a pan (92) on top of a jar of jelly (65)
 surrounded by a bunch of white flour (ml; meel; flour in dutch; 35).
 
