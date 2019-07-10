@@ -31,3 +31,5 @@ future: true
 
 # Google analytics 
 safe: true
+
+theme: jekyll-theme-minimal
