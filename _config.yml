@@ -35,5 +35,5 @@ future: true
 # Google analytics 
 safe: true
 
-remote_theme: "mmistakes/minimal-mistakes@4.16.4
+remote_theme: "mmistakes/minimal-mistakes@4.16.4"
 
