@@ -15,6 +15,7 @@ gems:
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
 
 # highlighter 
 highlighter: rouge
