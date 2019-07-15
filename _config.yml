@@ -12,7 +12,7 @@ author:
 # Gems
 gems:
   - jekyll-paginate
-
+  - jekyll-remote-theme
 
 # highlighter 
 highlighter: rouge
@@ -32,4 +32,5 @@ future: true
 # Google analytics 
 safe: true
 
-theme: jekyll-theme-minimal
+remote_theme: "mmistakes/minimal-mistakes@4.16.4
+
