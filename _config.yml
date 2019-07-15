@@ -12,6 +12,8 @@ author:
 # Gems
 gems:
   - jekyll-paginate
+
+plugins:
   - jekyll-remote-theme
 
 # highlighter 
