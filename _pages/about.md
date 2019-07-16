@@ -7,7 +7,7 @@ title: "👨 About"
 
 So here's a picture of me so you know what I look like.
 
-<img src="/assets/images/bio-photo2.jpg" style="max-height: 500px">
+<img src="/assets/images/bio-photo4.jpg" style="max-height: 400px">
 
 That's me!
 
