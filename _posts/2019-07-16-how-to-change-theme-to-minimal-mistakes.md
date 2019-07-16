@@ -18,10 +18,33 @@ Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes 
 
 <img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-minimal-mistakes-theme.jpg">
 
-...
+Setting this is up is ridiculously simple if you know what you're doing. I am making this blog post because I want to save people the headache of spending a whole day debugging something they don't actually have to because they followed the wrong instructions.
 
+This post assumes that you are going to run your blog using [Github pages](https://pages.github.com). The final product of this blog post can be found [here](www.google.com) and in your case is going to be hosted at `<username>.github.io/<repo-name>` or `<username>.github.io` if your `repo-name` is `<username>.github.io`. Note that you can only have 1 Github pages repo that points towards `<username>github.io`, all others are pointed towards `<username>github.io/<repo-name>`.
 
+## Step 1. Fork the minimal-mistakes starter repo
 
+Go to the Minimal Mistakes Github pages starter [found here](https://github.com/mmistakes/mm-github-pages-starter) and fork the repo.
+
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/001-fork.jpg">
+
+## Step 2. Change the repo name
+
+Click on `settings` and change the repository name. I chose to rename the repo to `minimal-mistakes-blog`.
+
+**Option 1** If you rename the repo to `<username>.github.io` then your Github pages will be hosted on `<username>.github.io`. For me this becomes `rainymood.github.io` which can be found [here](https://rainymood.github.io).
+
+**Option 2** If you rename it to anything else, say `minimal-mistakes`, then your Github pages will be hosted on `<username>.github.io/<repo-name>`. For me this becomes `rainymood.github.io/minimal-mistakes-blog` which can be found [here](https://www.rainymood.github.io/minimal-mistakes).
+
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/002-edit.jpg">
+
+## Step 3. That's it!
+
+**That's it! It's that simple.**
+
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/002-edit.jpg">
+
+This is what it looks like and you can find it [here](https://www.rainymood.github.io/minimal-mistakes-blog)
 
 
 <!-- Begin Mailchimp Signup Form -->
