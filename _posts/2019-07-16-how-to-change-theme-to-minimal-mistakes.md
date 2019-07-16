@@ -8,7 +8,7 @@ tags:
   - update
 ---
 
-Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes theme which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This blog post explains how to quickly get up and running with the minimal-mistakes theme.
+Recently I migrated my whole blog from the Cayman theme to the Minimal Mistakes theme, which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This blog post explains how to quickly get up and running with the Minimal Mistakes theme.
 
 **Before**
 
