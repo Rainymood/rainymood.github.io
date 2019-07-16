@@ -8,7 +8,7 @@ tags:
   - update
 ---
 
-Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes theme which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This is what it looked like before and after.
+Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes theme which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This blog post explains how to quickly get up and running with the minimal-mistakes theme.
 
 **Before**
 
@@ -44,8 +44,7 @@ Click on `settings` and change the repository name. I chose to rename the repo t
 
 <img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/002-edit.jpg">
 
-This is what it looks like and you can find it [here](https://www.rainymood.github.io/minimal-mistakes-blog)
-
+This is what the final product looks like and you can find it [here](https://www.rainymood.github.io/minimal-mistakes-blog).
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
