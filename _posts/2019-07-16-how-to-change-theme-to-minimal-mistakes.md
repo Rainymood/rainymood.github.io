@@ -8,7 +8,21 @@ tags:
   - update
 ---
 
+Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes theme which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This is what it looked like before and after. 
+
+**Before** 
+
 <img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-cayman-theme.png">
+
+**After**
+
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-minimal-mistakes-theme.png">
+
+... 
+
+
+
+
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
