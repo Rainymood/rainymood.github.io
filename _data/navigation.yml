@@ -1,9 +1,9 @@
 main:
-  - title: "Start here"
+  - title: "🎯 Start here"
     url: /start/
-  - title: "Blog"
+  - title: "✏️ Blog"
     url: /posts/
-  - title: "Bookshelf 📖"
+  - title: "📚 Bookshelf"
     url: /bookshelf/
-  - title: "About"
+  - title: "👨 About"
     url: /about/
