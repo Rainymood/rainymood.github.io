@@ -30,11 +30,11 @@ Go to the Minimal Mistakes Github pages starter [found here](https://github.com/
 
 ## Step 2. Change the repo name
 
-Click on `settings` and change the repository name. I chose to rename the repo to `minimal-mistakes-blog`.
+Click on `settings` and change the repository name. I chose to rename the repo to `minimal-mistakes`.
 
 **Option 1** If you rename the repo to `<username>.github.io` then your Github pages will be hosted on `<username>.github.io`. For me this becomes `rainymood.github.io` which can be found [here](https://rainymood.github.io).
 
-**Option 2** If you rename it to anything else, say `minimal-mistakes`, then your Github pages will be hosted on `<username>.github.io/<repo-name>`. For me this becomes `rainymood.github.io/minimal-mistakes-blog` which can be found [here](https://www.rainymood.github.io/minimal-mistakes).
+**Option 2** If you rename it to anything else, say `minimal-mistakes`, then your Github pages will be hosted on `<username>.github.io/<repo-name>`. For me this becomes `rainymood.github.io/minimal-mistakes` which can be found [here](https://rainymood.github.io/minimal-mistakes).
 
 <img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/002-edit.jpg">
 
@@ -42,9 +42,9 @@ Click on `settings` and change the repository name. I chose to rename the repo t
 
 **That's it! It's that simple.**
 
-<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/002-edit.jpg">
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/003-done.jpg">
 
-This is what the final product looks like and you can find it [here](https://www.rainymood.github.io/minimal-mistakes-blog).
+This is what the final product looks like and you can find it [here](https://rainymood.github.io/minimal-mistakes).
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
