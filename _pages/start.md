@@ -5,8 +5,6 @@ title: "🎯 Start here"
 
 ## Jan Meppe
 
-<img src="/assets/images/bio-photo3.jpg" style="max-height: 500px">
-
 Welcome to my blog and pleasure to meet you!
 
 I'm Jan Meppe and this is my my personal corner of the internet.
