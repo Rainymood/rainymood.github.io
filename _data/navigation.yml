@@ -3,7 +3,7 @@ main:
     url: /start/
   - title: "Blog"
     url: /posts/
-  - title: "Bookshelf"
+  - title: "Bookshelf 📖"
     url: /bookshelf/
   - title: "About"
     url: /about/
