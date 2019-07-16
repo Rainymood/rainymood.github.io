@@ -1,4 +1,6 @@
 main:
+  - title: "Start here"
+    url: /start/
   - title: "Blog"
     url: /posts/
   - title: "Bookshelf"
