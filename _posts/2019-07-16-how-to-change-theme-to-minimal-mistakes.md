@@ -8,11 +8,13 @@ tags:
   - update
 ---
 
-
+Before
+![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![Theme before][before]
 
 After
 
-<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-cayman-theme.png">
+[before]: assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-cayman-theme
 
 
 <!-- Begin Mailchimp Signup Form -->
