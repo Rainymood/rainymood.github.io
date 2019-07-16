@@ -8,17 +8,17 @@ tags:
   - update
 ---
 
-Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes theme which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This is what it looked like before and after. 
+Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes theme which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This is what it looked like before and after.
 
-**Before** 
+**Before**
 
-<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-cayman-theme.png">
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-cayman-theme.jpg">
 
 **After**
 
-<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-minimal-mistakes-theme.png">
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-minimal-mistakes-theme.jpg">
 
-... 
+...
 
 
 
