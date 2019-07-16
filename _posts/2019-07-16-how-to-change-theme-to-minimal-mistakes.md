@@ -20,7 +20,7 @@ Recently I migrated my whole blog from the Cayman theme to the Minimal mistakes 
 
 Setting this is up is ridiculously simple if you know what you're doing. I am making this blog post because I want to save people the headache of spending a whole day debugging something they don't actually have to because they followed the wrong instructions.
 
-This post assumes that you are going to run your blog using [Github pages](https://pages.github.com). The final product of this blog post can be found [here](www.google.com) and in your case is going to be hosted at `<username>.github.io/<repo-name>` or `<username>.github.io` if your `repo-name` is `<username>.github.io`. Note that you can only have 1 Github pages repo that points towards `<username>github.io`, all others are pointed towards `<username>github.io/<repo-name>`.
+This post assumes that you are going to run your blog using [Github pages](https://pages.github.com). Note that you can only have 1 Github pages repo that points towards `<username>github.io`, all other Github pages are going to point towards `<username>github.io/<repo-name>`.
 
 ## Step 1. Fork the minimal-mistakes starter repo
 
@@ -40,11 +40,15 @@ Click on `settings` and change the repository name. I chose to rename the repo t
 
 ## Step 3. That's it!
 
-**That's it! It's that simple.**
+**It's that simple.**
+
+Don't be like me and waste a full day debugging something you don't actually have to. Just fork the repo and start publishing!
+
+This is what the final product looks like and you can find it [here](https://rainymood.github.io/minimal-mistakes).
 
 <img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/003-done.jpg">
 
-This is what the final product looks like and you can find it [here](https://rainymood.github.io/minimal-mistakes).
+
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
