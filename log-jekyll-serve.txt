@@ -1,0 +1,130 @@
+Script started on Tue Jul 16 18:31:04 2019
+Running ~.zshrc ...
+Complete ...
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004hbbundle exec jekyll serve[?2004l
+kbundle\zsh: command not found: bundle
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01;31mexit 127
+[00m[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004hbbundle     b  bbundle[?2004l
+kbundle\zsh: command not found: bundle
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01;31mexit 127
+[00m[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004hbbundle     b  ggem update --system[?2004l
+kgem\Ignoring audite-0.4.0 because its extensions are not built.  Try: gem pristine audite --version 0.4.0
+Ignoring bigdecimal-1.2.7 because its extensions are not built.  Try: gem pristine bigdecimal --version 1.2.7
+Ignoring binding_of_caller-0.7.2 because its extensions are not built.  Try: gem pristine binding_of_caller --version 0.7.2
+Ignoring blockenspiel-0.4.5 because its extensions are not built.  Try: gem pristine blockenspiel --version 0.4.5
+Ignoring byebug-5.0.0 because its extensions are not built.  Try: gem pristine byebug --version 5.0.0
+Ignoring commonmarker-0.17.13 because its extensions are not built.  Try: gem pristine commonmarker --version 0.17.13
+Ignoring debug_inspector-0.0.2 because its extensions are not built.  Try: gem pristine debug_inspector --version 0.0.2
+Ignoring eventmachine-1.2.7 because its extensions are not built.  Try: gem pristine eventmachine --version 1.2.7
+Ignoring executable-hooks-1.3.2 because its extensions are not built.  Try: gem pristine executable-hooks --version 1.3.2
+Ignoring ffi-1.9.18 because its extensions are not built.  Try: gem pristine ffi --version 1.9.18
+Ignoring ffi-1.9.10 because its extensions are not built.  Try: gem pristine ffi --version 1.9.10
+Ignoring gem-wrappers-1.2.7 because its extensions are not built.  Try: gem pristine gem-wrappers --version 1.2.7
+Ignoring http_parser.rb-0.6.0 because its extensions are not built.  Try: gem pristine http_parser.rb --version 0.6.0
+Ignoring json-1.8.3 because its extensions are not built.  Try: gem pristine json --version 1.8.3
+Ignoring nokogiri-1.6.8 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.8
+Ignoring nokogiri-1.6.6.2 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.6.2
+Ignoring posix-spawn-0.3.11 because its extensions are not built.  Try: gem pristine posix-spawn --version 0.3.11
+Ignoring psych-2.0.13 because its extensions are not built.  Try: gem pristine psych --version 2.0.13
+Ignoring sqlite3-1.3.10 because its extensions are not built.  Try: gem pristine sqlite3 --version 1.3.10
+Ignoring sqlite3-ruby-1.2.5 because its extensions are not built.  Try: gem pristine sqlite3-ruby --version 1.2.5
+Ignoring yajl-ruby-1.2.1 because its extensions are not built.  Try: gem pristine yajl-ruby --version 1.2.1
+Error loading RubyGems plugin "/Users/janmeppe/.rvm/gems/ruby-2.2.1@global/gems/executable-hooks-1.3.2/lib/rubygems_plugin.rb": cannot load such file -- executable-hooks/wrapper (LoadError)
+Error loading RubyGems plugin "/Users/janmeppe/.rvm/gems/ruby-2.2.1@global/gems/gem-wrappers-1.2.7/lib/rubygems_plugin.rb": cannot load such file -- gem-wrappers (LoadError)
+Updating rubygems-update
+Fetching: rubygems-update-3.0.4.gemFetching: rubygems-update-3.0.4.gem (  1%)Fetching: rubygems-update-3.0.4.gem (  2%)Fetching: rubygems-update-3.0.4.gem (  3%)Fetching: rubygems-update-3.0.4.gem (  4%)Fetching: rubygems-update-3.0.4.gem (  6%)Fetching: rubygems-update-3.0.4.gem (  8%)Fetching: rubygems-update-3.0.4.gem ( 10%)Fetching: rubygems-update-3.0.4.gem ( 12%)Fetching: rubygems-update-3.0.4.gem ( 14%)Fetching: rubygems-update-3.0.4.gem ( 16%)Fetching: rubygems-update-3.0.4.gem ( 18%)Fetching: rubygems-update-3.0.4.gem ( 20%)Fetching: rubygems-update-3.0.4.gem ( 21%)Fetching: rubygems-update-3.0.4.gem ( 23%)Fetching: rubygems-update-3.0.4.gem ( 25%)Fetching: rubygems-update-3.0.4.gem ( 27%)Fetching: rubygems-update-3.0.4.gem ( 29%)Fetching: rubygems-update-3.0.4.gem ( 31%)Fetching: rubygems-update-3.0.4.gem ( 33%)Fetching: rubygems-update-3.0.4.gem ( 35%)Fetching: rubygems-update-3.0.4.gem ( 37%)Fetching: rubygems-update-3.0.4.gem ( 39%)Fetching: rubygems-update-3.0.4.gem ( 41%)Fetching: rubygems-update-3.0.4.gem ( 42%)Fetching: rubygems-update-3.0.4.gem ( 44%)Fetching: rubygems-update-3.0.4.gem ( 46%)Fetching: rubygems-update-3.0.4.gem ( 48%)Fetching: rubygems-update-3.0.4.gem ( 50%)Fetching: rubygems-update-3.0.4.gem ( 52%)Fetching: rubygems-update-3.0.4.gem ( 54%)Fetching: rubygems-update-3.0.4.gem ( 56%)Fetching: rubygems-update-3.0.4.gem ( 58%)Fetching: rubygems-update-3.0.4.gem ( 60%)Fetching: rubygems-update-3.0.4.gem ( 62%)Fetching: rubygems-update-3.0.4.gem ( 63%)Fetching: rubygems-update-3.0.4.gem ( 65%)Fetching: rubygems-update-3.0.4.gem ( 67%)Fetching: rubygems-update-3.0.4.gem ( 69%)Fetching: rubygems-update-3.0.4.gem ( 71%)Fetching: rubygems-update-3.0.4.gem ( 73%)Fetching: rubygems-update-3.0.4.gem ( 75%)Fetching: rubygems-update-3.0.4.gem ( 77%)Fetching: rubygems-update-3.0.4.gem ( 79%)Fetching: rubygems-update-3.0.4.gem ( 81%)Fetching: rubygems-update-3.0.4.gem ( 83%)Fetching: rubygems-update-3.0.4.gem ( 85%)Fetching: rubygems-update-3.0.4.gem ( 86%)Fetching: rubygems-update-3.0.4.gem ( 88%)Fetching: rubygems-update-3.0.4.gem ( 90%)Fetching: rubygems-update-3.0.4.gem ( 92%)Fetching: rubygems-update-3.0.4.gem ( 94%)Fetching: rubygems-update-3.0.4.gem ( 96%)Fetching: rubygems-update-3.0.4.gem ( 98%)Fetching: rubygems-update-3.0.4.gem (100%)Fetching: rubygems-update-3.0.4.gem (100%)
+Successfully installed rubygems-update-3.0.4
+Parsing documentation for rubygems-update-3.0.4
+Installing ri documentation for rubygems-update-3.0.4
+Installing darkfish documentation for rubygems-update-3.0.4
+Done installing documentation for rubygems-update after 62 seconds
+Parsing documentation for rubygems-update-3.0.4
+Done installing documentation for rubygems-update after 0 seconds
+Installing RubyGems 3.0.4
+Ignoring audite-0.4.0 because its extensions are not built.  Try: gem pristine audite --version 0.4.0
+Ignoring bigdecimal-1.2.7 because its extensions are not built.  Try: gem pristine bigdecimal --version 1.2.7
+Ignoring binding_of_caller-0.7.2 because its extensions are not built.  Try: gem pristine binding_of_caller --version 0.7.2
+Ignoring blockenspiel-0.4.5 because its extensions are not built.  Try: gem pristine blockenspiel --version 0.4.5
+Ignoring byebug-5.0.0 because its extensions are not built.  Try: gem pristine byebug --version 5.0.0
+Ignoring commonmarker-0.17.13 because its extensions are not built.  Try: gem pristine commonmarker --version 0.17.13
+Ignoring debug_inspector-0.0.2 because its extensions are not built.  Try: gem pristine debug_inspector --version 0.0.2
+Ignoring eventmachine-1.2.7 because its extensions are not built.  Try: gem pristine eventmachine --version 1.2.7
+Ignoring executable-hooks-1.3.2 because its extensions are not built.  Try: gem pristine executable-hooks --version 1.3.2
+Ignoring ffi-1.9.18 because its extensions are not built.  Try: gem pristine ffi --version 1.9.18
+Ignoring ffi-1.9.10 because its extensions are not built.  Try: gem pristine ffi --version 1.9.10
+Ignoring gem-wrappers-1.2.7 because its extensions are not built.  Try: gem pristine gem-wrappers --version 1.2.7
+Ignoring http_parser.rb-0.6.0 because its extensions are not built.  Try: gem pristine http_parser.rb --version 0.6.0
+Ignoring json-1.8.3 because its extensions are not built.  Try: gem pristine json --version 1.8.3
+Ignoring nokogiri-1.6.8 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.8
+Ignoring nokogiri-1.6.6.2 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.6.2
+Ignoring posix-spawn-0.3.11 because its extensions are not built.  Try: gem pristine posix-spawn --version 0.3.11
+Ignoring psych-2.0.13 because its extensions are not built.  Try: gem pristine psych --version 2.0.13
+Ignoring sqlite3-1.3.10 because its extensions are not built.  Try: gem pristine sqlite3 --version 1.3.10
+Ignoring sqlite3-ruby-1.2.5 because its extensions are not built.  Try: gem pristine sqlite3-ruby --version 1.2.5
+Ignoring yajl-ruby-1.2.1 because its extensions are not built.  Try: gem pristine yajl-ruby --version 1.2.1
+Ignoring audite-0.4.0 because its extensions are not built. Try: gem pristine audite --version 0.4.0
+Ignoring bigdecimal-1.2.7 because its extensions are not built. Try: gem pristine bigdecimal --version 1.2.7
+Ignoring binding_of_caller-0.7.2 because its extensions are not built. Try: gem pristine binding_of_caller --version 0.7.2
+Ignoring blockenspiel-0.4.5 because its extensions are not built. Try: gem pristine blockenspiel --version 0.4.5
+Ignoring byebug-5.0.0 because its extensions are not built. Try: gem pristine byebug --version 5.0.0
+Ignoring commonmarker-0.17.13 because its extensions are not built. Try: gem pristine commonmarker --version 0.17.13
+Ignoring debug_inspector-0.0.2 because its extensions are not built. Try: gem pristine debug_inspector --version 0.0.2
+Ignoring eventmachine-1.2.7 because its extensions are not built. Try: gem pristine eventmachine --version 1.2.7
+Ignoring executable-hooks-1.3.2 because its extensions are not built. Try: gem pristine executable-hooks --version 1.3.2
+Ignoring ffi-1.9.18 because its extensions are not built. Try: gem pristine ffi --version 1.9.18
+Ignoring ffi-1.9.10 because its extensions are not built. Try: gem pristine ffi --version 1.9.10
+Ignoring gem-wrappers-1.2.7 because its extensions are not built. Try: gem pristine gem-wrappers --version 1.2.7
+Ignoring http_parser.rb-0.6.0 because its extensions are not built. Try: gem pristine http_parser.rb --version 0.6.0
+Ignoring json-1.8.3 because its extensions are not built. Try: gem pristine json --version 1.8.3
+Ignoring nokogiri-1.6.8 because its extensions are not built. Try: gem pristine nokogiri --version 1.6.8
+Ignoring nokogiri-1.6.6.2 because its extensions are not built. Try: gem pristine nokogiri --version 1.6.6.2
+Ignoring posix-spawn-0.3.11 because its extensions are not built. Try: gem pristine posix-spawn --version 0.3.11
+Ignoring psych-2.0.13 because its extensions are not built. Try: gem pristine psych --version 2.0.13
+Ignoring sqlite3-1.3.10 because its extensions are not built. Try: gem pristine sqlite3 --version 1.3.10
+Ignoring sqlite3-ruby-1.2.5 because its extensions are not built. Try: gem pristine sqlite3-ruby --version 1.2.5
+Ignoring yajl-ruby-1.2.1 because its extensions are not built. Try: gem pristine yajl-ruby --version 1.2.1
+Error loading RubyGems plugin "/Users/janmeppe/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/executable-hooks-1.3.2/lib/rubygems_plugin.rb": cannot load such file -- executable-hooks/wrapper (LoadError)
+Error loading RubyGems plugin "/Users/janmeppe/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/gem-wrappers-1.2.7/lib/rubygems_plugin.rb": cannot load such file -- gem-wrappers (LoadError)
+ERROR:  While executing gem ... (Errno::EACCES)
+    Permission denied @ rb_sysopen - /Library/Ruby/Site/2.3.0/rubygems.rb
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004hggem install bundler[?2004l
+kgem\Ignoring audite-0.4.0 because its extensions are not built.  Try: gem pristine audite --version 0.4.0
+Ignoring bigdecimal-1.2.7 because its extensions are not built.  Try: gem pristine bigdecimal --version 1.2.7
+Ignoring binding_of_caller-0.7.2 because its extensions are not built.  Try: gem pristine binding_of_caller --version 0.7.2
+Ignoring blockenspiel-0.4.5 because its extensions are not built.  Try: gem pristine blockenspiel --version 0.4.5
+Ignoring byebug-5.0.0 because its extensions are not built.  Try: gem pristine byebug --version 5.0.0
+Ignoring commonmarker-0.17.13 because its extensions are not built.  Try: gem pristine commonmarker --version 0.17.13
+Ignoring debug_inspector-0.0.2 because its extensions are not built.  Try: gem pristine debug_inspector --version 0.0.2
+Ignoring eventmachine-1.2.7 because its extensions are not built.  Try: gem pristine eventmachine --version 1.2.7
+Ignoring executable-hooks-1.3.2 because its extensions are not built.  Try: gem pristine executable-hooks --version 1.3.2
+Ignoring ffi-1.9.18 because its extensions are not built.  Try: gem pristine ffi --version 1.9.18
+Ignoring ffi-1.9.10 because its extensions are not built.  Try: gem pristine ffi --version 1.9.10
+Ignoring gem-wrappers-1.2.7 because its extensions are not built.  Try: gem pristine gem-wrappers --version 1.2.7
+Ignoring http_parser.rb-0.6.0 because its extensions are not built.  Try: gem pristine http_parser.rb --version 0.6.0
+Ignoring json-1.8.3 because its extensions are not built.  Try: gem pristine json --version 1.8.3
+Ignoring nokogiri-1.6.8 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.8
+Ignoring nokogiri-1.6.6.2 because its extensions are not built.  Try: gem pristine nokogiri --version 1.6.6.2
+Ignoring posix-spawn-0.3.11 because its extensions are not built.  Try: gem pristine posix-spawn --version 0.3.11
+Ignoring psych-2.0.13 because its extensions are not built.  Try: gem pristine psych --version 2.0.13
+Ignoring sqlite3-1.3.10 because its extensions are not built.  Try: gem pristine sqlite3 --version 1.3.10
+Ignoring sqlite3-ruby-1.2.5 because its extensions are not built.  Try: gem pristine sqlite3-ruby --version 1.2.5
+Ignoring yajl-ruby-1.2.1 because its extensions are not built.  Try: gem pristine yajl-ruby --version 1.2.1
+Error loading RubyGems plugin "/Users/janmeppe/.rvm/gems/ruby-2.2.1@global/gems/executable-hooks-1.3.2/lib/rubygems_plugin.rb": cannot load such file -- executable-hooks/wrapper (LoadError)
+Error loading RubyGems plugin "/Users/janmeppe/.rvm/gems/ruby-2.2.1@global/gems/gem-wrappers-1.2.7/lib/rubygems_plugin.rb": cannot load such file -- gem-wrappers (LoadError)
+Successfully installed bundler-2.0.2
+Parsing documentation for bundler-2.0.2
+Installing ri documentation for bundler-2.0.2
+Done installing documentation for bundler after 6 seconds
+1 gem installed
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004hbbundler update --bundler[?2004l
+kbundler\zsh: command not found: bundler
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01;31mexit 127
+[00m[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004hbbundler[?2004l
+kbundler\zsh: command not found: bundler
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01;31mexit 127
+[00m[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004hbbundle[?2004l
+kbundle\zsh: command not found: bundle
+[1m[3m%[23m[1m[0m                                                                                                                                                                                                                  k..ood.github.io\[0m[23m[24m[J[01;31mexit 127
+[00m[01m[35m![33m?[00mmaster [32m~/Github-blog/rainymood.github.io[00m> [K[?2004heexit[?2004l
+kexit\
+Script done on Tue Jul 16 18:34:16 2019
