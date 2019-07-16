@@ -108,6 +108,8 @@ defaults:
       layout: single
       author_profile: true
 
+teaser: /assets/images/500x300.jpg
+
 category_archive:
   type: liquid
   path: /categories/
