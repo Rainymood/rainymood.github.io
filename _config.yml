@@ -110,6 +110,8 @@ defaults:
 
 teaser: /assets/images/500x300.jpg
 
+logo: "/assets/images/88x88.png"
+
 category_archive:
   type: liquid
   path: /categories/
