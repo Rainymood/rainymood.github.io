@@ -16,6 +16,17 @@ I see my self as a (in descending order of importance):
 - data scientist
 - machine learning engineer
 
-I am obsessed with problem solving, technology, product, and design.
+I care deeply about:
+- Solving people's problems using tech
+- Teaching while learning
+- Making the world a better place
 
-I hold an MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home), another MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en), and a BSc in Econometrics also from the [University of Amsterdam](https://www.uva.nl/en)
+I am obsessed with:
+- Artificial intelligence, machine learning, and deep learning
+- Software engineering (i.e. writing good code)
+- Personal productivity and efficiency
+
+Where I've studied:
+- MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home)
+- MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
+- BSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
