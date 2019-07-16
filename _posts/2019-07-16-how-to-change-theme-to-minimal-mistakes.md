@@ -8,14 +8,7 @@ tags:
   - update
 ---
 
-Before
-![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
-![Theme before][before]
-
-After
-
-[before]: assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-cayman-theme
-
+<img src="/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/blog-cayman-theme.png">
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
