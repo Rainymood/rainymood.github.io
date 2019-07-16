@@ -1,9 +1,0 @@
-In case you forget, this is the git workflow you need. 
-
-    git add .
-    git commit -m "message here"
-    git push origin master
-
-Make sure to write down a solid commit message. The message should read
-something like: When pushed <commit message> happens. 
-
