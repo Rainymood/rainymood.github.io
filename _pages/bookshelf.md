@@ -15,3 +15,5 @@ I like to read. A lot. This is a curated list of the best (self-help) books I've
 
 These are other individuals whose blogs I follow and find inspiring:
 - [Jason Crawford](https://jasoncrawford.org/)
+- [Brett Victor (via worrydream)](http://worrydream.com/)
+
