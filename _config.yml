@@ -107,7 +107,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      comments: true
+      comments:
         provider: "disqus"
         disqus: 
           shortname: "janmeppeblog" 
