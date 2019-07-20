@@ -107,6 +107,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      comments: true
 
 teaser: /assets/images/500x300.jpg
 
@@ -128,5 +129,3 @@ analytics:
 # fixes "No GitHub API authentication" error
 github: [metadata]
 
-# adds discuss 
-comments: true
