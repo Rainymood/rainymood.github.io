@@ -1,11 +1,13 @@
 main:
-  - title: "Start here"
+  - title: "🎯 Start here"
     url: /start/
-  - title: "Blog"
+  - title: "📝 Blog"
     url: /posts/
-  - title: "Projects"
+  - title: "🏆 Projects"
     url: /projects/
-  - title: "Bookshelf"
+  - title: "📚 Bookshelf"
     url: /bookshelf/
-  - title: "About"
+  - title: "👨 About"
     url: /about/
+
+
