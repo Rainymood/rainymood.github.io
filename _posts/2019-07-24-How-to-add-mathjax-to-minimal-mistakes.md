@@ -29,9 +29,19 @@ remote_theme: mmistakes/minimal-mistakes
 ...
 ```
 
-## Step 2. Create a `latex.html` file
+## Step 2. Copy over `scripts.html`
 
-Create a file in `_includes/latex.html` (create the `_includes/` folder if it doesn't exist yet) with these contents. 
+This is where stuff gets a little bit tricky. This blog was set up by
+forking [this](https://github.com/mmistakes/mm-github-pages-starter)
+repo and then using the original repo as a remote theme. To get Latex
+support we first have to go to the original Minimal Mistakes repo
+[here](https://github.com/mmistakes/minimal-mistakes) and copy over
+`minimal-mistakes/_includes/scripts.html` locally to our
+`_includes/scripts.html`. 
+
+## Step 3 Modify `scripts.html` 
+
+We are now going to modify `scripts.html` and **append** the following content: 
 
 ```html
 <script type="text/javascript" async
@@ -53,11 +63,11 @@ Create a file in `_includes/latex.html` (create the `_includes/` folder if it do
 ```
 
 Note that this overrides any other include file in the remote
-theme. If you name this file `scripts.html` instead of `latex.html` as
-in the original tutorial, some stuff on your site will break because
-`scripts.html` overrides those in the remote theme repository.
+theme. So the contents of the original file in the remote theme will
+be overwritten. This means that this fix/update is liable to break
+with new updates. Be mindful of this.
 
-## Step 3. That's it!
+## Step 4. That's it!
 
 If you did everything properly then this should render nicely: 
 
