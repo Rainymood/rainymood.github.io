@@ -39,7 +39,7 @@ support we first have to go to the original Minimal Mistakes repo
 `minimal-mistakes/_includes/scripts.html` locally to our
 `_includes/scripts.html`. 
 
-## Step 3 Modify `scripts.html` 
+## Step 3. Modify `scripts.html` 
 
 We are now going to modify `scripts.html` and **append** the following content: 
 
