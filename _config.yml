@@ -110,6 +110,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+      comments: true
+        provider: "disqus"
+        disqus:
+          shortname: "janmeppeblog"
 
 teaser: /assets/images/500x300.jpg
 
