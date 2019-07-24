@@ -6,8 +6,6 @@ categories:
 tags:
   - Jekyll
   - update
-header:
-  teaser: /assets/teaser-how-to-change-theme.jpg
 ---
 
 In one of my
