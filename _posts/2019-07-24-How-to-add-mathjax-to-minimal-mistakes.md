@@ -29,9 +29,9 @@ remote_theme: mmistakes/minimal-mistakes
 ...
 ```
 
-## Step 2. Create a `scripts.html` file
+## Step 2. Create a `latex.html` file
 
-Create a file in `_includes/scripts.html` (create the `_includes/` folder if it doesn't exist yet) with these contents
+Create a file in `_includes/latex.html` (create the `_includes/` folder if it doesn't exist yet) with these contents. 
 
 ```html
 <script type="text/javascript" async
@@ -51,6 +51,11 @@ Create a file in `_includes/scripts.html` (create the `_includes/` folder if it 
    });
 </script>
 ```
+
+Note that this overrides any other include file in the remote
+theme. If you name this file `scripts.html` instead of `latex.html` as
+in the original tutorial, some stuff on your site will break because
+`scripts.html` overrides those in the remote theme repository.
 
 ## Step 3. That's it!
 
