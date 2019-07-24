@@ -14,7 +14,6 @@ In one of my
 [previous](http://www.janmeppe.com/blog/how-to-change-theme-to-minimal-mistakes/)
 blog posts I show you how to set up the Minimal Mistakes theme for
 your Github page.
-
 In this blog post I show how to add Latex support to your Minimal
 Mistakes jekyll blog and is largely based on
 [this](https://sort-care.github.io/Latex-on-Blog/).
