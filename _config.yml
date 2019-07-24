@@ -88,7 +88,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/janmeppe"
 
-comments: true
+comments:
   provider: "disqus"
   disqus:
     shortname: "janmeppeblog"
