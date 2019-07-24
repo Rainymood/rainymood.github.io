@@ -88,6 +88,11 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/janmeppe"
 
+comments: true
+  provider: "disqus"
+  disqus:
+    shortname: "janmeppeblog"
+
 defaults:
   # _posts
   - scope:
@@ -98,9 +103,6 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-        provider: "disqus"
-        disqus:
-          shortname: "janmeppeblog"
       share: true
       related: true
   # _pages
@@ -110,10 +112,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      comments: true
-        provider: "disqus"
-        disqus:
-          shortname: "janmeppeblog"
+
 
 teaser: /assets/images/500x300.jpg
 
