@@ -1,5 +1,5 @@
 ---
-title: "How to add Latex to Minimal Mistakes" 
+title: "How to add Latex to Minimal Mistakes"
 date: 2019-07-24
 categories:
   - blog
@@ -35,11 +35,11 @@ repo and then using the original repo as a remote theme. To get Latex
 support we first have to go to the original Minimal Mistakes repo
 [here](https://github.com/mmistakes/minimal-mistakes) and copy over
 `minimal-mistakes/_includes/scripts.html` locally to our
-`_includes/scripts.html`. 
+`_includes/scripts.html`.
 
-## Step 3. Modify `scripts.html` 
+## Step 3. Modify `scripts.html`
 
-We are now going to modify `scripts.html` and **append** the following content: 
+We are now going to modify `scripts.html` and **append** the following content:
 
 ```html
 <script type="text/javascript" async
@@ -67,9 +67,9 @@ with new updates. Be mindful of this.
 
 ## Step 4. That's it!
 
-If you did everything properly then this should render nicely: 
+If you did everything properly then this should render nicely:
 
-$$ e^{\pi i} = -1$$ 
+$$ e^{i \pi} = -1$$
 
 # Subscribe
 
