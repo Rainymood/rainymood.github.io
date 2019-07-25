@@ -19,12 +19,9 @@ For my recent blog posts click [here](http://www.janmeppe.com/posts/).
 ## What you will find on this blog
 
 On this blog you content related to:
-- Data science/Machine
+- Data science
 - Artificial intelligence, machine learning, and deep learning
-- Vim/Emacs
-- Productivity hacks
-- Time management
-- Leadership/management
+- Productivity hacks, time management, and leadership
 
 ## Subscribe
 
