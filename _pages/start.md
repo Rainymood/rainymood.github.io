@@ -3,19 +3,28 @@ permalink: /start/
 title: "🎯 Start here"
 ---
 
-## Jan Meppe
+## About me
 
-Welcome to my blog and pleasure to meet you!
+- Currently employed as a Data Scientist at Fortune 200 company
+- Studied econometrics in University (basically applied mathematics)
+- In my spare time I dabble in programming, machine learning, and deep learning
 
-I'm Jan Meppe and this is my my personal corner of the internet.
+## Something to start with
 
-On this blog you will find a diverse set of essays and blog posts about: Vim, Emacs, programming, coding, problem solving, machine learning, tech, product, design, and all other things that interest me.
+- [Want to know how to get a blog like this? Click here!](http://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/)
+- [Want to know how to get Latex support on a blog like this? Click here!](http://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/)
 
-## Writing
+For my recent blog posts click [here](http://www.janmeppe.com/posts/).
 
-I blog occasionally about startups, tech, business, and life:
+## What you will find on this blog
 
-- [How to change Jekyll theme to Minimal Mistakes](http://rainymood.github.io/blog/how-to-change-theme-to-minimal-mistakes/)
+On this blog you content related to:
+- Data science/Machine
+- Artificial intelligence, machine learning, and deep learning
+- Vim/Emacs
+- Productivity hacks
+- Time management
+- Leadership/management
 
 ## Subscribe
 
