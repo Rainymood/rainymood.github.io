@@ -5,7 +5,7 @@ title: "🎯 Start here"
 
 ## About me
 
-- Currently employed as a Data Scientist at Fortune 200 company
+- Currently employed as a Data Scientist at a large Fortune 200 company
 - Studied econometrics in University (basically applied mathematics)
 - In my spare time I dabble in programming, machine learning, and deep learning
 
