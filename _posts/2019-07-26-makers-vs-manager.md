@@ -58,9 +58,10 @@ difficult to produce something truly valuable in half an hour.
 
 For people on the maker's schedule, ill-planned meetings come with a
 cost that is both high and not immediately obvious. **A single meeting
-can ruin a whole morning by breaking up a long period in just
-small enough periods where exactly nothing of value can be produced.**
-Meetings are like the interruptions from the comic, but on a macro level.
+can ruin a whole morning by breaking up a long period into just short
+enough periods where exactly nothing of value can be produced.**
+Meetings are like the interruptions from the comic, but on a macro
+level.
 
 Consider a single meeting from 10:00-11:00.
 
@@ -116,7 +117,7 @@ For the third solution we continue to the closing remarks.
 
 ## Closing remarks
 
-It feels incredibly lazy to simply copy Graham's words but I they
+It feels incredibly lazy to simply copy Graham's words again, but they
 still ring true today, ten years later.
 
 > Till recently we weren't clear in our own minds about the source of
