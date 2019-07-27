@@ -8,10 +8,10 @@ tags:
   - update
 ---
 
-It's well known that programmers dislike meetings... *a lot*. But
-have you ever wondered why programmers dislike meetings so much? The
-answer is simple but obvious once pointed out: meetings are more
-costly to them.
+It's well known that programmers dislike meetings... *a lot*. But have
+you ever wondered why programmers dislike meetings so much compared to
+other people? The answer is simple but obvious once pointed out:
+meetings are more costly to them.
 
 I'm sure many programmers can relate to this comic.
 
@@ -59,7 +59,7 @@ difficult to produce something truly valuable in half an hour.
 For people on the maker's schedule, ill-planned meetings come with a
 cost that is both high and not immediately obvious. **A single meeting
 can ruin a whole morning by breaking up a long period in just
-small enough time units where exactly nothing of value can be produced.**
+small enough periods where exactly nothing of value can be produced.**
 Meetings are like the interruptions from the comic, but on a macro level.
 
 Consider a single meeting from 10:00-11:00.
