@@ -3,9 +3,11 @@ permalink: /about/
 title: "👨 About"
 ---
 
-# Jan Meppe
+# Hi. I'm Jan.
 
-So here's a picture of me so you know what I look like.
+I'm a data scientist that loves explaining difficult concepts using simple images.
+
+Here's a picture of me so you know what I look like.
 
 <img src="/assets/images/bio-photo4.jpg" style="max-height: 400px">
 
