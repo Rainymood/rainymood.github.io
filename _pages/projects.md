@@ -10,7 +10,7 @@ Under construction.
 
 <img src="/assets/teasers/project-neural-network2.png">
 
-**Description:** To understand how neural networks work I decided to build my own. I livestreamed my process on twitch and the code can be found on Github. 
+**Description:** To better understand how neural networks work, I decided to build my own without any external libraries. I livestreamed my process on twitch and the code can be found on Github. 
 
 **Technologies:** Python, numpy
 
