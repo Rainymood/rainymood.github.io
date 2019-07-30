@@ -8,7 +8,7 @@ Under construction.
 
 ## Neural Network From Scratch (Nov 2018) 
 
-<img src="/assets/teasers/project-neural-network.jpg">
+<img src="/assets/teasers/project-neural-network2.png">
 
 **Description:** To understand how neural networks work I decided to build my own. I livestreamed my process on twitch and the code can be found on Github. 
 
