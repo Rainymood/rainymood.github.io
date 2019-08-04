@@ -1,5 +1,5 @@
 ---
-title: "Regex For Noobs (like me!) - an illustrated guide"
+title: "Regex For Noobs (like me!) - An Illustrated Guide"
 date: 2019-08-04
 categories:
   - blog
