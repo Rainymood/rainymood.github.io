@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Jan Meppe"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "\"Any technology sufficiently advanced enough is indistinguishable from magic.\"<br> - Arthur C. Clarke"
+  bio    : "\"Any sufficiently advanced technology is indistinguishable from magic.\"<br> - Arthur C. Clarke"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
