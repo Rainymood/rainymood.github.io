@@ -11,10 +11,8 @@ title: "🎯 Start here"
 
 ## Something to start with
 
-- I hit the front page of [Hacker News](https://news.ycombinator.com/item?id=20608032) with my
-  popular blog post, [Regex For Noobs (like me!) - An Illustrated
-Guide](https://news.ycombinator.com/item?id=20608032), which became a top story
-with more than +500 points and 100 comments!
+- Want to know how Regex works? [Click here!](https://www.janmeppe.com/blog/regex-for-noobs/)
+    - This blog post became a top story and was featured on the front page of [Hacker News](https://news.ycombinator.com/item?id=20608032) with more than 500 points and 100 comments. 
 - Want to know how to get a blog like this? [Click here!](http://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/)
 - Want to know how to get Latex support on a blog like this? [Click here!](http://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/)
 
