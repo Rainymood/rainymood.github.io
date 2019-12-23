@@ -5,7 +5,9 @@ title: "Projects"
 
 ## Neural Network From Scratch (December 2019) 
 
-<img src="/assets/teasers/sanofi.mp4">
+<iframe src='https://gfycat.com/ifr/FarHugeAmericanrobin' frameborder='0' scrolling='no' allowfullscreen width='640' height='444'></iframe>
+
+<div style='position:relative; padding-bottom:calc(62.50% + 44px)'><iframe src='https://gfycat.com/ifr/FarHugeAmericanrobin' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/2kwVaai" data-context="false" ><a href="//imgur.com/a/2kwVaai"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
