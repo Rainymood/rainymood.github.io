@@ -1,5 +1,3 @@
-# Understanding matplotlib
-
 Plotting with matplotlib is really confusing. Understanding how it works
 under the hood helps to alleviate this pain enormously. This short blog post
 is here to help you on the way to matplotlib enlightenment.
