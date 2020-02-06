@@ -33,5 +33,3 @@ Where I've studied:
 - MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home)
 - MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
 - BSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
-
-You can find my cv [here](assets/cv/200205_cv.pdf).
