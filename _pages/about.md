@@ -5,9 +5,10 @@ title: "👨 About"
 
 # Hi. I'm Jan.
 
-I'm a data scientist that loves explaining difficult concepts using simple images.
-
-Here's a picture of me so you know what I look like.
+I'm a product-oriented full-stack data scientist/machine learning engineer
+that loves explaining difficult concepts using simple images. I work mainly
+in Python and JavaScript and have experience building full-stack digital
+products.
 
 <img src="/assets/images/bio-photo4.jpg" style="max-height: 400px">
 
@@ -32,3 +33,5 @@ Where I've studied:
 - MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home)
 - MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
 - BSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
+
+You can find my cv [here](assets/cv/200205_cv.pdf).
