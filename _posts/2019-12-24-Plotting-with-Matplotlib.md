@@ -26,7 +26,7 @@ Let's jump right in!
 * What we think of as a "figure" is an Axes object in matplotlib terminology
 * `ax.plot()`, `plt.plot()`, etc. are all wrappers for the same functionality
 
-## Understand the matplotlib object hierarchy
+# Understand the matplotlib object hierarchy
 
 The first thing one must understand is the object-oriented hierarchy
 that matplotlib uses. Without having a clear picture of this hierarchy in mind, the
@@ -46,7 +46,7 @@ Basically, the hierarchy is as follows: Figure, Axes, Axis and all other stuff t
 
 **Your Axes object is what you would normally think of as a single "figure"**. 
 
-## Realise that you are really only manipulating one Axes (this is not a typo)
+# Realise that you are really only manipulating one Axes (this is not a typo)
 
 With this object hierarchy and terminology firmly in place, we can get to the
 crux of the problem. You **have to realise** the following key concept:
@@ -97,7 +97,7 @@ ax.legend(loc='best')
 ...
 ```
 
-## Extra: Deep dive into matplotlib source code
+# Extra: Deep dive into matplotlib source code
 
 The matplotlib source code is actually [open source](https://github.com/matplotlib/matplotlib) so we can dive into the code and see what actually happens. 
 
@@ -107,7 +107,7 @@ We ask ourselves: what *really* happens when we add the legend the Axes object?
 ax.legend(loc='best)
 ```
 
-We look in the [docs](https://matplotlib.org/3.1.1/_modules/matplotlib/pyplot.html#legend) for `matplotlib.pyplot.legend`. The documentation clearly states (**in langauge we understand now!**): "Place a legend on the axes." Where "axes" refers to the Axes object, which is can trip you up if you're not familiar with the terminology. 
+We look in the [docs](https://matplotlib.org/3.1.1/_modules/matplotlib/pyplot.html#legend) for `matplotlib.pyplot.legend`. The documentation clearly states (**in langauge we understand now!**): "Place a legend on the axes." Where "axes" refers to the Axes object, which can trip you up if you're not familiar with the terminology. 
 
 Searching for the legend function in the source code we come across this piece of code. 
 
