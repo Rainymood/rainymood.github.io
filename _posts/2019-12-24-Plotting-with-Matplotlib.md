@@ -6,6 +6,8 @@ categories:
 tags:
   - Jekyll
   - update
+header: 
+  teaser: "/assets/2019-12-24-matplotlib/matplotlib.jpg"
 ---
 
 Plotting with matplotlib is really confusing. Understanding how it works

@@ -7,7 +7,7 @@ tags:
   - Jekyll
   - update
 header:
-  - teaser: /assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/teaser.jpg
+  - teaser: "/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/teaser.jpg"
 ---
 
 Recently I migrated my whole blog from the Cayman theme to the Minimal Mistakes theme, which can be found [here](https://mmistakes.github.io/minimal-mistakes/). This blog post explains how to quickly get up and running with the Minimal Mistakes theme.

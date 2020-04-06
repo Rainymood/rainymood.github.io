@@ -16,6 +16,7 @@ to, but are kind of intimidated by the whole thing.
 
 In other words, welcome to ...
 
+<img src="/assets/2019-08-01-regex/regex-for-noobs.jpg">
 
 For most people without a formal CS education, regular expressions
 (regex) can come off as something that only the most hardcore unix
