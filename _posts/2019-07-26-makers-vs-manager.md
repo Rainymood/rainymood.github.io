@@ -7,7 +7,7 @@ tags:
   - Jekyll
   - update
 header: 
-  teaser: "/assets/2019-07-25-maker-vs-manager/comic.png"
+  teaser: "/assets/2019-07-25-maker-vs-manager/teaser.png"
 ---
 
 It's well known that programmers dislike meetings... *a lot*. But have
