@@ -29,14 +29,18 @@ more time on it than I would like to admit.
 Adding a teaser image in minimal mistakes is easy, you just have to change
 the front matter of your post by adding a header and teaser tag
 
-```YAML
+<script src="https://gist.github.com/Rainymood/b8fcbfb82949a188d31ceccf95ce1819.js"></script>
+
+<!-- ```YAML
 header: 
   teaser: "/path/to/image.png"
-```
+``` -->
 
 For example, the front matter of this post looks like this. 
 
-```YAML
+<script src="https://gist.github.com/Rainymood/2b58c32c9efc7e6b329128fe6a4344f4.js"></script>
+
+<!-- ```YAML
 ---
 title: "How to add a teaser image to minimal mistakes"
 date: 2020-04-06
@@ -48,7 +52,7 @@ tags:
 header:
   teaser: "/assets/2020-04-06-add-teaser-to-minimal-mistakes/before.png"
 ---
-```
+``` -->
 
 ## Conclusion
 
