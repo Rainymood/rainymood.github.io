@@ -50,6 +50,15 @@ header:
 ---
 ```
 
+## Conclusion
+
+Adding teaser images in minimal mistakes is deceptively simple, you just need
+to know what to change. For some reason I was not able to figure it out and
+had to ask someone myself.
+
+With this short and simple blog post I hope to help someone with the same
+burning question as me: "How do I add teaser images to minimal mistakes?"
+
 # Subscribe
 
 <!-- Begin Mailchimp Signup Form -->
