@@ -4,6 +4,7 @@ date: 2020-04-06
 categories:
   - blog
 tags:
+  - minimalmistakes
   - Jekyll
   - update
 header:
