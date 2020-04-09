@@ -8,7 +8,7 @@
 $tq-blue: #342797;
 $deepmind-blue: #15244a; 
 
-// $link-color: $tq-blue;
+$link-color: $tq-blue;
 // $link-color: $deepmind-blue;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin

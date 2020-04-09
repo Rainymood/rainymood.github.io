@@ -63,18 +63,18 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "\"Any sufficiently advanced technology is indistinguishable from magic.\"<br> - Arthur C. Clarke"
   links:
-    - label: "Website"
+    - label: "janmeppe.com"
       icon: "fas fa-fw fa-link"
       url: "https://www.janmeppe.com"
-    - label: "Twitter"
+    - label: "@janmeppe"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/janmeppe"
-    - label: "GitHub"
+    - label: "rainymood"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rainymood"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/janmeppe"
+  #   - label: "Instagram"
+  #     icon: "fab fa-fw fa-instagram"
+  #     url: "https://instagram.com/janmeppe"
 
 footer:
   links:
