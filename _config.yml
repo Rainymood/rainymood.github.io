@@ -114,9 +114,12 @@ defaults:
       author_profile: true
 
 
-teaser: /assets/images/500x300.jpg
+# teaser: /assets/images/500x300.jpg
 
-logo: /assets/images/88x88.jpg
+# logo: /assets/images/88x88.jpg
+# logo: /assets/images/88x352.jpg
+# logo: /assets/images/logo2.png
+logo: /assets/images/logo3.png
 
 category_archive:
   type: liquid

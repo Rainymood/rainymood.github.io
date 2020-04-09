@@ -4,21 +4,37 @@
 
 @charset "utf-8";
 
+// Add this before imports
+$tq-blue: #342797;
+$deepmind-blue: #15244a; 
+
+// $link-color: $tq-blue;
+// $link-color: $deepmind-blue;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 html {
-  font-size: 14px; // change to whatever
+  font-size: 12px; // change to whatever
 
   @include breakpoint($medium) {
-    font-size: 16px; // change to whatever
+    font-size: 14px; // change to whatever
   }
 
   @include breakpoint($large) {
-    font-size: 18px; // change to whatever
+    font-size: 16px; // change to whatever
   }
 
   @include breakpoint($x-large) {
-    font-size: 20px; // change to whatever
+    font-size: 18px; // change to whatever
   }
 }
+
+// .greedy-nav a { color: $deepmind-blue; } // link color TQ blue
+// .greedy-nav a { color: red; } // link color 
+// .greedy-nav a { color: #15244a; } // link color deepmind blue
+
+// // Hide side title
+// .greedy-nav .site-title {
+//   opacity: 1;
+// }

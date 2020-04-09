@@ -5,8 +5,10 @@ permalink: /splash-page/
 date: 2020-04-08
 header:
   overlay_color: "#000"
+  # overlay_color: "#ca423b"
   overlay_filter: "0.5"
   overlay_image: /assets/splash/laptop.jpeg
+  # overlay_image: /assets/splash/red.jpg
 
   actions:
     - label: "View tutorials"
