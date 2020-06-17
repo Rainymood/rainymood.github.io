@@ -4,11 +4,16 @@ title: "👨 About"
 ---
 
 # Hi. I'm Jan.
+I help companies make sense of their data.
 
-I'm a product-oriented full-stack data scientist/machine learning engineer
-that loves explaining difficult concepts using simple images. I work mainly
-in Python and JavaScript and have experience building full-stack digital
-products.
+I do this through a combination of data science, machine learning, behavioral
+insights, and product design.
+
+The best way to describe me would be a product-focused full-stack data
+scientist (machine learning engineer).
+
+I love programming in Python and JavaScript and love to tinker in new
+technologies such as Go and Haskell.
 
 <img src="/assets/images/bio-photo4.jpg" style="max-height: 400px">
 
