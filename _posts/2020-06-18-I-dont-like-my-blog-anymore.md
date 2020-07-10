@@ -1,5 +1,5 @@
 ---
-title: "I don't like my blog anymore. Help!" 
+title: "I don't love my blog anymore. Help!" 
 date: 2020-06-18
 categories:
   - blog
