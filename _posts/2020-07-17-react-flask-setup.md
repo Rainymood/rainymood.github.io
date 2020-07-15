@@ -14,13 +14,13 @@ header:
 ---
 
 In this blog post I will go over how to set up your React and Flask project
-while avoiding the dreaded Cross-Origin Resource Sharing (CORS) errors.
+while avoiding the dreaded Cross-Origin Resource Sharing (CORS) error.
 
 This is what the final demo looks like. 
 
 <img src="/assets/2020-07-17-react-flask-setup/demo.png">
 
-You can find the code on Github [here](https://github.com/Rainymood/react-flask-demo)
+You can find the code on Github [here](https://github.com/Rainymood/react-flask-demo).
 
 ## Flask server
 
@@ -71,14 +71,17 @@ will try to send this to our React frontend.
 
 ## React frontend
 
-Getting started with the React frontend is also easy because we have `create-react-app`. Assuming that we are already in the folder that you want to work from and have created the `server.py` file, we will now create a new react project in this folder. 
+Getting started with the React frontend is also easy because we have
+`create-react-app`. Assuming that we are already in the folder that you want
+to work from and have created the `server.py` file, we will now create a new
+react project in this folder.
 
 ```bash
 npx create-react-app .
 ```
 
-All that rests us to connect the React frontend with the Flask backend is to
-change `src/App.js` into this.
+Now we just have to connect the React frontend with the Flask backend. 
+We can do this by changing the contents of `src/App.js` into this. 
 
 ```js
 import React, { useState, useEffect } from 'react';
@@ -188,7 +191,18 @@ This is basically what is happening:
 * We configure React such that it forwards all requests it receives on 3000 to 5000
 * This is how we avoid the CORS issues
 
+You should be ready to run the React frontend now. 
+
+```
+npm start
+```
+
 # Conclusion
+
+You're done! If you followed all the steps correctly your running React app
+should look like this.
+
+<img src="/assets/2020-07-17-react-flask-setup/demo.png">
 
 That's it! In this blog post I provide you with a very small demo repository
 that connects a React frontend with a Flask backend while avoiding CORS
