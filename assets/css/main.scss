@@ -7,9 +7,10 @@
 // Add this before imports
 $tq-blue: #342797;
 $deepmind-blue: #15244a; 
+$dark-grey: #4A4A4A;
+$bain-red: #CC0800;
 
-$link-color: $tq-blue;
-// $link-color: $deepmind-blue;
+$link-color: $dark-grey;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
