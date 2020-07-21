@@ -34,3 +34,5 @@ format it all over again got kind of tiring. This seems to work for me and is si
 
 * [View my blog here](https://rainymood.github.io/)
 * [View configuration options here](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+
+
