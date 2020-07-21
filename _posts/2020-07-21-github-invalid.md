@@ -117,27 +117,7 @@ thing. Stupid fucking git I hate you. At the same time you work seamlessly
 
 Stupid silly git.
 
-# Still getting bothered? 
-
-If you typed in your new password (personal access token) somewhere and it
-worke you might still run into the issue of having to do it *again*. Of
-course, no sane programmer wants to input his password every time he pushes
-something.
-
-To fix this, follow the instructions [here](https://docs.github.com/en/github/using-git/caching-your-github-credentials-in-git) and [here](https://docs.github.com/en/github/using-git/updating-credentials-from-the-osx-keychain) and [here](https://gist.github.com/nepsilon/0fd0c779f76d7172f12477ba9d71bb66).
-
-What worked for me:
-
-```
-git config --global credential.helper osxkeychain
-```
-
-```
- ➜  git credential-osxkeychain erase
-host=github.com
-protocol=https
-> [press return]
-```
+# Subscribe 
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
