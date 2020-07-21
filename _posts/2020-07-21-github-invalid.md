@@ -117,6 +117,39 @@ thing. Stupid fucking git I hate you. At the same time you work seamlessly
 
 Stupid silly git.
 
+# Update: Still getting asked for your credentials every time?
+
+If you are, even after all this trouble, still getting asked for your
+credentials, follow along!
+
+First, delete the current credentials explained [here](https://docs.github.com/en/github/using-git/updating-credentials-from-the-osx-keychain#updating-your-credentials-via-keychain-access)
+
+```
+$ git credential-osxkeychain erase
+host=github.com
+protocol=https
+> [Press Return]
+```
+
+Then, follow the steps outlined
+[here](https://stackoverflow.com/questions/52428365/osxkeychain-is-not-storing-github-credentials).
+
+Do you see this little `lock` icon? 
+
+<img src="/assets/2020-07-21-github-invalid/lock1.png">
+
+Right click on it and make sure it is `locked`. 
+
+<img src="/assets/2020-07-21-github-invalid/lock2.png">
+
+Finally, if you now try to push or pull you will be prompted to fill in your computer password. 
+
+<img src="/assets/2020-07-21-github-invalid/creds.png">
+
+Done! Your credentials are now stored. All is well now.
+
+<img src="/assets/2020-07-21-github-invalid/spongebob-859x639.jpg">
+
 # Subscribe 
 
 <!-- Begin Mailchimp Signup Form -->
