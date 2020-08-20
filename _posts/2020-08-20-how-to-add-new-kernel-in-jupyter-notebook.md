@@ -64,7 +64,7 @@ $ workon data-science
 (data-science) $ ...
 ```
 
-## Step 3: Add the kernel to you jupyter notebook
+## Step 3: Add the kernel to your Jupyter notebook
 
 Finally, **while you are still in your virtualenv** `data-science`, add your
 kernel to your jupyter notebook with the following command.
