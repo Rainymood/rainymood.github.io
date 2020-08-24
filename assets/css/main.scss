@@ -9,11 +9,22 @@ $tq-blue: #342797;
 $deepmind-blue: #15244a; 
 $dark-grey: #4A4A4A;
 $bain-red: #CC0800;
+$rands-grey: #474747;
+$rands-grey-navbar: #F2F3F3;
+$black: #000000;
 
-$link-color: $dark-grey;
+// Set up main colour
+$main-color: $rands-grey;
+
+// Post headers
+$link-color: $main-color;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// To add custom styling: 
+//     The alternative is to copy /assets/css/main.scss to the same location
+//     locally. And then add any style overrides after @import "minimal-mistakes";.
 
 html {
   font-size: 12px; // change to whatever
@@ -31,11 +42,16 @@ html {
   }
 }
 
-// .greedy-nav a { color: $deepmind-blue; } // link color TQ blue
-// .greedy-nav a { color: red; } // link color 
-// .greedy-nav a { color: #15244a; } // link color deepmind blue
-
-// // Hide side title
-// .greedy-nav .site-title {
-//   opacity: 1;
+// Janmeppe.com / start here / blog / about nav colours 
+// .greedy-nav a { 
+//   color: $black;
 // }
+
+// Background of masthead inner wrap 
+// .masthead__inner-wrap {
+//   background-color: #00ffff; 
+// } 
+
+
+// Hide side title
+// .greedy-nav .site-title { opacity: 1; }

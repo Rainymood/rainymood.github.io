@@ -105,6 +105,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -120,6 +121,7 @@ defaults:
 # logo: /assets/images/logo2.png
 # Logo next to janmeppe.com site title
 # logo: /assets/images/logo3.png
+logo: /assets/images/logo5-32x32.png
 
 category_archive:
   type: liquid
