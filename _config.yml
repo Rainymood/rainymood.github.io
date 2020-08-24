@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Jan Meppe"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "\"Any sufficiently advanced technology is indistinguishable from magic.\"<br> - Arthur C. Clarke"
+  bio    : "Machine Learning Engineer in love with building digital products."
   links:
     - label: "janmeppe.com"
       icon: "fas fa-fw fa-link"
@@ -121,7 +121,7 @@ defaults:
 # logo: /assets/images/logo2.png
 # Logo next to janmeppe.com site title
 # logo: /assets/images/logo3.png
-logo: /assets/images/logo5-32x32.png
+logo: /assets/images/logo5-32x32-trans.png
 
 category_archive:
   type: liquid
