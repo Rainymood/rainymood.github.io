@@ -10,22 +10,21 @@ header:
   teaser: "/assets/2020-10-18-blogging-can-save-you-work/teaser.jpg"
 ---
 
-In this famous blog post, [you should write
-blogs](https://sites.google.com/site/steveyegge2/you-should-write-blogs),
-Steve Yegge explains why you should blog.
-
-Steve is somewhat of a cult figure in the tech space. If you've never heard
-of Steve Yegge, he was a Senior Staff Software Engineer/Manager for Amazon,
-Google, and Grab and is well-known for his (not so sober yet elucidating)
-writing about programming, productivity, and software culture on his blog
-"Stevey's Drunken Blog Rants".
+In [You Should Write
+Blogs](https://sites.google.com/site/steveyegge2/you-should-write-blogs),
+Steve Yegge explains why you should blog. Steve is somewhat of a cult figure
+in the tech space. If you've never heard of Steve Yegge, he was a Senior
+Staff Software Engineer/Manager at Amazon, Google, and Grab and is
+well-known for his (not so sober yet elucidating) writing about programming,
+productivity, and software culture on his blog "Stevey's Drunken Blog Rants".
 
 In this particular blog post he disarms 4 commonly used reasons why people
-don't blog, although they should:
-* Reason 1 I'm too busy
-* Reason 2 I'm afraid to put my true thoughts on public record
-* Reason 3 Nobody will read my blog
-* Reason 4 Blogging is narcissistic
+don't blog:
+
+* Reason #1: I'm too busy
+* Reason #2: I'm afraid to put my true thoughts on public record
+* Reason #3: Nobody will read my blog
+* Reason #4: Blogging is narcissistic
 
 Each and every one of these reasons deserves a single blog post, but in this
 blog post I will zoom in on the first reason: "I'm too busy."
@@ -50,7 +49,7 @@ blog. I want to show you real life examples where I saved work by blogging.
 
 ![](/../assets/2020-10-18-blogging-can-save-you-work/2020-10-18-17-55-46.png)
 
-https://www.janmeppe.com/blog/how-to-add-new-kernel-in-jupyter-notebook/
+[How to add a new kernel in jupyter notebook](https://www.janmeppe.com/blog/how-to-add-new-kernel-in-jupyter-notebook/)
 
 I got sick and tired of having to google the commands to add a new kernel to
 my Jupyter notebooks. So I wrote a thing! Then I put it online! I am very
@@ -60,7 +59,7 @@ pleased to say that I have self-referenced to my article multiple times.
 
 ![](/../assets/2020-10-18-blogging-can-save-you-work/2020-10-18-17-56-02.png)
 
-https://www.janmeppe.com/blog/react-flask-setup/
+[React flask setup](https://www.janmeppe.com/blog/react-flask-setup/)
 
 I wrote this blog to help a colleague of mine. He wanted some help to set-up
 a simple React front-end and Flask backend. While setting this up, I ran into
@@ -75,13 +74,17 @@ it!
 
 ![](/../assets/2020-10-18-blogging-can-save-you-work/2020-10-18-17-55-28.png)
 
-https://www.youtube.com/watch?v=iiSIaMD4vqY&ab_channel=JanMeppe
+[How to create your own CUSTOM complex modifications in Karabiner-elements
+](https://www.youtube.com/watch?v=iiSIaMD4vqY&ab_channel=JanMeppe)
 
 Back in August 2019 I made clear that the [karabiner-elements](https://github.com/pqrs-org/Karabiner-Elements/issues/1225#issuecomment-525663812) documentation was lacking. People had trouble figuring out how to add custom complex modifications. Roughly a year later [I figured it out](https://github.com/pqrs-org/Karabiner-Elements/issues/1225#issuecomment-668004967). I thought to myself, if I have this problem, there must be another person that will have this problem too! I decided to record a short video, put it on YouTube, and left it there. Slowly but surely people commented on my video that they found it super helpful. How great is that!
 
 ## Conclusion
 
 The most important thing from this blog post the realization that **you can save work by blogging**. Rather than having to explain the same thing over and over again, doing something once, and then pointing people towards it is a very high-leverage thing you can do. In this blog post I explained this and showed you three real life examples of where I (on accident) managed to apply this principle. 
+
+Thank you for reading! Please let me know what you think of this article! If
+you liked this you can subscribe by leaving your email down below.
 
 # Subscribe 
 
