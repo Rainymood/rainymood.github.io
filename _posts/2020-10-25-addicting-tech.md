@@ -96,9 +96,20 @@ See how damn scary this is?
 This is how your brain is being hacked. Endless loops of triggers, actions,
 variable rewards, and investments.
 
-# How do they do it? 
+# How do they do it? Endless novelty
 
-With this model in the back of your mind, this is how they do it. 
+These products make you engage by providing you **an endless amount of
+novelty** at the low low price of a single action. Just think about the
+amount of actions you have to take to enter one of their loops:
+
+* Open the app? one tap.
+* Like an post? one tap.
+* Explore new posts? one swipe down
+
+They make it as simple as possible for you to fall into one of their traps.
+Honestly, I don't dare to hypothesize what the next step is. 
+
+So that's how they do it, **endless novelty at the tip of your fingers**.
 
 Twitter
 
