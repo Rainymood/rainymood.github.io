@@ -1,7 +1,5 @@
 # Janmeppe.com code 
 
-[[assets/images/Screenshot 2020-11-19 at 09.11.03.png]]
-
 This repository contains the code and assets of my personal blog which you can find at [janmeppe.com](www.janmeppe.com). 
 
 It uses the [minimal
