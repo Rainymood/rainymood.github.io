@@ -1,34 +1,32 @@
-# Jan Meppe's personal blog
+# Janmeppe.com code 
 
-This repository contains the code of Jan Meppe's personal blog. It is built with the [minimal
-mistakes](https://mmistakes.github.io/minimal-mistakes/) jekyll theme. Jan's website can be found at [janmeppe.com](www.janmeppe.com)
+![](assets/images/Screenshot 2020-11-19 at 09.11.03.png)
 
-## How to run locally
+This repository contains the code and assets of my personal blog which you can find at [janmeppe.com](www.janmeppe.com). 
+
+It uses the [minimal
+mistakes](https://mmistakes.github.io/minimal-mistakes/) jekyll theme with some minor tweaks.
+
+## Setup
 
 ```ruby
 rake build
 ```
 
-Instead of using the `bundle exec jekyll serve` (or `build`) we build and run
-the website locally using a ruby workaround. 
+Usually we would run the blog using `bundle exec jekyll serve` or `build`.
+This is a workaround due to a unicode error/bug that I still haven't fixed.
+Read about that [here](https://www.janmeppe.com/blog/invalid-US-ASCII-character/).
 
-I have written about this unicode error/bug
- [here](https://www.janmeppe.com/blog/invalid-US-ASCII-character/)
-   
-
-## How to write draft posts
+## Draft 
 
 To write draft posts put **undated** posts in the `_drafts/` folder and then
-build/serve jekyll with `--draft`. Note that this flag is by default enabled
-in the `rake build` workaround.
+build/serve jekyll with `--draft`.
 
-## How do I write blog posts
+This flag is by default enabled if you run with `rake build`. 
 
-Because I am a savage I write most of my posts directly in the `_/posts`
-folder and throw all the assets in `_assets/`. That is my writing process. 
+## Blog posts
 
-I have tried writing posts in different editors and things but having to
-format it all over again got kind of tiring. This seems to work for me and is simple and stupid enough that I can follow the procedure. 
+Usually I don't bother with draft posts and write them directly in `_/posts`. All assets go in `assets/`. 
 
 ## Links
 
