@@ -8,7 +8,7 @@ tags:
   - minimal-mistakes
   - blog
 header:
-  teaser: "/assets/2020-11-19-personal-blog-minimal-mistakes/teaser-800x430.png"
+  teaser: "/assets/2020-11-19-personal-blog-minimal-mistakes/teaser.png"
 ---
 
 # How to change size of blog posts
@@ -18,13 +18,12 @@ header:
 * Go to `assets/css/main.scss`
 * Edit the `font-size` attribute of `archive__item-title`
 
-This is my `assets/css/main.scss`.
+This is what my `assets/css/main.scss` looks like. 
 
 ```css
 .archive__item-title {
     position: relative;
     font-size: 30px;
-  
 ```
 # How to add a favicon to minimal mistakes
 
