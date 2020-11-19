@@ -11,6 +11,21 @@ header:
   teaser: "/assets/2020-11-19-personal-blog-minimal-mistakes/teaser-800x430.png"
 ---
 
+# How to change size of blog posts
+
+![](/../assets/2020-11-19-personal-blog-minimal-mistakes/2020-11-19-15-05-48.png)
+
+* Go to `assets/css/main.scss`
+* Edit the `font-size` attribute of `archive__item-title`
+
+This is my `assets/css/main.scss`.
+
+```css
+.archive__item-title {
+    position: relative;
+    font-size: 30px;
+  
+```
 # How to add a favicon to minimal mistakes
 
 ![](/../assets/2020-11-19-personal-blog-minimal-mistakes/2020-11-19-14-30-44.png)
@@ -20,7 +35,7 @@ header:
 * Download the package and extract it to the root directory
 * Copy the html code and add it to `_includes/head/custom.html`
 
-This is what my `_includes/head/custom.html` looks like:
+This is what my `_includes/head/custom.html` looks like.
 
 ```html
 <!-- start custom head snippets -->
