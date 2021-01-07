@@ -1,12 +1,12 @@
 main:
   # - title: <img src="/assets/images/26x26.png">Start here
-  - title: Start here
-    url: /start/
+  # - title: Start here
+  #   url: /start/
   # - title: <img src="/assets/images/26x26.png">Blog
   - title: Blog
     url: /posts/
-  - title: Projects
-    url: /projects/
+  # - title: Projects
+  #   url: /projects/
   # - title: <img src="/assets/images/26x26.png">About
   - title: About
     url: /about/
