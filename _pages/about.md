@@ -7,17 +7,25 @@ title: "About Jan"
 
 Hi 👋
 
-My name is Jan Meppe. I'm a machine learning engineer that is passionate
-about building consumer tech products. I am based in Amsterdam.
+My name is Jan Meppe. 
 
-I make productivity tools:
+I am a data scientist. I turn data into results.
 
-* [Daily Productivity](https://janmeppe.substack.com/) is a daily newsletter focused on making you more productive. I compile the best self-help advice and turn it into an easily digested daily newsletter. 
+I *obsessively* collect data and turn them into results. For example I, 
+
+* Used data science to reduce a client's CI/CD build times by 67% resulting in significant cost savings
+* Used data science to become one of Europe's top 500 players in Overwatch (top 0.0012% performance)
+* Used data science to figure out how to solve a Rubik's cube in <15 seconds
 
 I code:
 
 * I do machine learning stuff in **Python** with **TensorFlow/Keras**, **Scikit-learn**, **Pandas**, and **Numpy**.
 * I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js**.
+
+I'm a full-stack data scientist that knows his way around most
+Python/JavaScript code you can throw at me. Sometimes I work as a machine
+learning engineer or pure software engineer, but my passion lies in data. I
+am based in Amsterdam btw.
 
 I write:
 
@@ -25,11 +33,15 @@ I write:
 * I also write on my blog [www.Janmeppe.com](https://www.janmeppe.com/). In 2020 I published 23 blog posts and in 2019 I published 7. 
 * One of my blog posts was featured on the front page of [Hacker News](https://news.ycombinator.com/item?id=20608032) and was read more than 30.000 times.
 
-My most popular blog articles are tutorials:
+I am passionate about helping others:
 
 * [Regex For Noobs (like me!) - An Illustrated Guide](https://www.janmeppe.com/blog/regex-for-noobs/)
 * [How to add a new kernel to your Jupyter Notebook](https://www.janmeppe.com/blog/how-to-add-new-kernel-in-jupyter-notebook/)
 * [How to add a splash image to minimal mistakes](https://www.janmeppe.com/blog/how-to-add-splash-to-minimal-mistakes/)
+
+I also make silly productivity tools to make you more productive:
+
+* [Daily Productivity](https://janmeppe.substack.com/) is a daily newsletter with daily productivity tips. I compile the best self-help advice and turn it into an easily digested daily newsletter. 
 
 I [love meeting strangers on the internet](https://www.kalzumeus.com/standing-invitation/). So if you want to talk about: startups, tech, data science, productivity, management, leadership, notetaking, or zettelkasten, don't hesitate! Say hi on [Twitter](https://twitter.com/Janmeppe) for example!
 
