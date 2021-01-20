@@ -7,8 +7,9 @@ tags:
   - python
   - tool
 header:
-  teaser: ""
+  teaser: "/../assets/2021-01-20-how-to-set-python3-as-default-mac/2021-01-20-17-43-24.png"
 ---
+
 
 The default Python version that ships with (older) Mac OS software is
 hilariously old. Because I am still developing on a mid-2014 MBP Retina (SUE ME!) I was still rocking this bad boy. But at some point I was cracking my head on Python environments and well, I just had to fix it. So here goes!
@@ -43,7 +44,7 @@ pyenv 1.2.21
 
 Install the desired Python version. In my case this is version `3.9.0`.
 
-```
+```bash
 $ pyenv install 3.9.0
 python-build: use openssl 1.0 from homebrew
 python-build: use readline from homebrew
@@ -55,13 +56,13 @@ This. Will. Take. A. While. Go grab a cup of coffee or something.
 
 Set your installed version as the default.
 
-```
+```bash
 $ pyenv global 3.9.0
 ```
 
 Validate whether it worked.
 
-```
+```bash
 $ pyenv version
 3.9.0 (set by /Users/janmeppe/.pyenv/version)
 ```
