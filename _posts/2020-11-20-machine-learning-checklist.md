@@ -11,11 +11,11 @@ header:
   teaser: "/../assets/2020-11-20-machine-learning-checklist/2020-11-20-14-01-26.png"
 ---
 
+Use this 8-step machine learning checklist to guide you through your machine learning projects.
+
 ![](/../assets/2020-11-20-machine-learning-checklist/2020-11-20-14-01-26.png)
 
 <!-- What is the value for the user/reader?  -->
-
-Use this 8-step machine learning checklist to guide you through your machine learning projects.
 
 I found this checklist the appendix of [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291).
 Every machine learning project should use this checklist, or at least part of

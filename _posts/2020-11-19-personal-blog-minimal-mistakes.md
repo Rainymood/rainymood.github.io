@@ -11,6 +11,8 @@ header:
   teaser: "/assets/2020-11-19-personal-blog-minimal-mistakes/teaser.png"
 ---
 
+In this blog post I'll show you how to change the size of your blog posts in the minimal mistakes theme. 
+
 # How to change size of blog posts
 
 ![](/../assets/2020-11-19-personal-blog-minimal-mistakes/2020-11-19-15-05-48.png)
