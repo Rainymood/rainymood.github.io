@@ -4,22 +4,81 @@
 
 @charset "utf-8";
 
-// Add this before imports
-$tq-blue: #342797;
-$deepmind-blue: #15244a; 
-$dark-grey: #4A4A4A;
-$bain-red: #CC0800;
-$rands-grey: #474747;
-$rands-grey-navbar: #F2F3F3;
-$black: #000000;
+// Add colour settings before "@import"
 
-// Set up main colour
-$main-color: $rands-grey;
+// Define colors 
+$brian-clicked-link: #265aeb;
+$brian-unclicked-link: #1e38af;
+$brian-creme: #fafafa;
 
 // Post headers
-$link-color: $main-color;
+$link-color: $brian-unclicked-link;
+
+// Change background of website to creme. From: https://brianlovin.com/
+$background-color: $brian-creme;
+
+// https://nithiya.gitlab.io/development/pages-tweaks/
+
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+// github syntax highlighting (base16) 
+// https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#colors
+// https://github.com/Defman21/base16-github-scheme/blob/master/github.yaml
+// http://chriskempson.com/projects/base16/
+// $base00: #ffffff !important;
+// $base01: #f5f5f5 !important;
+// $base02: #c8c8fa !important;
+// $base03: #969896 !important;
+// $base04: #e8e8e8 !important;
+// $base05: #333333 !important;
+// $base06: #ffffff !important;
+// $base07: #ffffff !important;
+// $base08: #ed6a43 !important;
+// $base09: #0086b3 !important;
+// $base0A: #795da3 !important;
+// $base0B: #183691 !important;
+// $base0C: #183691 !important;
+// $base0D: #795da3 !important;
+// $base0E: #a71d5d !important;
+// $base0F: #333333 !important;
+
+// // scheme: "Default Light"
+// // author: "Chris Kempson (http://chriskempson.com)"
+// $base00: #f8f8f8 !important;
+// $base01: #e8e8e8 !important;
+// $base02: #d8d8d8 !important;
+// $base03: #b8b8b8 !important;
+// $base04: #585858 !important;
+// $base05: #383838 !important;
+// $base06: #282828 !important;
+// $base07: #181818 !important;
+// $base08: #ab4642 !important;
+// $base09: #dc9656 !important;
+// $base0A: #f7ca88 !important;
+// $base0B: #a1b56c !important;
+// $base0C: #86c1b9 !important;
+// $base0D: #7cafc2 !important;
+// $base0E: #ba8baf !important;
+// $base0F: #a16946 !important;
+
+$base00: #181818 !important;
+$base01: #282828 !important;
+$base02: #383838 !important;
+$base03: #585858 !important;
+$base04: #b8b8b8 !important;
+$base05: #d8d8d8 !important;
+$base06: #e8e8e8 !important;
+$base07: #f8f8f8 !important;
+$base08: #ab4642 !important;
+$base09: #dc9656 !important;
+$base0A: #f7ca88 !important;
+$base0B: #a1b56c !important;
+$base0C: #86c1b9 !important;
+$base0D: #7cafc2 !important;
+$base0E: #ba8baf !important;
+$base0F: #a16946 !important;
+
 @import "minimal-mistakes"; // main partials
 
 // To add custom styling: 
@@ -42,9 +101,22 @@ html {
   }
 }
 
-// Janmeppe.com / start here / blog / about nav colours 
+// .masthead__menu-item {
+//   color: #612424;
+// }
+
+// .masthead {
+//   background-color: #612424;
+// }
+
+// .masthead_inner-wrap {
+//   background-color: #612424;
+// }
+
+
+// Set top navbar background colour to white. 
 // .greedy-nav a { 
-//   color: $black;
+//   color: #ffffff;
 // }
 
 // Background of masthead inner wrap 
@@ -55,3 +127,6 @@ html {
 
 // Hide side title
 // .greedy-nav .site-title { opacity: 1; }
+
+
+// Code highlighting: https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/

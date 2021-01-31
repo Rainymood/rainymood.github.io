@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Janmeppe.com
 email: janmeppe@gmail.com
-description: Jan Meppe's personal blog about problem solving, machine learning, deep learning, data science, tech, product, and design.
+description: I write about data science, tech, note-taking, and productivity.
 # this means to ignore newlines until "baseurl:"
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
@@ -114,14 +114,13 @@ defaults:
       layout: single
       author_profile: true
 
-
 # teaser: /assets/images/500x300.jpg
 # logo: /assets/images/88x88.jpg
 # logo: /assets/images/88x352.jpg
 # logo: /assets/images/logo2.png
 # Logo next to janmeppe.com site title
 # logo: /assets/images/logo3.png
-logo: /assets/images/logo5-32x32-trans.png
+# logo: /assets/images/logo5-32x32-trans.png
 
 category_archive:
   type: liquid

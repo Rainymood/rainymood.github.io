@@ -31,3 +31,21 @@ Usually I don't bother with draft posts and write them directly in `_/posts`. Al
 * [View my blog here](https://rainymood.github.io/)
 * [View configuration options here](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
+
+## View bundler
+
+```
+cat Gemfile.lock | grep -A 1 "BUNDLED WITH"
+BUNDLED WITH
+   1.17.3
+
+gem install bundler -v '1.17.3'
+```
+
+## How to override settings
+
+Change the settings in `assets/css/main.scss`.
+
+## How to change your home page?
+
+Change settings in `index.html`.
