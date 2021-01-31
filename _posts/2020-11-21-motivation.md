@@ -13,11 +13,12 @@ header:
   teaser: "/../assets/2020-11-21-motivation/2020-11-20-16-06-07.png"
 ---
 
-![](/../assets/2020-11-21-motivation/2020-11-20-16-06-11.png)
-
 According to legendary management guru Andy Grove, there can only be two
 reasons why you're procrastinating. In [High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884),
 he writes:
+
+![](/../assets/2020-11-21-motivation/2020-11-20-16-06-11.png)
+
 
 >"When a person is not doing his job, there can only be two reasons for it.
 **The person either can’t do it or won’t do it; he is either not capable or
