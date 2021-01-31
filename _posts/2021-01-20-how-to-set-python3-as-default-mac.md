@@ -16,8 +16,8 @@ hilariously old. Because I am still developing on a mid-2014 MBP Retina (SUE ME!
 
 There is a right way and wrong way to set Python 3 as the default on your
 Mac. I'll show you the right way. In general you *never ever* want to fuck
-with your system version of Python. You is very dangerous and can mess up
-many many things.
+with your system version of Python. This is very dangerous and can mess up
+many things.
 
 To manage our global python version we will use `pyenv` and then make our shell always use `pyenv`. I will merely set the global default to Python `3.9.0` but you could also manage more version at the same time. 
 
