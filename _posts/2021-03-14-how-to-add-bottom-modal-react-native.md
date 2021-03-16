@@ -1,5 +1,5 @@
 ---
-title: "How to add a bottom modal in react-native"
+title: "How to add a bottom modal in React Native"
 date: 2021-03-14
 categories:
   - blog
