@@ -2,8 +2,6 @@
 
 This repository contains the code and assets of my personal blog which you can find at [janmeppe.com](www.janmeppe.com). 
 
-It uses the [minimal
-mistakes](https://mmistakes.github.io/minimal-mistakes/) jekyll theme with some minor tweaks.
 
 ## Setup
 
@@ -11,28 +9,26 @@ mistakes](https://mmistakes.github.io/minimal-mistakes/) jekyll theme with some 
 rake build
 ```
 
-Usually we would run the blog using `bundle exec jekyll serve` or `build`.
-This is a workaround due to a unicode error/bug that I still haven't fixed.
-Read about that [here](https://www.janmeppe.com/blog/invalid-US-ASCII-character/).
+Usually we would run the blog using `bundle exec jekyll serve` or simply `build`.
 
-## Draft 
+This is a workaround due to a unicode error/bug that I still haven't fixed which you can read more about here:
 
-To write draft posts put **undated** posts in the `_drafts/` folder and then
-build/serve jekyll with `--draft`.
+* [Invalid US-ASCII character “\xE2” on line 54 workaround](https://www.janmeppe.com/blog/invalid-US-ASCII-character/)
 
-This flag is by default enabled if you run with `rake build`. 
+## Writing posts
 
-## Blog posts
+To write: 
 
-Usually I don't bother with draft posts and write them directly in `_/posts`. All assets go in `assets/`. 
+* drafts put **undated** posts in the `_drafts/` folder.
+* blog posts put **dated** posts in the `_posts/` folder. 
 
-## Links
+Put all assets in `assets/` in a folder with the same name. 
 
-* [View my blog here](https://rainymood.github.io/)
-* [View configuration options here](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+If you want to see the drafts, serve build/serve Jekyll with the `--draft` flag enabled. 
 
+This flag is by default enabled if you run the blog with `rake build`. 
 
-## View bundler
+## Q: How to view your bundler version?
 
 ```
 cat Gemfile.lock | grep -A 1 "BUNDLED WITH"
@@ -42,10 +38,15 @@ BUNDLED WITH
 gem install bundler -v '1.17.3'
 ```
 
-## How to override settings
+## Q: How to override settings
 
 Change the settings in `assets/css/main.scss`.
 
-## How to change your home page?
+## Q: How to change your home page?
 
 Change settings in `index.html`.
+
+## Resources
+
+* [Minimal mistakes (Jekyll theme used)](https://mmistakes.github.io/minimal-mistakes/)
+* [Configuration options](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
