@@ -1,15 +1,7 @@
 main:
-  # - title: <img src="/assets/images/26x26.png">Start here
-  # - title: Start here
-  #   url: /start/
-  # - title: <img src="/assets/images/26x26.png">Blog
   - title: Blog
     url: /posts/
-  # - title: Projects
-  #   url: /projects/
-  # - title: <img src="/assets/images/26x26.png">About
+  - title: Newsletter
+    url: https://janmeppe.substack.com/
   - title: About
     url: /about/
-  # - title: Splash
-  #   url: /splash-page/
-
