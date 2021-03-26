@@ -28,11 +28,19 @@ I write:
 * I also write on my blog [www.Janmeppe.com](https://www.janmeppe.com/). In 2020 I published 23 blog posts and in 2019 I published 7. 
 * One of my blog posts was featured on the front page of [Hacker News](https://news.ycombinator.com/item?id=20608032) and was read more than 30.000 times.
 
-I am passionate about helping others:
+I am currently learning React-Native to build native apps:
+
+* [Simple React Native Redux counter example
+](https://www.janmeppe.com/blog/simple-react-native-redux-counter/)
+* [How to add a bottom modal in React Native
+](https://www.janmeppe.com/blog/how-to-add-bottom-modal-react-native/)
+
+I am passionate about helping others you can view some of my tutorials:
 
 * [Regex For Noobs (like me!) - An Illustrated Guide](https://www.janmeppe.com/blog/regex-for-noobs/)
 * [How to add a new kernel to your Jupyter Notebook](https://www.janmeppe.com/blog/how-to-add-new-kernel-in-jupyter-notebook/)
 * [How to add a splash image to minimal mistakes](https://www.janmeppe.com/blog/how-to-add-splash-to-minimal-mistakes/)
+
 
 I currently work as data science consultant / machine learning engineer /
 software engineer in the Amsterdam office of
