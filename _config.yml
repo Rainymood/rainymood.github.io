@@ -61,7 +61,8 @@ plugins:
 author:
   name   : "Jan Meppe"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Machine Learning Engineer in love with building digital products."
+  bio    : "data science x software engineering x product"
+  location : "Amsterdam"
   links:
     - label: "janmeppe.com"
       icon: "fas fa-fw fa-link"
@@ -72,6 +73,9 @@ author:
     - label: "rainymood"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rainymood"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jan-meppe-48491656/"
   #   - label: "Instagram"
   #     icon: "fab fa-fw fa-instagram"
   #     url: "https://instagram.com/janmeppe"
