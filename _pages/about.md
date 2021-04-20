@@ -24,6 +24,8 @@ I code:
 
 [Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on. 
 
+[Here](https://docs.google.com/spreadsheets/d/1poMQpggzXVm8zrBWY9gzMqwAxgze5cH4-XVYDupI-AE/edit?usp=sharing) is my story grid, but you can't open this one ;)
+
 I write:
 
 * I write a sort-of daily newsletter, [Today Jan Learned](https://janmeppe.substack.com/). In 2020 I published 37 editions of TJL. 
