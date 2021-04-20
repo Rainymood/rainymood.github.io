@@ -22,9 +22,11 @@ I code:
 * I do machine learning stuff in **Python** with **TensorFlow/Keras**, **Scikit-learn**, **Pandas**, and **Numpy**
 * I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js**
 
+[Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on. 
+
 I write:
 
-* I write a **daily** newsletter, [Today Jan Learned](https://janmeppe.substack.com/). In 2020 I published 37 editions of TJL. 
+* I write a sort-of daily newsletter, [Today Jan Learned](https://janmeppe.substack.com/). In 2020 I published 37 editions of TJL. 
 * I also write on my blog [www.Janmeppe.com](https://www.janmeppe.com/). In 2020 I published 23 blog posts and in 2019 I published 7. 
 * One of my blog posts was featured on the front page of [Hacker News](https://news.ycombinator.com/item?id=20608032) and was read more than 30.000 times.
 
@@ -41,7 +43,6 @@ I am passionate about helping others you can view some of my tutorials:
 * [How to add a new kernel to your Jupyter Notebook](https://www.janmeppe.com/blog/how-to-add-new-kernel-in-jupyter-notebook/)
 * [How to add a splash image to minimal mistakes](https://www.janmeppe.com/blog/how-to-add-splash-to-minimal-mistakes/)
 
-
 I currently work as data science consultant / machine learning engineer /
 software engineer in the Amsterdam office of
 [Cognizant](https://www.cognizant.com/nl-nl/) helping our clients leverage
@@ -49,9 +50,9 @@ the power of AI and machine learning.
 
 Before that, I studied econometrics (financial engineering) in Amsterdam: 
 
-- MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home)
-- MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
-- BSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
+* MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home)
+* MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
+* BSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
 
 Find me on:
 
