@@ -1,6 +1,6 @@
 main:
-  - title: Notes
-    url: /notes/
+  # - title: Notes
+  #   url: /notes/
   - title: Blog
     url: /posts/
   - title: Newsletter
