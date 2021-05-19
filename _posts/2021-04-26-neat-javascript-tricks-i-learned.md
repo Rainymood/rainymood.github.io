@@ -9,7 +9,7 @@ tags:
   - blog
   - javascript
 header:
-  teaser: ""
+  teaser: "/../assets/2021-04-26-neat-javascript-tricks-i-learned/teaser800x430.png"
 ---
 
 Today I learned some cool "tricks" (uhmm... fundamentals...) in JavaScript. 
