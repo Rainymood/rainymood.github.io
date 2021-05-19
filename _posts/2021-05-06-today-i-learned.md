@@ -1,5 +1,5 @@
 ---
-title: "Today I learned" 
+title: "This week in: Today I learned (TIL)" 
 date: 2021-05-04
 categories:
   - blog
@@ -9,15 +9,17 @@ tags:
   - blog
   - til
 header:
-  teaser: ""
+  teaser: "/../assets/2021-05-06-today-i-learned/teaser.png"
 ---
 
-**Warning!** This is a draft! This post is being written as you are reading it!  I started this post on 2021-05-04 and will be updating it regularly until I think it contains enough to be considered done.
-{: .notice--warning}
+I've been keeping a running list of some of the interesting things that I learned these last couple of weeks. Hopefully you steal a trick or two from me here!
+
+<!-- **Warning!** This is a draft! This post is being written as you are reading it!  I started this post on 2021-05-04 and will be updating it regularly until I think it contains enough to be considered done.
+{: .notice--warning} -->
 
 ## 2021-05-04
 
-Today I learned that this... well... works. This is how I created a value based on another value from my redux store.
+Today I learned that this... well... works. I learned how to create a value based on another value from my redux store. It's ugly, but it works. I'm not proud of this but it gets the job done.
 
 ```javascript
 const messages = useSelector((state) => state.messages); 
@@ -28,7 +30,7 @@ const allThreeDone = found ? todaysMessage.answer1 != '' && todaysMessage.answer
 
 ---
 
-Today I learned how to count the amount of trues. 
+Today I learned how to count the amount of trues in an array.
 
 ```javascript
 [false,false,true,false,true].filter(x => x).length // returns 2
@@ -36,7 +38,7 @@ Today I learned how to count the amount of trues.
 
 ---
 
-Today I learned how to add opacity to an image in react-native
+Today I learned how to add opacity to an image in react native.
 
 ```javascript
 <Image opacity={0.2} />
@@ -44,7 +46,7 @@ Today I learned how to add opacity to an image in react-native
 
 ---
 
-Today I learned how to copy your public key to your clipboard
+Today I learned how to copy your public key to your clipboard.
 
 ```bash
 pbcopy < ~/.ssh/id_rsa.pub
@@ -52,7 +54,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 ---
 
-Today I learned how to check what shell you are using
+Today I learned how to check what shell you are using.
 
 ```
 echo $SHELL
@@ -60,13 +62,15 @@ echo $SHELL
 
 ---
 
-Today I learned how to download a node with `wget` if you are ssh'd into a server
+Today I learned how to download node with `wget` if you are ssh'd into a server.
 
-`wget https://nodejs.org/dist/v10.5.0/node-v10.5.0-linux-x64.tar.xz` 
+```bash
+wget https://nodejs.org/dist/v10.5.0/node-v10.5.0-linux-x64.tar.xz 
+```
 
 # 2021-05-05
 
-TIL how to plot a confusion matrix in `matplotlib`
+Today I learned how to plot a confusion matrix using `ConfusionMatrixDisplay` in matplotlib.
 
 ```python
 mat = confusion_matrix(y_true=eval_labels, y_pred=predicted_eval_labels)
@@ -75,16 +79,16 @@ ConfusionMatrixDisplay(mat, display_labels=class_names).plot()
 
 ---
 
-TIL if you have a list and you want to turn it in a dictionary mapping, turn it into a numpy array.
+Today I learned about this neat mapping trick. If you have a list and you want to turn it into a dictionary mapping, simply turn it into a numpy array.
 
 ```python
-class_names = np.array(class_names) # => class_names = ["apple", "pear", "banana"]
-class_names[eval_labels] # => class_names[[1, 0]] = ["pear", "apple"]
+class_names = np.array(["apple", "pear", "banana"]) 
+class_names[[1, 0]] # ["pear", "apple"]
 ```
 
 --
 
-TIL if you want to save whatever figure, make a new figure with `plt.subplots()` and pass the `ax` object.
+Today I learned that if you want to save whatever figure you just make a new figure using `plt.subplots()` and pass through the `ax` object.
 
 ```python
 fig, ax = plt.subplots()
@@ -95,11 +99,11 @@ fig.savefig("tmp.png")
 
 ---
 
-TIL that you should use `bbox_inches=tight` if your plots are showing correctly but `fig.savefig()` is clipping your axes.
+Today I learned that, if your plots are showing correctly but `savefig` is clipping your axes, you should use the `bbox_inches=tight` setting.
 
 ---
 
-TIL how to remove unused axes from images in a subplot
+Today I learned how to remove unused axes from images in a subplot.
 
 ```python
 def show_img_prediction_grid(imgs, labels, predicted_labels, class_names):
@@ -123,17 +127,79 @@ def show_img_prediction_grid(imgs, labels, predicted_labels, class_names):
 
 ---
 
-TIL that order matters when using logical and (`&`) in Python. `a & b == c` is not the same as `a & (b == c)`. Duh.
+Today I learned that order matters when doing logical and (`&`) in Python. `a & b == c` is not the same as `a & (b == c)`. Duh. This is very basic but I forgot some parentheses and it stumped me for a while.
 
 # 2021-05-06
 
-Today I learned that there is an ideal time to review your notes:
+Today I learned that there is an ideal time to review your notes.
 
-> SuperMemo is based on the insight that there is an ideal moment to practice what you've learned. Practice too soon and you waste your time. Practice too late and you've forgotten the material and have to relearn it. The right time to practice is just at the moment you're about to forget. Unfortunately, this moment is different for every person and each bit of information. Imagine a pile of thousands of flash cards. Somewhere in this pile are the ones you should be practicing right now. Which are they?
+> SuperMemo is based on the insight that there is an ideal moment to practice what you've learned. Practice too soon and you waste your time. Practice too late and you've forgotten the material and have to relearn it. The right time to practice is just at the moment you're about to forget. 
 
 ---
 
-Today I learned that first step in debugging is *always* can I reproduce this bug?
+Today I learned that the first question you should always ask yourself during debugging is: "Can I reproduce this bug?" 
+
+# 2021-05-09
+
+Today I learned that the [Rectified Linear Unit (ReLU)](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) activation function solves the [vanishing gradient problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem). I should know this, but I forgot. 
+
+---
+
+Today I learned that [Tensorflow.js](https://www.tensorflow.org/js) stores the model as a graph, but loses some precision due to different data structures. Or so I've been told. 
+
+---
+
+Today I learned you can use `$$ ... $$` to add LaTeX on this blog. I completely forgot about this hah! I actually wrote [a blog post](https://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/) about this a while back.
+
+$$ e^{i \pi} = -1$$
+
+# 2021-05-17
+
+Today I learned that working in 3 sprints of 25 minutes works really well for me. What works even better is if you set clear goals for those pomodoros. Usually you finish your goal with some time left. You can do a lot in 25 minutes!
+
+---
+
+Today I learned that you can check whether an array is empty by checking the length: `array.length == 0 `.
+
+---
+
+Today I learned how to add a line break in a `<Text>` component.
+
+```js
+<Text
+  style={{
+    fontStyle: 'italic',
+    color: 'grey',
+  }}
+>{`
+  It's quite empty here...
+  try adding something in the journal screen
+`}
+</Text>
+```
+
+---
+
+Today I learned that you can check if a string is empty using triple quotes: `str === ""`.
+
+---
+
+Today I learned how to map an array to an object. 
+
+```js
+const data = [
+  {id: 1, country: 'Germany'},
+  {id: 2, country: 'Austria'},
+  {id: 3, country: 'Switzerland'}
+];
+
+const dictionary = Object.assign({}, ...data.map(x => ({[x.id]: x.country})));
+// {1: "Germany", 2: "Austria", 3: "Switzerland"}
+```
+
+# Conclusion
+
+I hope you scanned over these TILs and maybe one or two things caught your eye! I especially like the mapping trick for numpy labels and the multi-line trick for react native.
 
 # Subscribe 
 
