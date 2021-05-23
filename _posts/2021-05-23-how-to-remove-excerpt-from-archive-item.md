@@ -1,5 +1,5 @@
 ---
-title: "How to remove excerpt from recent posts in minimal mistakes" 
+title: "How to remove the excerpt from recent posts in a minimal mistakes blog" 
 date: 2021-05-21
 categories:
   - blog
