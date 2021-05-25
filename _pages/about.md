@@ -39,6 +39,16 @@ I am currently learning React-Native to build native apps:
 * [How to add a bottom modal in React Native
 ](https://www.janmeppe.com/blog/how-to-add-bottom-modal-react-native/)
 
+This blog is built with [Jekyll](https://jekyllrb.com/docs/themes/) using the [Minimal mistakes](https://mmistakes.github.io/minimal-mistakes/) theme which I heavily tweaked and write about as well:
+
+* [How to remove the excerpt from recent posts in a minimal mistakes blog](https://www.janmeppe.com/blog/how-to-remove-excerpt-from-archive-item/)
+* [How to change size of blog posts](https://www.janmeppe.com/blog/personal-blog-minimal-mistakes/)
+* [How to add a favicon to minimal mistakes](https://www.janmeppe.com/blog/personal-blog-minimal-mistakes/)
+* [How to add Latex to Minimal Mistakes](https://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/)
+* [How to change Jekyll theme to Minimal Mistakes](https://www.janmeppe.com/blog/how-to-change-theme-to-minimal-mistakes/)
+* [How to add a teaser image to minimal mistakes](https://www.janmeppe.com/blog/add-teaser-to-minimal-mistakes/)
+* [How to add a splash image to minimal mistakes](https://www.janmeppe.com/blog/how-to-add-splash-to-minimal-mistakes/)
+
 I am passionate about helping others you can view some of my tutorials:
 
 * [Regex For Noobs (like me!) - An Illustrated Guide](https://www.janmeppe.com/blog/regex-for-noobs/)
