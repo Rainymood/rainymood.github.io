@@ -7,9 +7,9 @@ toc: true
 toc_sticky: true
 tags:
   - blog
-  - output
+  - productivity
 header:
-  teaser: ""
+  teaser: "/../assets/2021-04-10-what-did-I-do-these-last-2-weeks/2021-04-10-20-37-20.png"
 ---
 
 What did I really do these last two weeks?

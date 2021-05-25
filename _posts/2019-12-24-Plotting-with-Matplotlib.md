@@ -6,6 +6,8 @@ categories:
 tags:
   - Jekyll
   - update
+  - python
+  - matplotlib
 header: 
   teaser: "/assets/2019-12-24-matplotlib/matplotlib.jpg"
 ---

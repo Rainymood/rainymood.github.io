@@ -1,6 +1,6 @@
 ---
 title: "How to auto-scroll to a focused TextInput in a ScrollView" 
-date: 2021-04-26
+date: 2021-05-01
 categories:
   - blog
 toc: false
@@ -8,6 +8,7 @@ toc_sticky: true
 tags:
   - blog
   - javascript
+  - react-native
 header:
   teaser: "/../assets/2021-05-01-implemented-auto-scroll/auto-scroll-demo.gif"
 ---
