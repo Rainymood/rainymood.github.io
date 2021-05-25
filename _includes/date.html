@@ -1,0 +1,4 @@
+{% assign document = post | default: page %}
+{% assign date = document.date %}
+{% assign date_format = site.date_format | default: "%Y-%m-%d" %}
+<time datetime="{{ date | date_to_xmlschema }}">({{ date | date: date_format }})</time>
