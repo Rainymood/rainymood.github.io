@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Jan Meppe"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "data science x software engineering x product"
+  bio    : "Machine learning engineer in love with building digital products."
   location : "Amsterdam"
   links:
     - label: "janmeppe.com"
