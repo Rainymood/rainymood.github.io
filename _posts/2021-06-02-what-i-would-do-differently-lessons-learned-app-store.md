@@ -12,9 +12,16 @@ header:
   teaser: "/../assets/2021-06-02-what-i-would-do-differently-lessons-learned-app-store/thumbnail.png"
 ---
 
-I shipped an app to the app store! Download it [here](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en)!
+I am incredibly pleased to announce that Apple accepted my submission to their
+app store! In other words, I finally shipped my app to the app store 🎉 woohoo!
+This has been a long-standing goal of mine and it feels great to have
+finally done it!
+
+Download 3 good things by clicking [here](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en)!
 
 [![](/../assets/2021-06-02-what-i-would-do-differently-lessons-learned-app-store/2021-06-02-11-09-36.png){: .align-center}](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en)
+
+What's this app about anyway?
 
 **3 good things: a gratitude log** is a guided gratitude journaling app designed to make you happier. 
 
