@@ -30,8 +30,7 @@ boxes to answer this question. After doing this for a while, you'll have a list
 of all the good things that happened to you, helping you focus on the
 positive things in life. 
 
-Making this I made a lot of mistakes and learned a lot of lessons. This article is as much
-advice to you as it is to future me.
+I made a lot of mistakes during this project and learned a lot of valuable lessons that I want to document here. What I write down here is as much advice to you as it is to future me.
 
 This is what I would do differently...
 
