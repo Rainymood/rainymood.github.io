@@ -149,6 +149,10 @@ $base0f: #ff5370;
 html {
   font-size: 12px; // change to whatever
 
+  @include breakpoint($small){
+    font-size: 12px; // change to whatever
+  }
+
   @include breakpoint($medium) {
     font-size: 14px; // change to whatever
   }
