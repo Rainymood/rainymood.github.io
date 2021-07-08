@@ -147,22 +147,22 @@ $base0f: #ff5370;
 //     locally. And then add any style overrides after @import "minimal-mistakes";.
 
 html {
-  font-size: 12px; // change to whatever
+  font-size: 16px; // change to whatever
 
   @include breakpoint($small){
-    font-size: 12px; // change to whatever
-  }
-
-  @include breakpoint($medium) {
-    font-size: 14px; // change to whatever
-  }
-
-  @include breakpoint($large) {
     font-size: 16px; // change to whatever
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($medium) {
     font-size: 18px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 20px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 22px; // change to whatever
   }
 }
 
