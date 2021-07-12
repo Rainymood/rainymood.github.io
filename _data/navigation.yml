@@ -1,9 +1,7 @@
 main:
-  - title: Categories
-    url: /tags/
+  - title: Startup
+    url: /startup/
   - title: Blog
     url: /posts/
-  - title: Newsletter
-    url: https://janmeppe.substack.com/
   - title: About
     url: /about/
