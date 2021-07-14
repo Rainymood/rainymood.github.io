@@ -1,7 +1,5 @@
 # Janmeppe.com
 
-![]("./assets/screenshots/Screenshot 2021-07-14 at 12.13.59.png")
-
 ![](./assets/screenshots/2021-07-14.png)
 
 This repository contains the code, text, and assets of my personal blog which
