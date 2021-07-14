@@ -1,9 +1,33 @@
-# Janmeppe.com code 
+# Janmeppe.com
 
-This repository contains the code and assets of my personal blog which you can find at [janmeppe.com](www.janmeppe.com). 
+![](assets/screenshots/Screenshot 2021-07-14 at 12.13.59.png)
 
+This repository contains the code, text, and assets of my personal blog which
+you can find here at [www.janmeppe.com](www.janmeppe.com). 
 
-## Setup
+## Installation
+
+Clone the repo
+
+```
+git clone https://github.com/Rainymood/rainymood.github.io
+```
+
+Assuming you have a working installation of [Ruby](https://www.ruby-lang.org/en/downloads/), install the bundler
+
+```
+gem install bundler
+```
+
+And install all the gems
+
+```
+bundle install
+```
+
+## Running the blog
+
+Run the blog with
 
 ```ruby
 rake build
@@ -45,6 +69,12 @@ Change the settings in `assets/css/main.scss`.
 ## Q: How to change your home page?
 
 Change settings in `index.html`.
+
+## Q: How to uninstall all gems?
+
+```
+gem uninstall -aIx
+```
 
 ## Resources
 
