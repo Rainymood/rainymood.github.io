@@ -12,7 +12,7 @@ header:
   teaser: "assets/2021-07-14-how-to-fix-incompatible-library-version-nokogiri/teaser.png"
 ---
 
-Imagine trying to run your blog with `bundle exec jekyll server` or `rake build` and suddenly you are hit by this incompatible library error: 
+Imagine trying to run your blog with `bundle exec jekyll serve` or `rake build` and suddenly you are hit by this incompatible library error: 
 
 ```
 Traceback (most recent call last):
