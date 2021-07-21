@@ -7,7 +7,7 @@ Here you can find my writings about startups.
 
 - [What is a startup?]({% post_url 2021-07-08-what-is-a-startup %})
 - [Product thinking framework: transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %})
-<!-- - [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %}) -->
+- [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %})
 
 # Other resources
 
