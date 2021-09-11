@@ -9,6 +9,7 @@ Here you can find my writings about startups.
 - [Product thinking framework: transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %})
 - [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %})
 
-# Other resources
+I also love to collect analogies and stories:
 
-- [Startup = Growth](http://www.paulgraham.com/growth.html) Seminal article about what differentiates a startup from a regular company. Must read. 
+- [Testing is like pulling up a bucket of water]()
+- [Eton College's Perfect Lawns]({% link _pages/stories/2021-09-11-eton-garden.md %}): A story about how a small amount of daily care can add up

@@ -7,7 +7,7 @@ title: "About Jan"
 
 Hi 👋
 
-My name is Jan Meppe and I'm an Amsterdam-based data scientist / software engineer.
+My name is Jan Meppe and I am a Machine Learning Engineer at [Snappet](https://www.snappet.org/), an Edtech startup.
 
 I am passionate about using data to make better decisions. 
 
