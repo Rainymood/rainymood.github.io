@@ -7,7 +7,14 @@ title: "About Jan"
 
 Hi 👋
 
-My name is Jan Meppe and I am a Machine Learning Engineer at [Snappet](https://www.snappet.org/), an Edtech startup.
+My name is Jan Meppe and I am a Machine Learning Engineer at
+[Snappet](https://www.snappet.org/). 
+
+Snappet is an EdTech startup building the future of eduction. It's flagship
+product is an online learning platform for primary schools. Through working on
+Snappet provided tablets we provide our pupils a way of learning core
+competencies in math and language through our adaptive and AI-driven educational
+platform. Prior to this, I was a data scientist for a Fortune 500 company.
 
 I am passionate about using data to make better decisions. 
 
@@ -53,12 +60,8 @@ I am passionate about helping others you can view some of my tutorials:
 * [How to add a new kernel to your Jupyter Notebook](https://www.janmeppe.com/blog/how-to-add-new-kernel-in-jupyter-notebook/)
 * [How to add a splash image to minimal mistakes](https://www.janmeppe.com/blog/how-to-add-splash-to-minimal-mistakes/)
 
-I currently work as data science consultant / machine learning engineer /
-software engineer in the Amsterdam office of
-[Cognizant](https://www.cognizant.com/nl-nl/) helping our clients leverage
-the power of AI and machine learning.
-
-Before that, I studied econometrics (financial engineering) in Amsterdam: 
+I studied econometrics (financial engineering) with a focus on machine learning
+applications in the finance domain in Amsterdam: 
 
 * MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home)
 * MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
