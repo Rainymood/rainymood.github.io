@@ -11,5 +11,5 @@ Here you can find my writings about startups.
 
 I also love to collect analogies and stories:
 
-- [Testing is like pulling up a bucket of water]()
+- [Testing is like pulling up a bucket of water from a well]({% _pages/stories/2021-09-12-testing-is-like-a-well.md %})
 - [Eton College's Perfect Lawns]({% link _pages/stories/2021-09-11-eton-garden.md %}): A story about how a small amount of daily care can add up
