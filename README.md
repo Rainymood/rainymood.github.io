@@ -25,7 +25,7 @@ And install all the gems
 bundle install
 ```
 
-## Running the blog
+## Running the blog (Mac)
 
 Run the blog with
 
@@ -39,6 +39,13 @@ This is a workaround due to a unicode error/bug that I still haven't fixed which
 
 * [Invalid US-ASCII character “\xE2” on line 54 workaround](https://www.janmeppe.com/blog/invalid-US-ASCII-character/)
 
+## Running the blog (Windows)
+
+Run the blog with 
+
+```
+bundle exec jekyll serve --livereload -o --drafts --future
+```
 ## Writing posts
 
 To write: 
@@ -51,6 +58,10 @@ Put all assets in `assets/` in a folder with the same name.
 If you want to see the drafts, serve build/serve Jekyll with the `--draft` flag enabled. 
 
 This flag is by default enabled if you run the blog with `rake build`. 
+
+## Writing posts (in the future)
+
+I want to move towards a workflow where I use branches. I think I want a `draft` branch where I can fuck around and then once I'm done I can just pull it to the main one using a pull request. This would clean up my `main` branch a lot. 
 
 ## Q: How to view your bundler version?
 
@@ -75,6 +86,42 @@ Change settings in `index.html`.
 ```
 gem uninstall -aIx
 ```
+
+## Q: How to resolve incompatible ruby gems
+
+```
+ruby_dep-1.5.0 requires ruby version >= 2.2.5, ~> 2.2, which is incompatible
+with the current version, ruby 3.0.2p107
+```
+
+`bundle update`
+
+## Q: How to solve cannot load such file (LoadError)
+
+```
+λ bundle exec jekyll serve
+...
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/jekyll-3.9.0/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+```
+
+`bundle add webrick`
+
+## Q: How to resolve cannot load such file rubyeventmachine (LoadError)
+
+```
+Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/eventmachine-1.2.7-x64-mingw32/lib/rubyeventmachine.rb:2:in `require': cannot load such file -- 3.0/rubyeventmachine (LoadError)
+...
+```
+
+```
+gem uninstall eventmachine 
+gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
+bundle install
+bundle exec jekyll
+```
+
+See: https://stackoverflow.com/a/65547010
 
 ## Resources
 
