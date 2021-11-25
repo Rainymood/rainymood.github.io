@@ -128,3 +128,7 @@ See: https://stackoverflow.com/a/65547010
 
 * [Minimal mistakes (Jekyll theme used)](https://mmistakes.github.io/minimal-mistakes/)
 * [Configuration options](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
+
+## Inspiration
+
+* [Justin Rummel](https://www.justinrummel.com/page3/)
