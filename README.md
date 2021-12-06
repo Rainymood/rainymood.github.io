@@ -132,3 +132,9 @@ See: https://stackoverflow.com/a/65547010
 ## Inspiration
 
 * [Justin Rummel](https://www.justinrummel.com/page3/)
+
+## `cat readme.md`
+
+```
+bundle exec jekyll serve --livereload -o --drafts --future
+```
