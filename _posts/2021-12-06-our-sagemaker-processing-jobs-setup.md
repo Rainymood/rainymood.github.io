@@ -11,21 +11,19 @@ header:
   teaser: "/../assets/2021-12-06-our-sagemaker-processing-jobs-setup/thumbnail.png"
 ---
 
-At [Snappet](https://us.snappet.org/) (we're [hiring](https://jobs.snappet.org/)!) we use Sagemaker processing jobs to power most of our machine learning workflow. 
+At [Snappet](https://us.snappet.org/) (we're [hiring](https://jobs.snappet.org/)!) we use [Sagemaker Processing](https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job.html) jobs to power most of our machine learning workflow. 
+Sagemaker Processing jobs create our data, train our models, and hypertune our parameters.
 
-Processing jobs create our data, train our models, and hypertune our parameters.
+I usually blog about things that I've learned and I think that this architecture is interesting enough to share and show you how it works. 
 
-I think it is interesting enough to share about and show you how it works.
-
-As of writing this, most of machine learning models still ran from Jupyter notebooks, but we are working hard turning them into robust ML pipelines.
-
-![](/../assets/2021-12-06-our-sagemaker-processing-jobs-setup/thumbnail.png)
+As of writing this, most of jobs start from Jupyter notebooks, but we are in the process of turning these individual processing jobs into robust ML pipelines using [Sagemaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/).
 
 ## 1. Creating the processing job
 
-The first step in this whole process is creating the processing job. Usually this gets called from a Jupyter notebook.
+![](/../assets/2021-12-06-our-sagemaker-processing-jobs-setup/image1.png)
 
-We pass the input path (`input_path`), output path (`output_path`), and the arguments (`foo`) to the processing job. We turn them into a stringified list that Sagemaker understands.
+The first step in this whole process is creating the processing job. 
+We pass the input path (`input_path`), output path (`output_path`), and the arguments (`foo`) to the processing job and turn the arguments into a stringified list that Sagemaker understands.
 
 ```bash
 args = {
@@ -44,16 +42,17 @@ from sagemaker.processing import Processor
 
 proc = Processor(
     entrypoint=["python", "-u", "src/entrypoint.py"], 
-    base_job_name=...,  # some descriptive name
-    role=...,  # aws role
     image_uri=image_uri, # docker image pushed to ECR
-    instance_type='ml.r5.24xlarge',  # for example
+    ...
 )
 ```
 
 ## 2. Running the processing job
 
-After creating the processing job, we can run it. For this we use `ProcessingInput` and `ProcessingOutput`.
+![](/../assets/2021-12-06-our-sagemaker-processing-jobs-setup/image2.png)
+
+The second step after creating the job, is running it. For this we use
+`ProcessingInput` and `ProcessingOutput`.
 
 ```python
 from sagemaker.processing import ProcessingInput, ProcessingOutput
@@ -78,14 +77,55 @@ proc.run(
 
 `ProcessingInput` allows us to download the data to the `input_path` and `ProcessingOutput` allows us to upload the results to the `output_path`. For example, input data could be the training data, and the output data could be the model weights.
 
-## 3. Building the docker
+## 3. The entrypoint
 
-That's cool, but where does this entrypoint come from? The entrypoint is part of an image that we build using a `dockerfile`. 
+![](/../assets/2021-12-06-our-sagemaker-processing-jobs-setup/image4.png)
 
-Our docker files are quite basic, but we clearly separate the source code from the entrypoints, and we use `poetry` as our package manager.
+Notice that the processing job starts with the entrypoint. The entrypoint is
+the piece of code that defines how the program is ran, in other words, it is the interface of the program.
+
+We believe that it is important to write software that has a strong and clear interface. 
+Because this turns the code into a black box, something you can run by just looking at the entrypoint without worrying about the implementation.
+
+Most of our entrypoints simply parse some arguments and look something like this:
+
+```python
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(...)
+    parser.add_argument('--input_path', type=str, default='/opt/ml/processing/input/',
+                        help='path to save input data to ')
+    parser.add_argument('--output_path', type=str, default='/opt/ml/processing/output/',
+                        help='path to save output data to')
+    parser.add_argument('--foo', type=str, default='bar',
+                        help="all other parameters")
+
+    args, _ = parser.parse_known_args()
+    param_dict = copy.copy(vars(args))
+
+    logging.info(f"Using arguments {json.dumps(param_dict, indent=2)}")
+
+    # Init
+    preprocessing_handler = PreprocessingHandler(
+        foo=param_dict["bar"],
+    )
+
+    # Run
+    preprocessing_handler.run(
+        input_path=param_dict["input_path"],
+        output_path=param_dict['output_path']
+    )
+```
+
+## 4. Wrapping it up in a nice docker
+
+![](/../assets/2021-12-06-our-sagemaker-processing-jobs-setup/image3.png)
+
+Nice, but how do you productize this? For this we use Docker. Our docker
+files are quite basic, but we clearly separate the source code from the
+entrypoints, and we use `poetry` as our package manager.
 
 ```dockerfile
-FROM python:3.8-slim-buster
+FROM python:3.8
 
 WORKDIR "/opt"
 
@@ -109,52 +149,22 @@ RUN echo "SOURCE_COMMIT: $SOURCE_COMMIT"
 ENTRYPOINT ["python", "-u", "src/entrypoint.py"]
 ```
 
-Using a build script we build the docker and push it to our image repository, for which we use [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/). The `image_uri` is then passed as a parameter to the processing job when creating it.
+Using custom build scripts we build, tag, and finally push the docker images to our image repository, for which we use [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/). 
 
-Note that the `ENTRYPOINT` in the last line gets overwritten by the Sagemaker's entrypoint and is effectively useless.
+Remember the `image_uri` that we passed as a parameter when creating the
+processing job? That's exactly the uri of this image that we push to the ECR.
 
-## 4. Entering the entrypoint
-
-The last piece of the puzzle is the actual entrypoint. The entrypoint is a simple `argparse` that parses the input arguments. 
-
-By clearly defining the entrypoint of the program we have a strong and clean interface to the code. The code is like a black box, you can run it by just looking at the entrypoint.
-
-Most of our entrypoints look something like this:
-
-```python
-import argparse
-import json
-import logging 
-
-from src.models.data.handlers import PreprocessingHandler
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--input_path', type=str, default='/opt/ml/processing/input/', help='path to save input data to ')
-    parser.add_argument('--output_path', type=str, default='/opt/ml/processing/output/', help='path to save output data to')
-    parser.add_argument('--foo', type=str, default='bar', help="all other parameters")
-
-    args, _ = parser.parse_known_args()
-    param_dict = copy.copy(vars(args))
-
-    logging.info(f"Using arguments {json.dumps(param_dict, indent=2)}")
-
-    preprocessing_handler = PreprocessingHandler(
-        input_path=param_dict["input_path"],
-        foo=param_dict["bar"],
-    )
-    preprocessing_handler.run(output_path=param_dict['output_path'])
-```
+This struck me in the beginning as a little bit weird, but `ENTRYPOINT` in the last line of the `dockerfile` actually gets overwritten by the Sagemaker's entrypoint and thus is effectively useless.
 
 ## Conclusion
 
-This is the rough structure that our pipelines follow at the moment. The structure has served us quite well and we are in the process of turning them into robust pipelines using either Airflow or Sagemaker Pipelines. 
+So, that's it! That is the rough structure that our pipelines follow at the moment. This structure is serving us quite well, but of course we are always improving it and currently we are in the processing of automating these using Sagemaker Pipelines which is another super interesting topic I should probably also cover some day!
 
-To recap: 
+To recap:
 
-* We run a a `ProcessingJob` from an `image_uri` located in our Amazon ECR
-* Data comes in through `ProcessingInput` and exits through `ProcessingOutput` 
-* We have a well-defined `ENTRYPOINT` in the form of an `argparse`
+* We use Sagemaker Processing jobs to run dockers from our Amazon ECR
+* Data comes in through `ProcessingInput` and out through `ProcessingOutput` via s3
+* A well-defined `ENTRYPOINT` in the form of an `argparse` specifies the API of the program
 
 # Subscribe
 
