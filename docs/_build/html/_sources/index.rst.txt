@@ -11,6 +11,9 @@ Welcome to Jan Meppe's notes's documentation!
    :caption: Contents:
 
    sql.md
+   python.md
+   analogy.md
+   zen-koans.md
 
 Indices and tables
 ==================
