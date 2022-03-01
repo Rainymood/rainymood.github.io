@@ -10,76 +10,93 @@ header:
 ---
 
 It's no secret that many of our teachers are overworked and undervalued. While
-this is a systemic problem, I do believe that we can help to alleviate some of
-the burden on our teachers by using technology in the right places. 
+this is a systemic problem, we can alleviate some of this burden by creating
+technology for the classroom. This can save time for teachers and have them do
+more what they are best at: educating our children.
 
-By leveraging technology at the right place at the right time in the
-classroom we can truly unburden our teachers and allow them to do what they are
-best at: educating our children.
+The honest truth is I came up with this blog post because I was curious where Snappet
+(the company that I work for) adds value in the classroom. I just kind of
+started brainstorming where and how we add value in the classroom and what you
+read is the result of that. 
 
-Full disclose: I work as a machine learning engineer for Snappet. Snappet is a
-tablet based educational platform for primary schools. Schools that use Snappet
-technology have students make exercises on tablets, we collect this data,
-process it, and try to use it to maximize a student's learning.
+[Snappet](https://us.snappet.org/) is an edtech company that provides a
+tablet-based learning solution for primary schools in subjects like math and
+language. We are currently based in The Netherlands,
+Spain, and the US. What we do in a nutshell is this: We provide the school with
+the tablets and software for kids to learn, I then specifically capture all this
+data, do smart things with it, and try to make these kids learn as much as
+possible :).
 
-I never meant for this to become a stealth ad for Snappet, but I just started
-thinking through all the ways that Snappet makes lives easier for the teacher
-and students, and that's how I came up with this blog post. 
-
-Do you have a passion for education? APPLY NOW! At [Snappet]() we are always looking for talent! If you are a data scientist or
-machine learning engineer with a passion for education, feel free to reach out
-to me personally! 
+Are you a data scientist / data engineer / machine learning engineer with a
+passion for education? Apply now at [Snappet](https://us.snappet.org/). We are
+always looking for technical talent with a heart for education.
 {: .notice--success}
 
-<!-- Personalisation. Another promising part where technology can help is personalised lesson plans. The assumption that the order of exercises in the textbook is the most optimal order for every student is quite strict and in my opinion outdated and quickly violated. Even more strongly worded, technology can be used to figure out the exact best order for students, or perhaps there is none. But by using technology we can personalise the lesson plans and create a more effective learning solution for everyone.  -->
+Anyway, let's get cracking! Where does technology add value in the classroom?
 
 ## Better teachers
 
 ![](/../assets/2022-01-13-technology-and-edtech/snappet-teacher.png)
 
 **Technology is transforming the way teachers teach.** The first way technology
-can be leveraged is with the teachers. Technology can provide teachers with
-live and actionable insights into classroom and individual student behavior.
+is transforming education is by changing how teacher teach. In contrast to traditional education, technology has the added benefit of being able to provide
+teachers with live and actionable insights into classroom and individual student behavior.
 
-`IMG_DASHBOARD.jpg`
+![](/../assets/2022-01-13-technology-and-edtech/7-1.jpg)
 
-For example, this is the live dashboard that every teacher has when he or she
-uses Snappet. With this dashboard she gains immediate insights into which
-students are thriving and which students are struggling. Using this dashboard
-she can then more effectively intervene and support where is really necessary. 
+For example, this is the live dashboard the teachers see when they teach a
+lesson through Snappet.  Green dots indicate correct answers of students and red
+dots incorrect answers.  With this dashboard, teachers get immediate feedback
+and insights into which students are doing well and which students could use a
+little more support.  The beauty is that using these insights teachers can more
+accurately support those students that really need it. 
 
 ## Better students
 
 ![](/../assets/2022-01-13-technology-and-edtech/snappet-students.png)
 
 **Technology is transforming the way students learn.** The second way technology
-can be leveraged is with the students. Technology can provide them accurate
+is transforming education is by changing the way that students learn. Technology can provide them accurate
 insights into their own performance and how they are doing relative to their
 peers. 
 
-IMG
+![](/../assets/2022-01-13-technology-and-edtech/Groeipoppetjes-klein.png)
 
-For example, this is the learning objective status that we show to the students.
-This bar shows you how you are doing and how much practice you still need to
-have completed this learning objective. This gives students ownership over their
-skills and gives them information on what they still need to practice!
+For example, at Snappet we have this thing called the learning objective
+indicator. A learning objective is a skill that we expect you to master at
+some point (say, the tables of 10). For each of these learning objectives we
+show this learning objective indicator as a running blob. This way the student
+knows exactly which learning objectives he has mastered and which need some
+additional work (orange). 
 
 
 ## Better content
 
 ![](/../assets/2022-01-13-technology-and-edtech/snappet-content.png)
 
-**Technology is transforming the way we think about content.** The third and final way technology can be leveraged is through serving the right content. Using big data and smart algorithms we can create better content for our students. If every student makes a certain exercise correct, does that mean that all students are wrong or is the content just unclear? Furthermore, by gathering data on which students finds which exercises difficult we can use smart algorithms to serve exactly the right questions to the right student to maximize their learning! 
+**Technology is transforming the way we create and serve content.** 
+The third and final way technology is changing education is through the content itself.
+We can now use big data and smart algorithms to 1) create the right content and 2) serve the right content to the right student.
+
+![](/../assets/2022-01-13-technology-and-edtech/opgave.png)
+
+Consider the exercise above (just forget that it is in Dutch). Imagine that we see that *every* student makes this exercise wrong, does that mean
+that all those students are wrong? Or that the content is just unclear?  Using
+these kind of insights we can create better content, filter out bad content, and
+serve the right content to the right student at the appropriate difficulty
+level!
 
 ## Conclusion
 
 ![](/../assets/2022-01-13-technology-and-edtech/snappet-complete.png)
 
-All in all, I think that technology is one of the ways that we can really
-transform education in a positive way. I only touched upon three different
-perspectives in this blog post (teachers, students, content) but of course there
-are many more. If you found this interesting be sure to visit our website or
-directly reach out to me! I'm always in for a good chat about tech and education :). 
+All in all, I think that technology is beautiful in the sense that it allows us to do more with what we already have. 
+Whether we like it or not, technology is going to transform the educational space and we need to make sure that it is in the
+benefit of all of us, but most importantly to the benefit the children that we educate.
+
+In this blog post I touched upon three different perspectives on how technology can add
+value to teachers, students, and study material they learn from.
+I hope you found this interesting and feel free to reach out to me if you want to chat or brainstorm about this :)
 
 # Subscribe
 
