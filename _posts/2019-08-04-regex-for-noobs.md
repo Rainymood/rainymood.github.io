@@ -6,6 +6,7 @@ categories:
 tags:
   - Jekyll
   - update
+  - python
 header:
   teaser: "/assets/2019-08-01-regex/regex-for-noobs.jpg"
 ---

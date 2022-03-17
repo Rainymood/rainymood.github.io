@@ -1,7 +1,9 @@
 ---
 title: "How to fix AttributeError: module 'regex' has no attribute 'Match' for SQLFluff"
 date: 2022-03-17
-tags: tutorial sql 
+tags:
+  - tutorial
+  - sql
 categories: blog
 toc: false
 toc_sticky: false

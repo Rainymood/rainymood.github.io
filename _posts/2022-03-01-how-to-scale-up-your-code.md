@@ -5,6 +5,8 @@ categories:
   - blog
 toc: false
 toc_sticky: false
+tags:
+  - python
 header:
   teaser: "/../assets/2022-03-01-how-to-scale-up-your-code/thumbnail.png"
 ---

@@ -2,8 +2,9 @@
 title:  "Scraping flashcards for Anki with Python"
 date: 2016-04-26
 categories:
-  - Blog
+  - blog
 tags:
+  - python
   - anki
 ---
 
