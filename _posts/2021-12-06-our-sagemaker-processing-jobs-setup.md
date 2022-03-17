@@ -7,6 +7,7 @@ toc: false
 toc_sticky: false
 tags:
   - update
+  - python
 header:
   teaser: "/../assets/2021-12-06-our-sagemaker-processing-jobs-setup/thumbnail.png"
 ---

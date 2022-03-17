@@ -7,6 +7,7 @@ toc: false
 toc_sticky: false
 tags:
   - update
+  - python
 header:
   teaser: "/../assets/2021-11-29-how-to-set-up-your-python-projects/thumbnail.png"
 ---

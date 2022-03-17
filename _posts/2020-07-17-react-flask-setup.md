@@ -9,6 +9,7 @@ tags:
   - tutorial
   - flask
   - react
+  - python
 header:
   teaser: "/assets/2020-07-17-react-flask-setup/flaskreact.png"
 ---
