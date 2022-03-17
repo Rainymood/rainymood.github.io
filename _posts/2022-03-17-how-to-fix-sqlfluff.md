@@ -8,7 +8,7 @@ categories: blog
 toc: false
 toc_sticky: false
 header:
-  teaser: "/../assets/2022-03-01-how-to-scale-up-your-code/thumbnail.png"
+  teaser: "/../assets/2022-03-17-how-to-fix-sqlfluff/thumbnail.png"
 ---
 
 In this blog post I'll show you how to fix the `AttributeError: module 'regex' has no attribute 'Match` error when trying to install SQLFluff. 
