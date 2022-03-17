@@ -12,10 +12,11 @@ header:
 ---
 
 In this blog post I'll show you how to fix the `AttributeError: module 'regex' has no attribute 'Match` error when trying to install SQLFluff. 
+[SQLFluff](https://www.sqlfluff.com/) is popular SQL linter and formatter. I ran into some issues when trying to install it. 
 
-[SQLFluff](https://www.sqlfluff.com/) is popular SQL linter and formatter. 
+Hopefully someone googles this error and then finds this post :)
 
-I installed `sqlfluff`
+Installing went fine
 
 ```bash
 $ pip install sqlfluff
@@ -26,7 +27,7 @@ Requirement already satisfied: regex in c:\users\janmeppe\anaconda3\lib\site-pac
 Successfully installed sqlfluff-0.11.1
 ```
 
-And tried to [run the instructions](https://docs.sqlfluff.com/en/stable/gettingstarted.html), but this happened
+And then I tried to [follow the instructions](https://docs.sqlfluff.com/en/stable/gettingstarted.html) but this happened
 
 ```bash
 $ echo "  SELECT a  +  b FROM tbl;  " > test.sql
