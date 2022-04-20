@@ -9,42 +9,32 @@ Hi 👋
 
 My name is Jan Meppe and I am a Machine Learning Engineer at
 [Snappet](https://www.snappet.org/). 
+I spend most of my days writing **Python**, **SQL**, or thinking about **machine learning** algorithms. 
+Prior to this I was a data scientist for a large [Fortune 500](https://www.cognizant.com/) company.
 
-Snappet is an EdTech startup building the future of eduction. It's flagship
-product is an online learning platform for primary schools. Through working on
-Snappet provided tablets we provide our pupils a way of learning core
-competencies in math and language through our adaptive and AI-driven educational
-platform. Prior to this, I was a data scientist for a Fortune 500 company.
+What really drives me is my **passion for data-driven decision making:**
 
-I am passionate about using data to make better decisions. 
+* I used data-driven decision making to become **one of the best 500 players in Europe** in a game called [Overwatch](https://playoverwatch.com/en-gb/) (that's the *0.0012%th percentile performance*)
+* I used data-driven decision making to learn how to solve a Rubik's cube in **under 15 seconds**
+* I used data-driven decision making to reduce a client's CI/CD build times **by a factor 3x** resulting in significant cost savings
 
-I *obsessively* collect data and turn them into results. For example I, 
+I write because I like it and because I can help people at scale:
 
-* Used data science to reduce a client's CI/CD build times by 67% resulting in significant cost savings
-* Used data science to become one of Europe's top 500 players in Overwatch (top 0.0012% performance)
-* Used data science to figure out how to solve a Rubik's cube in <15 seconds
+* I have written more than 50 articles on my blog [www.janmeppe.com](https://www.janmeppe.com/)
+* I wrote more than 150 editions of my sort-of daily (but now discontinued) newsletter [Today Jan Learned](https://janmeppe.substack.com/).
+* [Hacker News](https://news.ycombinator.com/item?id=20608032) featured one of my blog posts on their front page and was read more than 30.000 times.
 
-I code:
+<img src="/assets/images/3-good-things.png" style="max-height: 400px">
 
-* I do machine learning stuff in **Python** with **TensorFlow/Keras**, **Scikit-learn**, **Pandas**, and **Numpy**
-* I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js**
+I built an iPhone app that is live on the [app store](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en) and wrote about what I learned:
 
-[Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on. 
-
-I write:
-
-* I write a sort-of daily newsletter, [Today Jan Learned](https://janmeppe.substack.com/). In 2020 I published 37 editions of TJL. 
-* I also write on my blog [www.Janmeppe.com](https://www.janmeppe.com/). In 2020 I published 23 blog posts and in 2019 I published 7. 
-* One of my blog posts was featured on the front page of [Hacker News](https://news.ycombinator.com/item?id=20608032) and was read more than 30.000 times.
-
-I am currently learning React-Native to build native apps:
-
+* [View 3 good things: a gratitude log on the App store](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en)
 * [Simple React Native Redux counter example
 ](https://www.janmeppe.com/blog/simple-react-native-redux-counter/)
 * [How to add a bottom modal in React Native
 ](https://www.janmeppe.com/blog/how-to-add-bottom-modal-react-native/)
 
-This blog is built with [Jekyll](https://jekyllrb.com/docs/themes/) using the [Minimal mistakes](https://mmistakes.github.io/minimal-mistakes/) theme which I heavily tweaked and write about as well:
+I also make micro-tutorials so that I can save other people the headaches that I experienced setting up this [Jekyll](https://jekyllrb.com/docs/themes/) + [Minimal mistakes](https://mmistakes.github.io/minimal-mistakes/) blog:
 
 * [How to remove the excerpt from recent posts in a minimal mistakes blog](https://www.janmeppe.com/blog/how-to-remove-excerpt-from-archive-item/)
 * [How to change size of blog posts](https://www.janmeppe.com/blog/personal-blog-minimal-mistakes/)
@@ -60,8 +50,7 @@ I am passionate about helping others you can view some of my tutorials:
 * [How to add a new kernel to your Jupyter Notebook](https://www.janmeppe.com/blog/how-to-add-new-kernel-in-jupyter-notebook/)
 * [How to add a splash image to minimal mistakes](https://www.janmeppe.com/blog/how-to-add-splash-to-minimal-mistakes/)
 
-I studied econometrics (financial engineering) with a focus on machine learning
-applications in the finance domain in Amsterdam: 
+I studied econometrics (financial engineering) with a focus on machine learning: 
 
 * MPhil in (Advanced) Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home)
 * MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
@@ -70,6 +59,15 @@ applications in the finance domain in Amsterdam:
 Find me on:
 
 * Tweet me on [Twitter](https://twitter.com/Janmeppe)
-* Send me a PR on [Github](https://github.com/rainymood)
+* Ping me in a PR on [Github](https://github.com/rainymood)
 * Slide in my DMs on [Instagram](https://www.instagram.com/janmeppe/)
-* Read my newsletter on [Substack](https://janmeppe.substack.com)
+* Read (discontinued) newsletter on [Substack](https://janmeppe.substack.com)
+
+
+
+<!-- I code:
+
+* I do machine learning stuff in **Python** with **TensorFlow/Keras**, **Scikit-learn**, **Pandas**, and **Numpy**
+* I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js** -->
+
+<!-- [Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on.  -->
