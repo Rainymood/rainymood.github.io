@@ -10,7 +10,7 @@ categories: blog
 toc: false
 toc_sticky: false
 header:
-  teaser: "/../assets/2022-04-29-show-your-work-create-testset-automation/thumbnail2.png"
+  teaser: "/../assets/2022-04-29-show-your-work-create-testset-automation/thumbnail3.png"
 ---
 
 I want to share a little piece of work that I recently completed. Hope you enjoy!
