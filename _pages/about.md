@@ -9,10 +9,19 @@ Hi 👋
 
 My name is Jan Meppe and I am a Machine Learning Engineer at
 [Snappet](https://www.snappet.org/). 
-I spend most of my days writing **Python**, **SQL**, or thinking about **machine learning** algorithms. 
-Prior to this I was a data scientist for a large [Fortune 500](https://www.cognizant.com/) company.
 
-What really drives me is my **passion for data-driven decision making:**
+I write about **how to become a better machine learning engineer**.
+
+If you are in the machine learning field and want to talk tech, career,
+or productivity, consider this my [standing invitation](https://www.kalzumeus.com/standing-invitation/): I want to talk to you
+:). 
+
+I love meeting new people and making new friends over the internet. Find me on twitter at [@Janmeppe](https://twitter.com/Janmeppe).
+
+---
+
+That being said... I love machine learning, but what really *really* drives me
+is my obsession for **data-driven decision making:**
 
 * I used data-driven decision making to become **one of the best 500 players in Europe** in a game called [Overwatch](https://playoverwatch.com/en-gb/) (that's the *0.0012%th percentile performance*)
 * I used data-driven decision making to learn how to solve a Rubik's cube in **under 15 seconds**
