@@ -8,15 +8,40 @@ title: "About Jan"
 Hi 👋
 
 My name is Jan Meppe and I am a Machine Learning Engineer at
-[Snappet](https://www.snappet.org/). 
+[Snappet](https://www.snappet.org/).  I blog about **how to become a better machine learning engineer**.
 
-I write about **how to become a better machine learning engineer**.
+Here are some of my blog posts (and those that I still plan to write) loosely organised by topic.
 
-If you are in the machine learning field and want to talk tech, career,
-or productivity, consider this my [standing invitation](https://www.kalzumeus.com/standing-invitation/): I want to talk to you
-:). 
-
-I love meeting new people and making new friends over the internet. Find me on twitter at [@Janmeppe](https://twitter.com/Janmeppe).
+- AWS
+  - [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
+- Python
+  - [How to structure your python code]({% post_url 2022-04-05-basic-setup %})
+  - [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
+- SQL
+  - [Three tips for writing better SQL]({% post_url 2022-05-10-show-your-work-sql %})
+  - How to review SQL code
+- Docker
+  - [Docker optimization trick: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation %})
+- Machine learning
+  - [How to add a new kernel to your Jupyter Notebook]({% post_url 2020-08-20-how-to-add-new-kernel-in-jupyter-notebook %})
+  - [8-Step Machine Learning Checklist]({% post_url 2020-11-20-machine-learning-checklist %})
+- Testing
+  - What are tests and why do we need tests
+  - Testing is like pulling up a bucket of water from a well
+  - How to get started writing tests if you have no idea where to start
+- Time management, procrastination, and motivation
+  - [The Maker vs Manager Problem]({% post_url 2019-07-26-makers-vs-manager %})
+  - [There can only be two reasons why you are procrastinating]({% post_url 2020-11-21-motivation %})
+- How to make good flashcards for optimal learning
+  - [Make your Anki flashcards atomic]({% post_url 2020-10-24-atomic-anki-cards %})
+- What kind of work can you expect as a machine learning engineer?
+  - [Show your work: Writing complex SQL queries]({% post_url 2022-05-10-show-your-work-sql %})
+  - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
+- Startups/building product
+  - [Product thinking framework: transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %})
+  - [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %})
+  - [What is a startup?]({% post_url 2021-07-08-what-is-a-startup %})
+  - [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %})
 
 ---
 
