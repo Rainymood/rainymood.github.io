@@ -1,5 +1,5 @@
 ---
-title: "Show your work: Writing gnarly SQL queries"
+title: "Show your work: Writing complex SQL queries"
 date: 2022-05-10
 tags:
   - sql
@@ -13,18 +13,29 @@ header:
   teaser: "/../assets/2022-04-29-show-your-work-create-testset-automation/thumbnail3.png"
 ---
 
-Today I wrote this SQL query
+Today I wrote this beast of an SQL query and wanted to share this with you because I think we can learn some lessons from this on how to become a better machine learning engineer.
+
+I wanted to let you know how to approach such a query and what you can learn from my mistakes.
+
+**tl;dr** <br>
+    1. Break big tables down into smaller subqueries
+    2. Use CTEs (subtables) liberally
+    3. Start with a docstring
+{: .notice--success}
+
+<!-- {{ site.baseurl }}{% post_url 2022-05-10-show-your-work-sql %} -->
 
 ![](/../assets/2022-05-10-show-your-work-sql/2022-05-10-16-34-17.png)
 
-It starts with a small docstring.
+# Tip 1: Start with a docstring
 
-I like to treat my SQL like I like my code, well documented. Some of my
-colleagues disagree and think that the code should speak for itself, but I
-always greatly appreciate a good docstring. 
+SQL is code and it should be treated as such. 
+
+Always start big and complex SQL queries with a small docstring that explains
+the what and the why of the query. 
 
 ```sql
-/* Create-repopulation-61688-for-default-difficultiers.sql
+/* Create-repopulation-61688-for-default-difficulties.sql
 
 Creates the table that is needed for continuous calibration (CC). We create this
 table because we want to revert all previously continuously calibrated
@@ -36,8 +47,17 @@ Revert all events that:
 */
 ```
 
-Then we create the subtable `calibrated_exercises` which contains the exercises
-(by their `originalexerciseid`) that we need to consider.
+# Tip 2: Use CTEs liberally
+
+Complex things are just simple things stacked on top of each other. 
+
+The same can be said for SQL queries. If you need to do something simple, try to break it down into easier little pieces and put them on top of eac h other. 
+
+Common Table Expressions (CTEs), or as I like to call them 'subtables' are temporary tables that you can use to get to your final query result. They are indispensible tools.
+
+Use CTEs liberally.
+
+The first CTE we make is `calibrated_exercises` which contains the exercises (by their `originalexerciseid`) that we need to consider.
 
 ```sql
 with calibrated_exercises as (
