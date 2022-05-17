@@ -14,6 +14,27 @@
 
 // Color settings MUST happen before the @import step
 
+// Interesting links: 
+// * https://github.com/k-bosko/k-bosko.github.io/blob/master/_sass/minimal-mistakes/_variables.scss
+// * highlighting: https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/
+// * https://glitchbone.github.io/vscode-base16-term/#/tomorrow-night
+// * https://nithiya.gitlab.io/development/pages-tweaks/
+
+// github syntax highlighting (base16):
+// * https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#colors
+// * https://github.com/Defman21/base16-github-scheme/blob/master/github.yaml
+// * http://chriskempson.com/projects/base16/
+// * https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#colors
+
+// You'll have to first set variables (like those in _variables.scss), then import
+// minimal mistakes, and finally write the html code.
+// The html part will set the default font size (i.e. the text font size within
+// your posts). The type-size variables on the other hand will set font size for
+// other elements like table of content etc., relative to the default size
+// specified in the html block. 
+
+// From: https://github.com/mmistakes/minimal-mistakes/discussions/1352#discussioncomment-2074482
+
 // Define colors 
 $brian-clicked-link: #265aeb;
 $brian-unclicked-link: #1e38af;
@@ -22,22 +43,10 @@ $white: #ffffff;
 $color-link-grey: #3E4245;
 
 // Post headers
-// $link-color: $color-link-grey;
 $link-color: $brian-unclicked-link;
 
 // Change background of website to creme. From: https://brianlovin.com/
-// $background-color: $brian-creme;
-$background-color: $white;
-
-// https://nithiya.gitlab.io/development/pages-tweaks/
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-
-// github syntax highlighting (base16) 
-// https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#colors
-// https://github.com/Defman21/base16-github-scheme/blob/master/github.yaml
-// http://chriskempson.com/projects/base16/
-// https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#colors
+$background-color: $white; 
 
 /* default syntax highlighting (base16) */
 $base00: #263238;
@@ -57,34 +66,11 @@ $base0d: #82aaff;
 $base0e: #c792ea;
 $base0f: #ff5370;
 
+// @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+
 @import "minimal-mistakes"; // main partials
 
-// To add custom styling: 
-//     The alternative is to copy /assets/css/main.scss to the same location
-//     locally. And then add any style overrides after @import "minimal-mistakes";.
-
-
-// Define breakpoints https://github.com/k-bosko/k-bosko.github.io/blob/master/_sass/minimal-mistakes/_variables.scss
-// DOESNT WORK .... why not ...
-// $small: 600px !default;
-// $medium: 768px !default;
-// $medium-wide: 900px !default;
-// $large: 1024px !default;
-// $x-large: 1280px !default;
-// //$max-width: $x-large !default;
-// $max-width: 500px !default;
-
-// html {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 1em;
-//   padding-right: 1em;
-//   max-width: 100%;
-
-//   @include breakpoint($x-large) {
-//     max-width: $max-width;
-//   }
-// }
 
 // this used to work 
 // html {
@@ -135,7 +121,6 @@ $base0f: #ff5370;
 // .greedy-nav .site-title { opacity: 1; }
 
 
-// Code highlighting: https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/
 
 
 // .archive__item-title {
@@ -149,5 +134,3 @@ $base0f: #ff5370;
 //   // color: inherit;
 //   text-decoration: none;
 // }
-
-// https://glitchbone.github.io/vscode-base16-term/#/tomorrow-night
