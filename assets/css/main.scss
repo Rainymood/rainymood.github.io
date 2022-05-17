@@ -25,7 +25,9 @@
 // * https://github.com/Defman21/base16-github-scheme/blob/master/github.yaml
 // * http://chriskempson.com/projects/base16/
 // * https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#colors
+// * https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/#gfm-code-blocks
 
+// Moritz Lange writes: 
 // You'll have to first set variables (like those in _variables.scss), then import
 // minimal mistakes, and finally write the html code.
 // The html part will set the default font size (i.e. the text font size within
@@ -48,28 +50,38 @@ $link-color: $brian-unclicked-link;
 // Change background of website to creme. From: https://brianlovin.com/
 $background-color: $white; 
 
-/* default syntax highlighting (base16) */
-$base00: #263238;
-$base01: #2e3c43;
-$base02: #314549;
-$base03: #546e7a;
-$base04: #b2ccd6;
-$base05: #eeffff;
-$base06: #eeffff;
-$base07: #ffffff;
-$base08: #f07178;
-$base09: #f78c6c;
-$base0a: #ffcb6b;
-$base0b: #c3e88d;
-$base0c: #89ddff;
-$base0d: #82aaff;
-$base0e: #c792ea;
-$base0f: #ff5370;
+/* type scale */
+$type-size-1: 2.441em !default;
+$type-size-2: 1.953em !default;
+$type-size-3: 1.563em !default;
+$type-size-4: 1.25em !default;
+$type-size-5: 1.1em !default;
+$type-size-5b: 0.9em !default;
+$type-size-6: 0.8em !default;
+$type-size-7: 0.8em !default;
+$type-size-8: 0.625em !default;
 
-// @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+// !! ALL VARIABLE DECLARATIONS MUST BE BEFORE THIS STATEMENT !!
+@import "minimal-mistakes";
 
+// #container {
+//   float: left;
+//   margin: 0 -240px 0 0;
+//   width: 50%;
+// }
 
-@import "minimal-mistakes"; // main partials
+// This changes the code box. Do you wonder how you can find this out yourself?
+// Use the inspect tool and look at which class you are selecting. This one
+// highlights pre.highlight and class=highlight! YES YES YES YES I FINALLY
+// FIGURED THIS OUT (2022-05-17) I feel so stupid that it took me so long but I
+// can finally style the code box, lol.
+.highlight {
+  margin: 0;
+  padding: 0.5em;
+  font-family: $monospace;
+  font-size: $type-size-5b;
+  line-height: 1.8;
+}
 
 
 // this used to work 
@@ -120,17 +132,7 @@ $base0f: #ff5370;
 // Hide side title
 // .greedy-nav .site-title { opacity: 1; }
 
-
-
-
 // .archive__item-title {
 //   position: relative;
 //   font-size: 50px;
 // } 
-
-
-// // // seems to work and then gets overwritten
-// .archive a {
-//   // color: inherit;
-//   text-decoration: none;
-// }
