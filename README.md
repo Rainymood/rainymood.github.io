@@ -66,6 +66,10 @@ This flag is by default enabled if you run the blog with `rake build`.
 
 I want to move towards a workflow where I use branches. I think I want a `draft` branch where I can fuck around and then once I'm done I can just pull it to the main one using a pull request. This would clean up my `main` branch a lot. 
 
+## Changing the styling
+
+Edit `assets\css\main.scss`
+
 ## Docs
 
 I have some docs that I keep in the `docs/` folder. Run and autobuild with:

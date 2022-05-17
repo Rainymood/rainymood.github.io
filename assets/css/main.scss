@@ -4,7 +4,15 @@
 
 @charset "utf-8";
 
-// Add colour settings before "@import"
+// How to edit minimal mistakes style if you use github pages
+
+// To make basic tweaks to theme’s style Sass variables can be overridden by adding
+// to <your_project>/assets/css/main.scss. For instance, to change the link color
+// used throughout the theme add:
+
+// From: https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/
+
+// Color settings MUST happen before the @import step
 
 // Define colors 
 $brian-clicked-link: #265aeb;
@@ -49,122 +57,55 @@ $base0d: #82aaff;
 $base0e: #c792ea;
 $base0f: #ff5370;
 
-
-// $base00: #ffffff !important;
-// $base01: #f5f5f5 !important;
-// $base02: #c8c8fa !important;
-// $base03: #969896 !important;
-// $base04: #e8e8e8 !important;
-// $base05: #333333 !important;
-// $base06: #ffffff !important;
-// $base07: #ffffff !important;
-// $base08: #ed6a43 !important;
-// $base09: #0086b3 !important;
-// $base0A: #795da3 !important;
-// $base0B: #183691 !important;
-// $base0C: #183691 !important;
-// $base0D: #795da3 !important;
-// $base0E: #a71d5d !important;
-// $base0F: #333333 !important;
-
-// // scheme: "Default Light"
-// // author: "Chris Kempson (http://chriskempson.com)"
-// $base00: #f8f8f8 !important;
-// $base01: #e8e8e8 !important;
-// $base02: #d8d8d8 !important;
-// $base03: #b8b8b8 !important;
-// $base04: #585858 !important;
-// $base05: #383838 !important;
-// $base06: #282828 !important;
-// $base07: #181818 !important;
-// $base08: #ab4642 !important;
-// $base09: #dc9656 !important;
-// $base0A: #f7ca88 !important;
-// $base0B: #a1b56c !important;
-// $base0C: #86c1b9 !important;
-// $base0D: #7cafc2 !important;
-// $base0E: #ba8baf !important;
-// $base0F: #a16946 !important;
-
-// $base00: #181818 !important;
-// $base01: #282828 !important;
-// $base02: #383838 !important;
-// $base03: #585858 !important;
-// $base04: #b8b8b8 !important;
-// $base05: #d8d8d8 !important;
-// $base06: #e8e8e8 !important;
-// $base07: #f8f8f8 !important;
-// $base08: #ab4642 !important;
-// $base09: #dc9656 !important;
-// $base0A: #f7ca88 !important;
-// $base0B: #a1b56c !important;
-// $base0C: #86c1b9 !important;
-// $base0D: #7cafc2 !important;
-// $base0E: #ba8baf !important;
-// $base0F: #a16946 !important;
-
-// /* plum syntax highlighting (base16) */
-// // https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#plum
-// $base00: #ffffff;
-// $base01: #e0e0e0;
-// $base02: #d0d0d0;
-// $base03: #b0b0b0;
-// $base04: #000000;
-// $base05: #101010;
-// $base06: #151515;
-// $base07: #202020;
-// $base08: #ff0086;
-// $base09: #fd8900;
-// $base0a: #aba800;
-// $base0b: #00c918;
-// $base0c: #1faaaa;
-// $base0d: #3777e6;
-// $base0e: #ad00a1;
-// $base0f: #cc6633;
-
-// /* solarized light syntax highlighting (base16) */
-// $base00: #fafafa !default;
-// $base01: #073642 !default;
-// $base02: #586e75 !default;
-// $base03: #657b83 !default;
-// $base04: #839496 !default;
-// $base05: #586e75 !default;
-// $base06: #eee8d5 !default;
-// $base07: #fdf6e3 !default;
-// $base08: #dc322f !default;
-// $base09: #cb4b16 !default;
-// $base0a: #b58900 !default;
-// $base0b: #859900 !default;
-// $base0c: #2aa198 !default;
-// $base0d: #268bd2 !default;
-// $base0e: #6c71c4 !default;
-// $base0f: #d33682 !default;
-
 @import "minimal-mistakes"; // main partials
 
 // To add custom styling: 
 //     The alternative is to copy /assets/css/main.scss to the same location
 //     locally. And then add any style overrides after @import "minimal-mistakes";.
 
-html {
-  font-size: 16px; // change to whatever
 
-  @include breakpoint($small){
-    font-size: 16px; // change to whatever
-  }
+// Define breakpoints https://github.com/k-bosko/k-bosko.github.io/blob/master/_sass/minimal-mistakes/_variables.scss
+// DOESNT WORK .... why not ...
+// $small: 600px !default;
+// $medium: 768px !default;
+// $medium-wide: 900px !default;
+// $large: 1024px !default;
+// $x-large: 1280px !default;
+// //$max-width: $x-large !default;
+// $max-width: 500px !default;
 
-  @include breakpoint($medium) {
-    font-size: 18px; // change to whatever
-  }
+// html {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 1em;
+//   padding-right: 1em;
+//   max-width: 100%;
 
-  @include breakpoint($large) {
-    font-size: 20px; // change to whatever
-  }
+//   @include breakpoint($x-large) {
+//     max-width: $max-width;
+//   }
+// }
 
-  @include breakpoint($x-large) {
-    font-size: 22px; // change to whatever
-  }
-}
+// this used to work 
+// html {
+//   font-size: 16px; // change to whatever
+
+//   @include breakpoint($small){
+//     font-size: 16px; // change to whatever
+//   }
+
+//   @include breakpoint($medium) {
+//     font-size: 18px; // change to whatever
+//   }
+
+//   @include breakpoint($large) {
+//     font-size: 20px; // change to whatever
+//   }
+
+//   @include breakpoint($x-large) {
+//     font-size: 22px; // change to whatever
+//   }
+// }
 
 // .masthead__menu-item {
 //   color: #612424;
