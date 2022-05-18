@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Janmeppe.com
 email: janmeppe@gmail.com
-description: I write about data science, tech, note-taking, and productivity.
+description: I write about how to grow as a machine learning engineer.
 # this means to ignore newlines until "baseurl:"
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
@@ -60,16 +60,16 @@ plugins:
 
 author:
   name   : "Jan Meppe"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/memoji.png"
   bio    : "Machine learning engineer in love with building digital products."
   # location : "Amsterdam"
-  links:
-    - label: "Python writings"
-      icon: "fab fa-python"
-      url: "https://www.janmeppe.com/tags/#python"
-    - label: "SQL writings"
-      icon: "fas fa-database"
-      url: "https://www.janmeppe.com/tags/#sql"
+  # links:
+  #   - label: "Python writings"
+  #     icon: "fab fa-python"
+  #     url: "https://www.janmeppe.com/tags/#python"
+  #   - label: "SQL writings"
+  #     icon: "fas fa-database"
+  #     url: "https://www.janmeppe.com/tags/#sql"
     # - label: "janmeppe.com"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://www.janmeppe.com"

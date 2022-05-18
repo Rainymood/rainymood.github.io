@@ -3,7 +3,7 @@ permalink: /about/
 title: "About Jan"
 ---
 
-<img src="/assets/images/bio-photo5.jpg" style="max-height: 400px">
+<img src="/assets/images/bio-header2.png" style="max-height: 400px">
 
 Hi 👋
 
@@ -37,6 +37,9 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
 - What kind of work can you expect as a machine learning engineer?
   - [Show your work: Writing complex SQL queries]({% post_url 2022-05-10-show-your-work-sql %})
   - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
+- How to take better notes
+  - [Filling my first Field Notes]({% post_url 2020-10-14-field-notes-1 %})
+  - [How to take more useful paper notes]({% post_url 2021-05-21-notes-on-paper-notes %})
 - Startups/building product
   - [Product thinking framework: transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %})
   - [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %})
