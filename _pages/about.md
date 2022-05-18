@@ -12,16 +12,19 @@ My name is Jan Meppe and I am a Machine Learning Engineer at
 
 Here are some of my blog posts (and those that I still plan to write) loosely organised by topic.
 
-- AWS
-  - [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
 - Python
   - [How to structure your python code]({% post_url 2022-04-05-basic-setup %})
   - [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
+  - [How to set Python 3 as default on Mac]({% post_url 2021-01-20-how-to-set-python3-as-default-mac %})
+  - [How to set up your Python projects with conda and poetry]({% post_url 2021-11-29-how-to-set-up-your-python-projects %})
+  - [How to see log messages while unit testing in pycharm]({% post_url 2021-12-03-how-to-add-logging-to-pycharm-tests %})
 - SQL
   - [Three tips for writing better SQL]({% post_url 2022-05-10-show-your-work-sql %})
   - How to review SQL code
 - Docker
   - [Docker optimization trick: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation %})
+- AWS
+  - [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
 - Machine learning
   - [How to add a new kernel to your Jupyter Notebook]({% post_url 2020-08-20-how-to-add-new-kernel-in-jupyter-notebook %})
   - [8-Step Machine Learning Checklist]({% post_url 2020-11-20-machine-learning-checklist %})

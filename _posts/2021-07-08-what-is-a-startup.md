@@ -3,6 +3,8 @@ title: "What is a startup?"
 date: 2021-07-07
 categories:
   - blog
+  - startups
+  - product
 toc: false
 toc_sticky: false
 tags:

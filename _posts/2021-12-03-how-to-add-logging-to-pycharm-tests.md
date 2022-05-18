@@ -3,6 +3,8 @@ title: "How to see log messages while unit testing in pycharm"
 date: 2021-12-03
 categories:
   - blog
+  - python
+  - testing
 toc: false
 toc_sticky: false
 tags:

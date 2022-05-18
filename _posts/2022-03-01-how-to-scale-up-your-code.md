@@ -3,6 +3,7 @@ title: "How to scale up your code"
 date: 2022-03-01
 categories:
   - blog
+  - python
 toc: false
 toc_sticky: false
 tags:

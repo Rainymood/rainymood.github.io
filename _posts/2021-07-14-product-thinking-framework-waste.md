@@ -3,6 +3,7 @@ title: "Product thinking framework: transform waste"
 date: 2021-07-14
 categories:
   - blog
+  - product
 toc: false
 toc_sticky: false
 tags:

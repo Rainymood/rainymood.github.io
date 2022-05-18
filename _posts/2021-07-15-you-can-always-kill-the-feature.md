@@ -3,6 +3,7 @@ title: "You can always kill the feature"
 date: 2021-07-15
 categories:
   - blog
+  - product
 toc: false
 toc_sticky: false
 tags:

@@ -3,6 +3,7 @@ title: "How to set up your Python projects with conda and poetry"
 date: 2021-11-29
 categories:
   - blog
+  - python
 toc: false
 toc_sticky: false
 tags:

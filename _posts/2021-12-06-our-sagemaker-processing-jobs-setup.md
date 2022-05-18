@@ -3,6 +3,8 @@ title: "Our Amazon Sagemaker Processing job setup"
 date: 2021-12-06
 categories:
   - blog
+  - aws
+  - python
 toc: false
 toc_sticky: false
 tags:
