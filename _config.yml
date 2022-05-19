@@ -63,13 +63,7 @@ author:
   avatar : "/assets/images/memoji-transparent.png"
   bio    : "Machine learning engineer in love with building digital products."
   # location : "Amsterdam"
-  # links:
-  #   - label: "Python writings"
-  #     icon: "fab fa-python"
-  #     url: "https://www.janmeppe.com/tags/#python"
-  #   - label: "SQL writings"
-  #     icon: "fas fa-database"
-  #     url: "https://www.janmeppe.com/tags/#sql"
+  links:
     - label: "janmeppe.com"
       icon: "fas fa-fw fa-link"
       url: "https://www.janmeppe.com/about"
@@ -85,6 +79,12 @@ author:
   #   - label: "Instagram"
   #     icon: "fab fa-fw fa-instagram"
   #     url: "https://instagram.com/janmeppe"
+  #   - label: "Python writings"
+  #     icon: "fab fa-python"
+  #     url: "https://www.janmeppe.com/tags/#python"
+  #   - label: "SQL writings"
+  #     icon: "fas fa-database"
+  #     url: "https://www.janmeppe.com/tags/#sql"
 
 footer:
   links:

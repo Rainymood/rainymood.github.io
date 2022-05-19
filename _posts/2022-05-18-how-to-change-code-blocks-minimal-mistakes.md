@@ -16,7 +16,7 @@ In this blog post I want to share with you how to change the font size of the co
 I'll show you how to change the styling of these code blocks:
 
 ```python
-def hello_world(s: string) -> None:
+def hello_world(s: str) -> None:
     ...
 ```
 
