@@ -7,6 +7,29 @@ import os
 import unicodedata
 import re
 
+def header(title: str, date, asset_dirname: str) -> str:
+    """Returns the header to be written to the md file"""
+
+    # TODO: fix https://stackoverflow.com/questions/2504411/proper-indentation-for-multiline-strings
+    assert len(title) > 0
+    assert len(asset_dirname) > 0
+
+    return f"""---
+title: "{title}"
+date: {date.strftime("%Y-%m-%d")}
+tags:
+- blog
+- jekyll
+categories: blog
+toc: false
+toc_sticky: false
+header:
+    teaser: "/../assets/{asset_dirname}/thumbnail.png"
+---
+
+# Hello world
+"""
+
 def slugify(value, allow_unicode=False) -> str: 
     """
     Convert to ASCII if 'allow_unicode' is False. Convert spaces or repeated
@@ -48,5 +71,6 @@ if __name__ == "__main__":
     # Create markdown file
     markdown_filepath = os.path.join("_posts", markdown_filename)
     with open(markdown_filepath, "w") as f:
-        f.write("Hello world")
+        md_header = header(title, today, asset_dirname)
+        f.write(md_header)
     print(f"Successfully created {markdown_filepath}")
