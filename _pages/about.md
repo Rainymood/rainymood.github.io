@@ -28,9 +28,6 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
   - [Docker optimization trick: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation %})
 - AWS
   - [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
-<!-- - Machine learning
-  - [How to add a new kernel to your Jupyter Notebook]({% post_url 2020-08-20-how-to-add-new-kernel-in-jupyter-notebook %})
-  - [8-Step Machine Learning Checklist]({% post_url 2020-11-20-machine-learning-checklist %}) -->
 - Testing
   - What are tests and why do we need tests
   - Testing is like pulling up a bucket of water from a well
@@ -38,6 +35,7 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
 - Time management, procrastination, and motivation
   - [The Maker vs Manager Problem]({% post_url 2019-07-26-makers-vs-manager %})
   - [There can only be two reasons why you are procrastinating]({% post_url 2020-11-21-motivation %})
+  - [Dan Harmon's Advice for Overcoming Writer's Block]({% post_url 2022-05-20-dan-harmon-writing-advice %})
 - How to make good flashcards for optimal learning
   - [Make your Anki flashcards atomic]({% post_url 2020-10-24-atomic-anki-cards %})
 - What kind of work can you expect as a machine learning engineer?

@@ -1,6 +1,6 @@
 # Janmeppe.com
 
-![](./assets/screenshots/2021-07-14.png)
+![](./assets/screenshots/2022-05-18.png)
 
 This repository contains the code, text, and assets of my personal blog which
 you can find here at [www.janmeppe.com](www.janmeppe.com). 
@@ -51,20 +51,23 @@ bundle exec jekyll serve --livereload -o --drafts --future
 ```
 ## Writing posts
 
-To write: 
+Switch to a new branch. For example,
 
-* drafts put **undated** posts in the `_drafts/` folder.
-* blog posts put **dated** posts in the `_posts/` folder. 
+```bash
+git checkout -b 220520-new-post
+```
 
-Put all assets in `assets/` in a folder with the same name. 
+Run `new-post.py`
 
-If you want to see the drafts, serve build/serve Jekyll with the `--draft` flag enabled. 
+```
+Input name of title (ctrl + C to cancel): dan harmon writing advice
+foldername:  2022-05-20-dan-harmon-writing-advice
+filename:  2022-05-20-dan-harmon-writing-advice.md
+Successfully created assets\2022-05-20-dan-harmon-writing-advice
+Successfully created _posts\2022-05-20-dan-harmon-writing-advice.md
+```
 
-This flag is by default enabled if you run the blog with `rake build`. 
-
-## Writing posts (in the future)
-
-I want to move towards a workflow where I use branches. I think I want a `draft` branch where I can fuck around and then once I'm done I can just pull it to the main one using a pull request. This would clean up my `main` branch a lot. 
+Start writing, push to this branch, once you are done make a PR to the main branch and (squash) merge it in. 
 
 ## Changing the styling
 
@@ -88,8 +91,9 @@ Some common issues and solutions can be found in [FAQ.md](FAQ.md).
 * [Configuration options](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 * [Justin Rummel](https://www.justinrummel.com/page3/): I need to figure out how this guy added pictures 
 
+## Tail for `cat readme.md`
 
-## Tail for a quick `cat readme.md`
+I should probably make an alias for this but I'm too lazy so I usually do `cat readme.md` and then copy paste this command to start my blog locally.
 
 ```
 bundle exec jekyll serve --livereload -o --drafts --future
