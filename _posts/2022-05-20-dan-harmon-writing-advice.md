@@ -1,6 +1,6 @@
 ---
 title: "Dan Harmon's Advice for Overcoming Writer's Block"
-date: 2022-05-22
+date: 2022-05-20
 tags:
   - blog
   - jekyll
