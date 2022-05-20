@@ -12,7 +12,7 @@ header:
     teaser: "/../assets/2022-05-20-dan-harmon-writing-advice/thumbnail.png"
 ---
 
-Dan Harmon, creator of [Rick and Morty](https://www.imdb.com/title/tt2861424/), fielded questions from redditors in a [Ask Me Anything (AMA)](https://www.reddit.com/r/IAmA/comments/yne9x/i_am_dan_harmon_creator_of_community_writer_of/) a while ago.
+Dan Harmon, creator of [Rick and Morty](https://www.imdb.com/title/tt2861424/), fielded questions from redditors in an [Ask Me Anything (AMA)](https://www.reddit.com/r/IAmA/comments/yne9x/i_am_dan_harmon_creator_of_community_writer_of/) a while ago.
 
 One redditor asked Harmon how to overcome writer's block and Harmon's response is fantastic.
 
@@ -38,10 +38,9 @@ Here's his response:
 > 
 > Happy hunting and pecking!
 
-
 ---
 
-*I applied some light editing to the original blob of text*
+*I applied some light editing to the original text*
 
 
 # Subscribe
