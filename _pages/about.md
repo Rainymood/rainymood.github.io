@@ -29,6 +29,7 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
 - AWS
   - [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
 - Testing
+  - [Refactoring code so that it becomes easier to test]({% post_url 2022-05-27-refactoring-using-tdd %})
   - What are tests and why do we need tests
   - Testing is like pulling up a bucket of water from a well
   - How to get started writing tests if you have no idea where to start
