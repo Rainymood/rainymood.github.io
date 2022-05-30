@@ -37,6 +37,7 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
   - [The Maker vs Manager Problem]({% post_url 2019-07-26-makers-vs-manager %})
   - [There can only be two reasons why you are procrastinating]({% post_url 2020-11-21-motivation %})
   - [Dan Harmon's Advice for Overcoming Writer's Block]({% post_url 2022-05-20-dan-harmon-writing-advice %})
+  - [Don't put your scale under your bed]({% post_url 2022-05-30-dont-put-your-scale-under-your-bed %})
 - How to make good flashcards for optimal learning
   - [Make your Anki flashcards atomic]({% post_url 2020-10-24-atomic-anki-cards %})
 - What kind of work can you expect as a machine learning engineer?
