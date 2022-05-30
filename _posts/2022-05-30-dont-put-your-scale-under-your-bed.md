@@ -46,8 +46,8 @@ time, of course it's going to be hard to resist the temptation!
 The cool thing is that we are in control of our environment. We can fill it with
 triggers inspiring good behavior and remove triggers invoking bad behavior. 
 
-So, If you want to make a habit of tracking your weight, don't put your scale
-under your bed. Instead, put it somewhere where you can see it.
+So, if you want to make a habit of tracking your weight, don't put your scale
+under your bed. Instead, put it somewhere you can see it.
 
 # Subscribe
 
