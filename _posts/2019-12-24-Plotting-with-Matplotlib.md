@@ -111,7 +111,7 @@ We ask ourselves: what *really* happens when we add the legend the Axes object?
 ax.legend(loc='best)
 ```
 
-We look in the [docs](https://matplotlib.org/3.1.1/_modules/matplotlib/pyplot.html#legend) for `matplotlib.pyplot.legend`. The documentation clearly states (**in langauge we understand now!**): "Place a legend on the axes." Where "axes" refers to the Axes object, which can trip you up if you're not familiar with the terminology. 
+We look in the [docs](https://matplotlib.org/3.1.1/_modules/matplotlib/pyplot.html#legend) for `matplotlib.pyplot.legend`. The documentation clearly states (**in language we understand now!**): "Place a legend on the axes." Where "axes" refers to the Axes object, which can trip you up if you're not familiar with the terminology. 
 
 Searching for the legend function in the source code we come across this piece of code. 
 
