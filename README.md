@@ -95,6 +95,8 @@ Some common issues and solutions can be found in [FAQ.md](FAQ.md).
 
 I should probably make an alias for this but I'm too lazy so I usually do `cat readme.md` and then copy paste this command to start my blog locally.
 
+The `--incremental` flag is a lifesaver. 
+
 ```
-bundle exec jekyll serve --livereload -o --drafts --future
+bundle exec jekyll serve --livereload -o --incremental
 ```

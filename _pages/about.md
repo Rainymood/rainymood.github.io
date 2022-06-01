@@ -41,7 +41,7 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
   - [Don't put your scale under your bed]({% post_url 2022-05-30-dont-put-your-scale-under-your-bed %})
 - How to make good flashcards for optimal learning
   - [Make your Anki flashcards atomic]({% post_url 2020-10-24-atomic-anki-cards %})
-  - [Don't mistake the internet's intelligence for your own]({% post url 2021-11-25-dont-confuse-intelligence %})
+  - [Don't mistake the internet's intelligence for your own]({% post_url 2021-11-25-dont-confuse-intelligence %})
 - What kind of work can you expect as a machine learning engineer?
   - [Show your work: Writing complex SQL queries]({% post_url 2022-05-10-show-your-work-sql %})
   - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
