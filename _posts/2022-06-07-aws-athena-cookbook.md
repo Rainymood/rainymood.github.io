@@ -23,8 +23,7 @@ Uses the [Presto SQL dialect](https://prestodb.io/docs/current/index.html).
 
 **Problem** You want to insert some data into a table to test something small.
 
-**Solution** Create a new temporary table and insert tables using the `values` keyword and
-then naming the columns with `t(var1, var2, ...)`.
+**Solution** Use the `values` keyword and name the columns with `t(var1, ...)`.
 
 ```sql
 select *
@@ -44,24 +43,20 @@ from
 
 **Problem** You don't really understand what `row` does. 
 
-**Solution** Say you take `row()` with two columns. Then `row()` combines them into a single data object from which you can refer to its fields. In this case the first and second one. 
+**Solution** `row()` combines columns them into a single data object from which you can refer to its fields. In this case the first and second one. 
 
 ```sql
 select row(weight, weight2)
 from
     (
-        select *
-        from
-            (
-                values
-                (1, .25, 1),
-                (2, .25, 2),
-                (3, .25, 3),
-                (4, .15, 4),
-                (5, .10, 1),
-                (6, .05, 1)
-            ) as t(offset, weight, weight2)
-    )
+        values
+        (1, .25, 1),
+        (2, .25, 2),
+        (3, .25, 3),
+        (4, .15, 4),
+        (5, .10, 1),
+        (6, .05, 1)
+    ) as t(offset, weight, weight2)
 ```
 
 ![](/../assets/2022-06-07-aws-athena-cookbook/2022-06-07-22-08-19.png)
@@ -76,15 +71,11 @@ from
 select max_by(value, time)
 from
     (
-        select *
-        from
-            (
-                values
-                (1, 5),
-                (2, 2),
-                (3, 4)
-            ) as t(time,value)
-    )
+        values
+        (1, 5),
+        (2, 2),
+        (3, 4)
+    ) as t(time,value)
 ```
 
 Returns `4`. 
@@ -99,19 +90,34 @@ Returns `4`.
 select max_by(offset, row(weight1, weight2))
 from
     (
-        select *
-        from
-            (
-                values
-                (1, .25, 1),
-                (2, .25, 2),
-                (3, .25, 3),
-                (4, .15, 4),
-                (5, .10, 1),
-                (6, .05, 1)
-            ) as t(offset, weight1, weight2)
-    )
+        values
+        (1, .25, 1),
+        (2, .25, 2),
+        (3, .25, 3),
+        (4, .15, 4),
+        (5, .10, 1),
+        (6, .05, 1)
+    ) as t(offset, weight1, weight2)
 ```
 
 Returns `3`. 
 
+# How to get today in AWS Athena
+
+**Problem** You want to get today's date in AWS Athena.
+
+**Solution** Use `current_date`
+
+```sql
+select current_date as today-- returns: 2022-06-07
+```
+
+# How to get yesterday in AWS Athena
+
+**Problem** You want to get yesterday's date in AWS Athena.
+
+**Solution** Use `current_date` together with the `interval` of one day
+
+```sql
+select current_date - interval '1' day -- returns: 2022-06-07
+```
