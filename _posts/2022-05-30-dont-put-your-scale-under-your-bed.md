@@ -9,7 +9,7 @@ categories: blog
 toc: false
 toc_sticky: false
 header:
-    teaser: "/../assets/2022-05-30-dont-put-your-scale-under-your-bed/thumbnail.png"
+    teaser: "/../assets/2022-05-30-dont-put-your-scale-under-your-bed/thumbnail2.png"
 ---
 
 I recently bought a smart scale. Why? Because I like data and I think it's fun
