@@ -19,7 +19,6 @@ Here are some of my blog posts loosely organised by topic.
 - What keeps me busy as an ML engineer
   - [Show your work: Writing complex SQL queries]({% post_url 2022-05-10-show-your-work-sql %})
   - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
-  - [Show your work: The nastiest bug I've ever seen in an ML system]({% post_url 2022-05-31-show-your-work-debugging-machine-learning-systems %})
 - Python
   - [How to structure your python code]({% post_url 2022-04-05-basic-setup %})
   - [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
