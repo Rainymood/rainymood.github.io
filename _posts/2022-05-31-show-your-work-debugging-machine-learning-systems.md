@@ -1,6 +1,6 @@
 ---
 title: "Show your work: The nastiest bug I've ever seen in an ML system"
-date: 2022-05-31
+date: 2022-06-10
 tags:
 - blog
 - jekyll
@@ -29,13 +29,15 @@ It got so bad that this was an all-hands on deck type of situation and we pulled
 
 I'm very glad I can finally send out this post because we finally fixed it! I will spare you all the details but this was honestly the **nastiest dirtiest bug that I've ever seen**.
 
-First, we thought it had something to do with the algorithm, but we really couldn't find anything wrong with it.
+First, we thought it had something to do with the difficulties of the exercises in our platform (we are an edtech company). We reset the difficulties but that didn't seem to fix the issue. 
 
-Then we thought it had something to do with the other algorithms influencing this one, but that also didn't turn out to work. 
+Then we thought it had something to do with the actual algorithm. We went through the algorithm, fixed what we thought was wrong, but that also didn't fix it. 
 
-**After a deep dive we figured out that it was an external library that was flipping some of our ground truths while reading in the data (0 to 1s and 0s to 1s)**. 
+Then after a painstaking investigation, one of our engineers figured out that **it was an external library that was flipping some of our ground truths while reading in the data (0 to 1s and 0s to 1s)**. 
 
-Note that it only flipped *some* of the ground truths. This made it incredibly difficult to track down. You can actually view the github issue that one of our senior architects made [here](https://github.com/aloneguid/parquet-dotnet/issues/168). 
+Note that it only flipped *some* of the ground truths. This is what made it so incredibly difficult to track down. 
+
+You can view the github issue on said library that one of our senior architects made [here](https://github.com/aloneguid/parquet-dotnet/issues/168). 
 
 This is the craziest bug I've seen in my career thus far. 
 
