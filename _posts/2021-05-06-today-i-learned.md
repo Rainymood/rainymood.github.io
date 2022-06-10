@@ -165,6 +165,7 @@ Today I learned that you can check whether an array is empty by checking the len
 
 Today I learned how to add a line break in a `<Text>` component.
 
+{% raw %}
 ```js
 <Text
   style={{
@@ -177,6 +178,7 @@ Today I learned how to add a line break in a `<Text>` component.
 `}
 </Text>
 ```
+{% endraw %}
 
 ---
 

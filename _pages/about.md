@@ -10,12 +10,16 @@ Hi 👋
 My name is Jan Meppe and I am a Machine Learning Engineer at
 [Snappet](https://www.snappet.org/).  I blog about **how to become a better machine learning engineer**.
 
-Here are some of my blog posts (and those that I still plan to write) loosely organised by topic.
+Here are some of my blog posts loosely organised by topic.
 
 - Most popular (read >2000 times)
   - [Regex For Noobs (like me!) - An Illustrated Guide]({% post_url 2019-08-04-regex-for-noobs %})
   - [How to add a new kernel to your Jupyter Notebook]({% post_url 2020-08-20-how-to-add-new-kernel-in-jupyter-notebook %})
   - [How to set Python 3 as default on Mac]({% post_url 2021-01-20-how-to-set-python3-as-default-mac %})
+- What keeps me busy as an ML engineer
+  - [Show your work: Writing complex SQL queries]({% post_url 2022-05-10-show-your-work-sql %})
+  - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
+  - [Show your work: The nastiest bug I've ever seen in an ML system]({% post_url 2022-05-31-show-your-work-debugging-machine-learning-systems %})
 - Python
   - [How to structure your python code]({% post_url 2022-04-05-basic-setup %})
   - [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
@@ -26,15 +30,12 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
 - SQL
   - [Three tips for writing better SQL]({% post_url 2022-05-10-show-your-work-sql %})
   - [AWS Athena Cookbook]({% post_url 2022-06-07-aws-athena-cookbook %})
-  - How to review SQL code
 - Docker
   - [Docker optimization trick: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation %})
 - AWS
   - [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
 - Testing
   - [Refactoring code so that it becomes easier to test]({% post_url 2022-05-27-refactoring-using-tdd %})
-  - What are tests and why do we need tests
-  - How to get started writing tests if you have no idea where to start
 - Time management, procrastination, and motivation
   - [The Maker vs Manager Problem]({% post_url 2019-07-26-makers-vs-manager %})
   - [There can only be two reasons why you are procrastinating]({% post_url 2020-11-21-motivation %})
@@ -43,9 +44,6 @@ Here are some of my blog posts (and those that I still plan to write) loosely or
 - How to make good flashcards for optimal learning
   - [Make your Anki flashcards atomic]({% post_url 2020-10-24-atomic-anki-cards %})
   - [Don't mistake the internet's intelligence for your own]({% post_url 2021-11-25-dont-confuse-intelligence %})
-- What kind of work can you expect as a machine learning engineer?
-  - [Show your work: Writing complex SQL queries]({% post_url 2022-05-10-show-your-work-sql %})
-  - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
 - How to take better notes
   - [Filling my first Field Notes]({% post_url 2020-10-14-field-notes-1 %})
   - [How to take more useful paper notes]({% post_url 2021-05-21-notes-on-paper-notes %})
