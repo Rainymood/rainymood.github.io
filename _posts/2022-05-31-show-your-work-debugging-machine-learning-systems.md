@@ -11,6 +11,8 @@ toc: false
 toc_sticky: false
 header:
     teaser: "/../assets/2022-05-31-show-your-work-debugging-machine-learning-systems/thumbnail.png"
+published:
+  false
 ---
 
 This week I want to share with you what has been keeping me busy for the last couple of weeks (and not in a good way). 
