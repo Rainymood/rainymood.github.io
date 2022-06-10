@@ -29,6 +29,7 @@ Here are some of my blog posts loosely organised by topic.
   - [How to set up a React and Flask project]({% post_url 2020-07-17-react-flask-setup %})
 - SQL
   - [Three tips for writing better SQL]({% post_url 2022-05-10-show-your-work-sql %})
+  - [AWS Athena Cookbook]({% post_url 2022-06-07-aws-athena-cookbook %})
 - Docker
   - [Docker optimization trick: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation %})
 - AWS
