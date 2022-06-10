@@ -1,5 +1,5 @@
 ---
-title: "Show your work: Debugging Machine Learning Systems"
+title: "Show your work: The nastiest bug I've ever seen in an ML system"
 date: 2022-05-31
 tags:
 - blog
@@ -13,17 +13,33 @@ header:
     teaser: "/../assets/2022-05-31-show-your-work-debugging-machine-learning-systems/thumbnail.png"
 ---
 
+This week I want to share with you what has been keeping me busy for the last couple of weeks (and not in a good way). 
+
 ![](/../assets/2022-05-31-show-your-work-debugging-machine-learning-systems/2022-05-31-15-23-09.png)
 
-This graph has been keeping me busy for the last couple of weeks, and not in a good way.
+This graph shows the area under the curve (AUC) metric of one of our core algorithms [Snappet](https://us.snappet.org/). This graph can be thought of as the **algorithmic health of our platform**.
 
-This graph shows the area under the curve of one of our core algoriths in the platform at [Snappet](). 
+The 5 coloured lines are the 5th, 25th, 50th, 75th, and 95th percentile lines of the metric. Having it drop below 0.55 is bad (highest horizontal blue line), but having it drop below 0.50 (lowest horizontal blue line) is even worse. 
 
-You can see a stable period in the middle and then suddenly performance degrades by a lot. This is bad, very bad.
+We start at the black line. The period before the black line is good, stable, but then suddenly, like magic, it starts sliding down. The metric starts degrading. *Oh shit. What the hell is going on?*
 
-If you know anything about machine learning you know we are in trouble, an AUC of 0.50 is pretty bad. We had to drop our work and get this fixed asap. This was quite a multi-team effort to get this fixed. 
+The metric degraded so much that the green line (the median) had an AUC below 0.55 (the highest blue line). If you know anything about machine learning you can understand that this is pretty bad. If you don't know anything about machine learning just take it from me, that's bad. 
 
-This is what we learned.
+It got so bad that this was an all-hands on deck type of situation and we pulled some teams together to fix this, ASAP. 
+
+I'm very glad I can finally send out this post because we finally fixed it! I will spare you all the details but this was honestly the **nastiest dirtiest bug that I've ever seen**.
+
+First, we thought it had something to do with the algorithm, but we really couldn't find anything wrong with it.
+
+Then we thought it had something to do with the other algorithms influencing this one, but that also didn't turn out to work. 
+
+**After a deep dive we figured out that it was an external library that was flipping some of our ground truths while reading in the data (0 to 1s and 0s to 1s)**. 
+
+Note that it only flipped *some* of the ground truths. This made it incredibly difficult to track down. You can actually view the github issue that one of our senior architects made [here](https://github.com/aloneguid/parquet-dotnet/issues/168). 
+
+This is the craziest bug I've seen in my career thus far. 
+
+Anyway, here are some lessons that I (personally) learned from this:
 
 **Lesson 1: Monitor algorithmic performance.**
 The biggest thing we learned from this is that you should always monitor your
