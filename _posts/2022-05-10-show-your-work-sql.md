@@ -16,9 +16,9 @@ header:
 This week I had to write this monster of an SQL query and I wanted to share some
 tips that I found useful.
 
-Behold, the SQL monster under your bed:
+<!-- Behold, the SQL monster under your bed:
 
-![](/../assets/2022-05-10-show-your-work-sql/2022-05-10-16-34-17.png)
+![](/../assets/2022-05-10-show-your-work-sql/2022-05-10-16-34-17.png) -->
 
 # Tip 1: Start with a docstring
 
@@ -30,11 +30,11 @@ these that can be complex to understand if you see them for the first time,
 start with a docstring! 
 
 ```sql
-/* Create-repopulation-61688-for-default-difficulties.sql
+/* Create-repopulation-for-default-difficulties.sql
 
 Creates the table that is needed for continuous calibration (CC). We create this
 table because we want to revert all previously continuously calibrated
-difficulties from 1-10-2012 to 3-5-2022 because of ticket 61688.
+difficulties from ... to ...
 
 Revert all events that:
     1. Had no event before that date, but had an event after
