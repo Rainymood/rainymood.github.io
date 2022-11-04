@@ -1,6 +1,6 @@
 ---
 title: "Funny SQL bug because I thought `row_number()` started at 0"
-date: 2022-10-23
+date: 2022-11-04
 tags:
 - blog
 - sql
