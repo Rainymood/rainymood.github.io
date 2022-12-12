@@ -91,6 +91,10 @@ Some common issues and solutions can be found in [FAQ.md](FAQ.md).
 * [Configuration options](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 * [Justin Rummel](https://www.justinrummel.com/page3/): I need to figure out how this guy added pictures 
 
+## Kanban board
+
+https://trello.com/b/Re16gCSo/janmeppecom
+
 ## Tail for `cat readme.md`
 
 I should probably make an alias for this but I'm too lazy so I usually do `cat readme.md` and then copy paste this command to start my blog locally.
