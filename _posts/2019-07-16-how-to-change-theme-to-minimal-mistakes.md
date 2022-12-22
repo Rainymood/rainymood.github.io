@@ -4,8 +4,8 @@ date: 2019-07-16
 categories:
   - blog
 tags:
-  - update
   - minimal-mistakes
+  - blog
 header:
   - teaser: "/assets/2019-06-16-how-to-change-theme-to-minimal-mistakes/teaser.jpg"
 ---
