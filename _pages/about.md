@@ -3,7 +3,7 @@ permalink: /about/
 title: "About Jan"
 ---
 
-<img src="/assets/images/bio-header2.png" style="max-height: 400px">
+<img src="/assets/images/profile-pic-blue-round.png" style="max-height: 300px">{: .align-center}
 
 Hi 👋
 
