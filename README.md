@@ -98,6 +98,13 @@ Some common issues and solutions can be found in [FAQ.md](FAQ.md).
 
 https://trello.com/b/Re16gCSo/janmeppecom
 
+## Cool: Small buttons
+
+[This PR](https://github.com/Rainymood/rainymood.github.io/pull/41/commits/ed26137516a172311bc2c8e114a96101a41d56ac) adds small buttons like this:
+
+![](/assets/README/2023-01-07-14-18-37.png)
+
+
 ## Tail for `cat readme.md`
 
 I should probably make an alias for this but I'm too lazy so I usually do `cat readme.md` and then copy paste this command to start my blog locally.
