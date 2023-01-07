@@ -3,7 +3,6 @@ permalink: /about/
 title: "About Jan"
 ---
 
-<!-- <img src="/assets/images/profile-pic-blue-round.png" style="max-height: 300px">{: .align-center} -->
 <img src="/assets/images/bio-photo5.jpg" style="max-height: 500px">{: .align-center}
 
 

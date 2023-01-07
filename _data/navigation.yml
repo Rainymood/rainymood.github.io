@@ -1,6 +1,4 @@
 main:
-  # - title: Startup
-  #   url: /startup/
   - title: Blog
     url: /posts-grid/
   - title: Archive
