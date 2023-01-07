@@ -14,10 +14,23 @@ header:
     teaser: "/../assets/2023-01-07-focus-on-how-you-did-grow-instead-of-on-how-you-didnt/thumbnail.png"
 ---
 
-# Hello world
+This week I taught my girlfriend how to ski and came to a funny realisation.
 
+**Key takeaway**: Focus on how you *did* grow instead of on how you *didn’t* grow.
+{: .notice--success}
 
+![](/../assets/2023-01-07-focus-on-how-you-did-grow-instead-of-on-how-you-didnt/2023-01-07-19-49-55.png)
 
+Before this my girlfriend had never skied and let me tell you that learning how to ski is terrifying. Add to this the fact that my girlfriend has a fear of heights and well yeah, you have a recipe for disaster.
+
+Now imagine us halfway down the slope when her panic kicked in.  She would say things like "I want to quit" and "I can't do this" and "I can't ski" even though we are halfway down the mountain. 
+
+I kept telling her that she was doing great and pointing out how far we got already. We were already halfway down the mountain. This seemed to help calm her down. Afterwards at the bottom of the slope I further emphasized her incredible progress. In the span of a couple of days she grew from never having skied to traversing a difficult blue slope on her own.
+
+I thought this was funny because I noticed a parallel with myself in my work
+life. Sometimes I tell my manager that I feel like I haven't grown recently. He then points out all the ways that I did grow but I didn't see myself, like I did to my girlfriend. 
+
+**We should stop focusing on the ways we *didn't* grow and start focusing on all the ways we *did* grow.**
 
 # Subscribe
 <!-- Begin Mailchimp Signup Form -->
