@@ -90,6 +90,9 @@ Some common issues and solutions can be found in [FAQ.md](FAQ.md).
 * [Minimal mistakes (Jekyll theme used)](https://mmistakes.github.io/minimal-mistakes/)
 * [Configuration options](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 * [Justin Rummel](https://www.justinrummel.com/page3/): I need to figure out how this guy added pictures 
+* https://www.fabriziomusacchio.com/blog/
+  * Simple view is awesome
+  * Has images
 
 ## Kanban board
 
