@@ -90,10 +90,20 @@ Some common issues and solutions can be found in [FAQ.md](FAQ.md).
 * [Minimal mistakes (Jekyll theme used)](https://mmistakes.github.io/minimal-mistakes/)
 * [Configuration options](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 * [Justin Rummel](https://www.justinrummel.com/page3/): I need to figure out how this guy added pictures 
+* https://www.fabriziomusacchio.com/blog/
+  * Simple view is awesome
+  * Has images
 
 ## Kanban board
 
 https://trello.com/b/Re16gCSo/janmeppecom
+
+## Cool: Small buttons
+
+[This PR](https://github.com/Rainymood/rainymood.github.io/pull/41/commits/ed26137516a172311bc2c8e114a96101a41d56ac) adds small buttons like this:
+
+![](/assets/README/2023-01-07-14-18-37.png)
+
 
 ## Tail for `cat readme.md`
 

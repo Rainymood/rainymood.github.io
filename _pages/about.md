@@ -3,14 +3,20 @@ permalink: /about/
 title: "About Jan"
 ---
 
-<!-- <img src="/assets/images/profile-pic-blue-round.png" style="max-height: 300px">{: .align-center} -->
 <img src="/assets/images/bio-photo5.jpg" style="max-height: 500px">{: .align-center}
+
 
 Hi 👋
 
 I'm Jan Meppe and right now I work as a Machine Learning Engineer at an edtech startup called [Snappet](https://www.snappet.org/).
 
 Before that I worked as a Data Scientist for a large [Fortune 200](https://en.wikipedia.org/wiki/Fortune_500) company.
+
+I write about:
+
+[career](#link){: .btn-green}
+[development](#link){: .btn-blue}
+[productivity](#link){: .btn-yellow}
 
 If you ever want to geek out on any of these topics, do not hesitate to reach out to me (I suggest you DM me on Twitter):
 
