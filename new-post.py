@@ -91,12 +91,20 @@ if __name__ == "__main__":
     assert len(title) > 3, "Title should be longer than 3 chars"
     assert " " not in markdown_filename, "No spaces allowed in filename"
     assert markdown_filename.endswith(".md"), "Filename should end with .md extension"
-    assert markdown_filename.startswith("2022"), "Filename should start with YYYY-MM-DD" # todo
+    # lol this test...
+    assert markdown_filename.startswith("202"), "Filename should start with YYYY-MM-DD" # todo
 
     # Create asset dir
     asset_dirpath = os.path.join("assets", asset_dirname)
     os.makedirs(asset_dirpath, exist_ok=True)
     print(f"Successfully created {asset_dirpath}")
+    import shutil
+
+    # copy default thumbnail
+    default_thumbnail_path = "assets\images\default-thumbnail.png"
+    post_thumbnail_path = os.path.join("assets", asset_dirname, "thumbnail.png")
+    print(f"Copying {default_thumbnail_path} -> {post_thumbnail_path}")
+    shutil.copy(default_thumbnail_path, post_thumbnail_path)
 
     # Create markdown file
     markdown_filepath = os.path.join("_posts", markdown_filename)
