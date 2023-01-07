@@ -3,14 +3,31 @@ permalink: /about/
 title: "About Jan"
 ---
 
-<img src="/assets/images/profile-pic-blue-round.png" style="max-height: 300px">{: .align-center}
+<!-- <img src="/assets/images/profile-pic-blue-round.png" style="max-height: 300px">{: .align-center} -->
+<img src="/assets/images/bio-photo5.jpg" style="max-height: 500px">{: .align-center}
 
 Hi 👋
 
-My name is Jan Meppe and I am a Machine Learning Engineer at
-[Snappet](https://www.snappet.org/).  I blog about **how to become a better machine learning engineer**.
+I'm Jan Meppe and right now I work as a Machine Learning Engineer at an edtech startup called [Snappet](https://www.snappet.org/).
 
-Here are some of my blog posts loosely organised by topic.
+Before that I worked as a Data Scientist for a large [Fortune 200](https://en.wikipedia.org/wiki/Fortune_500) company.
+
+If you ever want to geek out on any of these topics, do not hesitate to reach out to me (I suggest you DM me on Twitter):
+
+* Productivity/Procrastination
+* Machine learning/Data science
+* Startups/Product
+* Learning/Flashcards
+
+## I wrote some popular articles
+
+Three popular articles that I wrote are (read >2k times)::
+
+* [Regex For Noobs (like me!) - An Illustrated Guide]({% post_url 2019-08-04-regex-for-noobs %})
+* [How to add a new kernel to your Jupyter Notebook]({% post_url 2020-08-20-how-to-add-new-kernel-in-jupyter-notebook %})
+* [How to set Python 3 as default on Mac]({% post_url 2021-01-20-how-to-set-python3-as-default-mac %})
+
+<!-- Here are some of my blog posts loosely organised by topic.
 
 - Most popular (read >2000 times)
   - [Regex For Noobs (like me!) - An Illustrated Guide]({% post_url 2019-08-04-regex-for-noobs %})
@@ -50,30 +67,31 @@ Here are some of my blog posts loosely organised by topic.
   - [Product thinking framework: transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %})
   - [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %})
   - [What is a startup?]({% post_url 2021-07-08-what-is-a-startup %})
-  - [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %})
+  - [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %}) -->
 
 ## I love data-driven decision making
 
-That being said... I love machine learning, but what really *really* drives me
-is my obsession for **data-driven decision making:**
+I believe that machine learning is just one expression of **data-driven decision making**:
 
 * I used data-driven decision making to become **one of the best 500 players in Europe** in a game called [Overwatch](https://playoverwatch.com/en-gb/) (that's the *0.0012%th percentile performance*)
 * I used data-driven decision making to learn how to solve a Rubik's cube in **under 15 seconds**
 * I used data-driven decision making to reduce a client's CI/CD build times **by a factor 3x** resulting in significant cost savings
 
-## I write a lot 
+## I write (a lot)
 
-I write because I like it and because I can help people at scale:
+I write because I like it and because writing can help people at scale:
 
-* I have written more than 50 articles on my blog [www.janmeppe.com](https://www.janmeppe.com/)
-* I wrote more than 150 editions of my sort-of daily (but now discontinued) newsletter [Today Jan Learned](https://janmeppe.substack.com/).
+* [Janmeppe.com](https://www.janmeppe.com/) hosts 50+ of my blog posts
+* [Today Jan Learned](https://janmeppe.substack.com/) contains 100+ editions of my now discontinued daily newsletter
 * [Hacker News](https://news.ycombinator.com/item?id=20608032) featured one of my blog posts on their front page and was read more than 30.000 times.
 
-## I also build mobile apps...
+
+
+## I build mobile apps
 
 <img src="/assets/images/3-good-things.png" style="max-height: 400px">
 
-I built an iPhone app that is live on the [app store](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en) and wrote about what I learned:
+I built an iPhone app that was live on the [app store](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en) and wrote about what I learned:
 
 * [View 3 good things: a gratitude log on the App store](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en)
 * [Simple React Native Redux counter example
@@ -111,11 +129,9 @@ Find me on:
 * Slide in my DMs on [Instagram](https://www.instagram.com/janmeppe/)
 * Read (discontinued) newsletter on [Substack](https://janmeppe.substack.com)
 
-
-
 <!-- I code:
 
 * I do machine learning stuff in **Python** with **TensorFlow/Keras**, **Scikit-learn**, **Pandas**, and **Numpy**
-* I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js** -->
+* I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js**
 
-<!-- [Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on.  -->
+[Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on.  -->
