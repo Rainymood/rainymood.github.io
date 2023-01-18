@@ -21,6 +21,7 @@ the years building machine learing systems.
 2. [How to optimize your Docker: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation  %})
 3. [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
 4. [When you make a dataset, make a small statistics file]({% post_url 2023-01-18-when-you-make-a-dataset-make-a-small-statistics-file %})
+5. [Make sure you can find back your mlflow runs]({% post_url 2023-01-18-make-sure-you-can-find-back-your-mlflow-runs %})
 
 # Subscribe
 
