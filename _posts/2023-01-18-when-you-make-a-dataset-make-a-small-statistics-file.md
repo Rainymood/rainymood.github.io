@@ -1,26 +1,29 @@
 ---
-title: "Lessons learned from building machine learning systems"
-date: 2022-12-21
+title: "When you make a dataset, make a small statistics file"
+date: 2023-01-18
 tags:
 - python
 - sql
-- product
 categories: blog
 toc: false
 toc_sticky: false
 header:
-    teaser: "/../assets/2022-12-21-lessons-learned-from-building-machine-learning-systems/thumbnail.png"
+    teaser: "/../assets/2023-01-18-when-you-make-a-dataset-make-a-small-statistics-file/thumbnail.png"
 ---
 
-In this blog post I want to collect some of the lessons that I've learned over
-the years building machine learing systems. 
+This is another lesson that I learned building machine learning systems. For the other lessons that I learned click [here]({% post_url 2022-12-21-lessons-learned-from-building-machine-learning-systems %}).
 
-## Lessons learned
+![](/../assets/2023-01-18-when-you-make-a-dataset-make-a-small-statistics-file/2023-01-18-15-53-28.png)
 
-1. [How to set up Amazon Sagemaker for model training]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
-2. [How to optimize your Docker: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation  %})
-3. [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
-4. [When you make a dataset, make a small statistics file]({% post_url 2023-01-18-when-you-make-a-dataset-make-a-small-statistics-file %})
+**When you are creating a data set, make a small statistics file.**
+
+I learned this the hard way. When you are creating your dataset, make sure to also create a file that contains the most important statistics of this dataset at the time of creation. At the very least you want to have the minimum, maximum, count, and number of unique values per variable that you have.
+
+For me, the number of unique values is very important because I often end up making embeddings. And to make embeddings you need to know how much values you want to embed. 
+
+But really, this file can be anything ranging from a pickled dictionary to a dataframe or just some plain old text. Trust me, you will need these values later down the line. This is especially important when your dataset becomes big because then it can take nontrivial time to actually create the dataset. 
+
+So, keep in mind when you are creating a dataset to make a small statistics file! 
 
 # Subscribe
 
