@@ -23,6 +23,10 @@ tags:
 - product
 - startups
 - life
+- machine learning
+- aws 
+- docker
+- lessons learned
 categories: blog
 toc: false
 toc_sticky: false
