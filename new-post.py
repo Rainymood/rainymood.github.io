@@ -27,6 +27,7 @@ tags:
 - aws 
 - docker
 - lessons learned
+- story
 categories: blog
 toc: false
 toc_sticky: false

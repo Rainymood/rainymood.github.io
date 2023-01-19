@@ -28,13 +28,15 @@ I love this story. It clearly illustrates the concept of focusing on interests o
 
 Initially, it seems that both parties are in conflict about their positions. One of them wants the window open (position) and the other one wants it closed (position). This seems impossible to reconcile. 
 
-The librarian could not have invented the solution if she had only looked at their stated positions. Instead, she looked to their underlying needs (their interests) of having both fresh air and no draft. 
+But the librarian still managed to find a solution. The librarian could not have invented the solution if she had only looked at their stated positions. Instead, she looked to their underlying needs (their interests) of having both fresh air and no draft. 
 
 This concept can be directly applied to my work as a machine learning engineer.
 
-If you tick all the boxes in the acceptance criteria written on the ticket, you can still fail to solve the problem that the ticket was trying to address. 
+Even if you tick all the boxes in the acceptance criteria written on the ticket, you can still fail to solve the problem that the ticket was trying to address.
 
-This is because we should look beyond what is just written on the ticket (position) and focus on what the problem is that the ticket is trying to solve (interest).
+This is because what is written on the ticket (position) might not be the actual problem that needs to be solved (interest). 
+
+So try to look beyond just what is written on the ticket (position) and think deeply about the problem (interest) that this ticket is trying to address, and solve that instead. 
 
 
 # Subscribe
