@@ -104,6 +104,9 @@ https://trello.com/b/Re16gCSo/janmeppecom
 
 ![](/assets/README/2023-01-07-14-18-37.png)
 
+## Blue used
+
+`#1da1f2`
 
 ## Tail for `cat readme.md`
 
