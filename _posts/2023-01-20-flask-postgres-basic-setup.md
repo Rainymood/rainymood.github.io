@@ -14,7 +14,7 @@ header:
 
 In this blog post I'll share a basic [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [PostgreSQL](https://www.postgresql.org/) setup that you can use for local development.
 
-![](/../assets/2023-01-20-flask-postgres-basic-setup/thumbnail.gif)
+![](/../assets/2023-01-20-flask-postgres-basic-setup/image.gif)
 
 This tiny prototype:
 * Creates a postgres database
@@ -35,10 +35,6 @@ I learned:
 Full code can be found [here](https://github.com/Rainymood/flask-postgres).
 
 Credits go to this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-a-postgresql-database-in-a-flask-application).
-
-
-
-
 
 # Subscribe
 <!-- Begin Mailchimp Signup Form -->
