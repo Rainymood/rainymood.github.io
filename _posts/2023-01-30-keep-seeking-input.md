@@ -1,31 +1,45 @@
 ---
-title: "Lessons learned from building machine learning systems"
-date: 2022-12-21
+title: "Keep seeking input"
+date: 2023-01-30
 tags:
-- python
-- sql
-- product
+- life
+- lessons learned
 categories: blog
 toc: false
 toc_sticky: false
 header:
-    teaser: "/../assets/2022-12-21-lessons-learned-from-building-machine-learning-systems/thumbnail.png"
+    teaser: "/../assets/2023-01-30-keep-seeking-input/thumbnail.png"
 ---
 
-In this blog post I want to collect some of the lessons that I've learned over
-the years building machine learning systems. 
+This is another lesson that I learned building machine learning systems. For the other lessons that I learned click [here]({% post_url 2022-12-21-lessons-learned-from-building-machine-learning-systems %}).
 
-## Lessons learned
+Imagine that you're like a little machine with some *inputs* and *outputs*.
 
-1. [How to set up Amazon Sagemaker for model training]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
-2. [How to optimize your Docker: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation  %})
-3. [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
-4. [When you make a dataset, make a small statistics file]({% post_url 2023-01-18-when-you-make-a-dataset-make-a-small-statistics-file %})
-5. [Make sure you can find back your mlflow runs]({% post_url 2023-01-18-make-sure-you-can-find-back-your-mlflow-runs %})
-6. [Keep seeking input]({% post_url 2023-01-30-keep-seeking-input %})
+![](/../assets/2023-01-30-keep-seeking-input/2023-01-31-07-30-28.png)
+
+And your job as a machine is to generate the correct output.
+
+It sounds obvious, but **if you do not get the right inputs, it's impossible to get the right outputs.**
+
+Therefore, it's your job as a machine to figure out what inputs you need to make these correct outputs. 
+
+What do you need to go from this:
+
+![](/../assets/2023-01-30-keep-seeking-input/2023-01-30-15-18-41.png)
+
+To this: 
+
+![](/../assets/2023-01-30-keep-seeking-input/2023-01-30-15-19-12.png)
+
+What inputs does the machine need to create the right outputs? 
+
+And there's NO shame in getting these inputs! For example this could be: asking
+for more direction, or asking for technical help on a coding problem, or asking
+for some time to ask some validating questions.
+
+Do whatever you need to get the right inputs to create the right outputs.
 
 # Subscribe
-
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
