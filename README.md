@@ -117,7 +117,3 @@ The `--incremental` flag is a lifesaver.
 ```
 bundle exec jekyll serve --livereload -o --incremental
 ```
-
-
-``` bundle exec jekyll serve --livereload -o --incremental --limit_posts
-```

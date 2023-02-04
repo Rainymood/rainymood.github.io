@@ -18,6 +18,15 @@ def header(title: str, date, asset_dirname: str) -> str:
 title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
+- architecture
+- programming
+- tools
+- motivation
+- flashcards
+- pytorch
+- tensorflow
+- learning
+- projects
 - python
 - sql
 - product
@@ -28,6 +37,8 @@ tags:
 - docker
 - lessons learned
 - story
+- cosmicpython
+- inversion of control
 categories: blog
 toc: false
 toc_sticky: false
