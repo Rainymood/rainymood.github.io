@@ -2,16 +2,11 @@
 title: "Inversion of Control visualized"
 date: 2023-02-04
 tags:
-- python
-- sql
-- product
-- startups
-- life
-- machine learning
-- aws 
-- docker
-- lessons learned
-- story
+- architecture
+- programming
+- learning
+- cosmicpython
+- inversion of control
 categories: blog
 toc: false
 toc_sticky: false
