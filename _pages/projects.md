@@ -1,9 +1,38 @@
 ---
 permalink: /projects/
-title: "Projects"
+title: "Personal side projects"
+toc: true
 ---
 
-## Aug 2020 - Azure Data Scientist study guide
+An incomplete list of personal side projects.
+
+## Feedbackgoat.com (Feb 2023)
+
+<img src="/assets/teasers/teaser-feedback.gif" style="max-height: 400px">
+
+I built a small tool to quickly give and receive feedback. View the website at [www.feedbackgoat.com](https://feedbackgoat.com/). In this project I learned about:
+
+* Django (url dispatcher, data models, user auth, and much more)
+* Postgresql and sqlite
+* Serving a website to users on production
+
+**Technologies**: Python, Django, Postgresql, Bootstrap
+
+## iOS app: 3 good things (June 2021)
+
+<img src="/assets/teasers/teaser-3-good-things.png" style="max-height: 400px">
+
+I built an iPhone app that was live on the [app store](https://apps.apple.com/nl/app/3-good-things-a-gratitude-log/id1569794018?l=en) and wrote about what I learned:
+
+* [What I would do differently - lessons learned from shipping an app to the app store!]({% post_url 2021-06-02-what-i-would-do-differently-lessons-learned-app-store %})
+* [Simple React Native Redux counter example
+](https://www.janmeppe.com/blog/simple-react-native-redux-counter/)
+* [How to add a bottom modal in React Native
+](https://www.janmeppe.com/blog/how-to-add-bottom-modal-react-native/)
+
+**Technologies**: Javascript (ES6), React, Redux
+
+<!-- ## Aug 2020 - Azure Data Scientist study guide
 
 <img src="/assets/projects/dp-100.png">
 
@@ -47,19 +76,15 @@ Solution on Azure](https://docs.microsoft.com/en-us/learn/certifications/exams/d
 
 * Led a strategy consulting case
 * Researched how to manage employee performance using guilds
-* 6 months later, new guild structure is being rolled out to all European data science associates
+* 6 months later, new guild structure is being rolled out to all European data science associates -->
 
-## Nov 2018 - Neural Network From Scratch
+## Neural Network From Scratch (Nov 2018)
 
-<img src="/assets/teasers/project-neural-network2.png">
+<img src="/assets/teasers/project-neural-network2.png" style="max-height: 400px">
 
-**Description:** 
+I built my own neural network without any external libraries and livestreamed
+the process on Twitch with great viewer engagement.
 
-* Built my own neural network without any external libraries
-* Livestreamed the process on Twitch with great viewer engagement
-
-**Technologies:** Python, numpy
+**Technologies:** Python, Numpy
 
 **Videos:** [Video (Youtube)](https://youtu.be/QFqBZuiHYk0?t=1064) 
-
-**Code:** [Github]()

@@ -3,8 +3,6 @@ permalink: /about/
 title: "About Jan"
 ---
 
-test
-
 <img src="/assets/images/bio-photo5.jpg" style="max-height: 500px">{: .align-center}
 
 
@@ -14,7 +12,7 @@ I'm Jan Meppe and right now I work as a Machine Learning Engineer at an edtech s
 
 Before that I worked as a Data Scientist for a large [Fortune 200](https://en.wikipedia.org/wiki/Fortune_500) company.
 
-I write about:
+<!-- I write about:
 
 [career](#link){: .btn-green}
 [development](#link){: .btn-blue}
@@ -25,7 +23,7 @@ If you ever want to geek out on any of these topics, do not hesitate to reach ou
 * Productivity/Procrastination
 * Machine learning/Data science
 * Startups/Product
-* Learning/Flashcards
+* Learning/Flashcards -->
 
 ## I wrote some popular articles
 
