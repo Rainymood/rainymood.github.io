@@ -24,6 +24,7 @@ the years building machine learning systems.
 5. [Make sure you can find back your mlflow runs]({% post_url 2023-01-18-make-sure-you-can-find-back-your-mlflow-runs %})
 6. [Keep seeking input]({% post_url 2023-01-30-keep-seeking-input %})
 7. [Use assertions to check tensor sizes]({% post_url 2023-02-10-use-assertions-to-check-tensor-sizes %})
+8. [Your argparse is not the interface of your application]({% post_url 2023-02-18-your-argparse-is-not-the-interface-of-your-application %})
 
 # Subscribe
 

@@ -39,6 +39,7 @@ tags:
 - story
 - cosmicpython
 - inversion of control
+- code
 categories: blog
 toc: false
 toc_sticky: false
