@@ -4,26 +4,8 @@ date: 2023-03-04
 tags:
 - architecture
 - programming
-- tools
-- motivation
-- flashcards
-- pytorch
-- tensorflow
-- learning
-- projects
-- python
-- sql
-- product
-- startups
-- life
-- machine learning
-- aws 
-- docker
-- lessons learned
-- story
-- cosmicpython
-- inversion of control
 - code
+- reading notes
 categories: blog
 toc: false
 toc_sticky: false
