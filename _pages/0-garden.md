@@ -14,6 +14,8 @@ an incomplete and messy list of some of my semi-public learnings
 
 * [embedding models are powerful]({% link _pages/garden/embedding-models-are-powerful.md %})
 * [snappet pipelines 1]({% link _pages/garden/snappet-pipeline.md %})
+* [fraud detection things to rememeber]()
+
 
 # code
 
