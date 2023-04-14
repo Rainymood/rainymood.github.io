@@ -1,29 +1,9 @@
 ---
-title: "Rates of flow are more important than current counts"
-date: 2023-04-10
+title: "Unlocking the Secret to Never-ending Clean Dishes: The Surprising Systems Theory Approach You Need to Know!"
+date: 2023-04-14
 tags:
-- architecture
-- programming
-- tools
-- motivation
-- flashcards
-- pytorch
-- tensorflow
-- learning
-- projects
-- python
-- sql
-- product
-- startups
+- meta programming
 - life
-- machine learning
-- aws 
-- docker
-- lessons learned
-- story
-- cosmicpython
-- inversion of control
-- code
 categories: blog
 toc: false
 toc_sticky: false
@@ -31,32 +11,40 @@ header:
     teaser: "/../assets/2023-04-10-rates-of-flow-are-more-important-than-current-counts/thumbnail.png"
 ---
 
-I recently read [this](https://two-wrongs.com/emptying-the-dishwasher-with-systems-theory.html) article and it really resonated with me. The central insight of this article is that you should invest time and energy in such a way that you have time working for you rather than against you. If you live in a household where the dishes pile and you want this fixed you can, for example, start trying to do all the work yourself, but this will only get you frustrated. What is a better idea is that you invest time and effort into *emptying* the dishwasher. People often don't mind putting their dirty dishes in the dishwasher if it is emptied and clean. However, if the dishwasher is full then of course you are going to put your dishes on the counter, where else, the dishwasher is full? If you invest a tiny bit of effort more in the right place (emptying the dishwasher) you can have time work for you (people put their dishes in) instead of against you (dishes keep piling up). 
+I want to share [this article](https://two-wrongs.com/emptying-the-dishwasher-with-systems-theory.html) because it provides a fun and surprising insight that I found personally very relevant. 
 
-Imagine you have a dishwasher situation at home where the dishes seem to be piling up faster than you can manage.
+Before you ask, yes I did let [ChatGPT](https://chat.openai.com/) generate this clickbait title and I think it did a great job. Did you also notice the thumbnail? Yes I also let it generate that, insane, right? 
 
-The article then argues that it makes most sense for you to invest your limited time in such a way that you make time work *for* you rather than *against* you. 
+Anyway, the article analyses the flow of dirty dishes in a household using systems theory. If you ever lived in a household where dishes seem to endlessly pile up, you should definitely read this article. 
 
-Most people don't mind putting their dishes at all in the dishwasher given that it is clean and empty
+Most people don't really mind putting their dishes in the dishwasher, given that it's clean and empty. 
 
-But if the dishwasher is full and you have to go, then where you put your dishes? On the counter of course. This makes sense. We all do this.
+However, if the dishwasher is full then it makes total sense to put your dishes on the counter, because we have no time and need to carry on with our lives. I'm completely guilty of this too. 
 
-That is what the article argues.
+The problem is that if everyone does this, you enter this kind of stalemate: Everyone wants to have a clean counter but no one wants to clean other people's stuff the whole time (sometimes is OK). 
 
-The article now argues that *emptying the dishwasher* becomes a high leverage activity because it changes the relation of time and the system. 
+The surprising insight is that **emptying the dishwasher is a high leverage activity**. That is, putting the clean dishes back in the cabinet.
 
-Before time was working against you, the dishes kept piling up.
+The reason that this is a high leverage activity is because it changes the relation of time with respect to the system:
 
-After emptying the dishwasher time is working for you, people put their dishes in the (now) empty dishwasher themselves
+* Before emptying the dishwasher, **time was working against you**. If you would do nothing, people would just put their dirty dishes on the counter. 
+* After emptying the dishwasher, **time is working for you**. People now put their dirty dishes in the now clean dishwasher. Remember that most people are not evil, just lazy and busy.
 
-Read it here: https://two-wrongs.com/emptying-the-dishwasher-with-systems-theory.html
+If you don't have a lot of time (because you are lazy and busy) invest time intervening in the system at this high leverage point. This will give the best bang for your buck.
 
-**Remember** TODO/CHANGE? Rates of flow are more important than current counts
+This quote from the article captures the essence really well: 
+
+*"On a limited budget, it pays to quickly get to a point where flows are rearranged so that time is on your side. After that, you can work as slowly as whatever remaining budget allows."*
+
+Or if you want a shorter snappy version of this: 
+
+**Remember** Focus on emptying the dishwasher 
 {: .notice--success}
 
-[1] [Emptying the Dishwasher With Systems Theory](https://two-wrongs.com/emptying-the-dishwasher-with-systems-)
 
+[1] [Emptying the Dishwasher With Systems Theory](https://two-wrongs.com/emptying-the-dishwasher-with-systems-theory.html)
 
+<!-- an oil panting of a stack of dirty dishes on a table in the style of warm expressionist artstation high quality -->
 
 # Subscribe
 <!-- Begin Mailchimp Signup Form -->

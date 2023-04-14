@@ -18,6 +18,8 @@ def header(title: str, date, asset_dirname: str) -> str:
 title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
+- systems
+- meta programming
 - architecture
 - programming
 - tools
