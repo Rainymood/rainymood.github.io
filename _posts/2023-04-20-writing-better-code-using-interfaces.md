@@ -20,8 +20,9 @@ One thing that I've learned recently and that has improved my coding significant
 
 The famous [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection#:~:text=In%20software%20engineering%2C%20dependency%20injection,leading%20to%20loosely%20coupled%20programs.) mantra states that you should: *"depend on abstractions and not on implementations"*. 
 
-Before really understanding what was meant I always found those statements so vague that they were practically useless to me. 
-I want to give a nice example of this so that you have a clear understanding of what is meant because the idea is so powerful and I feel like everyone should know and understand it. 
+If you don't understand the underlying idea behind this mantra, then the statement itself is so vague and general that it is practically useless.
+
+I want to give a nice example illustrating the idea underlying this mantra so that you have a better understanding of the underlying concept. Then, once you understand that, the mantra becomes incredibly powerful on its own.
 
 For me, the main idea behind all this talk about interfaces boils down to the fact that you want to **design for swappability**.
 Design your code in such a way that the things that you *want to swap out, are easy to swap out*.
