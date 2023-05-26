@@ -42,6 +42,7 @@ tags:
 - cosmicpython
 - inversion of control
 - code
+- show-your-work
 categories: blog
 toc: false
 toc_sticky: false
