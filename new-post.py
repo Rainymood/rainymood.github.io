@@ -43,6 +43,7 @@ tags:
 - inversion of control
 - code
 - show-your-work
+- tip
 categories: blog
 toc: false
 toc_sticky: false
