@@ -44,6 +44,10 @@ tags:
 - code
 - show-your-work
 - tip
+- domain driven design
+- work
+- personal
+- architecture
 categories: blog
 toc: false
 toc_sticky: false
