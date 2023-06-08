@@ -1,5 +1,5 @@
 ---
-title: "My experience with DDD (part 2)"
+title: "My experience with Domain-Driven Design part 2: testing"
 date: 2023-06-06
 tags:
 - programming
@@ -17,114 +17,78 @@ header:
 
 
 Previous editions:
-* [test]({% post_url 2023-06-02-my-experience-with-domain-driven-design-part-1.md %})
+* [My experience with Domain Driven Design part 1]({% post_url 2023-06-02-my-experience-with-domain-driven-design-part-1 %})
 
-## Test object creation also goes into fixtures
+## Use fixtures for test object creation
 
-In my previous post I told you that we heavily rely on [pytest fixtures]() to set up everything, but we take this even a step further. We even make our test objects in fixtures so that we can easily reuse them.
+Another new thing that I noticed is that we setup our objects that we want to test *inside pytest fixtures*. 
 
-First I wanted to create my `ContextDataTransformer` and test it like so
+Before I would do something like this (you do not need to know what a `ContextDataTransformer` is)
 
 ```python
-def test_context_data_transformer_has_right_schema(non_sequential_raw_dataset, non_sequential_raw_mappers):
-    transformer = ContextDataTransformer(
-        ...
-    )
+def test_context_data_transformer_has_right_schema():
+    transformer = ContextDataTransformer()
 
     assert transformer.get_schema() == expected_schema
 ```
 
-But looking at the other tests I noticed we had a fixture that contained some data. In this fixture some objects were also created. So instead of creating the test object in the test, we create it in the fixture:
+But we can *also* put the object creation inside the fixture, making the test a lot cleaner
 
 ```python
 # tests/fixtures/data_transformation_fixture.py
 @pytest.fixture
-def snappet_pupil_to_dense_sequence_transformer(non_sequential_raw_mappers):
-    return DictionaryTransformer(
-            output_fields=[DENSE_PUPIL_ID_SEQUENCE],
-        ),
-        dictionary=non_sequential_raw_mappers["snappet_pupil_id_to_dense"],
-        default_value=-1,
-    )
+def context_data_transformer():
+    return ContextDataTransformer()
 ``` 
 
-Before
+Which means that now in our test we can rely on the fixture instead
 
 ```python
-def test_context_data_transformer_has_right_schema(non_sequential_raw_dataset, non_sequential_raw_mappers):
-    transformer = ContextDataTransformer(
-        snappet_originalexercise_id_mapper=non_sequential_raw_mappers["snappet_originalexercise_id_to_dense"],
-        snappet_answer_type_mapper=non_sequential_raw_mappers["snappet_answer_type_to_dense"],
-        default_value=0,
-    )
-
-    expected_schema = InputOutputSchema(
-        input_schema=Schema(fields=[SNAPPET_ORIGINAL_EXERCISE_ID, SNAPPET_ANSWER_TYPE]),
-        output_schema=Schema(fields=[DENSE_CONTEXT_ID]),
-    )
-
+def test_context_data_transformer_has_right_schema(context_data_transformer):
     assert transformer.get_schema() == expected_schema
 ```
 
-After
-
-```python
-def test_context_data_transformer_has_right_schema(snappet_context_data_transformer):
-    transformer = snappet_context_data_transformer
-
-    expected_schema = InputOutputSchema(
-        input_schema=Schema(fields=[SNAPPET_ORIGINAL_EXERCISE_ID, SNAPPET_ANSWER_TYPE]),
-        output_schema=Schema(fields=[DENSE_CONTEXT_ID]),
-    )
-
-    assert transformer.get_schema() == expected_schema
-```
-
-What this means is that we also create the objects we want to test in our fixtures. 
-
-The test code is much cleaner now.
-
-The main benefit of doing this, I think, is that you only really have one place where all the objects are now which are the fixtures. 
+Essentially we are just moving things around from the test file to the fixture file, but I notice that my tests feel a lot cleaner because they only test the behavior of the object or function under test.
 
 ## Tests become extremely lightweight
 
-I've said this before and I will say it again: having things defined in terms of your domain model makes your tests really lightweight. 
+I've said this before and I will say it again: using a domain model makes your tests really lightweight.
 
-All your domain models and where they are made are centralised in the fixtures. You have also thought about what data you need and hence you make the smallest possible version of that data, which makes everything light.
-
-All of these things seem small when you look at them in isolation: thinking about your test data, putting them in fixtures, writing tests in terms of domain models. But when you add them up they amount to a test suite that is a joy to run. The testing experience, honestly, is joyful instead of soul-sucking. 
-
-I'm not afraid of changing things anymore because the tests are nimble and fast. If I change something I know that the tests will run in 50ms or so, so no fear in changing things. I can change something, get feedback, adjust, and adapt. It's great. 
+Because you have thought deeply about your domain model you know the minimum amount of data you need to construct them, which results into small fixtures, which again results in quick tests. 
 
 ## Constructing a mental model of the problem
 
-A big part of domain-driven design is crafting a domain language that is understood by everyone (shared vocabulary) but at the same time that helps you solve the problem.
+I think that domain driven design and problem solving with it is like learning a new language. It takes some time to get up to speed with the vocabulary and grammar. 
 
-A big part of problem solving, using code then, is trying to create a mental model of the problem in your head and being able to swiftly traverse around that mental model. Of course, some problems are complex, and that makes the mental models quite large and bit so it might take a while to get accustomed to the new mental model, this is nothing new.
+A big part of problem solving is trying to create a mental model of the problem that helps to solve said problem. Then you should load this mental model into your head and be able to swiftly traverse up and down the necessary ladders of abstraction. Some problems are quite big and thorny which makes their mental models also big and thorny, so it might take a while to get accustomed to this new mental model. 
 
-Similarly, working with this new repository that uses a domain model I needed to get my head around the domain model first. After a couple of days of struggling I feel like I'm getting the overall picture, the "gestalt" of things. 
+What I want to say is that it's not weird to have to study the domain model for quite some time, say 2 days, to become well-versed in it. You need to understand all the individual pieces before you can really wrap your head around it and grok the overallness of the project, the gestalt. 
+
 
 ## Schema validation is nice
 
-The first time I wrote this I thought the data validation was excessive and trivial:
+When I wrote this I thought it was very extra, "Who needs data validation?" I
+thought to myself. I thought I was smart and good at writing code:
 
 ```python
-    def transform(self, data: Data):
-        input_schema = set(self.schema.input_schema.fields)
-        data_schema = set(data)
-        is_schema_valid = input_schema.issubset(data_schema)
-        if not is_schema_valid:
-            raise ValueError(
-                f"The input_data data does not contain the fields this transformer supports:"
-                f"{self.schema.input_schema.fields[0]}."
-            )
+def transform(self, data: Data):
+    input_schema = set(self.schema.input_schema.fields)
+    data_schema = set(data)
+    is_schema_valid = input_schema.issubset(data_schema)
+    if not is_schema_valid:
+        raise ValueError(
+            f"The input_data data does not contain the fields this transformer supports:"
+            f"{self.schema.input_schema.fields[0]}."
+        )
 ```
 
-And then the first time I tried to run a test, it already triggered and saved me a bug. Humans are flawed sometimes. Hehe. 
+The first time I wrote a test for the `transform` function the invalid schema
+immediately triggered because of an error I made. Oopsy!
 
-## Our domain model makes indexing batches a breeze
 
-Another really neat thing is that I can index our data with the `Field.name` instead of an index. 
+## Our domain model makes data indexing a breeze
+
+Our domain model works like this, we have a `DataLoader` that provides batches of `Data` which are dicts indexed with keys of `Fields`. 
 
 Previously, `batch_data` would just be a dataframe or tensor and we would have to slice it like this: 
 
@@ -140,11 +104,13 @@ dense_original_exercise_ids = data[DENSE_ORIGINAL_EXERCISE_ID]
 
 This is really neat.
 
-## Tests run in the order of ms
+## Wrapping up 
 
-![](/../assets/2023-06-06-my-experience-with-ddd-part-2/2023-06-06-13-48-08.png)
+In isolation, all these things are small improvements: small data, pytest fixtures, fast tests. But small things add up. When you add them all up your testing experience suddenly becomes a joy instead of a drag. Tests run in the order of 50ms which makes it almost (gasp) fun to run your tests because they are so damn quick. I'm not afraid of changing things because I know I can run the tests, get quick feedback, and adjust and adapt. The testing experience becomes joyful instead of a soul-sucking tedium. 
 
-Which really is a great feeling.
+**Remember** Domain-driven design makes the testing experience much more joyful
+{: .notice--success}
+
 
 # Subscribe
 <!-- Begin Mailchimp Signup Form -->
