@@ -1,5 +1,5 @@
 ---
-title: "My experience with Domain Driven Design part 1"
+title: "My experience with Domain-Driven Design part 1: naming"
 date: 2023-06-02
 tags:
 - programming
@@ -15,7 +15,7 @@ header:
     teaser: "/../assets/2023-06-02-my-experience-with-domain-driven-design-part-1/thumbnail.png"
 ---
 
-So I have been working a lot with [Domain Driven Design (DDD)]() lately. 
+So I have been working a lot with [Domain Driven Design (DDD)](https://en.wikipedia.org/wiki/Domain-driven_design) lately. 
 
 This is mainly because I have a colleague who is in love with it and it rubs off on me -- and I love it. 
 
@@ -141,6 +141,9 @@ In the beginning it felt very weird trying to cast every little thing to a domai
 Framing your problem in terms of domain models is nice because it really gives a language to the problem that you are trying to solve. You're actively translating the "dirty" outside world to your "clean" pristine inner world that exists only of domain models. 
 
 Slap some interfaces on top of this and you have clean code that works that is written in such a way that it is almost impossible to write bad code. 
+
+**Remember** Domain-driven design is naming things for what they are
+{: .notice--success}
 
 # Subscribe
 <!-- Begin Mailchimp Signup Form -->
