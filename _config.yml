@@ -145,7 +145,7 @@ tag_archive:
 analytics:
   provider: "google"
   google:
-    tracking_id: "UA-78697215-1"
+    tracking_id: "G-FDMCMSCC4F"
     anonymize_ip: false # default
 
 # fixes "No GitHub API authentication" error
