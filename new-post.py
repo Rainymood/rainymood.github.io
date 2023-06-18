@@ -62,7 +62,15 @@ header:
 """
 
 def footer():
+    """Should probably use textwrap.dedent here..."""
     return """
+## Wrapping up
+
+LOREM IPSUM
+
+**Remember** LOREM IPSUM!
+{: .notice--success}
+
 # Subscribe
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
