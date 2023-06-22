@@ -3,35 +3,8 @@ title: "Key design principles for dealing with (human) error"
 date: 2023-06-18
 tags:
 - systems
-- meta programming
-- architecture
-- programming
-- tools
-- motivation
-- flashcards
-- pytorch
-- tensorflow
-- learning
-- projects
-- python
-- sql
-- product
-- startups
-- life
-- machine learning
-- aws 
-- docker
-- lessons learned
-- story
-- cosmicpython
-- inversion of control
-- code
-- show-your-work
-- tip
-- domain driven design
 - work
-- personal
-- architecture
+- design
 categories: blog
 toc: false
 toc_sticky: false
@@ -42,6 +15,8 @@ header:
 <img src="/assets/2023-06-18-key-design-principles-for-dealing-with-human-error/2023-06-18-18-30-42.png" style="max-height: 200px">{: .align-left} 
 When I picked up this book I thought it was going to be a book about product design. That was true, but this book is also much more. Next to being extremely entertaining and informative, it provides a unified framework for thinking about usability in products. 
 
+## Two gulfs
+
 Given a user and product we can always describe two fundamental user-product discrepancies: 
 
 * **Gulf of execution**: The gap in what the user wants to do (goals) and how easy it is for the user to figure out how to do it (feedfoward)
@@ -51,11 +26,20 @@ A simplified version of the model is illustrated here:
 
 ![](/../assets/2023-06-18-key-design-principles-for-dealing-with-human-error/2023-06-18-17-59-33.png){: .align-center}
 
-Then the book continues with a chapter on human error, and that because human error is likely inevitable, we should try to design whatever we design in such a way that it takes human error into account. These are the key design principles shared for dealing with (human) error, I quote: 
+## Key design principles
+
+Because we, as humans, are fallible, human error is inevitable. Thus, the best designs take this into account. These are the key design principles from the book for dealing with (human) error, I quote (emphasis mine): 
 
 * "**Put the knowledge required to operate the technology in the world**. Don’t require that all the knowledge must be in the head. Allow for efficient operation when people have learned all the requirements, when they are experts who can perform without the knowledge in the world, but make it possible for non-experts to use the knowledge in the world. This will also help experts who need to perform a rare, infrequently performed operation or return to the technology after a prolonged absence."
 * "Use the power of natural and artificial constraints: physical, logical, semantic, and cultural. Exploit the power of forcing functions and natural mappings."
 * "Bridge the two gulfs, the Gulf of Execution and the Gulf of Evaluation. **Make things visible, both for execution and evaluation.** On the execution side, provide feedforward information: make the options readily available. On the evaluation side, provide feedback: make the results of each action apparent. Make it possible to determine the system’s status readily, easily, accurately, and in a form consistent with the person’s goals, plans, and expectations."
+
+## Wrapping up
+
+For me, this summarizes to the following two statements: 
+
+1. Keep in mind the two gulfs (execution and evaluation)
+2. Make everything visible: knowledge on how to operate the system, but also feedback and feedforward
 
 **Remember** The best design takes human error into account.
 {: .notice--success}
