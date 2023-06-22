@@ -48,6 +48,7 @@ tags:
 - work
 - personal
 - architecture
+- design
 categories: blog
 toc: false
 toc_sticky: false
