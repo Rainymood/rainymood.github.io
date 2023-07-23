@@ -1,6 +1,6 @@
 ---
 title: "Neat trick to instantiate models with different inits"
-date: 2023-06-30
+date: 2023-07-23
 tags:
 - python
 - code
