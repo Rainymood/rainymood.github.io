@@ -14,7 +14,7 @@ header:
 
 ---
 
-Ever since AWS moved their Athena engine to [version 3](https://docs.aws.amazon.com/athena/latest/ug/engine-versions-reference-0003.html) weird things started happening to us: This query that used to run under 3 minutes now times out after 45 minutes. What the fuck?
+Ever since AWS moved their Athena engine to [version 3](https://docs.aws.amazon.com/athena/latest/ug/engine-versions-reference-0003.html) weird things started happening to us: This query that used to run under 3 minutes now times out after 45 minutes. What the hell?
 
 ![](/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-13-39-53.png)
 
@@ -30,16 +30,7 @@ If you google this you get literally **zero results**:
 
 ![](/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-16-28-35.png)
 
-So this is kind of a hidden gem? An experimental feature that is not documented yet? I feel like some agent in a spy mission. Why does it feel so dirty yet so right possessing this undocumented knowledge? 
-
-You can guess what we did next.
-
-```sql
-WITH pupils as (
-    SELECT pupilid
-        ...
-        -- very long and complex sql query here
-```
+So this is kind of a hidden gem? An experimental feature that is not documented yet? It feels like I'm in possession of some forbidden black magic that no one is aware of, it feels to wrong. You can guess what happens next.
 
 ![](/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-16-17-58.png)
 
