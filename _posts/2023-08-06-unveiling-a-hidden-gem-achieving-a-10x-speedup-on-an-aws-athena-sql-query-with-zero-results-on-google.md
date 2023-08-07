@@ -14,11 +14,13 @@ header:
 
 ---
 
-Ever since AWS moved their Athena engine to [version 3](https://docs.aws.amazon.com/athena/latest/ug/engine-versions-reference-0003.html) weird things started happening to us: This query that used to run under 3 minutes now times out after 45 minutes. What the hell?
+Ever since AWS moved their Athena engine to [version 3](https://docs.aws.amazon.com/athena/latest/ug/engine-versions-reference-0003.html) weird things started happening to us. 
+
+This query that used to run under 3 minutes now times out after 45 minutes. What the hell?
 
 ![](/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-13-39-53.png)
 
-We debugged this for hours unsuccessfully. Our frustration led us to contact AWS Support directly and this is what they said (paraphrased):
+After trying to debug this query unsuccessfully for hours, we decided to contact AWS Support directly and this is what they said (paraphrased):
 
 > AWS Support: So uhmmm, maybe like, yeah, try... adding this to your query somewhere: `@{rule_based_join_reorder ='false'}`?
 >
@@ -30,7 +32,9 @@ If you google this you get literally **zero results**:
 
 ![](/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-16-28-35.png)
 
-So this is kind of a hidden gem? An experimental feature that is not documented yet? It feels like I'm in possession of some forbidden black magic that no one is aware of, it feels to wrong. You can guess what happens next.
+(Update 2023-08-07: My blog post is now the first hit, hehe)
+
+It feels like I'm in possession of this forbidden jutsu that no one else knows and it feels great. Anyway, you can guess what we tried out next:
 
 ![](/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-16-17-58.png)
 
@@ -44,15 +48,17 @@ WITH pupils as (
 
 ![](/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-16-18-05.png)
 
-What just happened here? I have no clue so I asked ChatGPT:
+What just happened here exactly? I had no clue so I asked ChatGPT:
 
 > Me: Dear ChatGPT, What does @{rule_based_join_reorder ='false'} do?
 >
-> ChatGPT:  In SQL Server, the rule_based_join_reorder option is used to control the query optimizer's behavior for reordering joins in query execution plans. Setting rule_based_join_reorder to 'false' indicates that the query optimizer should not use the rule-based join reorder algorithm, and instead, it should rely on the cost-based optimizer to determine the optimal join order.
+> ChatGPT:  In SQL Server, the rule_based_join_reorder option is used to control the query optimizer's behavior for reordering joins in query execution plans. 
+>
+> ... (more bla bla bla)
 
-It turns out that there is an undocumented setting that allows us to disable this rule based join reordering. The heuristics used in this rule based join reordering turned out to be really inefficient for our specific query, which resulted in the huge speedup after disabling it.
+It turns out that there is this undocumented setting in AWS that allows us to disable the rule based join reordering. The heuristics used to order the joins turned out to be very inefficient for our specific query, resulting in the huge speedup after disabling it.
 
-haha athena go brrrrrr
+In other words: haha athena go brrrrrr
 
 # Subscribe
 <!-- Begin Mailchimp Signup Form -->
