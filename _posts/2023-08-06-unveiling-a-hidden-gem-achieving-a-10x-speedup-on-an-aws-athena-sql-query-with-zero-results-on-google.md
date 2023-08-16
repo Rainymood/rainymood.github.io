@@ -10,9 +10,10 @@ categories: blog
 toc: false
 toc_sticky: false
 header:
-    teaser: "/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-06-13-34-23.png"
-
+    teaser: "/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-16-08-41-29.png"
 ---
+
+
 
 Ever since AWS moved their Athena engine to [version 3](https://docs.aws.amazon.com/athena/latest/ug/engine-versions-reference-0003.html) weird things started happening to us. 
 
