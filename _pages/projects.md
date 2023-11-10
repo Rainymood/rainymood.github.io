@@ -1,10 +1,31 @@
 ---
 permalink: /projects/
-title: "Personal side projects"
+title: "Projects"
 toc: true
 ---
 
-An incomplete list of personal side projects.
+An incomplete list of (personal) projects.
+
+# Professional
+
+Only mentioning the most fun things :)
+
+2023
+
+* Trained and deployed a new model to production, resulting in 30% more learning results over a 5 week long A/B test against previous best production model. (PyTorch)
+* Designed and built automated retraining pipeline, resulting in a smooth one-click retraining process in our machine learning platform. (AWS Sagemaker pipelines)
+
+2022
+
+* Automated key piece of infrastructure for automatic creation of datasets (AWS Lambda, AWS CloudFormation)
+
+2021
+
+* Rewrote core algorithm of the platform and scaled machine learning model training to billions of rows
+* Worked on chatbot based on Bi-Directional LSTM for a large telecom client serving >2m users
+
+# Personal side projects
+
 
 ## Feedbackgoat.com (Feb 2023)
 

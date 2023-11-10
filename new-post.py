@@ -19,6 +19,14 @@ title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
 
+- engineering
+- management
+- leadership
+
+- work
+- personal
+- lessons learned
+
 - python
 - sql
 - machine learning
@@ -51,11 +59,6 @@ tags:
 - inversion of control
 - domain driven design
 
-- work
-- personal
-- life
-- story
-- lessons learned
 
 categories: blog
 toc: false
