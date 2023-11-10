@@ -19,12 +19,9 @@ title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
 
-<<<<<<< HEAD
 - work
 - personal
 
-=======
->>>>>>> 2023-11-10-minor-improvements
 - engineering
 - management
 - leadership
