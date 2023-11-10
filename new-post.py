@@ -19,6 +19,10 @@ title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
 
+- engineering
+- management
+- leadership
+
 - python
 - sql
 - machine learning
