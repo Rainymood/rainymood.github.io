@@ -19,13 +19,26 @@ title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
 
+- work
+- personal
+
+- engineering
+- management
+- leadership
+
+- product
+- design
+- tools
+- learning
+
 - python
 - sql
-- machine learning
+- javascript
+
 - aws 
 - docker
+- machine learning
 - programming
-- javascript
 - pytorch
 - tensorflow
 - code
@@ -37,23 +50,16 @@ tags:
 - meta programming
 - architecture
 
-- design
 - tools
 - motivation
 - flashcards
-- learning
 - projects
-- product
-
 - startups
 
 - cosmicpython
 - inversion of control
 - domain driven design
 
-- work
-- personal
-- life
 - story
 - lessons learned
 
