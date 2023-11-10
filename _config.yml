@@ -76,9 +76,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jan-meppe-48491656/"
-    - label: "Digital garden"
-      icon: "fas fa-fw fa-link"
-      url: /garden/
+    # - label: "Digital garden"
+    #   icon: "fas fa-fw fa-link"
+    #   url: /garden/
   #   - label: "Instagram"
   #     icon: "fab fa-fw fa-instagram"
   #     url: "https://instagram.com/janmeppe"
