@@ -11,13 +11,13 @@ Hi 👋
 My name is Jan Meppe and I work as a machine learning engineer at an edtech
 startup called [Snappet](https://www.snappet.org/). 
 
-Before that I worked on client projects as a data science consultant for [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
+Before that, I worked as a data science consultant for [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-My objective is to use my skills to make a **positive impact** in the world.
+My goal (and hope) is that I can use my skills to make a **positive impact** in the world, making the world a better place.
 
-## I wrote some popular articles
+## I wrote some pretty popular articles
 
-Three popular articles that I wrote are (read >2k times)::
+Three popular articles that I wrote are:
 
 * [Regex For Noobs (like me!) - An Illustrated Guide]({% post_url 2019-08-04-regex-for-noobs %})
 * [How to add a new kernel to your Jupyter Notebook]({% post_url 2020-08-20-how-to-add-new-kernel-in-jupyter-notebook %})
