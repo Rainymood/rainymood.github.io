@@ -8,22 +8,12 @@ title: "About Jan"
 
 Hi 👋
 
-I'm Jan Meppe and right now I work as a Machine Learning Engineer at an edtech startup called [Snappet](https://www.snappet.org/).
+My name is Jan Meppe and I work as a machine learning engineer at an edtech
+startup called [Snappet](https://www.snappet.org/). 
 
-Before that I worked as a Data Scientist for a large [Fortune 200](https://en.wikipedia.org/wiki/Fortune_500) company.
+Before that I worked on client projects as a data science consultant for [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-<!-- I write about:
-
-[career](#link){: .btn-green}
-[development](#link){: .btn-blue}
-[productivity](#link){: .btn-yellow}
-
-If you ever want to geek out on any of these topics, do not hesitate to reach out to me (I suggest you DM me on Twitter):
-
-* Productivity/Procrastination
-* Machine learning/Data science
-* Startups/Product
-* Learning/Flashcards -->
+My objective is to use my skills to make a **positive impact** in the world.
 
 ## I wrote some popular articles
 
@@ -105,7 +95,7 @@ I built an iPhone app that was live on the [app store](https://apps.apple.com/nl
 * [How to add a bottom modal in React Native
 ](https://www.janmeppe.com/blog/how-to-add-bottom-modal-react-native/)
 
-## Do you want a blog like this?
+## I write about how to set up a blog like this
 
 I share what I learn setting up this [Jekyll](https://jekyllrb.com/docs/themes/) blog with the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme:
 
@@ -126,9 +116,7 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 * MSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
 * BSc in Econometrics from the [University of Amsterdam](https://www.uva.nl/en)
 
-## Contact me
-
-Find me on:
+## I hang around here
 
 * Tweet me on [Twitter](https://twitter.com/Janmeppe)
 * Ping me in a PR on [Github](https://github.com/rainymood)
@@ -141,3 +129,6 @@ Find me on:
 * I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js**
 
 [Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on.  -->
+
+
+<img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center}
