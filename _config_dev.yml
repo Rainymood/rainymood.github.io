@@ -43,16 +43,13 @@ include:
 # exclude:
 #   - Gemfile
 #   - Gemfile.lock
-#   - node_modules
+  # - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
 exclude:
-  - assets
-keep_files:
-  - assets
+- _pages/
 
 # Plugins (previously gems:)
 plugins:
@@ -67,7 +64,7 @@ author:
   name   : "Jan Meppe"
   avatar : "/assets/images/new-profile-pic-small.png"
   bio    : "Machine learning engineer in love with building digital products."
-  # location : "Amsterdam"
+  location : "Amsterdam"
   links:
     - label: "janmeppe.com"
       icon: "fas fa-fw fa-link"
@@ -81,15 +78,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jan-meppe-48491656/"
-  #   - label: "Instagram"
-  #     icon: "fab fa-fw fa-instagram"
-  #     url: "https://instagram.com/janmeppe"
-  #   - label: "Python writings"
-  #     icon: "fab fa-python"
-  #     url: "https://www.janmeppe.com/tags/#python"
-  #   - label: "SQL writings"
-  #     icon: "fas fa-database"
-  #     url: "https://www.janmeppe.com/tags/#sql"
 
 footer:
   links:
@@ -129,14 +117,6 @@ defaults:
       layout: single
       author_profile: true
 
-# teaser: /assets/images/500x300.jpg
-# logo: /assets/images/88x88.jpg
-# logo: /assets/images/88x352.jpg
-# logo: /assets/images/logo2.png
-# Logo next to janmeppe.com site title
-# logo: /assets/images/logo3.png
-# logo: /assets/images/logo5-32x32-trans.png
-
 category_archive:
   type: liquid
   path: /categories/
@@ -147,9 +127,10 @@ tag_archive:
 analytics:
   provider: "google"
   google:
-    tracking_id: "UA-78697215-1"
+    tracking_id: "G-FDMCMSCC4F" # this doesn't work anymore?
     anonymize_ip: false # default
 
 # fixes "No GitHub API authentication" error
 github: [metadata]
 
+keep_files: [assets]

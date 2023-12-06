@@ -69,6 +69,28 @@ Successfully created _posts\2022-05-20-dan-harmon-writing-advice.md
 
 Start writing, push to this branch, once you are done make a PR to the main branch and (squash) merge it in. 
 
+## Speeding things up... 
+
+Jekyll gets slow when you have lots of pages. I got sick and tired of having to
+wait 20 seconds to see an update to any blog post. Run `make last` to use the
+`_config_dev.yml` and only build the latest post. This also disables the other
+`_pages` because those contain relative `{% post_url %}` links which break if
+the posts don't exist.
+
+```
+$ make last
+bundle exec jekyll serve --config _config_dev.yml --livereload -o --incremental --limit_posts 1 --profile
+... 
+      Regenerating: 1 file(s) changed at 2023-12-06 07:55:56
+                    _posts/2023-08-30-i-recently-passed-the-aws-solution-architect-associate-exam-aws-saa-c03-heres-how-i-did-it.md
+
+                    ...done in 3.2591694 seconds.
+```
+
+Still not as snappy as I want it, but sure as hell a lot better than >20 seconds.
+
+* https://deku.posstree.com/en/jekyll/preview-speed-up/
+
 ## Changing the styling
 
 Edit `assets\css\main.scss`
