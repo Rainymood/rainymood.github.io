@@ -1,5 +1,5 @@
 ---
-title: "Tests are nice"
+title: "Test-Driven Development win: Lessons learned using golang in Advent of Code"
 date: 2023-12-09
 tags:
 - golang
@@ -15,13 +15,11 @@ header:
     teaser: "/../assets/2023-12-09-tests-are-nice/thumbnail.png"
 ---
 
-*Sharing my experience with test-driven development (TDD) and learning golang using the Advent Of Code (AOC)*
-
-Because the logic in part 1 of [Advent of Code Day 9](https://adventofcode.com/2023/day/9) did not seem so daunting, I wanted to challenge myself to really use Test-Driven Development here and I want to share some realizations that I had while doing so.
+Because the logic in part 1 of [Advent of Code Day 9](https://adventofcode.com/2023/day/9) did not seem so daunting, I wanted to challenge myself to really use Test-Driven Development. In this blog post I want to share some funny realizations that I had while doing so.
 
 ### Realization 1
 
-**I made a lot of mistakes even for small and simple functions!** The first thing that I realized was that, even for small and simple functions, I was messing up big time. I was forgetting edge cases and making tiny mistakes all over the place. We really are bad computers. Even for this simple function that calculates the difference between the elements `diff()` I still needed multiple tries to get all the unit tests to pass. 
+**I made a lot of mistakes even for small and simple functions!** The first thing that I realized was that, even for small and simple functions, I was messing up big time. I was forgetting edge cases and making tiny mistakes all over the place. We really are bad computers. Even for this simple function that calculates the difference between the elements (`diff()`) I still needed multiple tries to get all the unit tests to pass. 
 
 This unit test shows one of the unit tests for this function:
 
