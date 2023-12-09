@@ -1,9 +1,7 @@
 # Janmeppe.com
 
-![](./assets/screenshots/2022-05-18.png)
-
 This repository contains the code, text, and assets of my personal blog which
-you can find here at [www.janmeppe.com](www.janmeppe.com). 
+you can visit at [www.janmeppe.com](www.janmeppe.com). 
 
 ## Installation
 
@@ -25,8 +23,19 @@ And install all the gems
 bundle install
 ```
 
-If this is the first time you are setting up the blog on a new computer. Generate a new
-Personal Access Token (PAT) [here](https://github.com/settings/tokens).
+If this is the first time you are setting up the blog on a new computer. 
+
+Generate a new Personal Access Token (PAT) [here](https://github.com/settings/tokens).
+
+## Running the blog (Windows)
+
+Run the blog with 
+
+```bash
+make blog
+```
+
+
 
 ## Running the blog (Mac)
 
@@ -36,28 +45,17 @@ Run the blog with
 rake build
 ```
 
-Usually we would run the blog using `bundle exec jekyll serve` or simply `build`.
+Ideally we would use `bundle exec jekyll serve` or `build` but [this](https://www.janmeppe.com/blog/invalid-US-ASCII-character/) is the reason why we can not do this. 
 
-This is a workaround due to a unicode error/bug that I still haven't fixed which you can read more about here:
-
-* [Invalid US-ASCII character “\xE2” on line 54 workaround](https://www.janmeppe.com/blog/invalid-US-ASCII-character/)
-
-## Running the blog (Windows)
-
-Run the blog with 
-
-```
-bundle exec jekyll serve --livereload -o --drafts --future
-```
 ## Writing posts
 
-Switch to a new branch. For example,
-
 ```bash
-git checkout -b 220520-new-post
+git checkout -b 2023-12-09-new-post
+make new
+make last
 ```
 
-Run `new-post.py`
+Should result in 
 
 ```
 Input name of title (ctrl + C to cancel): dan harmon writing advice

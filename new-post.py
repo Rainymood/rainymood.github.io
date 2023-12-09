@@ -1,4 +1,3 @@
-
 """"Prompts the user to input a title ("new title") this then gets slugified and
 the asset folder (assets/YYYY-MM-DD-new-title) gets made and the markdown file
 gets made (_posts/YYYY-MM-DD-new-title)."""
@@ -6,6 +5,7 @@ import datetime
 import os
 import unicodedata
 import re
+import shutil
 
 def header(title: str, date, asset_dirname: str) -> str:
     """Returns the header to be written to the md file"""
@@ -123,35 +123,36 @@ def slugify(value, allow_unicode=False) -> str:
     value = re.sub(r'[^\w\s-]', '', value.lower())
     return re.sub(r'[-\s]+', '-', value).strip('-_')
 
+ASSET_DIR = "assets"
+
 if __name__ == "__main__":
-    title = input("Input name of title (ctrl + C to cancel): ")
+    # Request input from user
+    title = input("Title of blog post (Ctrl + C to cancel): ")
     print(title)
-    print("slugify titled", slugify(title))
+    print("\tslugify titled", slugify(title))
 
     today = datetime.date.today()
     asset_dirname = today.strftime("%Y-%m-%d") + "-" + slugify(title) # ex 2022-05-20-title-of-new-post
     markdown_filename = asset_dirname + ".md" # 2022-05-20-title-of-new-post.md
-    print("foldername: ", asset_dirname)
-    print("filename: ", markdown_filename)
+    print("\tfoldername: ", asset_dirname)
+    print("\tfilename: ", markdown_filename)
 
     # "Tests"
     assert len(asset_dirname) > 0, "Foldername can't be empty"
     assert len(title) > 3, "Title should be longer than 3 chars"
     assert " " not in markdown_filename, "No spaces allowed in filename"
     assert markdown_filename.endswith(".md"), "Filename should end with .md extension"
-    # lol this test...
-    assert markdown_filename.startswith("202"), "Filename should start with YYYY-MM-DD" # todo
+    assert markdown_filename.startswith("202"), "Filename should start with YYYY-MM-DD"
 
     # Create asset dir
-    asset_dirpath = os.path.join("assets", asset_dirname)
+    asset_dirpath = os.path.join(ASSET_DIR, asset_dirname)
     os.makedirs(asset_dirpath, exist_ok=True)
-    print(f"Successfully created {asset_dirpath}")
-    import shutil
+    print(f"\tSuccessfully created {asset_dirpath}")
 
-    # copy default thumbnail
-    default_thumbnail_path = "assets\images\default-thumbnail.png"
-    post_thumbnail_path = os.path.join("assets", asset_dirname, "thumbnail.png")
-    print(f"Copying {default_thumbnail_path} -> {post_thumbnail_path}")
+    # Create thumbnail
+    default_thumbnail_path = f"{ASSET_DIR}\images\default-thumbnail.png"
+    post_thumbnail_path = os.path.join(ASSET_DIR, asset_dirname, "thumbnail.png")
+    print(f"\tCopying {default_thumbnail_path} -> {post_thumbnail_path}")
     shutil.copy(default_thumbnail_path, post_thumbnail_path)
 
     # Create markdown file
@@ -161,4 +162,6 @@ if __name__ == "__main__":
         md_footer = footer()
         f.write(md_header)
         f.write(md_footer)
-    print(f"Successfully created {markdown_filepath}")
+    print(f"\tSuccessfully created {markdown_filepath}")
+
+    print(f"\tHave fun writing!")
