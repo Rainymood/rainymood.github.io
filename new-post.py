@@ -31,6 +31,9 @@ tags:
 - tools
 - learning
 
+- advent of code
+
+- golang
 - python
 - sql
 - javascript
@@ -128,14 +131,16 @@ ASSET_DIR = "assets"
 if __name__ == "__main__":
     # Request input from user
     title = input("Title of blog post (Ctrl + C to cancel): ")
-    print(title)
-    print("\tslugify titled", slugify(title))
+    slug = slugify(title)
+    print("Creating a new blog post for you...")
+    print("\tTitle: ", title)
+    print("\tSlug: ", slug)
 
     today = datetime.date.today()
-    asset_dirname = today.strftime("%Y-%m-%d") + "-" + slugify(title) # ex 2022-05-20-title-of-new-post
+    asset_dirname = today.strftime("%Y-%m-%d") + "-" + slug # ex 2022-05-20-title-of-new-post
     markdown_filename = asset_dirname + ".md" # 2022-05-20-title-of-new-post.md
-    print("\tfoldername: ", asset_dirname)
-    print("\tfilename: ", markdown_filename)
+    print("\tAsset dir: ", asset_dirname)
+    print("\tFilename: ", markdown_filename)
 
     # "Tests"
     assert len(asset_dirname) > 0, "Foldername can't be empty"
