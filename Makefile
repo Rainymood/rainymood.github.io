@@ -11,3 +11,10 @@ last:
 
 new: 
 	python new-post.py
+
+post: 
+	echo "check if on master"
+	echo "git pull"
+	echo "get last branch"
+	echo "get filename"
+	echo "merge last branch into master"
