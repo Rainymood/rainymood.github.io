@@ -26,6 +26,11 @@ tags:
 - management
 - leadership
 
+- aws
+
+- tutorial
+- blog
+
 - product
 - design
 - tools
@@ -72,6 +77,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/{asset_dirname}/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 # Hello world
 
