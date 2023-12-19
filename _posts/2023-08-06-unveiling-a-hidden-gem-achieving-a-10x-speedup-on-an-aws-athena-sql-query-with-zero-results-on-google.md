@@ -12,6 +12,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-08-06-unveiling-a-hidden-gem-achieving-a-10x-speedup-on-an-aws-athena-sql-query-with-zero-results-on-google/2023-08-16-08-41-29.png"
 ---
+<!-- ctrl + alt + v -->
 
 
 

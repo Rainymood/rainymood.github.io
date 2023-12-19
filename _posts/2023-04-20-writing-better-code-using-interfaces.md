@@ -15,6 +15,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-04-20-writing-better-code-using-interfaces/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 One thing that I've learned recently and that has improved my coding significantly is writing code in terms of interfaces. 
 

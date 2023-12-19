@@ -11,6 +11,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2022-10-23-funny-sql-bug-because-i-thought-row_number-started-at-0/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 I was working on a toy project of mine and ran into a funny SQL bug because of an off-by-one error.
 

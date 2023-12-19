@@ -8,6 +8,7 @@ tags:
   - Jekyll
   - update
 ---
+<!-- ctrl + alt + v -->
 
 In one of my
 [previous](http://www.janmeppe.com/blog/how-to-change-theme-to-minimal-mistakes/)

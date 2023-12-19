@@ -14,6 +14,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-05-24-what-my-job-looks-like-implementing-a-data-sequencing-step-in-an-ml-pipeline/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 I thought it would be fun to take you along a ride of what I *actually* do as a machine learning engineer.
 

@@ -11,6 +11,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-06-01-tip-use-pytest-fixtures-instead-of-test-data/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 Recently I've been using a lot of [pytest fixtures](https://docs.pytest.org/en/6.2.x/fixture.html) instead of a `tests/data` folder and my life has been much better ever since!
 

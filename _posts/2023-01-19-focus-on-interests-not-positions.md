@@ -11,6 +11,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-01-19-focus-on-interests-not-positions/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 In this blog post I want to tell you about a negotiation principle that I believe can be applied much more broadly. 
 

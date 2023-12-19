@@ -8,6 +8,7 @@ tags:
   - Jekyll
   - update
 ---
+<!-- ctrl + alt + v -->
 
 In this blog post I cover the infamous "Invalid US-ASCII character
 \"\xE2\" on line 54" error that seems to plague people when trying to

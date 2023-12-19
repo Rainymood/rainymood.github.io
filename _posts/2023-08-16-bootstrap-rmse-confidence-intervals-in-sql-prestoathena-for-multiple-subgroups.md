@@ -12,6 +12,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-08-16-bootstrap-rmse-confidence-intervals-in-sql-prestoathena-for-multiple-subgroups/2023-08-16-08-38-23.png"
 ---
+<!-- ctrl + alt + v -->
 
 In this blog post I want to show you how to calculate approximate confidence intervals in SQL (Presto/Athena dialect) using [bootstrapping](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)), specifically for the Root Mean Squared Error (RMSE) *and* in multiple subgroups.
 

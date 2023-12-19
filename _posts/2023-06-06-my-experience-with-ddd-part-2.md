@@ -13,6 +13,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-06-06-my-experience-with-ddd-part-2/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 
 

@@ -7,6 +7,7 @@ tags:
   - python
   - anki
 ---
+<!-- ctrl + alt + v -->
 
 So while I am using Anki (flashcard program) to expand my
 vocabulary for my upcoming GRE test (wish me luck) I came across

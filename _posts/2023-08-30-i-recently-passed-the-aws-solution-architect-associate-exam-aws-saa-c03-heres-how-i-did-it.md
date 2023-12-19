@@ -13,6 +13,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-08-30-i-recently-passed-the-aws-solution-architect-associate-exam-aws-saa-c03-heres-how-i-did-it/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 I recently passed the [AWS SAA-C03](https://aws.amazon.com/certification/certified-solutions-architect-associate/) exam certification and in this blog post I wanted to share my approach on how I did it. 
 

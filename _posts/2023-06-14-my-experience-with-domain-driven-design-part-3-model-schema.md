@@ -13,6 +13,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-06-14-my-experience-with-domain-driven-design-part-3-model-schema/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 In this blog post I scream into the void about working in a project heavily influenced by [Domain-Driven Design]() principles. 
 

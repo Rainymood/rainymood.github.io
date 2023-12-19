@@ -10,6 +10,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-04-10-rates-of-flow-are-more-important-than-current-counts/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 I want to share [this article](https://two-wrongs.com/emptying-the-dishwasher-with-systems-theory.html) because it provides a fun and surprising insight that I found personally very relevant. 
 

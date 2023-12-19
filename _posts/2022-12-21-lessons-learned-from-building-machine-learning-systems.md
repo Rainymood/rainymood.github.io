@@ -11,6 +11,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2022-12-21-lessons-learned-from-building-machine-learning-systems/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 In this blog post I want to collect some of the lessons that I've learned over
 the years building machine learning systems. 

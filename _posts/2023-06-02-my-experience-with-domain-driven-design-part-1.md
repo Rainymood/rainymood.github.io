@@ -14,6 +14,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-06-02-my-experience-with-domain-driven-design-part-1/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 So I have been working a lot with [Domain Driven Design (DDD)](https://en.wikipedia.org/wiki/Domain-driven_design) lately. 
 

@@ -10,6 +10,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2022-12-12-how-to-get-bucket-name-and-path-for-s3-urls-in-python/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 If you work a lot with s3 urls like these
 

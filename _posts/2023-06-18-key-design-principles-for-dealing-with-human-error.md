@@ -11,6 +11,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-06-18-key-design-principles-for-dealing-with-human-error/2023-06-18-17-52-52.png"
 ---
+<!-- ctrl + alt + v -->
 
 <img src="/assets/2023-06-18-key-design-principles-for-dealing-with-human-error/2023-06-18-18-30-42.png" style="max-height: 200px">{: .align-left} 
 When I picked up this book I thought it was going to be a book about product design. That was true, but this book is also much more. Next to being extremely entertaining and informative, it provides a unified framework for thinking about usability in products. 

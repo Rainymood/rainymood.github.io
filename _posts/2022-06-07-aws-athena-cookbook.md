@@ -12,6 +12,7 @@ toc_sticky: true
 header:
     teaser: "/../assets/2022-06-07-aws-athena-cookbook/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 Commonly used snippets for AWS Athena. 
 

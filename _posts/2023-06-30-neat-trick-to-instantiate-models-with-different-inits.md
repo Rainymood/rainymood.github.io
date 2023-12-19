@@ -11,6 +11,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-06-30-neat-trick-to-instantiate-models-with-different-inits/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 In this blog post I want to share with you a trick that I find myself using quite often when trying to instantiate different machine learning models with different parameters in the same machine learning pipeline.
 

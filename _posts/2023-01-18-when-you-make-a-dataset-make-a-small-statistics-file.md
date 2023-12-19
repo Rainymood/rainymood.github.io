@@ -10,6 +10,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-01-18-when-you-make-a-dataset-make-a-small-statistics-file/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 This is another lesson that I learned building machine learning systems. For the other lessons that I learned click [here]({% post_url 2022-12-21-lessons-learned-from-building-machine-learning-systems %}).
 

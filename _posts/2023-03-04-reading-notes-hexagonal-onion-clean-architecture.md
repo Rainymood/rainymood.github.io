@@ -12,6 +12,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-03-04-reading-notes-hexagonal-onion-clean-architecture/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 This is my summary of this great video [Hexagonal, Onion & Clean Architecture](https://www.youtube.com/watch?v=JubdZIdLQ4M&t=1s&ab_channel=DrawingBoxes). I love this video because to me it really captures the essence of the hexagonal architecture in a fun and entertaining way.
 

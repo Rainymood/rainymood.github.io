@@ -11,6 +11,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-01-20-flask-postgres-basic-setup/thumbnail.gif"
 ---
+<!-- ctrl + alt + v -->
 
 In this blog post I'll share a basic [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [PostgreSQL](https://www.postgresql.org/) setup that you can use for local development.
 

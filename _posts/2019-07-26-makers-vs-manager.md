@@ -9,7 +9,7 @@ tags:
 header: 
   teaser: "/assets/2019-07-25-maker-vs-manager/teaser.png"
 ---
-
+<!-- ctrl + alt + v -->
 It's well known that programmers dislike meetings... *a lot*. But have
 you ever wondered why programmers dislike meetings so much compared to
 other people? The answer is simple but obvious once pointed out:

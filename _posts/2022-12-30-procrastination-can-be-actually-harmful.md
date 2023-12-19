@@ -10,6 +10,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2022-12-30-procrastination-can-be-actually-harmful/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 I'm actually a bit ashamed of making this post, but this is a very clear example of how procrastination can be harmful.
 

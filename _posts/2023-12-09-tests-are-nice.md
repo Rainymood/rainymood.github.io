@@ -14,6 +14,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-12-09-tests-are-nice/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 Because the logic in part 1 of [Advent of Code Day 9](https://adventofcode.com/2023/day/9) did not seem so daunting, I wanted to challenge myself to really use Test-Driven Development. In this blog post I want to share some funny realizations that I had while doing so.
 

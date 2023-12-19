@@ -13,7 +13,6 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-02-04-inversion-of-control-visualized/thumbnail.png"
 ---
-
 <!-- alt + ctrl + v -->
 
 In this blog post I visualize an important concept called **Inversion of Control**.

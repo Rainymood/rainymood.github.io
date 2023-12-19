@@ -13,6 +13,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2023-01-07-focus-on-how-you-did-grow-instead-of-on-how-you-didnt/thumbnail.png"
 ---
+<!-- ctrl + alt + v -->
 
 This week I taught my girlfriend how to ski and came to a funny realisation.
 
