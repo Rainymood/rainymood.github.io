@@ -18,18 +18,25 @@ def header(title: str, date, asset_dirname: str) -> str:
 title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
+# Blog or how-to
 - blog
+- tutorial
 
+# Work or personal?
 - work
 - personal
 
+# Big themes that I write about
 - engineering
 - management
 - leadership
+- systems
 
-- aws
-
-- tutorial
+# Programming languages
+- golang
+- python
+- sql
+- javascript
 
 - product
 - design
@@ -38,10 +45,6 @@ tags:
 
 - advent of code
 
-- golang
-- python
-- sql
-- javascript
 
 - aws 
 - docker
@@ -54,7 +57,6 @@ tags:
 - tip
 - athena
 
-- systems
 - meta programming
 - architecture
 
@@ -79,6 +81,13 @@ header:
     teaser: "/../assets/{asset_dirname}/thumbnail.png"
 ---
 <!-- ctrl + alt + v -->
+
+<!-- Checklist:
+Title = insight
+Interesting 1st sentence
+Short and concise -->
+
+<!-- 1. interesting hook -->
 
 # Hello world
 
