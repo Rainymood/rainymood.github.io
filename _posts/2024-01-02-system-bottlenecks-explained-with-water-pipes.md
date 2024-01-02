@@ -13,6 +13,11 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
+<!-- Checklist:
+Title = insight
+Interesting 1st sentence
+Short and concise -->
+
 <!-- 1. interesting hook -->
 The most important insight from systems theory is that the total system output is limited by its bottleneck.
 

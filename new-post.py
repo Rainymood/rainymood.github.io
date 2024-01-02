@@ -82,6 +82,13 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
+<!-- Checklist:
+Title = insight
+Interesting 1st sentence
+Short and concise -->
+
+<!-- 1. interesting hook -->
+
 # Hello world
 
 
