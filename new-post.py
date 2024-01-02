@@ -26,10 +26,12 @@ tags:
 - engineering
 - management
 - leadership
+- systems
 
 - aws
 
 - tutorial
+
 
 - product
 - design
@@ -54,7 +56,6 @@ tags:
 - tip
 - athena
 
-- systems
 - meta programming
 - architecture
 
