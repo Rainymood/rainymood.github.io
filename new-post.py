@@ -18,6 +18,7 @@ def header(title: str, date, asset_dirname: str) -> str:
 title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
+- blog
 
 - work
 - personal
@@ -29,7 +30,6 @@ tags:
 - aws
 
 - tutorial
-- blog
 
 - product
 - design
@@ -70,6 +70,7 @@ tags:
 
 - story
 - lessons learned
+- video games
 
 categories: blog
 toc: false
