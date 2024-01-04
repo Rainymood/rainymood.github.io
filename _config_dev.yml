@@ -62,7 +62,7 @@ plugins:
 
 author:
   name   : "Jan Meppe"
-  avatar : "/assets/images/new-profile-pic-small.png"
+  avatar : "/assets/images/bio-photo.jpg"
   bio    : "Machine learning engineer in love with building digital products."
   location : "Amsterdam"
   links:
