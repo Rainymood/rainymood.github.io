@@ -31,22 +31,24 @@ tags:
 - management
 - leadership
 - systems
+- productivity
 
-# Programming languages
+# Programming languages/Cloud
 - golang
 - python
 - sql
 - javascript
+- aws
 - testing
 
+# Smaller themes
+- writing
 - product
 - design
 - tools
 - learning
 
 - advent of code
-
-
 - aws 
 - docker
 - machine learning
@@ -61,8 +63,6 @@ tags:
 - meta programming
 - architecture
 
-- tools
-- motivation
 - flashcards
 - projects
 - startups

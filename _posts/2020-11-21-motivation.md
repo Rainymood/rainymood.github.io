@@ -7,7 +7,6 @@ tags:
   - blog
   - procrastination
   - management 
-  - motivation
   - productivity 
 header:
   teaser: "/../assets/2020-11-21-motivation/2020-11-20-16-06-07.png"
