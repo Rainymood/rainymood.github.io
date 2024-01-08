@@ -88,13 +88,13 @@ Title = insight
 Interesting 1st sentence
 Short and concise -->
 
-<!-- 1. interesting hook -->
-
-# Hello world
+<!-- Do the most annoying thing first: thumbnail creation -->
 
 https://app.bannerbear.com/projects/POobgvMNDkxzxAYW70/templates/3g8zka5Y2OlaDEJXBY
 
+https://www.photopea.com/
 
+<!-- 1. interesting hook -->
 
 """
 
@@ -109,6 +109,7 @@ LOREM IPSUM
 {: .notice--success}
 
 # Subscribe
+
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
