@@ -41,6 +41,7 @@ tags:
 - javascript
 - aws
 - testing
+- documentation
 
 # Smaller themes
 - writing

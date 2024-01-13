@@ -15,7 +15,7 @@ categories: blog
 toc: false
 toc_sticky: false
 header:
-    teaser: "/../assets/2024-01-08-depending-on-things-make-them-harder-to-change/thumbnail.png"
+    teaser: "/../assets/2024-01-09-depending-on-things-make-them-harder-to-change/thumbnail.png"
 ---
 <!-- ctrl + alt + v -->
 
