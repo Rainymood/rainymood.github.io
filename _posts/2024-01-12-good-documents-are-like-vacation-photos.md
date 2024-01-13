@@ -16,7 +16,7 @@ categories: blog
 toc: false
 toc_sticky: false
 header:
-    teaser: "/../assets/2024-01-13-good-documents-are-like-vacation-photos/thumbnail.png"
+    teaser: "/../assets/2024-01-12-good-documents-are-like-vacation-photos/thumbnail.png"
 ---
 <!-- ctrl + alt + v -->
 
