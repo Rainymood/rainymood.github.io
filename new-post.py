@@ -34,6 +34,7 @@ tags:
 - productivity
 
 # Programming languages/Cloud
+- rust
 - golang
 - python
 - sql
