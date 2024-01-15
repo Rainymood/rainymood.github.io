@@ -1,5 +1,5 @@
 ---
-title: "3 examples of theory building (Naur, 1985)"
+title: "3 examples of theory building"
 date: 2024-01-15
 tags:
 # Blog or how-to
