@@ -98,6 +98,11 @@ https://www.photopea.com/
 
 <!-- 1. interesting hook -->
 
+* What do I want to say
+* Why do I want to say it?
+* How does this make a better product?
+* How does this make a better org?
+
 """
 
 def footer():
