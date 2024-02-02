@@ -1,14 +1,33 @@
 ---
-permalink: /projects/
-title: "Projects"
+permalink: /work/
+title: "Work"
 toc: true
 ---
 
-An incomplete list of (personal) projects.
+I build machine learning products/platforms in [Python](https://www.python.org/) and deploy them at scale using [AWS](https://aws.amazon.com/).
 
-# Professional
+Interested in working with me? View my [resume](/assets/cv/2024-01-22-jan-meppe-resume.pdf).
 
-Only mentioning the most fun things :)
+<!-- {: .notice--success} -->
+
+## Snappet (2021 - present)
+
+<img src="/assets/work/snappet.png" style="max-height: 300px">
+
+I work for [Snappet](https://snappet.org/) which is one of the largest educational AI startups in The Netherlands.  Here I first worked on modeling & research and am now working on machine learning platform infrastructure.
+
+## Cognizant (2019 - 2021)
+
+<!-- ![](/../assets/work/cognizant.jpg) -->
+
+<img src="/assets/work/cognizant.jpg" style="max-height: 300px">
+
+I worked in the Digital Strategy & Innovation Amsterdam office of [Mirabeau]()/[Cognizant](https://www.cognizant.com/nl/nl) as a data science consultant.
+I ran 10 projects in 7 different teams in 3 different countries. 
+
+
+
+<!-- # Professional
 
 2023
 
@@ -24,7 +43,7 @@ Only mentioning the most fun things :)
 * Rewrote core algorithm of the platform and scaled machine learning model training to billions of rows
 * Worked on chatbot based on Bi-Directional LSTM for a large telecom client serving >2m users
 
-# Personal side projects
+# Personal side projects -->
 
 
 ## Feedbackgoat.com (Feb 2023)
@@ -32,10 +51,6 @@ Only mentioning the most fun things :)
 <img src="/assets/teasers/teaser-feedback.gif" style="max-height: 400px">
 
 I built a small tool to quickly give and receive feedback. View the website at [www.feedbackgoat.com](https://feedbackgoat.com/). In this project I learned about:
-
-* Django (url dispatcher, data models, user auth, and much more)
-* Postgresql and sqlite
-* Serving a website to users on production
 
 **Technologies**: Python, Django, Postgresql, Bootstrap
 
