@@ -1,6 +1,6 @@
 ---
 title: "There will always be naysayers"
-date: 2024-01-23
+date: 2023-12-01
 tags:
 # Blog or how-to
 - blog
