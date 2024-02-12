@@ -1,6 +1,6 @@
 ---
-title: "There will always be naysayers"
-date: 2023-12-01
+title: "There will always be critics"
+date: 2024-01-23
 tags:
 # Blog or how-to
 - blog
@@ -15,6 +15,8 @@ toc: false
 toc_sticky: false
 header:
     teaser: "/../assets/2024-01-23-there-will-always-be-naysayers/thumbnail.png"
+published:
+    false
 ---
 <!-- ctrl + alt + v -->
 
@@ -25,21 +27,11 @@ Short and concise -->
 
 ![](/../assets/2024-01-23-there-will-always-be-naysayers/2024-01-23-12-02-48.png)
 
-**Introduction**
+* In this tweet we see how people initially disliked the now historic Wright brother's initial flight. It's easy to be negative and to be an armchair critic. No matter what you do, if it is of any significance you will find people that are critical. So best expect it and be ready for it. 
 
-In this tweet, or now X, we see how people initially disliked the Wright brothers historic flight. It's easy to be negative and be an armchair critic. No matter what you do, people will always be critical of you, so best expect it and be ready for it.
+* Product: That being said, criticism can also be used as a tool to refine ideas and to make them stronger by having them stand up to scrutiny. There will always be some criticism, but maybe you can use it to make your ideas stronger and more resilient. 
 
-**Personal reminder**
-
-Resistance to change is common and often wrapped in skepticism. This story is a reminder for me to keep going despite doubts that others might have. Resistance is just part of the journey. Don't be scared of what others think because they will think it regardless. There will always be naysayers.
-
-**Crafting better products**
-
-Criticism can be used like a tool to refine ideas and make them strong enough to stand up to scrutiny. There will always be some initial resistance to new ideas and change, because that's the way people are. 
-
-**Building better organizations**
-
-Organizations face decisions, sometimes this must be done in a group arrangement in a democratic setting and other times you must make bold decisions yourself which can be seen as leaps of faith. Embrace the criticism and most of all expect it regardless of what you do.
+* Org: Organizations must make decisions. Oftentimes this can be done in a democratic way in a group setting, but sometimes a leader must make bold and unpopular decisions. Then it is your choice. Do you listen to the criticism or do you continue regardless of what others say?
 
 # Subscribe
 
