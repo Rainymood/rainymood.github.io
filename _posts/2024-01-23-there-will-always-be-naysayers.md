@@ -16,7 +16,7 @@ toc_sticky: false
 header:
     teaser: "/../assets/2024-01-23-there-will-always-be-naysayers/thumbnail.png"
 published:
-    false
+    true
 ---
 <!-- ctrl + alt + v -->
 
