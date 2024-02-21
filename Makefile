@@ -19,4 +19,4 @@ new:
 publish: 
 	git checkout master
 	git pull
-	git merge $(MY_VAR)
+	git merge $(MY_VAR) -m "Merge branch $(MY_VAR)"
