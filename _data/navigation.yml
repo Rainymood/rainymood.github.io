@@ -1,4 +1,6 @@
 main:
+  - title: Essay
+    url: /essays/
   - title: Work
     url: /work/
   - title: Blog
