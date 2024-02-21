@@ -16,7 +16,7 @@ last:
 new: 
 	python new-post.py
 
-publish: 
-	git checkout master
-	git pull
-	git merge $(MY_VAR) -m "Merge branch $(MY_VAR)"
+# publish: 
+# 	git checkout master
+# 	git pull
+# 	git merge $(MY_VAR) -m "Merge branch $(MY_VAR)" && git push
