@@ -114,6 +114,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _essays
+  - scope:
+      path: ""
+      type: essays
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 category_archive:
   type: liquid
@@ -121,6 +129,14 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# These settings essentially say output index.html files for each portfolio
+# document in _portfolio at _site/portfolio/<document-filename>/.
+collections:
+  essays:
+    output: true
+    permalink: /:collection/:path/
+
 
 analytics:
   provider: "google"
