@@ -1,3 +1,6 @@
+
+MY_VAR := $(shell eval git branch --sort=-committerdate | head -1)
+
 build:
 	code .
 	bundle exec jekyll serve --livereload -o --incremental
@@ -13,9 +16,7 @@ last:
 new: 
 	python new-post.py
 
-post: 
-	echo "check if on master"
-	echo "git pull"
-	echo "get last branch"
-	echo "get filename"
-	echo "merge last branch into master"
+publish: 
+	git checkout master
+	git pull
+	git merge $(MY_VAR)
