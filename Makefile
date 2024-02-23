@@ -1,6 +1,9 @@
 
 MY_VAR := $(shell eval git branch --sort=-committerdate | head -1)
 
+BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
+HASH := $(shell git rev-parse HEAD)
+
 build:
 	code .
 	bundle exec jekyll serve --livereload -o --incremental
@@ -16,14 +19,5 @@ last:
 new: 
 	python new-post.py
 
-<<<<<<< HEAD
 publish: 
-	git checkout master
-	git pull
-	git merge $(MY_VAR) -m "Merge branch $(MY_VAR)"
-=======
-# publish: 
-# 	git checkout master
-# 	git pull
-# 	git merge $(MY_VAR) -m "Merge branch $(MY_VAR)" && git push
->>>>>>> 433f72e102d661ebe317c654464b0ba6d6145f60
+	echo $(BRANCH)
