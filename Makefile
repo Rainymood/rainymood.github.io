@@ -20,4 +20,6 @@ new:
 	python new-post.py
 
 publish: 
-	echo $(BRANCH)
+	git checkout master
+	git pull
+	echo git merge $(BRANCH)
