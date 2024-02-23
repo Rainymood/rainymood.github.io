@@ -22,4 +22,5 @@ new:
 publish: 
 	git checkout master
 	git pull
-	echo git merge $(BRANCH)
+	git merge $(BRANCH) 
+	git push
