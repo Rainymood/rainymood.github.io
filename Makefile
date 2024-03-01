@@ -22,5 +22,5 @@ new:
 publish: 
 	git checkout master
 	git pull
-	git merge $(BRANCH) 
+	git merge $(BRANCH) -m "Publish post in $(BRANCH)"
 	git push

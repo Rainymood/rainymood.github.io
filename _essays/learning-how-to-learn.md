@@ -96,6 +96,19 @@ By learning we update this mental model, so learning is about building a mental 
 
 For example, I am learning french right now and I am learning all the tenses, but I have learned only three so far: the present, passé récent, and the futur proche. There are many more, but I haven't learned them. So my mental model is restricted to only those times. This is not bad per se, but I need to work on both expressing myself with this limited mental model that I have and to build it out further, but one step at a time.
 
+# Duolingo practices 4 things on a very basic level
+
+* Reading
+* Writing
+* Speaking
+* Listening
+
+# Learning is teaching
+
+Learning is teaching. If you can teach something then you have adequately learned something. Teaching is learning because when you can teach something that means that you are above the material. If you are not above the material you will notice while teaching it that you have gaps in your knowledge that need remedying. 
+
+**Tip: To learn... teach!**
+
 # Conclusion
 
 In this essay I have tried to collect most of the useful tips I know for improving your skill of learning how to learn, i.e. meta-learning. I firmly believe that learning is a learned skill that we can learn. We can learn how to learn which makes us more effective.
