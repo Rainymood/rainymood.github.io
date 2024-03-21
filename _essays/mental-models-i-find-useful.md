@@ -1,6 +1,6 @@
 ---
 title: "Mental models I find useful"
-published: true
+published: false
 toc: true
 toc_sticky: true
 ---

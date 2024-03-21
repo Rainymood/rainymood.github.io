@@ -5,18 +5,22 @@ toc: true
 toc_sticky: true
 ---
 
-In this essay I try to collect everything I have learned about the process of learning how to learn, also called *meta-learning*. 
+In this essay I try to collect everything I have learned about the process of learning how to learn.
 
 > "Give me six hours to chop down a tree and I will spend the first four sharpening the axe." - Abraham Lincoln
 
-I think this process of learning how to learn is important because we spend a good part of our lives learning new things. It makes sense to spend some time to do this more efficiently. These tips are applicable both for students that are studying for exams and knowledge workers working in tech.
+Learning how to learn is important because we spend a good part of our lives learning new things.
 
-Some of these tips are obvious, but it is always good to repeat the basics. Some of these tips are less obvious, and therefore good to repeat. 
+Thus, it makes sense to become better at this. 
+
+These tips are geared and applicable both for students studying for exams and knowledge workers working in tech.
+
+Most of these tips are obvious, but some are *very* counterintuitive. They are so counterintuitive that I almost disagree with them, but the science doesn't lie.
 
 💡 This is a work in progress
 {: .notice--warning}
 
-# Use both your focused and diffused brain
+# Learning is focused and diffuse
 
 Current research shows that you have two types of brain activity, diffused and focused. A good analogy is that of a flashlight. 
 
@@ -28,7 +32,7 @@ The trick to using this knowledge for your learning is to use both modes of thin
 
 **Tip: Engage both types of thinking (focused and diffuse) when problem solving**
 
-# Space out your learning
+# Learning is spacing things out
 
 Current research shows that it is better to space out your learning than to cram it all together. If you are studying for a test then cramming is not so bad, but if you are studying for life-long retention then you should space out your learning. 
 
@@ -38,7 +42,7 @@ This advice is counterintuitive because it feels like you are learning less, bec
 
 **Tip: Space out your learning, I use the space repetition app Anki for this**
 
-# Interleave your practice
+# Learning is interleaving
 
 Another counterintuitive tip is that you should interleave your practice. What this means is that you should practice different problem solving techniques together instead of just cramming one, which is usually the way it is presented in text books.
 
@@ -76,7 +80,7 @@ To do this I use flashcards, these are great for practicing retrieval exercises 
 
 **Tip: Use flashcards to incorporate retrieval practice**
 
-# Learning should be fun
+# Learning is fun
 
 I deeply believe that we like to do things that are fun. This sounds almost stupidly trivial but it has an interesting corollary, we can force ourselves to do things we want by making them fun. If you do something, and it is fun, you want to do it more often, simple. We can apply this concept to skill learning.
 
@@ -96,18 +100,29 @@ By learning we update this mental model, so learning is about building a mental 
 
 For example, I am learning french right now and I am learning all the tenses, but I have learned only three so far: the present, passé récent, and the futur proche. There are many more, but I haven't learned them. So my mental model is restricted to only those times. This is not bad per se, but I need to work on both expressing myself with this limited mental model that I have and to build it out further, but one step at a time.
 
-# Duolingo practices 4 things on a very basic level
-
-* Reading
-* Writing
-* Speaking
-* Listening
-
 # Learning is teaching
 
 Learning is teaching. If you can teach something then you have adequately learned something. Teaching is learning because when you can teach something that means that you are above the material. If you are not above the material you will notice while teaching it that you have gaps in your knowledge that need remedying. 
 
 **Tip: To learn... teach!**
+
+# Learning is experiencing
+
+There are two ways you can learn something. You can learn it from instruction, by reading about it, or you can learn it from experience, by experiencing it. Not one is better than the other, but I think that the latter one has far more impact because it is much more visceral.
+
+**Tip: To learn, experience!**
+
+# Learning is hard work
+
+Learning is hard work. Learning is not always easy. It is especially in this hard work where the real learning is. If it comes to easily, if you are not stumbling, if you are not failing, then are you really learning enough? It is in this struggle where you try to express yourself, try, fail, get corrected, and try again, that you really learn. That is why it is so important that you create a safe environment where it is OK to fail and OK to try new things because this is where learning happens.
+
+**Tip: Don't get discouraged when things become hard!**
+
+# Learning is chunking
+
+Learning is chunking. An important concept that I forgot. Learning is chunking. Chunking means to understand something so well that you can do it without thinking. You have this one concept and it is just so ingrained in you that you can do it without thinking. Very close to doing things automatically. It's like building a habit around it I think. Chunking.
+
+**Tip: Work actively on your chunks**
 
 # Conclusion
 
