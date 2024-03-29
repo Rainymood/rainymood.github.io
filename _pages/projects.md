@@ -6,7 +6,7 @@ toc: true
 
 I build machine learning products/platforms in [Python](https://www.python.org/) and deploy them at scale using [AWS](https://aws.amazon.com/).
 
-Interested in working with me? View my [resume](/assets/cv/2024-01-22-jan-meppe-resume.pdf).
+Interested in working with me? View my [resume](/assets/cv/2024-03-28-jan-meppe-resume.pdf).
 
 <!-- {: .notice--success} -->
 
