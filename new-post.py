@@ -32,6 +32,7 @@ tags:
 - leadership
 - systems
 - productivity
+- lean
 
 # Programming languages/Cloud
 - rust
@@ -98,6 +99,8 @@ https://www.photopea.com/
 
 <!-- 1. interesting hook -->
 
+YOU ARE NOT FAMOUS. So do whatever you want :)
+
 * What do I want to say
 * Why do I want to say it?
 * How does this make a better product?
@@ -108,13 +111,6 @@ https://www.photopea.com/
 def footer():
     """Should probably use textwrap.dedent here..."""
     return """
-## Wrapping up
-
-LOREM IPSUM
-
-**Remember** LOREM IPSUM!
-{: .notice--success}
-
 # Subscribe
 
 <!-- Begin Mailchimp Signup Form -->
