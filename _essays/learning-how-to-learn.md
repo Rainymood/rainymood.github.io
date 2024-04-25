@@ -124,6 +124,10 @@ Learning is chunking. An important concept that I forgot. Learning is chunking. 
 
 **Tip: Work actively on your chunks**
 
+# Learning is being challenged
+
+Learning is about being challenged at the right level at the right time. As of 2024 I am learning french and I took a course on A1.1 level but this was too easy. I was not challenged and I could not pull myself up on the level of the others around me. The right level of challenge is needed. It's funny to see how this works now when you are the subject of personalised education yourself.
+
 # Conclusion
 
 In this essay I have tried to collect most of the useful tips I know for improving your skill of learning how to learn, i.e. meta-learning. I firmly believe that learning is a learned skill that we can learn. We can learn how to learn which makes us more effective.

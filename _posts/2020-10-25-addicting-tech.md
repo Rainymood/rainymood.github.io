@@ -4,7 +4,8 @@ date: 2020-10-25
 categories:
   - blog
 tags:
-  - tech
+  - engineering
+  - product
   - habits
   - dopamine
   - blog

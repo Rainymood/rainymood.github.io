@@ -8,12 +8,13 @@ title: "About Jan"
 
 Hi 👋
 
-My name is Jan Meppe and I work as a machine learning engineer at an edtech
-startup called [Snappet](https://www.snappet.org/). 
+My name is Jan Meppe and it is my mission to **change the way that people learn**.
+
+To fulfill that mission, I currently work as a machine learning engineer at an education startup called [Snappet](https://www.snappet.org/). 
 
 Before that, I worked as a data science consultant for [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-My goal (and hope) is that I can use my skills to make a **positive impact** in the world, making the world a better place.
+On this blog I write about anything that interests me, which is mainly education/learning, engineering, and productivity [(browse by tag)](https://www.janmeppe.com/tags/)
 
 ## I wrote some popular tech blog articles
 
@@ -45,7 +46,7 @@ I write because I like it and because writing can help people at scale:
 * [Today Jan Learned](https://janmeppe.substack.com/) contains 100+ editions of my now discontinued daily newsletter
 * [Hacker News](https://news.ycombinator.com/item?id=20608032) featured one of my blog posts on their front page and was read more than 30.000 times.
 
-## In the past I've built iOS apps
+## I made an iOS app in the past!
 
 <img src="/assets/images/3-good-things.png" style="max-height: 400px">
 
@@ -85,13 +86,7 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 * Slide in my DMs on [Instagram](https://www.instagram.com/janmeppe/)
 * Read (discontinued) newsletter on [Substack](https://janmeppe.substack.com)
 
-<!-- I code:
-
-* I do machine learning stuff in **Python** with **TensorFlow/Keras**, **Scikit-learn**, **Pandas**, and **Numpy**
-* I do web stuff in **JavaScript** with **React**, **React-native**, and **Node.js**
-
-[Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on.  -->
-
+<!-- [Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on.  --> -->
 
 <img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center}
 
