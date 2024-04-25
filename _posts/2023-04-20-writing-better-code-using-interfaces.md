@@ -2,7 +2,7 @@
 title: "Writing better code using interfaces"
 date: 2023-04-20
 tags:
-- architecture
+- software architecture
 - programming
 - python
 - lessons learned

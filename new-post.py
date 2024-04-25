@@ -28,6 +28,8 @@ tags:
 
 # Big themes that I write about
 - engineering
+- software architecture
+- learning
 - management
 - leadership
 - systems
@@ -49,8 +51,6 @@ tags:
 - product
 - design
 - tools
-- learning
-
 - advent of code
 - aws 
 - docker
@@ -64,7 +64,6 @@ tags:
 - athena
 
 - meta programming
-- architecture
 
 - flashcards
 - projects

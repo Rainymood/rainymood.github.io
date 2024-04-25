@@ -6,7 +6,7 @@ tags:
 - engineering
 - aws 
 - tutorial
-- architecture
+- software architecture
 categories: blog
 toc: true
 toc_sticky: true

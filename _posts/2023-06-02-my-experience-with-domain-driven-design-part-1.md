@@ -7,7 +7,7 @@ tags:
 - code
 - domain driven design
 - work
-- architecture
+- software architecture
 categories: blog
 toc: false
 toc_sticky: false

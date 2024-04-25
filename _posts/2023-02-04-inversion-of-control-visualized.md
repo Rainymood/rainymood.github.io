@@ -2,7 +2,7 @@
 title: "Inversion of Control visualized"
 date: 2023-02-04
 tags:
-- architecture
+- software architecture
 - programming
 - learning
 - cosmicpython

@@ -10,7 +10,7 @@ tags:
 
 # Big themes that I write about
 - systems
-- architecture
+- software architecture
 categories: blog
 toc: false
 toc_sticky: false

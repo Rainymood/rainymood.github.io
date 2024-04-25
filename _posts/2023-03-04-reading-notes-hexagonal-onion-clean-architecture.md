@@ -2,7 +2,7 @@
 title: "Reading Notes: Hexagonal, Onion & Clean Architecture"
 date: 2023-03-04
 tags:
-- architecture
+- software architecture
 - programming
 - code
 - reading notes
