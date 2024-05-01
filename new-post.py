@@ -36,6 +36,10 @@ tags:
 - productivity
 - lean
 
+# gaming/ui/ux design
+- juice
+- game design
+
 # Programming languages/Cloud
 - rust
 - golang

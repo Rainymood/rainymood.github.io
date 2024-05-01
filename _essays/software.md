@@ -1,10 +1,26 @@
 ---
-title: "How to write software"
-published:
-  false
+title: "How to write good code (draft)"
+published: true
+toc: true
+toc_sticky: true
 ---
 
-# Mindset
+Goal:
+
+* When someone asks me "How do you write good code?" this is the blog post I want to link them to.
+
+# What is good code
+
+## Code is for humans. Code is sociotechnical.
+
+The first thing we should agree on is that code is social. Growth is written by humans. And code will be read by humans. This is very important because this means that every rule I make here about code, it might not actually translate across cultures. Every culture is different. People in different cultures are different. You know so. There's not really A1 size fits all reply. But I think there are some overarching principles that we can apply which make most of the code better.
+
+
+## Code is read more often than it is written.
+
+So a funny thing happens when you've been working at the same company for some time. You make a project, you write some code, you're finished a project, and then a year later you actually have to revisit your old project and you're like, wait, who built this piece of crap? And then you look into git commit and it's actually you that wrote it, so. Here we end up on a very funny principle, which is that code is read more often than is written.
+
+Another way of framing this is that the second use write code, the second it goes from your head through your keyboard into the code base, it is now in maintenance mode. So this means that you will have to start maintaining it. And then imagine you have a project that has a lifespan of maybe one or two. Years. And you know it takes a week to write the code, but then if you look at it from the complete project perspective of two years. Most of the time will be spent in maintenance mode, so that is why it's so important that you write code that is easy to maintain, that you write code that is. So code is read more often than it is written. The second you write code, it has to become. It has to be maintained. So good code in that sense. Should be maintainable. Good code should be maintainable.
 
 ## Programming is problem solving
 
@@ -15,9 +31,23 @@ Writing code is not the end goal. The code exists to serve some greater purpose,
 The best code is no code. If you can do something in less lines, do it. Less lines of code means less things to maintain which means you can spend more time per unit. This increases quality and creates better software.
 
 Do not pride yourself into using *lines written* but instead think of it as *lines spent*. 
+## Good code should be understandable.
+
+So another thing is that good code should be maintainable. It should be changeable. So there's this story in Clean Architecture or Clean Code, whatever. And the story basically goes like this. Imagine you have two code bases. The first code base works perfectly, but it's very hard to change. Actually, it's impossible to change. But it works perfectly. The second one, the code actually doesn't work. It doesn't work at all, but it is possible to change the code. Now I ask you, which one do you prefer? The one that works but is unchangeable, or the one that actually completely unfunctional but is changeable? Now, of course there's a correct answer to this question, and that answer is that it's the one that's changeable. Why? Because the world around us keeps changing. So the second you write code it becomes outdated and you have to maintain it. So even though the code now is not correct because you can change it, you have the future option for it to be correct. However, the code that is right now, but it's impossible to change will be wrong because the underlying world will change. So the summary of this is that good codes should be changeable, it should be easy to understand and it should be changeable. It should be changeable. You should be able to make changes.
+
+# How do we write good code
+
+- Dependency injection
+- Information hiding / leaking
+- Cohesion and coupling
+- Separating data from computations
+- Domain modeling and lightweight domain objects
+- Input and output validation
+- Separating tech from problem solving
+- Local first
 
 
-Test
+
 
 ## Local is good
 
