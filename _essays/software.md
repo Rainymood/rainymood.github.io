@@ -5,37 +5,130 @@ toc: true
 toc_sticky: true
 ---
 
-Goal:
+In this essay I try to write down everything I know about **writing good code**.
 
-* When someone asks me "How do you write good code?" this is the blog post I want to link them to.
+When someone asks me "How do you write good code" this is the blog post I want to be able to link them to.
+
+The first section talks about **what is good code**.
+
+Here I show that:
+
+* Code is social
+* Code spends most of its time in maintenance mode
+* Code needs to be easy to change
+
+The second section talks about **software architecture**.
+
+Here I talk about:
+
+* Software architecture
+* What makes a software architecture good? (Spoiler: it's about being easy to change)
+* The Golden Rule of software architecture
+
+The third section talks about **tactics**
+
+Here I try to provide very practical and specific tactics you can immediately apply in your day-to-day.
 
 # What is good code
 
-## Code is for humans. Code is sociotechnical.
+![](/../assets/software/2024-05-02-11-45-02.png)
 
-The first thing we should agree on is that code is social. Growth is written by humans. And code will be read by humans. This is very important because this means that every rule I make here about code, it might not actually translate across cultures. Every culture is different. People in different cultures are different. You know so. There's not really A1 size fits all reply. But I think there are some overarching principles that we can apply which make most of the code better.
+## Code, like language, is deeply human.
 
+> "Programs should be written for people to read, and only incidentally for machines to execute." -- Unknown
 
-## Code is read more often than it is written.
+The first thing we should agree on is that **code is social**. Code is written by humans and for humans. 
 
-So a funny thing happens when you've been working at the same company for some time. You make a project, you write some code, you're finished a project, and then a year later you actually have to revisit your old project and you're like, wait, who built this piece of crap? And then you look into git commit and it's actually you that wrote it, so. Here we end up on a very funny principle, which is that code is read more often than is written.
+This is important to align on because this means that every rule I write here about how to write good code might not translate across borders or cultures. 
 
-Another way of framing this is that the second use write code, the second it goes from your head through your keyboard into the code base, it is now in maintenance mode. So this means that you will have to start maintaining it. And then imagine you have a project that has a lifespan of maybe one or two. Years. And you know it takes a week to write the code, but then if you look at it from the complete project perspective of two years. Most of the time will be spent in maintenance mode, so that is why it's so important that you write code that is easy to maintain, that you write code that is. So code is read more often than it is written. The second you write code, it has to become. It has to be maintained. So good code in that sense. Should be maintainable. Good code should be maintainable.
+Every culture is different, hence every culture will have it's own unique set of what really is good code. But maybe there are some general principles that do translate well across cultures.
 
-## Programming is problem solving
+## Code spends most of its time in maintenance mode
 
-Writing code is not the end goal. The code exists to serve some greater purpose, to solve a certain problem. Always try to keep the goal in mind. If you can avoid writing some code by talking with someone and solving the same problem, then do that instead. Less but better.
+> "Code is read more often than it is written." -- Unknown
+
+A funny thing happens when you work at any company long enough. You work on a project, write some code, you finish the project, and then a year later you actually have to revisit your old project and you wonder who wrote that piece of crap. You realize it was you who wrote it. 
+
+This is a special case of a principle that code is read more often than it is written. Another way of framing this is that the second you write and commit the code it goes in maintenance mode. If you have a healthy project with a lifespan of 2 years and it takes around a week to write the code, that means that it spends more than 99% of the time in maintenance mode (1 week coding versus 103 weeks maintenance). Good code should be maintainable.
 
 ## The best code is no code
 
-The best code is no code. If you can do something in less lines, do it. Less lines of code means less things to maintain which means you can spend more time per unit. This increases quality and creates better software.
+> ["The Best Code is No Code At All" -- Jeff Atwood](https://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
+
+The best code is no code.
+
+If you can write less lines of code, then do it. Less lines of code means less things to maintain which means more time you can spend on every line relatively. 
 
 Do not pride yourself into using *lines written* but instead think of it as *lines spent*. 
-## Good code should be understandable.
 
-So another thing is that good code should be maintainable. It should be changeable. So there's this story in Clean Architecture or Clean Code, whatever. And the story basically goes like this. Imagine you have two code bases. The first code base works perfectly, but it's very hard to change. Actually, it's impossible to change. But it works perfectly. The second one, the code actually doesn't work. It doesn't work at all, but it is possible to change the code. Now I ask you, which one do you prefer? The one that works but is unchangeable, or the one that actually completely unfunctional but is changeable? Now, of course there's a correct answer to this question, and that answer is that it's the one that's changeable. Why? Because the world around us keeps changing. So the second you write code it becomes outdated and you have to maintain it. So even though the code now is not correct because you can change it, you have the future option for it to be correct. However, the code that is right now, but it's impossible to change will be wrong because the underlying world will change. So the summary of this is that good codes should be changeable, it should be easy to understand and it should be changeable. It should be changeable. You should be able to make changes.
+## The best code is a solved problem
 
-# How do we write good code
+The best code is no code (and a solved problem).
+
+Writing code should not be the goal in and of itself.
+
+The code exists to **solve a certain problem**. If you can solve the problem without code, do that instead. Always try to keep this goal in mind.  If you can avoid writing some code by talking with someone and solving the same problem, then do that. Do less, but better.
+
+## Code should be easy to change
+
+What which of these two codebases do you prefer? One that doesn't work but you can change or the other which works but you can not change?
+
+> Function or architecture? Which of these two provides the greater value? Is it more important for the software system to work, or is it more important for the software system to be easy to change?
+>
+> If you ask the business managers, they’ll often say that it’s more important for the software system to work. Developers, in turn, often go along with this attitude. But it’s the wrong attitude. I can prove that it is wrong with the simple logical tool of examining the extremes.
+>
+>   - If you give me a program that works perfectly but is impossible to change, then it won’t work when the requirements change, and I won’t be able to make it work. Therefore the program will become useless.
+>   - If you give me a program that does not work but is easy to change, then I can make it work, and keep it working as requirements change. Therefore the program will remain continually useful.
+
+## Good design is easy to change (pragmatic programmer)
+
+The essence of good code design is that it is easy to change.
+
+The world is full of people trying to sell you specific knowledge about how to write good software. There are lists, acronyms, patterns, diagrams, docks and many other things that try to tell you how to write good software. And then here I am as well. I am trying to tell you exactly how to write software. 
+
+But there is a silver bullet. There is *one*.
+
+And that one silver bullet is this: **Good design is easier to change than that design.**
+
+All patterns, all techniques, all tooling that help you write good code like the hexagonal architecture, decoupling, and the single responsibility principle. All these things are special cases of this rule that they make your code easier to change. 
+
+Why is decoupling good? Decoupling is good because when you isolate concerns you make things easier to change.
+
+Why is the SRP good? The SRP is good because a change in requirements is then reflected in only one module.
+
+Why is good naming important? Good naming is important because to change code you need to read it. 
+
+Why is the hexagonal architecture good? Because when you want to change the technical infrastructure, it should be decoupled from the actual problem that you're solving. Making the code easy to change.
+
+This is the main principle underlying all other principles: good code should be easy to change.
+
+# Architecture
+
+## What is architecture (clean architecture)
+
+So when we hear architecture, we hear sounds and visions of power and mystery. We think of weighty decisions and deep technical prowess, right? But what actually is software architecture? What does it do and when do you do it? The architecture of a software system is to shape given to that system by those who build it. The form of the shape is in how the system is divided into components, how they are arranged, and in the way that they communicate with each other. So in a sense, architecture is the invisible glue holding all the pieces together. Now we must never forget that the purpose of this shape is to facilitate the development, deployment, operation and maintenance of the software inside of it. The primary purpose of the architecture is to support the whole life cycle of the system. Good architecture makes the system easy to understand, easy to change and develop, easy to maintain and easy to deploy. The ultimate goal is to minimize the lifetime cost of the system and to maximize programmer productivity.
+
+## What is architecture (clean architecture in python)
+
+Every production system, every package, every medical mechanical device, or every action actually is made of components and the connections between them. The purpose of these components is to use the outputs of the components as inputs into some other components in order to perform a certain set of actions. In this process, the architecture specifies which components are part of an implementation and how they are interconnected. 
+
+## The Golden Rule (clean architectures in python)
+
+![](/../assets/software/2024-05-02-11-42-51.png)
+
+> The Golden Rule: talk inwards with simple structures, talk outwards through interfaces.
+
+> Your elements should talk inwards, that is pass data to more abstract elements, using basic structures, that is entities and everything provided by the programming language you are using.
+
+> Your elements should talk outwards using interfaces, that is using only the expected API of a component, without referring to a specific implementation. When an outer layer is created, elements living there will plug themselves into those interfaces and provide a practical implementation.
+
+
+
+
+
+# Tooling
+
+## General Principles
 
 - Dependency injection
 - Information hiding / leaking
@@ -46,16 +139,11 @@ So another thing is that good code should be maintainable. It should be changeab
 - Separating tech from problem solving
 - Local first
 
-
-
-
-## Local is good
+## Local > Cloud
 
 Having things locally makes everything fast. Having to interface with the cloud takes time. Try to do as much as you can on your laptop. Why? Because this leads to quick feedback cycles and quick feedback cycles are important for you to figure out whether what you did was right or not. 
 
 Example: Instead of testing `s3` directly, spin up a copy of `moto` using `docker-compose` instead.
-
-# Tooling
 
 ## Use makefiles to automat tedious commands
 
