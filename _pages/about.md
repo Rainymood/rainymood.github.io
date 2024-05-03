@@ -24,6 +24,14 @@ Three popular (>20.000 reads) blogs that I wrote are:
 * [How to add a new kernel to your Jupyter Notebook]({% post_url 2020-08-20-how-to-add-new-kernel-in-jupyter-notebook %})
 * [How to set Python 3 as default on Mac]({% post_url 2021-01-20-how-to-set-python3-as-default-mac %})
 
+## I am passionate about writing good software
+
+And I love writing about it:
+
+* [Browse by tag: software architecture](https://www.janmeppe.com/tags/#software-architecture)
+* [Browse by tag: engineering](https://www.janmeppe.com/tags/#engineering) 
+* [Browse by tag: programming](https://www.janmeppe.com/tags/#programming)
+
 ## I love data-driven decision making
 
 I believe that machine learning is just one expression of **data-driven decision making**:

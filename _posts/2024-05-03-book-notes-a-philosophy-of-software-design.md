@@ -30,7 +30,7 @@ The book is short, it reads easily, and it contains new insight every time you r
 
 This is actually my second time reading it. 
 
-After having faced a different set of challenges at work I got wildly different from this read compared to the first time I read it. 
+After having faced a different set of challenges at work I got wildly different insights from this read compared to the first time I read it. 
 
 Here's my cliff notes of the book in bullet points. [1]
 
