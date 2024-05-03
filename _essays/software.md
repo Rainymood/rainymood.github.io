@@ -5,11 +5,11 @@ toc: true
 toc_sticky: true
 ---
 
-In this essay I try to write down everything I know about **writing good code**.
+In this essay I try to write down everything I know about **how to write good code.**
 
-When someone asks me "How do you write good code" this is the blog post I want to be able to link them to.
+I know that a lot of colleagues of mine, for their growth goals, are working on learning how to craft better code. And this blog post is the one I want to be able to link them to if they ask me "Hey Jan, do you have some tips to write good code?"
 
-The first section talks about **what is good code**.
+First, I talk about code and what exactly makes good code good. 
 
 Here I show that:
 
@@ -17,21 +17,34 @@ Here I show that:
 * Code spends most of its time in maintenance mode
 * Code needs to be easy to change
 
-The second section talks about **software architecture**.
+Then, I talk about **complexity** and the **philosophy** behind software design. 
+
+Here I:
+
+* Talk about complexity, what is it and how does it relate to software?
+* Ways to reduce and harness complexity
+
+This is largely a summary of the book A Philosophy of Software Design by John Oosterhout. 
+
+Then, I talk about about **software architecture**, what is software architecture exactly, and what can we do with it?
 
 Here I talk about:
 
-* Software architecture
-* What makes a software architecture good? (Spoiler: it's about being easy to change)
+* What is software architecture
+* What makes a certain software architecture good? (Spoiler: it's about being easy to change)
 * The Golden Rule of software architecture
 
-The third section talks about **tactics**
+The final section contains **tactics** that you can use. These are practical and specific things that you can immediately apply in your day-to-day.
 
-Here I try to provide very practical and specific tactics you can immediately apply in your day-to-day.
-
-# What is good code
+# What makes good code good
 
 ![](/../assets/software/2024-05-02-11-45-02.png)
+
+## Introduction
+
+If we want to write good code, we must first define what we mean by good code.
+
+There are no black and white rules, but there are some general rules of thumb I think most of us agree on.
 
 ## Code, like language, is deeply human.
 
@@ -101,6 +114,46 @@ Why is good naming important? Good naming is important because to change code yo
 Why is the hexagonal architecture good? Because when you want to change the technical infrastructure, it should be decoupled from the actual problem that you're solving. Making the code easy to change.
 
 This is the main principle underlying all other principles: good code should be easy to change.
+
+# Complexity (A Philosophy of Software Design)
+
+## Introduction
+
+The study of software is a study in complexity. We are taking information from some place, doing something with it, and putting it somewhere else. Fundamentally this feel and sounds very simple, but we all know what a mess we can make for ourselves. 
+
+This piece talks about complexity, what is it, how can we reduce it, and why does it seem to always creep up on us without us noticing?
+
+## Essential and accidental complexity
+
+The study of software is basically a study of complexity.
+
+What is complexity? How can we see if a system is complex? Why is working on complex systems hard? Are there ways for us to reduce it? 
+
+There are two types of complexity: **essential** and **accidental** complexity.
+
+* **Essential complexity**: Is the necessary complexity needed to perform a certain task. This complexity, at some level, is fundamental. If you want to do anything of significance you must have a certain minimum set of operations that do whatever you want to do. 
+* **Accidental complexity**: This is basically all the complexity that you add while trying to achieve the essential complexity. This is everything that is not essential. The trick is to eliminate and minimize this type of complexity.
+
+## Two ways of dealing with complexity
+
+There are two ways you can deal with complexity, both the essential and the accidental type. 
+
+* **Eliminate complexity**: The first way of dealing with complexity is to eliminate it. This is obviously good if it is possible. But often it is not that straightforward. 
+* **Encapsulate complexity**: The second way of dealing with complexity is to encapsulate it. That is, can we hide the complexity of a certain module in the implementation such that when we are not working with it, we are not exposed to this piece of the complexity of the puzzle?
+
+This is also the goal of **modular design**. The goal of modular design is to be able to work on a certain system without being exposed to all the complexity of the system. This is achieved with encapsulating complexity. There still is a certain amount of complexity in the system, but it is conveniently hidden for you when you are working on the system. The pieces of complexity that you are exposed to are expoed to you through the interface, its complex implementation is hidden by the interface.
+
+## What is complexity?
+
+Can we define complexity?
+
+The book defines complexity as **“Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system”**
+
+This definition of complexity mirrors the essence of good design from: "Software should be easy to change" and most of the other books I've found.
+
+This means that a system can be large and sophisticated, but if it is easy to change and easy to work on then the system is not complex in our vocabulary.
+
+Burn this definition in your head: complexity is everything that makes code harder to change. 
 
 # Architecture
 
