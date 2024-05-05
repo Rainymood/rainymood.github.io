@@ -7,54 +7,66 @@ toc_sticky: true
 
 In this essay I try to write down everything I know about **how to write good code.**
 
-I know that a lot of colleagues of mine, for their growth goals, are working on learning how to craft better code. And this blog post is the one I want to be able to link them to if they ask me "Hey Jan, do you have some tips to write good code?"
+Someone recently asked me "how do I write good code?" And that got me thinking a bit, and writing a bit, and before I knew this blog post spiraled out of control.
 
-First, I talk about code and what exactly makes good code good. 
+This is the blog post I want to be able to link people if they ask me this question again.
 
-Here I show that:
+Writing good code is [*simple*, but not *easy*](https://www.youtube.com/watch?v=SxdOUGdseq4) and I can summarize it in one sentence.
 
-* Code is social
-* Code spends most of its time in maintenance mode
-* Code needs to be easy to change
+💡 How do we write good code? **Write code that is easy to change**
+{: .notice--info}
 
-Then, I talk about **complexity** and the **philosophy** behind software design. 
+I've read countless books on how to write good code and this is the advice that seems to come back in different forms. Do everything you can in your power to make (and keep) your code easy to change. 
 
-Here I:
+This point is so important I'm going to emphasize it and make it an acronym that is easy to remember.
 
-* Talk about complexity, what is it and how does it relate to software?
-* Ways to reduce and harness complexity
+💡 How do we write good code? **Write code that is Easy To Change (ETC)**
+{: .notice--info}
 
-This is largely a summary of the book A Philosophy of Software Design by John Oosterhout. 
+(The astute reader will notice that this is Tip 9 from the Pragmatic Programmer.)
 
-Then, I talk about about **software architecture**, what is software architecture exactly, and what can we do with it?
+This is the conclusion that I will try to emphasize over and over again in this essay. To write good code, write code that is easy to change.
 
-Here I talk about:
+So whats's next in this essay?
 
-* What is software architecture
-* What makes a certain software architecture good? (Spoiler: it's about being easy to change)
-* The Golden Rule of software architecture
+First, I talk about what makes good code. Here I talk about how code is social and for humans, that it spends most of its time in maintenance mode, and that easiness of change is the most important value.
 
-The final section contains **tactics** that you can use. These are practical and specific things that you can immediately apply in your day-to-day.
+Then, I talk about complexity which is followed up with a discussion about building a philosophy behind your software design. I talk about the link between complexity and the link with the software you (have to) write and I talk about ways of reducing and managing complexity.  This chapter is by and large a summary of the book A Philosophy of Software Design by John Oosterhout. 
 
-# What makes good code good
+Then, I talk about about **software architecture**, what is software architecture exactly, and what can we do with it? What makes a certain architecture good? I provide a very useful golden rule of architecture to follow.
+
+Finally, the last section contains practical and tactical tips that you can use in your day-to-day.
+
+# What is good code?
 
 ![](/../assets/software/2024-05-02-11-45-02.png)
 
 ## Introduction
 
-If we want to write good code, we must first define what we mean by good code.
+If we want to write good code, we must first define what it means to write good code.
 
-There are no black and white rules, but there are some general rules of thumb I think most of us agree on.
+What is good code? What is bad code? What separates the two?
 
-## Code, like language, is deeply human.
+## Summary 
+
+A summary of the arguments and propositions used in the next part of the essay:
+
+* **The social argument.** Code is for other humans to read and change.
+* **The maintenance argument.** In the long run code is maintained more than written.
+* **The problem-solving argument.** Code exists to solve a problem. The best code is a solved problem with no code written.
+* **The Easy To Change (ETC) argument.** Being easy to change is more important than being correct.
+
+The most important argument is the easy to change argument, the other three are sub-arguments of that.
+
+## Code is for humans
 
 > "Programs should be written for people to read, and only incidentally for machines to execute." -- Unknown
 
-The first thing we should agree on is that **code is social**. Code is written by humans and for humans. 
+I love this quote, because it shows that code is for humans. Code is written by (somewhat) humans and mainly to be read by humans.
 
-This is important to align on because this means that every rule I write here about how to write good code might not translate across borders or cultures. 
+This is important because every rule I write here might not translate across borders or cultures.
 
-Every culture is different, hence every culture will have it's own unique set of what really is good code. But maybe there are some general principles that do translate well across cultures.
+Every person is unique and different, so what is good code to that person will be different as well. But hopefully there are some principles that *do* translate across borders and cultures.
 
 ## Code spends most of its time in maintenance mode
 
@@ -82,7 +94,14 @@ Writing code should not be the goal in and of itself.
 
 The code exists to **solve a certain problem**. If you can solve the problem without code, do that instead. Always try to keep this goal in mind.  If you can avoid writing some code by talking with someone and solving the same problem, then do that. Do less, but better.
 
-## Code should be easy to change
+## Good code should be easy to change
+
+💡 How do we write good code? **Write code that is Easy To Change (ETC)**
+{: .notice--info}
+
+### A tale of two values
+
+From: [Clean Architecture]() 
 
 What which of these two codebases do you prefer? One that doesn't work but you can change or the other which works but you can not change?
 
@@ -93,7 +112,9 @@ What which of these two codebases do you prefer? One that doesn't work but you c
 >   - If you give me a program that works perfectly but is impossible to change, then it won’t work when the requirements change, and I won’t be able to make it work. Therefore the program will become useless.
 >   - If you give me a program that does not work but is easy to change, then I can make it work, and keep it working as requirements change. Therefore the program will remain continually useful.
 
-## Good design is easy to change (pragmatic programmer)
+### The essence of good design
+
+From [The Pragmatic Programmer]()
 
 The essence of good code design is that it is easy to change.
 
@@ -114,6 +135,12 @@ Why is good naming important? Good naming is important because to change code yo
 Why is the hexagonal architecture good? Because when you want to change the technical infrastructure, it should be decoupled from the actual problem that you're solving. Making the code easy to change.
 
 This is the main principle underlying all other principles: good code should be easy to change.
+
+### Complex versus sophisticated
+
+From: [A Philosophy of Software design]()
+
+> For the purposes of this book, I define “complexity” in a practical way. **Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system.** Complexity can take many forms. For example, it might be hard to understand how a piece of code works; it might take a lot of effort to implement a small improvement, or it might not be clear which parts of the system must be modified to make the improvement; it might be difficult to fix one bug without introducing another. If a software system is hard to understand and modify, then it is complicated; if it is easy to understand and modify, then it is simple.
 
 # Complexity (A Philosophy of Software Design)
 
@@ -175,11 +202,20 @@ Every production system, every package, every medical mechanical device, or ever
 
 > Your elements should talk outwards using interfaces, that is using only the expected API of a component, without referring to a specific implementation. When an outer layer is created, elements living there will plug themselves into those interfaces and provide a practical implementation.
 
+# General tips and tactics
 
+## Separate data and compute
 
+A useful tip is to "separate data and compute". In your design you often have data ("things") and computations ("verbs"). I find that if you separate the two your design often becomes clearer and more obvious. 
 
+## Tips from daedech
 
-# Tooling
+https://daedtech.com/write-good-code/
+
+* Make it easy to change
+* Make it readable
+* Make it work
+  
 
 ## General Principles
 
@@ -211,6 +247,19 @@ Let the computer do the work. Automate the boring stuff.
 Try to make your feedback loop as fast as possible. This means for example having lightweight objects and writing tests for those objects. This means for example disabling steps in the pipeline so that you can run the tests faster. I am debugging a Docker pipeline now and I do not want to wait for the docker build every time but I am not changing the code, so I just disable the step so I can get faster to where the point that I'm trying to fix things. Make your feedback loops short so you get quick and timely feedback.
 
 # Tests
+
+## If tests are hard to write then something is wrong with your code
+
+It is often the case that the tests suite is slow and that tests are hard to write. If this is the case then something is wrong with your code. Code should be designed in such a way that the tests are easy to write.
+
+## Tests should prove the correctness of your code
+
+Testing and Debugging: Write automated tests to verify the correctness of your code. Test individual modules in isolation, and then test the system as a whole. Debugging should be systematic and based on a clear understanding of the code.
+
+
+## Tests can not capture all bugs
+
+## Production bugs should always be turned into a new bug
 
 ## Unit tests should be fast
 
