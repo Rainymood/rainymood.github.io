@@ -45,7 +45,7 @@ I believe that machine learning is just one expression of **data-driven decision
 * [How to deploy an AWS Lambda serverless function using AWS CloudFormation]({% post_url 2023-12-19-how-to-deploy-an-aws-lambda-serverless-function-using-aws-cloudformation %})
 * [Building a REST API with AWS API Gateway and AWS Lambda in Python]({% post_url 2023-12-18-building-a-rest-api-with-aws-api-gateway-and-aws-lambda-in-python-aws-tutorial %})
 * [Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
-* [Deploying your first AWS CloudFormation stack]({% 2024-05-10-deploying-your-first-aws-cloudformation-stack.md %})
+* [Deploying your first AWS CloudFormation stack]({% 2024-05-10-deploying-your-first-aws-cloudformation-stack %})
 
 ## I write about things that interest me
 
