@@ -8,6 +8,7 @@ toc_sticky: false
 tags:
   - blog
   - writing
+  - learning
 header:
   teaser: "/../assets/2021-05-21-notes-on-paper-notes/teaser.png"
 ---

@@ -6,6 +6,8 @@ categories:
 tags:
   - python
   - anki
+  # Theme
+  - learning
 ---
 <!-- ctrl + alt + v -->
 

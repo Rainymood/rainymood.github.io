@@ -1,49 +1,38 @@
 ---
 permalink: /start/
-title: "🎯 Start here"
+title: "Key themes in my work"
+classes: wide
 ---
 
-## About me
+New here? These are topics I [write]({% link _pages/year-archive-wide-grid.md %}) about. Alternatively, browse [tags]({% link _pages/tag-archive.md %}), the [archive]({% link _pages/year-archive.md %}) or search in the top right.
 
-- Currently employed as a Data Scientist at a large Fortune 200 company
-- Studied econometrics in University (basically applied mathematics)
-- In my spare time I dabble in programming, machine learning, and deep learning
+# Machine Learning System Design
 
-## Something to start with
+*What makes a (machine learning) system good and how do we create one?* 
 
-- Want to know how Regex works? [Click here!](https://www.janmeppe.com/blog/regex-for-noobs/)
-    - This post was featured on the front page of [Hacker News](https://news.ycombinator.com/item?id=20608032) with more than 500 points and 100 comments. 
-- Want to know how to get a blog like this? [Click here!](http://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/)
-- Want to know how to get Latex support on a blog like this? [Click here!](http://www.janmeppe.com/blog/How-to-add-mathjax-to-minimal-mistakes/)
+# Software
 
-For my recent blog posts click [here](http://www.janmeppe.com/posts/).
+*What makes great software and how do we write it?* 
 
-## What you will find on this blog
+* [Essay: How to write great software]({% link _essays/software.md %}): A longer essay on what makes software great and how to write great software
+* [Book notes: A philosophy of software design]({% post_url _posts/2024-05-03-book-notes-a-philosophy-of-software-design %}): Complexity and software
+* [A tale of two values]({% post_url 2024-01-19-a-tale-of-two-values %}): What is more important: something that works or something that we can change?
 
-On this blog you content related to:
-- Data science
-- Artificial intelligence, machine learning, and deep learning
-- Productivity hacks, time management, and leadership
+# Learning
 
-## Subscribe
+*How can we improve our learning and can we learn how to learn?*
 
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://gmail.us3.list-manage.com/subscribe/post?u=92fe86c389878585bc87837e8&amp;id=50543deff9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Liked this article and want to hear more?</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_92fe86c389878585bc87837e8_50543deff9" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
+* [Essay: Learning How To Learn]({% link _essays/learning-how-to-learn.md %}): A longer essay on almost everything I know about learning how to learn
+* [Atomic flashcards]({% post_url _posts/2020-10-24-atomic-anki-cards %}): Smaller flashcards are better
+* [Don't mistake the internet's intelligence for your own]({% post_url _posts/2021-11-25-dont-confuse-intelligence %}): Avoiding illusions of knowledge
+* [Lessons from playing video games at the highest level]({% post_url _posts/2024-01-01-lessons-from-playing-video-games-at-the-highest-level %}): Skill requires repeated application
+* [Learning how to snowboard as a skier]({% post_url _posts/2024-03-27-learning-how-to-snowboard-as-a-skier %}): Skill transfer from skiing to snowboarding
+* [Freedom is not free (2 lessons from 2 years of working)]({% post_url _posts/2021-02-01-3-most-important-lessons-from-2-years-of-working %}): Reflecting on data science consulting
 
-<!--End mc_embed_signup-->
+# Product
+
+*What makes a great product and how do we build one?*
+
+* [What is a startup?]({% post_url 2021-07-08-what-is-a-startup %}): My notes on a famous PG essay
+* [Transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %}): Ideation framework for startup ideas
+* [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %}): If your feature doesn't work out, often you can just kill it

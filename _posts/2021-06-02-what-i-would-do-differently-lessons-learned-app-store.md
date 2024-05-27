@@ -8,6 +8,7 @@ toc_sticky: false
 tags:
   - blog
   - lessonslearned
+  - learning
 header:
   teaser: "/../assets/2021-06-02-what-i-would-do-differently-lessons-learned-app-store/thumbnail.png"
 ---

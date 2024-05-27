@@ -7,6 +7,7 @@ tags:
   - anki
   - spaced-repetition-system
   - blog
+  - learning
 header:
   teaser: "/assets/2020-10-24-atomic-anki-cards/2020-10-24-13-42-52.png"
 ---

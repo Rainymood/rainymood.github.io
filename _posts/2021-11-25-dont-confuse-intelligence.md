@@ -7,6 +7,7 @@ toc: false
 toc_sticky: false
 tags:
   - update
+  - learning
 header:
   teaser: "/../assets/2021-11-25-dont-confuse-intelligence/thumbnail.png"
 ---

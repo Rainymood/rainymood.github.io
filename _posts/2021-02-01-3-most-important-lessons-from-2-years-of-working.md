@@ -7,6 +7,7 @@ tags:
   - lessons learned
   - work
   - career
+  - learning
 header:
   teaser: ""
 ---

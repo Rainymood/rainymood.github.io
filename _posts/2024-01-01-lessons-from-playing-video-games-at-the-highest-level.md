@@ -8,6 +8,7 @@ tags:
 - leadership
 - blog
 - lessons learned
+- learning
 categories: blog
 toc: false
 toc_sticky: false

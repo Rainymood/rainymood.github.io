@@ -14,7 +14,9 @@ To fulfill that mission, I currently work as a machine learning engineer at an e
 
 Before that, I worked as a data science consultant for [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-On this blog I write about anything that interests me, which is mainly education/learning, engineering, and productivity [(browse by tag)](https://www.janmeppe.com/tags/)
+New here? Go to [**Start Here**]({% link _pages/start.md %}) to view a curated list of my favourite and most popular blog posts organised by theme! Or [browse by tag](https://www.janmeppe.com/tags/) or use the search function!
+
+*I build machine learning systems at scale in [Python](https://www.python.org/) and [AWS](https://aws.amazon.com/). Interested in working with me? View my resume [here](/assets/cv/2024-03-28-jan-meppe-resume.pdf).*
 
 ## I wrote some popular tech blog articles
 
