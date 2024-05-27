@@ -13,8 +13,9 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 *How do we build great (machine learning) systems?*
 
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Software advice suspiciously generic enough to also apply to systems
-* [System bottlenecks explained with water pipes]({% post_url 2024-01-02-system-bottlenecks-explained-with-water-pipes %}): Impact system output by changing the bottleneck
 * [Key design principles for dealing with (human) error]({% post_url 2023-06-18-key-design-principles-for-dealing-with-human-error %}): Building systems with humans in mind
+* [Unlocking the Secret to Never-ending Clean Dishes: The Surprising Systems Theory Approach You Need to Know!]({% post_url 2023-04-10-rates-of-flow-are-more-important-than-current-counts %}): Get to a system state where time works for you instead against you
+* [System bottlenecks explained with water pipes]({% post_url 2024-01-02-system-bottlenecks-explained-with-water-pipes %}): Impact system output by changing the bottleneck
 * [Depending on things make them harder to change]({% post_url 2024-01-09-depending-on-things-make-them-harder-to-change %}): A real world example showing how dependencies drive system complexity
 * [Three examples of theory building]({% post_url 2024-01-15-3-examples-of-theory-building-naur-1985 %}): Real world examples of theory building by Naur (1985) 
 
