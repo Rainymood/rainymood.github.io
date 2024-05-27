@@ -14,9 +14,13 @@ To fulfill that mission, I currently work as a machine learning engineer at an e
 
 Before that, I worked as a data science consultant for [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-New here? Go to [**Start Here**]({% link _pages/start.md %}) to view a curated list of my favourite and most popular blog posts organised by theme! Or [browse by tag](https://www.janmeppe.com/tags/) or use the search function!
+I build machine learning systems at scale in [Python](https://www.python.org/) and [AWS](https://aws.amazon.com/). 
 
-*I build machine learning systems at scale in [Python](https://www.python.org/) and [AWS](https://aws.amazon.com/). Interested in working with me? View my resume [here](/assets/cv/2024-03-28-jan-meppe-resume.pdf).*
+💡 New here? Go to [**Start Here**]({% link _pages/start.md %}) to view a curated list of my favourite posts organised by theme! 
+{: .notice--info}
+
+Interested in working with me? View my resume [here](/assets/cv/2024-03-28-jan-meppe-resume.pdf).
+
 
 ## I wrote some popular tech blog articles
 
@@ -97,8 +101,6 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 * Slide in my DMs on [Instagram](https://www.instagram.com/janmeppe/)
 * Read (discontinued) newsletter on [Substack](https://janmeppe.substack.com)
 
-<!-- [Here](https://docs.google.com/document/d/1utv_GYHvGBNxgESQV14KaLHvbMk5COme7LNIu5yaxl8/edit?usp=sharing) is a list of some of the technical things that I've worked on.  --> -->
-
 <img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center}
 
 <!-- Here are some of my blog posts loosely organised by topic.
@@ -112,7 +114,6 @@ I studied econometrics (financial engineering) with a focus on machine learning:
   - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
 - Python
   - [How to structure your python code]({% post_url 2022-04-05-basic-setup %})
-  - [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %})
   - [How to set up your Python projects with conda and poetry]({% post_url 2021-11-29-how-to-set-up-your-python-projects %})
   - [How to see log messages while unit testing in pycharm]({% post_url 2021-12-03-how-to-add-logging-to-pycharm-tests %})
   - [Plotting with Matplotlib]({% post_url 2019-12-24-Plotting-with-Matplotlib %})
@@ -137,8 +138,3 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 - How to take better notes
   - [Filling my first Field Notes]({% post_url 2020-10-14-field-notes-1 %})
   - [How to take more useful paper notes]({% post_url 2021-05-21-notes-on-paper-notes %})
-- Startups/building product
-  - [Product thinking framework: transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %})
-  - [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %})
-  - [What is a startup?]({% post_url 2021-07-08-what-is-a-startup %})
-  - [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %}) -->

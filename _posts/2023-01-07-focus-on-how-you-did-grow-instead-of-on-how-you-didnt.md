@@ -4,7 +4,6 @@ date: 2023-01-07
 tags:
 - python
 - sql
-- product
 - startups
 - life
 categories: blog

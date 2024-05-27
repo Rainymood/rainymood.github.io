@@ -80,7 +80,7 @@ $ make last
 bundle exec jekyll serve --config _config_dev.yml --livereload -o --incremental --limit_posts 1 --profile
 ... 
       Regenerating: 1 file(s) changed at 2023-12-06 07:55:56
-                    _posts/2023-08-30-i-recently-passed-the-aws-solution-architect-associate-exam-aws-saa-c03-heres-how-i-did-it.md
+                    2023-08-30-i-recently-passed-the-aws-solution-architect-associate-exam-aws-saa-c03-heres-how-i-did-it.md
 
                     ...done in 3.2591694 seconds.
 ```
