@@ -14,10 +14,9 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Software advice suspiciously generic enough to also apply to systems
 * [Key design principles for dealing with (human) error]({% post_url 2023-06-18-key-design-principles-for-dealing-with-human-error %}): Building systems with humans in mind
-* [Unlocking the Secret to Never-ending Clean Dishes: The Surprising Systems Theory Approach You Need to Know!]({% post_url 2023-04-10-rates-of-flow-are-more-important-than-current-counts %}): Get to a system state where time works for you instead against you
+* [Unlocking the Secret to Never-ending Clean Dishes]({% post_url 2023-04-10-rates-of-flow-are-more-important-than-current-counts %}): Advice on where to intervene in systems
 * [System bottlenecks explained with water pipes]({% post_url 2024-01-02-system-bottlenecks-explained-with-water-pipes %}): Impact system output by changing the bottleneck
 * [Depending on things make them harder to change]({% post_url 2024-01-09-depending-on-things-make-them-harder-to-change %}): A real world example showing how dependencies drive system complexity
-* [Three examples of theory building]({% post_url 2024-01-15-3-examples-of-theory-building-naur-1985 %}): Real world examples of theory building by Naur (1985) 
 
 # Software
 
@@ -29,6 +28,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %}): Tips and tricks for scaling
 * [Your argparse is not the interface of your application]({% post_url 2023-02-18-your-argparse-is-not-the-interface-of-your-application %}): Anything (also the CLI) should be able to drive your program
 * [Writing better code using interfaces]({% post_url 2023-04-20-writing-better-code-using-interfaces  %}): Interfaces allow you to decouple from implementation details
+* [Three examples of theory building]({% post_url 2024-01-15-3-examples-of-theory-building-naur-1985 %}): Putting theory central instead of code (Naur, 1985)
 
 # Learning
 
@@ -40,6 +40,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [Lessons from playing video games at the highest level]({% post_url 2024-01-01-lessons-from-playing-video-games-at-the-highest-level %}): Skill requires repeated application
 * [Learning how to snowboard as a skier]({% post_url 2024-03-27-learning-how-to-snowboard-as-a-skier %}): Skill transfer from skiing to snowboarding
 * [Freedom is not free (2 lessons from 2 years of working)]({% post_url 2021-02-01-3-most-important-lessons-from-2-years-of-working %}): Reflecting on data science consulting
+* [A tool addresses human problems by amplifying human capabilities]({% post_url 2020-10-23-definition-of-tool %}): What exactly is a tool?
 
 # Product
 
@@ -50,3 +51,11 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %}): It is OK to kill your darlings
 * [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %}): How big tech got us hooked
 * [The Juiciness of Slay The Spire]({% post_url 2024-05-01-the-juiciness-of-slay-the-spire %}): Juice and game design
+
+# Career
+
+*Practices that work well for me and other generic advice*
+
+* [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): In your career you often do not take decisions alone. Structure group decision making.
+* [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): In your career you will need to give peer feedback to your colleagues. Structure your feedback so it is more effective.
+* [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): Sometimes it is unclear what to do. Structure your problem solving.

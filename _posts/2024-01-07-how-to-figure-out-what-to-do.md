@@ -10,6 +10,7 @@ tags:
 
 # Big themes that I write about
 - productivity
+- career
 
 categories: blog
 toc: false
