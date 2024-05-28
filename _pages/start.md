@@ -4,7 +4,7 @@ title: "Key themes in my work"
 classes: wide
 ---
 
-New here? This page has a curated list of [my blog posts]({% link _pages/year-archive-wide-grid.md %}) grouped by key themes.
+New here? This page has a curated list of [my blog posts]({% link _pages/year-archive-wide-grid.md %}) grouped by key theme.
 
 Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
 
@@ -35,6 +35,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 *How do we learn and get better at learning?*
 
 * [Essay: Learning How To Learn]({% link _essays/learning-how-to-learn.md %}): What I know about learning how to learn
+* [To learn, retrieve]({% post_url 2024-05-28-to-learn-retrieve %}): Retrieval is important in learning
 * [Atomic flashcards]({% post_url 2020-10-24-atomic-anki-cards %}): Smaller flashcards are better
 * [Don't mistake the internet's intelligence for your own]({% post_url 2021-11-25-dont-confuse-intelligence %}): Avoiding illusions of knowledge
 * [Lessons from playing video games at the highest level]({% post_url 2024-01-01-lessons-from-playing-video-games-at-the-highest-level %}): Skill requires repeated application
@@ -56,6 +57,6 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 *Practices that work well for me and other generic advice*
 
-* [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): In your career you often do not take decisions alone. Structure group decision making.
-* [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): In your career you will need to give peer feedback to your colleagues. Structure your feedback so it is more effective.
-* [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): Sometimes it is unclear what to do. Structure your problem solving.
+* [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): In your career you often do not take decisions alone. Use this framework to structure group decision making meetings.
+* [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): In your career you will need to give peer feedback to your colleagues. Use this framework to structure your feedback to make it more effective.
+* [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): In your career there will be times where you simply do not now what to do. Use this framework to figure out what to do.

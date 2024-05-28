@@ -26,13 +26,18 @@ tags:
 - work
 - personal
 
+# Start here themes
+- systems
+- software
+- learning
+- product
+- career
+
 # Big themes that I write about
 - engineering
 - software architecture
-- learning
 - management
 - leadership
-- systems
 - productivity
 - lean
 
@@ -103,6 +108,8 @@ https://www.photopea.com/
 <!-- 1. interesting hook -->
 
 YOU ARE NOT FAMOUS. So do whatever you want :)
+
+SP001: Establish yourself as an expert in the following fields: systems, learning, career, product, software.
 
 * What do I want to say
 * Why do I want to say it?
