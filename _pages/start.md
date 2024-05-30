@@ -52,6 +52,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %}): It is OK to kill your darlings
 * [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %}): How big tech got us hooked
 * [The Juiciness of Slay The Spire]({% post_url 2024-05-01-the-juiciness-of-slay-the-spire %}): Juice and game design
+* [Why I Can’t Remember Locking My Door: The Case for Better Design]({% post_url 2024-05-30-why-i-cant-remember-locking-my-door-the-case-for-better-design %}): Feedback is a design problem
 
 # Career
 
