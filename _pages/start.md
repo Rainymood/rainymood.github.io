@@ -29,6 +29,16 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [Your argparse is not the interface of your application]({% post_url 2023-02-18-your-argparse-is-not-the-interface-of-your-application %}): Anything (also the CLI) should be able to drive your program
 * [Writing better code using interfaces]({% post_url 2023-04-20-writing-better-code-using-interfaces  %}): Interfaces allow you to decouple from implementation details
 * [Three examples of theory building]({% post_url 2024-01-15-3-examples-of-theory-building-naur-1985 %}): Putting theory central instead of code (Naur, 1985)
+* [How to set up your Python projects with conda and poetry]({% post_url 2021-11-29-how-to-set-up-your-python-projects %})
+
+I make small tutorials on how to do things on AWS sometimes:
+
+* [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
+* [How to do cross account Sagemaker endpoint requests in AWS]({% post_url 2024-06-15-how-to-do-cross-account-sagemaker-endpoint-requests-in-aws %})
+* [How to deploy an AWS Lambda serverless function using AWS CloudFormation]({% post_url 2023-12-19-how-to-deploy-an-aws-lambda-serverless-function-using-aws-cloudformation %})
+* [Building a REST API with AWS API Gateway and AWS Lambda in Python]({% post_url 2023-12-18-building-a-rest-api-with-aws-api-gateway-and-aws-lambda-in-python-aws-tutorial %})
+* [Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
+* [Deploying your first AWS CloudFormation stack]({% post_url 2024-05-10-deploying-your-first-aws-cloudformation-stack %})
 
 # Learning
 

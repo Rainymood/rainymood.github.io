@@ -111,7 +111,6 @@ I studied econometrics (financial engineering) with a focus on machine learning:
   - [How to set Python 3 as default on Mac]({% post_url 2021-01-20-how-to-set-python3-as-default-mac %})
 - What keeps me busy as an ML engineer
   - [Show your work: Writing complex SQL queries]({% post_url 2022-05-10-show-your-work-sql %})
-  - [Show your work: Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
 - Python
   - [How to structure your python code]({% post_url 2022-04-05-basic-setup %})
   - [How to set up your Python projects with conda and poetry]({% post_url 2021-11-29-how-to-set-up-your-python-projects %})
@@ -124,7 +123,6 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 - Docker
   - [Docker optimization trick: install your dependencies first and your code second]({% post_url 2022-03-17-docker-optimisation %})
 - AWS
-  - [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
 - Testing
   - [Refactoring code so that it becomes easier to test]({% post_url 2022-05-27-refactoring-using-tdd %})
 - Time management, procrastination, and motivation
