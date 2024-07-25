@@ -23,9 +23,7 @@ And install all the gems
 bundle install
 ```
 
-If this is the first time you are setting up the blog on a new computer. 
-
-Generate a new Personal Access Token (PAT) [here](https://github.com/settings/tokens).
+If this is the first time you are setting up the blog on a new computer generate a new Personal Access Token (PAT) [here](https://github.com/settings/tokens).
 
 ## Running the blog (Windows)
 
@@ -93,18 +91,6 @@ Still not as snappy as I want it, but sure as hell a lot better than >20 seconds
 
 Edit `assets\css\main.scss`
 
-## Docs
-
-I have some docs that I keep in the `docs/` folder. Run and autobuild with:
-
-```bash
-sphinx-autobuild docs docs/_build/html
-```
-
-## FAQ
-
-Some common issues and solutions can be found in [FAQ.md](FAQ.md).
-
 ## Resources
 
 * [Minimal mistakes (Jekyll theme used)](https://mmistakes.github.io/minimal-mistakes/)
@@ -113,20 +99,6 @@ Some common issues and solutions can be found in [FAQ.md](FAQ.md).
 * https://www.fabriziomusacchio.com/blog/
   * Simple view is awesome
   * Has images
-
-## Kanban board
-
-https://trello.com/b/Re16gCSo/janmeppecom
-
-## Cool: Small buttons
-
-[This PR](https://github.com/Rainymood/rainymood.github.io/pull/41/commits/ed26137516a172311bc2c8e114a96101a41d56ac) adds small buttons like this:
-
-![](/assets/README/2023-01-07-14-18-37.png)
-
-## Blue used
-
-`#1da1f2`
 
 ## Tail for `cat readme.md`
 
@@ -137,3 +109,4 @@ The `--incremental` flag is a lifesaver.
 ```
 bundle exec jekyll serve --livereload -o --incremental
 ```
+
