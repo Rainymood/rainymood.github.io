@@ -188,7 +188,7 @@ if __name__ == "__main__":
     print(f"\tSuccessfully created {asset_dirpath}")
 
     # Create thumbnail
-    default_thumbnail_path = f"{ASSET_DIR}\images\default-thumbnail.png"
+    default_thumbnail_path = os.path.join(ASSET_DIR, "images","default-thumbnail.png")
     post_thumbnail_path = os.path.join(ASSET_DIR, asset_dirname, "thumbnail.png")
     print(f"\tCopying {default_thumbnail_path} -> {post_thumbnail_path}")
     shutil.copy(default_thumbnail_path, post_thumbnail_path)

@@ -31,6 +31,11 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [Three examples of theory building]({% post_url 2024-01-15-3-examples-of-theory-building-naur-1985 %}): Putting theory central instead of code (Naur, 1985)
 * [How to set up your Python projects with conda and poetry]({% post_url 2021-11-29-how-to-set-up-your-python-projects %})
 
+Optimization:
+
+* [Reducing our stored model state by 80% using bit manipulation magic in Python]({% post_url 2024-07-28-reducing-oour-stored-model-state-by-80-using-bit-manipulation-magic-in-python %}): Storing integers with reduced precision for fun and profit
+* [How to speed up your code]({% post_url 2024-01-11-how-to-speed-up-your-code %}): List of general techniques to speed up (your code)
+
 I make small tutorials on how to do things on AWS sometimes:
 
 * [Our Amazon Sagemaker Processing job setup]({% post_url 2021-12-06-our-sagemaker-processing-jobs-setup %})
@@ -39,6 +44,7 @@ I make small tutorials on how to do things on AWS sometimes:
 * [Building a REST API with AWS API Gateway and AWS Lambda in Python]({% post_url 2023-12-18-building-a-rest-api-with-aws-api-gateway-and-aws-lambda-in-python-aws-tutorial %})
 * [Automating cloud infrastructure using infrastructure-as-code]({% post_url 2022-04-29-show-your-work-create-testset-automation %})
 * [Deploying your first AWS CloudFormation stack]({% post_url 2024-05-10-deploying-your-first-aws-cloudformation-stack %})
+
 
 # Learning
 
