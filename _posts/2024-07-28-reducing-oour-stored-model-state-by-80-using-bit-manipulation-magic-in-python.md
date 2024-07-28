@@ -24,7 +24,7 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
-This week was pretty cool, together with a bearded grey wizard on our data engineering team we managed to reduce the model state we have to store by roughly 80% from 18kb to 4kb.
+This week was pretty cool, together with a bearded grey wizard on our data engineering team we managed to reduce our json payload size more than 80% (from roughly 18kb to less than 4kb every request) using some python bit manipulation magic.
 
 This was pretty wild, but also pretty necessary, because this is part of an API that will be called around 20 million times a day.
 
@@ -56,7 +56,7 @@ When I said this, his eyes lit up. He continued: "That's great news, because we 
 
 Now look. Here I am kind of like a fish out of the water. This felt like low-level black magic to me, really diving deeps into the bits and bytes and only taking what is truly necessary. I was eager to help out where possible.
 
-I knew that by default Python stores its integers in 32 bit format. So I said: "So do I understand it correctly that what you're saying is that instead of using the 32 bit integer, we can just chop off the first 4 bytes and only take the last byte? Because we need to count to 101?"
+I knew that by default Python stores its integers in 32 bit format. So I said: "So do I understand it correctly that what you're saying is that instead of using 4 bytes of the 32 bit integer, we can just chop off the first 3 bytes and only take the last byte? Because we only need to count to 101?"
 
 "Yup," the greybard replied.
 
