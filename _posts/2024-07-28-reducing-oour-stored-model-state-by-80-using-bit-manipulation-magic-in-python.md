@@ -53,7 +53,7 @@ I answered them in rapid succession. "Current payload size is 18kb. We need to s
 
 When I said this, his eyes lit up. He continued: "That's great news, because we can count to 2, 4, 8, ... we can count to 255 with just 8 bits. So if we need to store just 101 we only need 7 bits, but for simplicity let's just take the first 8 bits or the first byte."
 
-Now look. Here I am kind of like a fish out of the water. This felt like low-level black magic to me, really diving deeps into the bits and bytes and only taking what is truly necessary. I was eager to help out where possible.
+Now look. Here I am kind of like a fish out of the water. This bit manipulation felt like black magic to me, and I was stoked, eager to help out wherever possible.
 
 I knew that by default Python stores its integers in 32 bit format. So I said: "So do I understand it correctly that what you're saying is that instead of using 4 bytes of the 32 bit integer, we can just chop off the first 3 bytes and only take the last byte? Because we only need to count to 101?"
 
