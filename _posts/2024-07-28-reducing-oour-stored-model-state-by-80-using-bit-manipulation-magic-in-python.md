@@ -38,10 +38,9 @@ We (the platform team) care about how things run in production, the data science
 ```python
 @dataclass
 class ModelState(PupilState):
-    answer_count: int
     answer_type_counts: Dict[str, List[int]] # <==  new
-    focus_ability: float
-    skill_state: List[float]
+    f_embedding: float
+    s_embedding: List[float]
 ```
 
 We thought this was fine, but when we started looking at some production json payloads with the envisioned embedding sizes we realized that this would be a problem because the `answer_type_counts` was a vector of 3000 integers! Storing this extra data every API call would be a disaster and explode our costs.
