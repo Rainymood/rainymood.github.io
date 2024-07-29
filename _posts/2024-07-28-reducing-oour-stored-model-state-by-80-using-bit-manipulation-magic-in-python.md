@@ -57,11 +57,11 @@ Now look. Here I am kind of like a fish out of the water. This bit manipulation 
 
 I knew that by default Python stores its integers in 32 bit format. So I said: "So do I understand it correctly that what you're saying is that instead of using 4 bytes of the 32 bit integer, we can just chop off the first 3 bytes and only take the last byte? Because we only need to count to 101?"
 
-"Yup," the greybard replied.
+"Yup," the greybeard replied.
 
 "How do we do this?" I asked.
 
-The greybard explained that we could take the list of ints and pack together the contents as bytes, converting them to [unsigned chars](https://docs.python.org/3/library/struct.html#format-characters) using `struct`. 
+The greybeard explained that we could take the list of ints and pack together the contents as bytes, converting them to [unsigned chars](https://docs.python.org/3/library/struct.html#format-characters) using `struct`. 
 
 Compressing this list of integers then looks something like this
 
