@@ -40,6 +40,7 @@ tags:
 - leadership
 - productivity
 - lean
+- memory palace
 
 # gaming/ui/ux design
 - juice
