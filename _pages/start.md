@@ -50,7 +50,7 @@ I make small tutorials on how to do things on AWS sometimes:
 *How do we learn and get better at learning?*
 
 * [Essay: Learning How To Learn]({% link _essays/learning-how-to-learn.md %}): What I know about learning how to learn
-* [Memorising the first 18 digits of pi]({% post_url 2024-09-09-impressing-myself-with-memorising-the-first-18-digits-of-pi.md %}): Memory works better when you link it to vivid mental imagery
+* [Memorising the first 18 digits of pi]({% post_url 2024-09-09-impressing-myself-with-memorising-the-first-18-digits-of-pi %}): Memory works better when you link it to vivid mental imagery
 * [To learn, retrieve]({% post_url 2024-05-28-to-learn-retrieve %}): Retrieval is important in learning
 * [Atomic flashcards]({% post_url 2020-10-24-atomic-anki-cards %}): Smaller flashcards are better
 * [Don't mistake the internet's intelligence for your own]({% post_url 2021-11-25-dont-confuse-intelligence %}): Avoiding illusions of knowledge
