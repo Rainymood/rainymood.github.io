@@ -1,5 +1,5 @@
 ---
-title: "How to compress a list of capped integers in Python"
+title: "How to efficiently compress a list of integers with a maximum value in Python"
 date: 2024-10-26
 tags:
 # Blog or how-to
