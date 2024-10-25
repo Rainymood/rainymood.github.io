@@ -4,73 +4,13 @@ date: 2024-10-26
 tags:
 # Blog or how-to
 - blog
-- tutorial
-
 # Work or personal?
 - work
-- personal
-
 # Start here themes
-- systems
 - software
-- learning
-- product
-- career
-
 # Big themes that I write about
 - engineering
-- software architecture
-- management
-- leadership
-- productivity
-- lean
-- memory palace
-
-# gaming/ui/ux design
-- juice
-- game design
-
-# Programming languages/Cloud
-- rust
-- golang
 - python
-- sql
-- javascript
-- aws
-- testing
-- documentation
-
-# Smaller themes
-- writing
-- product
-- design
-- tools
-- advent of code
-- aws 
-- docker
-- machine learning
-- programming
-- pytorch
-- tensorflow
-- code
-- show-your-work
-- tip
-- athena
-
-- meta programming
-
-- flashcards
-- projects
-- startups
-
-- cosmicpython
-- inversion of control
-- domain driven design
-
-- story
-- lessons learned
-- video games
-
 categories: blog
 toc: false
 toc_sticky: false
@@ -79,11 +19,11 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
-Imagine you have a list of integers `lst = [1,2,3..]` in Python and you need to compress this list.
+I want to share a quick piece of code that I've been using and reusing a lot. Right now in the current projects that I'm working on I have to store a lot of data and store it efficiently. We are talking millions of states that need to be stored in small packets of less than 4kb. Here, compression and efficient storage become important. I find myself reusing this trick very often so I want to share it with you guys in the hope that it is useful to you too.
 
-But at the same time you know that this list has a maximum such that all elements are smaller than this capped max value.
+Imagine you have a list of integers `lst = [1,2,3.., 100, 2, 3, 100]` in Python that you need to compress, but you also know that this list has a maximum value (100 in this case).
 
-Then if you need to store this array somewhere but compress it, you can do it very easily by: first packing it into bytes, then compressing it with `zlib`, and then `base64` encoding it. 
+What you can then do, if you want to compress and store this array, is the following: pack it into bytes, compress it with `zlib`, and then `base64` encode it. 
 
 
 ```python
@@ -98,7 +38,7 @@ class CappedIntBlob(List[int]):
     of integers.
     """
 
-    def __init__(self, contents: Union[str, Iterable[int]], max_val: int = 255):
+    def __init__(self, contents: Union[str, Iterable[int]], max_val: int = 10):
         """Constructor
         @param contents: the contents, either a list of ints or a base64 string with 2-byte unsigned short integer representation.
         """
@@ -123,7 +63,7 @@ class CappedIntBlob(List[int]):
         return base64.b64encode(zlib.compress(struct.pack("<" + "H" * len(self), *self))).decode("utf-8")
 ```
 
-This is how to use it then
+And this is how you use it
 
 ```python
 >>> CappedIntBlob([1,2,3])
@@ -134,9 +74,9 @@ This is how to use it then
 
 >>> CappedIntBlob("eJxjZGBiYGYAAAAaAAc=")
 [1, 2, 3]
+
+assert str(CappedIntBlob([5, 10, 20])) == str(CappedIntBlob([5, 100, 200])) # true
 ```
-
-
 
 
 https://app.bannerbear.com/projects/POobgvMNDkxzxAYW70/templates/3g8zka5Y2OlaDEJXBY
