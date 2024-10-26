@@ -19,23 +19,21 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
-I want to share a quick piece of code that I've been using and reusing a lot. Right now in the current projects that I'm working on I have to store a lot of data and store it efficiently. We are talking millions of states that need to be stored in small packets of less than 4kb. Here, compression and efficient storage become important. I find myself reusing this trick very often so I want to share it with you guys in the hope that it is useful to you too.
+Here's a quick piece of code that I’ve been using repeatedly in my projects. Currently, I’m working on storing large amounts of data efficiently, dealing with millions of records that need to fit into packets under 4KB. This makes compression and optimized storage crucial. Since I’ve found this technique to be quite handy, I thought it’d be helpful to share it with you all, hoping you find it useful as well.
 
 Imagine you have a list of integers `lst = [1,2,3.., 100, 2, 3, 100]` in Python that you need to compress, but you also know that this list has a maximum value (100 in this case).
 
 What you can then do, if you want to compress and store this array, is the following: pack it into bytes, compress it with `zlib`, and then `base64` encode it. 
 
-
 ```python
 class CappedIntBlob(List[int]):
     """Capped integer Base64 Large Object aka CappedIntBlob.
     
-    Represents a list of 2-byte unsigned short integers, capped at xxxx.
+    Represents a list of 2-byte unsigned short integers, capped at max_val
 
     When converted to str, will convert all integers into 2-byte values and then base64 encode them after compressing with zlib.
 
-    The constructor accepts either a base64 string or an iterable
-    of integers.
+    The constructor accepts either a base64 string or an iterable of integers.
     """
 
     def __init__(self, contents: Union[str, Iterable[int]], max_val: int = 10):
