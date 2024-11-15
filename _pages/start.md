@@ -14,6 +14,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 
 * [Key concepts for scaling systems]({% post_url 2024-09-18-key-concepts-for-scaling-systems %}): Sharing the fundamental principles for scaling systems
+* [A Beginner's guide to domain-driven design boiled down to one image]({% post_url 2024-11-15-a-beginners-guide-to-domain-driven-design-boiled-down-to-one-image %}): What I think captures the core essence of domain-driven design.
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Software advice suspiciously generic enough to also apply to systems
 * [Key design principles for dealing with (human) error]({% post_url 2023-06-18-key-design-principles-for-dealing-with-human-error %}): Building systems with humans in mind
 * [Unlocking the Secret to Never-ending Clean Dishes]({% post_url 2023-04-10-rates-of-flow-are-more-important-than-current-counts %}): Advice on where to intervene in systems
