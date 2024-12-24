@@ -10,16 +10,28 @@ Hi 👋
 
 My name is Jan Meppe and it is my mission to **change the way that people learn**.
 
-To fulfill that mission, I currently work as a machine learning engineer at an education startup called [Snappet](https://www.snappet.org/). 
+To work on that mission I currently work at [Snappet](https://www.snappet.org/), an edtech startup where I'm leading the machine learning platform infrastructure team.
 
-Before that, I worked as a data science consultant for [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
+Before that, I worked as a data science consultant for the global IT consulting firm [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-I build machine learning systems at scale in [Python](https://www.python.org/) and [AWS](https://aws.amazon.com/). 
+Interested in working with me? View my resume [here](/assets/cv/2024-03-28-jan-meppe-resume.pdf).
+
 
 💡 New here? Go to [**Start Here**]({% link _pages/start.md %}) to view a curated list of my favourite posts organised by theme! 
 {: .notice--info}
 
-Interested in working with me? View my resume [here](/assets/cv/2024-03-28-jan-meppe-resume.pdf).
+I love building and scaling machine learning systems in [Python](https://www.python.org/) and [AWS](https://aws.amazon.com/) and in my spare time I'm learning a bit of [Rust](https://www.rust-lang.org).
+
+I am interested in and hence write about the following four things:
+- **Machine learning system design**: How do we design and build great (machine learning) systems?
+- **Software**: How do we build great software?
+- **Learning**: How do we learn and get better at learning?
+- **Product**: How do we build great digital products?
+
+Next to that, my blog is a collection of short personal rants and sometimes informative how-to guides, so feel free to browse around!
+
+Otherwise you can also  browse by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
+
 
 
 ## I wrote some popular tech blog articles
@@ -99,7 +111,8 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 * Tweet me on [Twitter](https://twitter.com/Janmeppe)
 * Ping me in a PR on [Github](https://github.com/rainymood)
 * Slide in my DMs on [Instagram](https://www.instagram.com/janmeppe/)
-* Read (discontinued) newsletter on [Substack](https://janmeppe.substack.com)
+* Email me on `{first_name}{last_name}@gmail.com`
+  * I love sending emails to people with personal blogs, so I also love getting emails from people that read my stuff!
 
 <img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center}
 
@@ -136,3 +149,6 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 - How to take better notes
   - [Filling my first Field Notes]({% post_url 2020-10-14-field-notes-1 %})
   - [How to take more useful paper notes]({% post_url 2021-05-21-notes-on-paper-notes %})
+
+
+-->
