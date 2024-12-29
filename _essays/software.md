@@ -1,5 +1,5 @@
 ---
-title: "How to write good code (draft)"
+title: "How to write good code"
 published: true
 toc: true
 toc_sticky: true
@@ -7,35 +7,67 @@ toc_sticky: true
 
 In this essay I try to write down everything I know about **how to write good code.**
 
-Someone recently asked me "how do I write good code?" And that got me thinking a bit, and writing a bit, and before I knew this blog post spiraled out of control.
+Someone recently asked me "Can you help me improve my code?" That got me thinking, and writing, and thinking and writing, and before I knew it this blog post spiraled out of control.
+
+💡 This post is a **draft**
+{: .notice--warning}
 
 This is the blog post I want to be able to link people if they ask me this question again.
 
-Writing good code is [*simple*, but not *easy*](https://www.youtube.com/watch?v=SxdOUGdseq4) and I can summarize it in one sentence.
+Good code is very contextual, that means that this blog is highly opinionated and biased towards professional development. What constitutes as "good" in this context is very different from say a student writing his master's thesis.
+
+Writing good code is [*simple*, but not *easy*](https://www.youtube.com/watch?v=SxdOUGdseq4) and can be summarized in a single sentence:
 
 💡 How do we write good code? **Write code that is easy to change**
 {: .notice--info}
 
-I've read countless books on how to write good code and this is the advice that seems to come back in different forms. Do everything you can in your power to make (and keep) your code easy to change. 
+I've read countless books on how to write good code and this is the advice comes back over and over again in different forms.
 
-This point is so important I'm going to emphasize it and make it an acronym that is easy to remember.
+* Writing tests makes your code easier to change because it can catch regressions
+* Using domain-driven design makes your code easier to change because the problem is solved in the domain space
+* Input output validation makes your code easier to change because you're not afraid of regressions
+* Interfaces make your code easier to change because a change in the interface is exactly propagated to all the other places that need change (the implementations)
+* Good design makes your code easier to change because things that don't change often (the interfaces between components) are well-designed
+* Fast tests are nice because they provide a tight feedback loop for you to change code
+* Good variable naming makes your code easier to change because it helps to build up a mental model of the code
+* Etc.
 
-💡 How do we write good code? **Write code that is Easy To Change (ETC)**
-{: .notice--info}
+# What I've written before about
 
-(The astute reader will notice that this is Tip 9 from the Pragmatic Programmer.)
+Next to all the other advice that exists already on the internet, what have I written before about? 
 
-This is the conclusion that I will try to emphasize over and over again in this essay. To write good code, write code that is easy to change.
+Broadly speaking I talk about three categories on my blog: domain-driven design, interfaces, and testing strategies.
 
-So whats's next in this essay?
+For intermediate to advanced programmers I think that writing good code comes down to having a solid solution of the problem in an abstract world that I call the "domain" space or the problem space. And then you want to express this solution in code using strongly typed (or type-hinted) objects. A programming language like Rust with its type checker is ideal for this, but you can get pretty far using type hints in Python.
 
-First, I talk about what makes good code. Here I talk about how code is social and for humans, that it spends most of its time in maintenance mode, and that easiness of change is the most important value.
+Once you have this design nailed down, it becomes harder and harder to write spaghetti code because all the wirings between components are well-defined and designed (by virtue of good design). 
 
-Then, I talk about complexity which is followed up with a discussion about building a philosophy behind your software design. I talk about the link between complexity and the link with the software you (have to) write and I talk about ways of reducing and managing complexity.  This chapter is by and large a summary of the book A Philosophy of Software Design by John Oosterhout. 
+You have lightweight domain objects that you can individually create, and test, and there are no big bulky real world objects that you are slinging around. You are truly solving the problem in the abstract domain space.
 
-Then, I talk about about **software architecture**, what is software architecture exactly, and what can we do with it? What makes a certain architecture good? I provide a very useful golden rule of architecture to follow.
+Domain-driven design/theory building/solving the problem in the domain space
 
-Finally, the last section contains practical and tactical tips that you can use in your day-to-day.
+* In [this]({% post_url 2024-11-15-a-beginners-guide-to-domain-driven-design-boiled-down-to-one-image %}) blog post I talk about how to solve problems "in the domain space" 
+* In [this series of 3 blog posts]({% post_url 2023-06-02-my-experience-with-domain-driven-design-part-1 %}) I talk about domain-driven design and specifically how to use better naming to name things
+* In [this]({% post_url 2024-01-12-good-documents-are-like-vacation-photos %}) blog post I talk about how documentation should be like vacation photos, which talk about theory building 
+* In [this]({% post_url 2024-01-15-3-examples-of-theory-building-naur-1985 %}) I talk about a paper of Naur (1985) which talks about theory building. Similar to solving a problem in an abstract domain space
+
+Interfaces/Dependency inversion/hexagonal architecture:
+
+* In [this]({% post_url 2023-03-04-reading-notes-hexagonal-onion-clean-architecture %}) blog post I write about the hexagonal architecture
+* In [this]({% post_url 2024-04-30-validate-your-input-and-output-asap %}) I talk about how you should validate your inputs and outputs using Pydantic. Now I know that this is a special case of [parse don't validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)
+* I write about inversion of control [this]({% post_url 2023-02-04-inversion-of-control-visualized %}) post
+* I write about how the argparse is not your interface of the application, with which I mean that it is merely an adapter [in this blog post]({% post_url 2023-02-18-your-argparse-is-not-the-interface-of-your-application %})
+* In [this]({% post_url 2024-04-03-never-integrate-directly %}) I write about how to use interfaces when implementing third party libraries
+* In [this]({% post_url 2024-01-16-working-together-with-interfaces %}) blog post I talk about collaboration using interfaces as contracts.
+* In [this]({% post_url 2023-04-20-writing-better-code-using-interfaces %}) blog post I talk about how to write better code using interfaces.
+* In [this]({% post_url 2024-01-08-tip-push-io-to-the-boundaries-of-your-application %}) blog post I talk about pushing IO to the boundaries, this is a trick learned from functional programming I think
+
+Testing: 
+
+* In [this]({% post_url 2023-12-09-tests-are-nice %}) blog post I talk about test-driven design and how it can catch regressions
+* In [this]({% post_url 2024-05-02-what-if-your-code-and-tests-are-in-the-same-file %}) blog post I talk about co-locating tests and source code. Things that evolve together should stay together
+* In [this]({% post_url 2024-01-13-rust-colocates-unit-tests %}) blog post I talk about how rust co-locates test and source code as well
+* In [this]({% post_url 2023-06-01-tip-use-pytest-fixtures-instead-of-test-data %}) blog post I talk about using pytest fixtures over normal test data
 
 # What is good code?
 
@@ -43,49 +75,40 @@ Finally, the last section contains practical and tactical tips that you can use 
 
 ## Introduction
 
-If we want to write good code, we must first define what it means to write good code.
+If we want to write good code we must first make clear for ourselves what it means to write good code.
 
-What is good code? What is bad code? What separates the two?
+It turns out that good code is code that:
+* Solves an underlying problem
+* Is easy to understand and modify
+* It uses interfaces and abstractions liberally
 
-## Summary 
-
-A summary of the arguments and propositions used in the next part of the essay:
-
-* **The social argument.** Code is for other humans to read and change.
-* **The maintenance argument.** In the long run code is maintained more than written.
-* **The problem-solving argument.** Code exists to solve a problem. The best code is a solved problem with no code written.
-* **The Easy To Change (ETC) argument.** Being easy to change is more important than being correct.
-
-The most important argument is the easy to change argument, the other three are sub-arguments of that.
-
-## Code is for humans
+## Code is written by humans (plural) for humans (plural)
 
 > "Programs should be written for people to read, and only incidentally for machines to execute." -- Unknown
 
-I love this quote, because it shows that code is for humans. Code is written by (somewhat) humans and mainly to be read by humans.
+Code is collaborative.
 
-This is important because every rule I write here might not translate across borders or cultures.
+When you start developing code professionally you start working in teams. This means that you will have to interface with other people through code. This means writing code in a way that is clear and understandable for other people other than yourself.
 
-Every person is unique and different, so what is good code to that person will be different as well. But hopefully there are some principles that *do* translate across borders and cultures.
+In other words, because code is written by humans and for humans, we must try to make it as easy as possible for other people to understand and to modify. At some point you start writing software that is the product of collaboration, and this changes what it means for code to be good. Correctness is not necessarily the only thing anymore, understandability and extensibility also become important.
 
-## Code spends most of its time in maintenance mode
+This is what I'd like to call the **collaboration** argument.
 
-> "Code is read more often than it is written." -- Unknown
 
-A funny thing happens when you work at any company long enough. You work on a project, write some code, you finish the project, and then a year later you actually have to revisit your old project and you wonder who wrote that piece of crap. You realize it was you who wrote it. 
-
-This is a special case of a principle that code is read more often than it is written. Another way of framing this is that the second you write and commit the code it goes in maintenance mode. If you have a healthy project with a lifespan of 2 years and it takes around a week to write the code, that means that it spends more than 99% of the time in maintenance mode (1 week coding versus 103 weeks maintenance). Good code should be maintainable.
 
 ## The best code is no code
 
 > ["The Best Code is No Code At All" -- Jeff Atwood](https://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 
+> "I believe it was Bill Gates: "Measuring software productivity by lines of code is like measuring progress on an airplane by how much it weighs."
+
 The best code is no code.
 
-If you can write less lines of code, then do it. Less lines of code means less things to maintain which means more time you can spend on every line relatively. 
+Code is not an asset, but a liability. 
+
+If you can solve the problem in less lines of code, do it. Why? Because fewer lines of code means less things to maintain which means you can spend more time on each line. 
 
 Do not pride yourself into using *lines written* but instead think of it as *lines spent*. 
-
 ## The best code is a solved problem
 
 The best code is no code (and a solved problem).
@@ -93,6 +116,12 @@ The best code is no code (and a solved problem).
 Writing code should not be the goal in and of itself.
 
 The code exists to **solve a certain problem**. If you can solve the problem without code, do that instead. Always try to keep this goal in mind.  If you can avoid writing some code by talking with someone and solving the same problem, then do that. Do less, but better.
+
+## Code models an underlying problem
+
+One thing that I want you to take away is that code models an underlying problem. Just like any other mathematical model models an underlying problem, we all make assumptions to solve these problems and these can be suddenly invalidated. For example, imagine Google Maps in a war-torn area. The software works but the underlying nature of the problem has shifted so dramatically that it is not up-to-date anymore. The code models an underlying problem but the problem has shifted dramatically. 
+
+Try to solve the problem in the domain-language of the problem and then translate that to code. Or have the two stay as close to each other as possible.
 
 ## Good code should be easy to change
 
@@ -122,7 +151,7 @@ The world is full of people trying to sell you specific knowledge about how to w
 
 But there is a silver bullet. There is *one*.
 
-And that one silver bullet is this: **Good design is easier to change than that design.**
+And that one silver bullet is this: **Good design is easier to change than bad design.**
 
 All patterns, all techniques, all tooling that help you write good code like the hexagonal architecture, decoupling, and the single responsibility principle. All these things are special cases of this rule that they make your code easier to change. 
 
@@ -141,6 +170,23 @@ This is the main principle underlying all other principles: good code should be 
 From: [A Philosophy of Software design]()
 
 > For the purposes of this book, I define “complexity” in a practical way. **Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system.** Complexity can take many forms. For example, it might be hard to understand how a piece of code works; it might take a lot of effort to implement a small improvement, or it might not be clear which parts of the system must be modified to make the improvement; it might be difficult to fix one bug without introducing another. If a software system is hard to understand and modify, then it is complicated; if it is easy to understand and modify, then it is simple.
+
+## The lifetime of code
+
+Code starts in the head of a coder. He searches and finds inspiration from his own knowledge and the code he finds in other places, and with that he writes new code. This code is added, committed and pushed into a new repository and from there on it takes a new life. It stays there, it gets maintained by his coder, and once he leaves, by other coders, maybe, at some point, it will be deleted, but this will be unlikely. It is there to stay, forever, maintained.
+
+I am writing this as we are at the precipice of Gen-AI coding, so I don't know how long this might be true for. But it is true now.
+
+## Code spends most of its time in maintenance mode
+
+> "Code is read more often than it is written."
+
+A funny thing happens when you work at any company long enough. You work on a project, write some code, you finish the project, and then a year later you actually have to revisit your old project, and you wonder who wrote that piece of crap. You realize it was you who wrote it.
+
+This is a special case of a principle that code is read more often than it is written. Another way of framing this is that the second you write and commit the code it goes in maintenance mode. If you have a healthy project with a lifespan of 2 years, and it takes around a week to write the code, that means that it spends more than 99% of the time in maintenance mode (1 week coding versus 103 weeks maintenance). Good code should be maintainable.
+
+This is what I'd like to call the **maintenance** argument.
+
 
 # Complexity (A Philosophy of Software Design)
 
@@ -204,18 +250,9 @@ Every production system, every package, every medical mechanical device, or ever
 
 # General tips and tactics
 
-## Separate data and compute
+## Separate data and computation
 
-A useful tip is to "separate data and compute". In your design you often have data ("things") and computations ("verbs"). I find that if you separate the two your design often becomes clearer and more obvious. 
-
-## Tips from daedech
-
-https://daedtech.com/write-good-code/
-
-* Make it easy to change
-* Make it readable
-* Make it work
-  
+In your design you often have data (things or nouns) and you have things you do (computations or verbs). If you separate these two in your design then your whole program often become clearer and more obvious.
 
 ## General Principles
 
@@ -228,15 +265,19 @@ https://daedtech.com/write-good-code/
 - Separating tech from problem solving
 - Local first
 
-## Local > Cloud
+## Prefer local to cloud
+
+If you can, try to get your whole stack up locally.
+
+You want to keep your debug loop as fast as possible. When you have your whole stack up locally that makes it easy and fast. If you have to wait for infrastructure to spin up in the cloud you are setting yourself up for failure.
 
 Having things locally makes everything fast. Having to interface with the cloud takes time. Try to do as much as you can on your laptop. Why? Because this leads to quick feedback cycles and quick feedback cycles are important for you to figure out whether what you did was right or not. 
 
 Example: Instead of testing `s3` directly, spin up a copy of `moto` using `docker-compose` instead.
 
-## Use makefiles to automat tedious commands
+## Automate tedious commands
 
-Copy pasting 5 lines every time by hand is terrible.
+It is OK to copy-paste 5 lines sometimes. But if you do it 3 or more times try to turn it into a simple script or `makefile`. Get into the habit of automating the boring stuff, this will, in the long-term, free up more time than you might think.
 
 Running `make build` feels great and snappy.
 
@@ -244,22 +285,23 @@ Let the computer do the work. Automate the boring stuff.
 
 ## Keep your feedback loop short
 
-Try to make your feedback loop as fast as possible. This means for example having lightweight objects and writing tests for those objects. This means for example disabling steps in the pipeline so that you can run the tests faster. I am debugging a Docker pipeline now and I do not want to wait for the docker build every time but I am not changing the code, so I just disable the step so I can get faster to where the point that I'm trying to fix things. Make your feedback loops short so you get quick and timely feedback.
+Try to make your feedback loop as fast as possible. This means for example having lightweight objects and writing tests for those objects. This means for example disabling steps in the pipeline so that you can run the tests faster. I am debugging a Docker pipeline now and I do not want to wait for the docker build every time, but I am not changing the code, so I just disable the step, so I can get faster to where the point that I'm trying to fix things. Make your feedback loops short, so you get quick and timely feedback.
 
-# Tests
+# Generic test advice
 
-## If tests are hard to write then something is wrong with your code
+Generic testing advice.
 
-It is often the case that the tests suite is slow and that tests are hard to write. If this is the case then something is wrong with your code. Code should be designed in such a way that the tests are easy to write.
+## If writing tests is hard, something is wrong with your code
+
+It is often the case that test suites are slow and that tests are hard to write. If this is the case then that probably means that there is something wrong with your design. Code should be designed in such a way that tests are easy to write (and fast).
 
 ## Tests should prove the correctness of your code
 
-Testing and Debugging: Write automated tests to verify the correctness of your code. Test individual modules in isolation, and then test the system as a whole. Debugging should be systematic and based on a clear understanding of the code.
+Write tests to verify the correctness of your code. When someone is reviewing your PR he should not read your code to check the correctness of it. Your tests should prove the correctness of your code.
 
+## Bugs in production should always be turned into a new test
 
-## Tests can not capture all bugs
-
-## Production bugs should always be turned into a new bug
+When a production outage occurs or some bug occurs in production. You want to make sure that it gets turned into a new test case that you can run. Because how are you otherwise going to make sure that this bug won't appear again? This is what we call a regression.
 
 ## Unit tests should be fast
 

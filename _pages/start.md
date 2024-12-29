@@ -25,7 +25,10 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 *How do we write great software?*
 
-* [Essay: How to write great software]({% link _essays/software.md %}): What I know about great software
+**READ THIS**: [How to write great software]({% link _essays/software.md %}): My ultimate blog post with everything I know about how to write great software for intermediate to advanced programmers
+{: .notice--info}
+
+
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Complexity and software
 * [A tale of two values]({% post_url 2024-01-19-a-tale-of-two-values %}): What is more important: something that works or something that we can change?
 * [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %}): Tips and tricks for scaling
