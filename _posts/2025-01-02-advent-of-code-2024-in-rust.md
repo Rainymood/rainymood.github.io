@@ -65,27 +65,27 @@ This ownership system is what makes Rust fast, but also what makes it difficult 
 
 I know I did a terrible job explaining the ownership system, but this makes it somewhat understandable from a Pythonista perspective, I think.
 
-# I am learning on ChatGPT quite a bit and it’s great
+# I am using ChatGPT quite a bit and it’s great (so far)
 
-I am using chatgpt to write a lot of code
+I output a lot of code with ChatGPT.
 
-I was always a bit skeptical but man chat gpt is a big help.
+I was always a bit skeptical but I have to admit it is a big help.
 
-Yes, I am writing a lot of shitty code. No it might not be the best code. but it is code that works and the output that I am able to output with chatgpt is like 10x the normal speed at which I can develop.
+Yes, I am writing a lot of shitty code. No it might not be the best code. But it is code that works and if I can output 10x the code at half the quality, I guess it is still a win?
 
-for me, the learning curve now is producing working rust code, not writing the best rust code. for me, good is now working. whether I wrote it or whehther chatgpt wrote it. 
+For me, the challenge or learning curve is producing **working** rust code, not writing the best rust code. 
 
-Honestly this is what we do write? We write tests that fix our behaviour and then we write code to make it pass. but there are many versions of the code that make it pass so, wy not have chatgpt write another one? 
+For me, good now means working, whether I wrote it or ChatGPT wrote it. 
 
-honestly, chatgpt thinks betterof the edge cases than i do.
+When you think about it we write tests that fix down some behaviour and then we write code to make the tests pass. But there are many versions of the code that make the tests pass, so why not have ChatGPT write some?
 
-computers don’t make mistakes, humans do
-
-im finally seeing the power of chatgpt.
+If I'm really honest sometimes ChatGPT thinks of more edge cases than I do. Computers don't make mistakes, humans do.
 
 Honestly, ChatGPT is really great. Especially for fighting WITH the borrow checker. Inputting an Error gives me some explainer in normal people language that a noob like me can work with.
 
-ChatGPT shouldn’t become a crutch that I should lean on too heavily. But at the same time people use Google as a crutch as well. It works, for me, now.
+ChatGPT shouldn’t become a crutch that I should lean on too heavily. 
+
+But at the same time people use Google as a crutch as well. It works, for me, now.
 
 # I struggled with and learned how and when to use references
 
@@ -100,8 +100,6 @@ I learned that you want to follow the principle of LEAST permission. So the orde
 Or this one
 
 ![](/../assets/2025-01-02-advent-of-code-2024-in-rust/2025-01-02-22-44-59.png)
-
-https://www.reddit.com/r/learnrust/comments/133iqe4/comment/jiaakgd/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 
 Talking with another colleague he explained it as follows: Try to write functions that return new types themselves and then just pass in borrowed values, then you don’t need to think about ownership all that much.
 
@@ -212,7 +210,6 @@ Learned how to do this initialization. There are probably nicer and better ways.
 
 There was one problem where I had to wrap around a grid which was a bit annoying. I solved this by taking the modulo in the end.
 
-
 > To fix this problem, we add numRows to i before taking the modulo numRows. This ensures that we're always taking the modulo of a positive number. Now we can count the number of live cells among the eight neighbors of grid[row][col] as follows.
 
 
@@ -249,23 +246,19 @@ To hedge this, invest in your debugging toolkit where you can print out the stat
 
 # Mistakenly used binary XOR for to the power
 
-I used `2^x` to try and to the power something, but this is the binary XOR operator. Oops
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1144a8ce-bde0-4492-ba49-02139859b5c2/184e2c12-3f31-45a6-a265-03724be9c552/image.png)
+I used `2^x` to try and to the power something, but this is the binary XOR operator. 
 
 ```yaml
 let num = (A / 2^combo.get(&operand).expect(""));
-
 ```
 
-num = 1013 but should be 1012 because a = 2024
+This didn't work as expected. Oops.
 
 # Thanks Reddit
 
 I was stuck on some problem and then someone on Reddit gave this hint and I had exactly the same problem. I fixed the first division but there were 2 other instances I had to fix. Thanks Reddit.
 
 > Part 1 is a nice simple bytecode interpreter, but with quite a few opportunities for bugs. I coded it slowly and carefully, but forgot to actually do the division in the division opcode, and when I fixed the bug I forgot there were two other division opcodes to fix.
->
 
 
 # Subscribe
