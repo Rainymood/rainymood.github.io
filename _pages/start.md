@@ -10,7 +10,11 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 # Machine Learning System Design
 
-*How do we build great (machine learning) systems?*
+*How do we build great (machine learning) systems?* [link (draft)]({% link _essays/system.md %})
+
+[//]: # (**READ THIS**: [How to build great systems &#40;draft&#41;]&#40;{% link _essays/system.md %}&#41;: Practical tips on building software and machine learning systems for the intermediate to advanced practitioner. Draft version.)
+
+[//]: # ({: .notice--info})
 
 
 * [Key concepts for scaling systems]({% post_url 2024-09-18-key-concepts-for-scaling-systems %}): Sharing the fundamental principles for scaling systems
@@ -23,10 +27,11 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 # Software
 
-*How do we write great software?*
+*How do we write great software?* [link (draft)]({% link _essays/software.md %})
 
-**READ THIS**: [How to write great software]({% link _essays/software.md %}): My ultimate blog post with everything I know about how to write great software for intermediate to advanced programmers
-{: .notice--info}
+[//]: # (**READ THIS**: [How to write great software &#40;draft&#41;]&#40;{% link _essays/software.md %}&#41;: My ultimate blog post with everything I know about how to write great software for intermediate to advanced programmers)
+
+[//]: # ({: .notice--info})
 
 
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Complexity and software
