@@ -34,6 +34,7 @@ tags:
 - career
 
 # Big themes that I write about
+- advent of code
 - engineering
 - software architecture
 - management
