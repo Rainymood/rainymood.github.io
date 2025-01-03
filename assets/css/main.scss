@@ -4,43 +4,6 @@
 
 @charset "utf-8";
 
-// // Define colors 
-// $brian-clicked-link: #265aeb;
-// $brian-unclicked-link: #1e38af;
-// $brian-creme: #fafafa;
-// $white: #ffffff;
-// $color-link-grey: #3E4245;
-
-// // Post headers
-// $link-color: $brian-unclicked-link;
-
-// // Change background of website to creme. From: https://brianlovin.com/
-// $background-color: $white; 
-
-// Defaults: See https://github.com/mmistakes/minimal-mistakes/discussions/1352
-// /* type scale */
-// $type-size-1                  : 2.441em !default;  // ~39.056px
-// $type-size-2                  : 1.953em !default;  // ~31.248px
-// $type-size-3                  : 1.563em !default;  // ~25.008px
-// $type-size-4                  : 1.25em !default;   // ~20px
-// $type-size-5                  : 1em !default;      // ~16px
-// $type-size-6                  : 0.75em !default;   // ~12px
-// $type-size-7                  : 0.6875em !default; // ~11px
-// $type-size-8                  : 0.625em !default;  // ~10px
-
-// /* type scale */
-$type-size-1: 2.441em !default;
-$type-size-2: 1.953em !default;
-$type-size-3: 1.563em !default;
-$type-size-4: 1.25em !default;
-$type-size-5: 1.1em !default;
-$type-size-5b: 0.9em !default;
-$type-size-6: 0.8em !default;
-$type-size-7: 0.8em !default;
-$type-size-8: 0.625em !default;
-
-// ================
-
 // https://github.com/KrisvanderMast/KrisvanderMast.github.io/blob/master/assets/_scss/_variables.scss
 
 /* paragraph indention */
@@ -67,25 +30,52 @@ $global-font-family         : $sans-serif;
 $header-font-family         : $sans-serif;
 $caption-font-family        : $serif;
 
-// /* type scale */
-// $type-size-1                : 2.441em;  // ~39.056px
-// $type-size-2                : 1.953em;  // ~31.248px
-// $type-size-3                : 1.563em;  // ~25.008px
-// $type-size-4                : 1.25em;   // ~20px
-// $type-size-5                : 1em;      // ~16px
-// $type-size-6                : 0.75em;   // ~12px
-// $type-size-7                : 0.6875em; // ~11px
-// $type-size-8                : 0.625em;  // ~10px
+/* type scale */
+$type-size-1: 2.441em !default;
+$type-size-2: 1.953em !default;
+$type-size-3: 1.563em !default;
+$type-size-4: 1.25em !default;
+$type-size-5: 1.1em !default;
+$type-size-6: 0.8em !default;
+$type-size-7: 0.8em !default;
+$type-size-8: 0.625em !default;
 
-
-
-// ====================
+/* headline scale */
+$h-size-1: 1.563em !default;
+$h-size-2: 1.25em !default;
+$h-size-3: 1.125em !default;
+$h-size-4: 1.0625em !default;
+$h-size-5: 1.03125em !default;
+$h-size-6: 1em !default;
 
 // *************************************************************
 // !! ALL VARIABLE DECLARATIONS MUST BE BEFORE THIS STATEMENT !!
 // *************************************************************
 
 @import "minimal-mistakes";
+
+// https://github.com/mmistakes/minimal-mistakes/discussions/1352#discussioncomment-2074482
+// If you adjust your /assets/css/main.scss like suggested in #1219:
+// You'll have to first set variables (like those in _variables.scss), then import minimal mistakes, and finally write the html code.
+// The html part will set the default font size (i.e. the text font size within your posts). The type-size variables on the other hand will set font size for other elements like table of content etc., relative to the default size specified in the html block.
+// As an example here's my /assets/css/main.css:
+
+// 2025-01-03 Took some time to fix this... Thanks MoritzLange :)
+html {
+    font-size: 10px; // change to whatever
+
+    @include breakpoint($medium) {
+      font-size: 12px; // change to whatever
+    }
+
+    @include breakpoint($large) {
+      font-size: 14px; // change to whatever
+    }
+
+    @include breakpoint($x-large) {
+      font-size: 16px; // change to whatever
+    }
+  }
 
 // 2023-12-12: Still don't really understand scss... oh well
 // 2022-05-17: This changes the code box. Do you wonder how you can find this out yourself?
