@@ -30,6 +30,14 @@ $global-font-family         : $sans-serif;
 $header-font-family         : $sans-serif;
 $caption-font-family        : $serif;
 
+$quote-blue-color           : #1da1f2;
+$primary-cream              : #b2d9f1;
+$cream-color                : #f4f4f4;
+
+// https://stackoverflow.com/questions/73789719/how-to-override-theme-defaults-for-minimal-mistakes-theme
+// $info-color                 : $quote-blue-color;
+// $link-color                 : $info-color;
+
 /* type scale */
 $type-size-1: 2.441em !default;
 $type-size-2: 1.953em !default;
@@ -90,4 +98,25 @@ html {
   // font-size: $type-size-5b;
   font-size: 0.9em;
   line-height: 1.5;
+}
+
+blockquote {
+  margin: 0em; // Remove all margin (push on the left)
+  margin-block: 2em; // Used to be 20www0ww
+  margin-inline-end: 1em;
+  padding-inline: 0.5em;
+  font-style: italic;
+  border-inline-start: 0.25em solid $quote-blue-color;
+  background-color: $cream-color;
+  border-top-right-radius: 8px; // Rounded top-right corner
+  border-bottom-right-radius: 8px; // Rounded bottom-right corner
+
+  cite {
+    font-style: italic;
+
+    &::before {
+      content: "\2014";
+      padding-inline-end: 5px;
+    }
+  }
 }

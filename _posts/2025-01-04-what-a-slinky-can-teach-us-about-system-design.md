@@ -105,7 +105,6 @@ Donella Meadows writes in Thinking in Systems:
 > The hands that manipulate it suppress or release some behavior that is latent within the structure of the spring. 
 > 
 > That is a central insight of systems theory.
-> 
 
 The central insight is that **the behaviour of a system is often times latent/hidden/stored within the structure of the system** and is not necessarily caused by the things we think it causes.
 
@@ -114,7 +113,6 @@ Yes the hand or the box do manipulate or suppress some of the behaviour, but tha
 She continues: 
 
 > When it comes to Slinkies, this idea is easy enough to understand. When it comes to individuals, companies, cities, or economies, it can be heretical. **The system, to a large extent, causes its own behavior!** An outside event may unleash that behavior, but the same outside event applied to a differ- ent system is likely to produce a different result.
-> 
 
  She reasons through some of the pretty wild implications if you ask me:
 
