@@ -35,6 +35,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 [//]: # ({: .notice--info})
 
+Great software consists of three things: A solved problem (think: hexagonal architecture and domain-driven design), a solid testing strategy that proves that you've solved the problem, and some thoughtful thinking about the interfaces and interactions between components.
 
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Complexity and software
 * [A tale of two values]({% post_url 2024-01-19-a-tale-of-two-values %}): What is more important: something that works or something that we can change?
@@ -42,6 +43,12 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [Your argparse is not the interface of your application]({% post_url 2023-02-18-your-argparse-is-not-the-interface-of-your-application %}): Anything (also the CLI) should be able to drive your program
 * [Writing better code using interfaces]({% post_url 2023-04-20-writing-better-code-using-interfaces  %}): Interfaces allow you to decouple from implementation details
 * [Three examples of theory building]({% post_url 2024-01-15-3-examples-of-theory-building-naur-1985 %}): Putting theory central instead of code (Naur, 1985)
+
+Testing:
+
+* [Testing Is Like Pulling Up a Bucket of Water from a Well]({% post_url 2025-01-04-testing-is-like-pulling-up-a-bucket-of-water-from-a-well %})
+* [What if your code and tests are in the same file?]({% post_url 2024-05-02-what-if-your-code-and-tests-are-in-the-same-file %})
+* [Rust colocates unit tests]({% post_url 2024-01-13-rust-colocates-unit-tests %})
 
 Optimization:
 
