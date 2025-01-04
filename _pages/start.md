@@ -20,6 +20,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [Key concepts for scaling systems]({% post_url 2024-09-18-key-concepts-for-scaling-systems %}): Sharing the fundamental principles for scaling systems
 * [What a Slinky Can Teach Us About System Design]({% post_url 2025-01-04-what-a-slinky-can-teach-us-about-system-design %}): System behaviour is latent within the structure of the system
 * [The Blind Men and the Elephant]({% post_url 2025-01-03-the-blind-men-and-the-elephant %}): A system is more than the sum of its parts
+* [Sweat the Small Stuff]({% post_url 2025-01-04-sweat-the-small-stuff %}): Because complexity is incremental, it makes sense to sweat the small stuff
 * [A Beginner's guide to domain-driven design boiled down to one image]({% post_url 2024-11-15-a-beginners-guide-to-domain-driven-design-boiled-down-to-one-image %}): What I think captures the core essence of domain-driven design.
 * [Key design principles for dealing with (human) error]({% post_url 2023-06-18-key-design-principles-for-dealing-with-human-error %}): Building systems with humans in mind
 * [Unlocking the Secret to Never-ending Clean Dishes]({% post_url 2023-04-10-rates-of-flow-are-more-important-than-current-counts %}): Advice on where to intervene in systems
