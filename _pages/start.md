@@ -8,9 +8,9 @@ New here? This page has a curated list of [my blog posts]({% link _pages/year-ar
 
 Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
 
-# Machine Learning System Design
+# System Design
 
-*How do we build great (machine learning) systems?* [link (draft)]({% link _essays/system.md %})
+*How do we build great (machine learning and software) systems?* [(draft)]({% link _essays/system.md %})
 
 [//]: # (**READ THIS**: [How to build great systems &#40;draft&#41;]&#40;{% link _essays/system.md %}&#41;: Practical tips on building software and machine learning systems for the intermediate to advanced practitioner. Draft version.)
 
@@ -18,16 +18,17 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 
 * [Key concepts for scaling systems]({% post_url 2024-09-18-key-concepts-for-scaling-systems %}): Sharing the fundamental principles for scaling systems
+* [What a Slinky Can Teach Us About System Design]({% post_url 2025-01-04-what-a-slinky-can-teach-us-about-system-design %}): System behaviour is latent within the structure of the system
+* [The Blind Men and the Elephant]({% post_url 2025-01-03-the-blind-men-and-the-elephant %}): A system is more than the sum of its parts
 * [A Beginner's guide to domain-driven design boiled down to one image]({% post_url 2024-11-15-a-beginners-guide-to-domain-driven-design-boiled-down-to-one-image %}): What I think captures the core essence of domain-driven design.
-* [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Software advice suspiciously generic enough to also apply to systems
 * [Key design principles for dealing with (human) error]({% post_url 2023-06-18-key-design-principles-for-dealing-with-human-error %}): Building systems with humans in mind
 * [Unlocking the Secret to Never-ending Clean Dishes]({% post_url 2023-04-10-rates-of-flow-are-more-important-than-current-counts %}): Advice on where to intervene in systems
-* [System bottlenecks explained with water pipes]({% post_url 2024-01-02-system-bottlenecks-explained-with-water-pipes %}): Impact system output by changing the bottleneck
+* [System bottlenecks explained with water pipes]({% post_url 2024-01-02-system-bottlenecks-explained-with-water-pipes %}): Always try to optimize the system bottleneck for maximum impact
 * [Depending on things make them harder to change]({% post_url 2024-01-09-depending-on-things-make-them-harder-to-change %}): A real world example showing how dependencies drive system complexity
 
 # Software
 
-*How do we write great software?* [link (draft)]({% link _essays/software.md %})
+*How do we write great software?* [(draft)]({% link _essays/software.md %})
 
 [//]: # (**READ THIS**: [How to write great software &#40;draft&#41;]&#40;{% link _essays/software.md %}&#41;: My ultimate blog post with everything I know about how to write great software for intermediate to advanced programmers)
 
