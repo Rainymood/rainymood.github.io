@@ -4,74 +4,10 @@ date: 2025-01-04
 tags:
 # Blog or how-to
 - blog
-- tutorial
-
 # Work or personal?
 - work
-- personal
-
 # Start here themes
 - systems
-- software
-- learning
-- product
-- career
-
-# Big themes that I write about
-- advent of code
-- engineering
-- software architecture
-- management
-- leadership
-- productivity
-- lean
-- memory palace
-
-# gaming/ui/ux design
-- juice
-- game design
-
-# Programming languages/Cloud
-- rust
-- golang
-- python
-- sql
-- javascript
-- aws
-- testing
-- documentation
-
-# Smaller themes
-- writing
-- product
-- design
-- tools
-- advent of code
-- aws 
-- docker
-- machine learning
-- programming
-- pytorch
-- tensorflow
-- code
-- show-your-work
-- tip
-- athena
-
-- meta programming
-
-- flashcards
-- projects
-- startups
-
-- cosmicpython
-- inversion of control
-- domain driven design
-
-- story
-- lessons learned
-- video games
-
 categories: blog
 toc: false
 toc_sticky: false

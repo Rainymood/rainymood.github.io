@@ -70,14 +70,14 @@ $h-size-6: 1em !default;
 
 // 2025-01-03 Took some time to fix this... Thanks MoritzLange :)
 html {
-    font-size: 10px; // change to whatever
+    font-size: 14px; // change to whatever
 
     @include breakpoint($medium) {
-      font-size: 12px; // change to whatever
+      font-size: 14px; // change to whatever
     }
 
     @include breakpoint($large) {
-      font-size: 14px; // change to whatever
+      font-size: 15px; // change to whatever
     }
 
     @include breakpoint($x-large) {

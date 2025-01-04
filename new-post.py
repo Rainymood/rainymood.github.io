@@ -34,7 +34,8 @@ tags:
 - career
 
 # Big themes that I write about
-- advent of code
+- recently
+- complexity
 - engineering
 - software architecture
 - management
@@ -47,7 +48,9 @@ tags:
 - juice
 - game design
 
+
 # Programming languages/Cloud
+- advent of code
 - rust
 - golang
 - python
@@ -74,14 +77,10 @@ tags:
 - tip
 - athena
 
-- meta programming
-
 - flashcards
 - projects
 - startups
 
-- cosmicpython
-- inversion of control
 - domain driven design
 
 - story
