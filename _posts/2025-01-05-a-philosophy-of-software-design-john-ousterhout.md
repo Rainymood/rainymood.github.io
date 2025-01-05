@@ -71,7 +71,7 @@ Ousterhout identifies two main causes of complexity:
 Ousterhout suggests two ways of dealing with complexity:
 
 1. Eliminating complexity: The first way is to eliminate complexity by making your code as obvious as possible.
-2. Encapsulating complexity: The second way is to encapsulate comoplexity so that you are only exposed to the complexity of the interface of the module instead of the implementation. We effectively hide the complexity of the module by providing a simple interface coupled with a powerful implementation.
+2. Encapsulating complexity: The second way is to encapsulate complexity so that you are only exposed to the complexity of the interface of the module instead of the implementation. We effectively hide the complexity of the module by providing a simple interface coupled with a powerful implementation.
 
 ---
 
@@ -103,7 +103,7 @@ Yes, there is a lot of complexity, but this is encapsulated behind a simple inte
 
 You can create deep modules by using the information hiding principle [[1]](): Modules should encapsulate a few pieces of knowledge that represent design decisions.
 
-The opposite of this is information leakage: Design decisions that are spread or duplicated across multiple modules. This creates change amplification or coupling because making a change in the design decision will force you to make change sin both multiple modules.
+The opposite of this is information leakage: Design decisions that are spread or duplicated across multiple modules. This creates change amplification or coupling because making a change in the design decision will force you to make changes in both multiple modules.
 
 Information can also leak through the implicit interface like having to know about the file format, or the order in which things should be executed.
 
