@@ -4,20 +4,22 @@ title: "Key themes in my work"
 classes: wide
 ---
 
-New here? This page has a curated list of [my blog posts]({% link _pages/year-archive-wide-grid.md %}) grouped by key theme.
+Welcome! This page has a curated list of [my blog posts]({% link _pages/year-archive-wide-grid.md %}) grouped by key theme.
+
+I write about [system design](#system-design), [software](#software), [learning how to learn](#learning), and [product development](#product). 
 
 Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
 
 # System Design
 
-*How do we build great (machine learning and software) systems?* [(draft)]({% link _essays/system.md %})
+*How do we build great (machine learning and software) systems?* [(mega-post draft)]({% link _essays/system.md %})
 
 [//]: # (**READ THIS**: [How to build great systems &#40;draft&#41;]&#40;{% link _essays/system.md %}&#41;: Practical tips on building software and machine learning systems for the intermediate to advanced practitioner. Draft version.)
 
 [//]: # ({: .notice--info})
 
-
-* [Key concepts for scaling systems]({% post_url 2024-09-18-key-concepts-for-scaling-systems %}): Sharing the fundamental principles for scaling systems
+* [Summary of a Philosophy of Software Design - John Ousterhout]({% post_url 2025-01-05-a-philosophy-of-software-design-john-ousterhout %}): Practical tips about software design that also apply to system design ⭐️⭐️⭐️ (personal favourite)
+* [Key concepts for scaling systems]({% post_url 2024-09-18-key-concepts-for-scaling-systems %}): The 4 most important techniques for scaling software systems
 * [What a Slinky Can Teach Us About System Design]({% post_url 2025-01-04-what-a-slinky-can-teach-us-about-system-design %}): System behaviour is latent within the structure of the system
 * [The Blind Men and the Elephant]({% post_url 2025-01-03-the-blind-men-and-the-elephant %}): A system is more than the sum of its parts
 * [Sweat the Small Stuff]({% post_url 2025-01-04-sweat-the-small-stuff %}): Because complexity is incremental, it makes sense to sweat the small stuff
@@ -29,15 +31,14 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 # Software
 
-*How do we write great software?* [(draft)]({% link _essays/software.md %})
+*How do we write great software?* [(mega-post draft)]({% link _essays/software.md %})
 
 [//]: # (**READ THIS**: [How to write great software &#40;draft&#41;]&#40;{% link _essays/software.md %}&#41;: My ultimate blog post with everything I know about how to write great software for intermediate to advanced programmers)
 
 [//]: # ({: .notice--info})
 
-Great software consists of three things: A solved problem (think: hexagonal architecture and domain-driven design), a solid testing strategy that proves that you've solved the problem, and some thoughtful thinking about the interfaces and interactions between components.
-
-* [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Complexity and software
+* [Summary of a Philosophy of Software Design - John Ousterhout]({% post_url 2025-01-05-a-philosophy-of-software-design-john-ousterhout %}): The most important and practical tips from my favourite book about software design ⭐️⭐️⭐️ (personal favourite)
+* [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Bullet note summary of the same book
 * [A tale of two values]({% post_url 2024-01-19-a-tale-of-two-values %}): What is more important: something that works or something that we can change?
 * [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %}): Tips and tricks for scaling
 * [Your argparse is not the interface of your application]({% post_url 2023-02-18-your-argparse-is-not-the-interface-of-your-application %}): Anything (also the CLI) should be able to drive your program
@@ -67,9 +68,8 @@ I make small tutorials on how to do things on AWS sometimes:
 
 # Learning
 
-*How do we learn and get better at learning?*
+*How do we learn and get better at learning?* [(mega-post draft)]({% link _essays/learning-how-to-learn.md %})
 
-* [Essay: Learning How To Learn]({% link _essays/learning-how-to-learn.md %}): What I know about learning how to learn
 * [Memorising the first 18 digits of pi]({% post_url 2024-09-09-impressing-myself-with-memorising-the-first-18-digits-of-pi %}): Memory works better when you link it to vivid mental imagery
 * [To learn, retrieve]({% post_url 2024-05-28-to-learn-retrieve %}): Retrieval is important in learning
 * [Atomic flashcards]({% post_url 2020-10-24-atomic-anki-cards %}): Smaller flashcards are better

@@ -120,3 +120,24 @@ blockquote {
     }
   }
 }
+
+// Change the table of contents on the right hand side
+// Set toc_label in the header to change contents
+// .toc .nav__title {
+//   background: dodgerblue;
+// }
+
+// Change the table of contents on the right hand side
+.h1 {
+  text-decoration: underline;
+  text-decoration-color: dodgerblue; // Specify the underline color
+  }
+
+// Change the image on the left hand side
+.author__avatar img {
+  max-width: 110px;
+  border-radius: 15%; // 50 is circle
+  // border-width:5px;
+  // border-color: dodgerblue;
+  padding: 0;
+}

@@ -5,11 +5,11 @@ toc: true
 toc_sticky: true
 ---
 
-In this essay I try to write down everything I know about **how to write good code.**
+In this mega blog post I try to write down everything I know about **how to write good code.**
 
 Someone recently asked me "Can you help me improve my code?" That got me thinking, and writing, and thinking and writing, and before I knew it this blog post spiraled out of control.
 
-💡 This post is a **draft**
+💡 This post is in a **draft** stage. I am in the information collection stage.
 {: .notice--warning}
 
 This is the blog post I want to be able to link people if they ask me this question again.
@@ -20,6 +20,8 @@ Writing good code is [*simple*, but not *easy*](https://www.youtube.com/watch?v=
 
 💡 How do we write good code? **Write code that is easy to change**
 {: .notice--info}
+
+Great software consists of three things: A solved problem (think: hexagonal architecture and domain-driven design), a solid testing strategy that proves that you've solved the problem, and some thoughtful thinking about the interfaces and interactions between components.
 
 I've read countless books on how to write good code and this is the advice comes back over and over again in different forms.
 

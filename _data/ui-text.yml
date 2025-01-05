@@ -1,0 +1,4 @@
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  toc_label                  : "Foo"

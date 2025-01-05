@@ -8,15 +8,10 @@ toc_sticky: true
 
 In this post I want to collect and synthesize everything I know about building systems. 
 
-This post focuses on building software and machine learning systems because that's what I do in my job. However, I hope that this advice is generic enough to also apply to other systems.
-
 💡 This post is in a **draft** stage. I am in the information collection stage.
 {: .notice--warning}
 
 # Outline
-
-
-Here's an outline you can use for your blog post on building great systems:
 
 * Introduction
   * What is a system
