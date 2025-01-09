@@ -16,19 +16,19 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
-My best friend is pregnant right now and I realized that being pregnant is a problem (sort of) that has a very specific time frame. 
+Experiencing pregnancy up close is so much different than experiencing it second hand. What it also made me realize is that being pregnant is a problem (sort of) that has a very specific time frame. 
 
 And just like that, I realized that actually **all human problems are timely**.
 
 ### death
 
-Most of humankind’s problems are man made, without humans, no problems. So imagine we take a "normal" (meaning standard) human that lives from age 0 to age 100m, then it is exactly in this time span that this person has problems. Let’s put it on a timeline like so:
+Most of humankind's problems are man-made--without humans, there would be no problems. Now, imagine we take a "typical" human who lives from birth to the age of 100. All the problems they experience exist exclusively within this specific tiem span. Let's put it on a timeline like so:
 
 ![](/../assets/2025-01-08-pregnant-problems/2025-01-08-13-47-27.png){: .align-center}
 
 ### taxes
 
-Now. There are two things certain in life: death and taxes. For illustrative purposes I’ll remove the death and focus on the taxes. Imagine a human starts paying taxes at 18 and stops paying taxes until he dies at age 100, that would look something like this:
+Now. There are two things certain in life: death and taxes. For illustrative purposes I’ll remove the death and focus on the taxes. Imagine a human starts paying taxes at 18 and stops paying taxes when he dies at age 100, that would look something like this:
 
 ![](/../assets/2025-01-08-pregnant-problems/2025-01-08-13-47-52.png){: .align-center}
 
@@ -42,7 +42,7 @@ The most obvious and extreme example is being pregnant! You become pregnant for 
 
 ### finding a coworking spot in vienna
 
-A while ago I was visiting Vienna and had my first online meeting at 9:00. At 8:30 I was walking from my hotel to the city center but I had a pressing and somewhat urgent problem: finding a good café to do some remote work in. For those 30 minutes, and I did find a nice café in some online directory, I had this specific and timely problem. I find that this example highlights the timeliness of our problems.
+A while ago I was visiting Vienna and had my first online meeting at 9:00. At 8:30 I was walking from my hotel to the city center, but I had a pressing and somewhat urgent problem: finding a good café to do some remote work in. For those 30 minutes, and I did find a nice café in some online directory, I had this specific and timely problem. I find that this example highlights the timeliness of our problems.
 
 ![](/../assets/2025-01-08-pregnant-problems/2025-01-08-13-53-43.png){: .align-center}
 
