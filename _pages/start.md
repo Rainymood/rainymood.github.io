@@ -89,7 +89,7 @@ I make small tutorials on how to do things on AWS sometimes:
 * [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %}): How big tech got us hooked
 * [The Juiciness of Slay The Spire]({% post_url 2024-05-01-the-juiciness-of-slay-the-spire %}): Juice and game design
 * [Why I Can’t Remember Locking My Door: The Case for Better Design]({% post_url 2024-05-30-why-i-cant-remember-locking-my-door-the-case-for-better-design %}): Feedback is a design problem
-* [Pregnant Problems]({% post_url 2025-01-08-pregnant-problems %}): A realization that all problems are timely and we should be aware of this
+* [All problems are timely]({% post_url 2025-01-08-pregnant-problems %}): Our problems often have a very specific time-window in which they appear
 
 # Career
 
