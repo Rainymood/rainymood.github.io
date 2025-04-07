@@ -90,6 +90,7 @@ I make small tutorials on how to do things on AWS sometimes:
 * [The Juiciness of Slay The Spire]({% post_url 2024-05-01-the-juiciness-of-slay-the-spire %}): Juice and game design
 * [Why I Can’t Remember Locking My Door: The Case for Better Design]({% post_url 2024-05-30-why-i-cant-remember-locking-my-door-the-case-for-better-design %}): Feedback is a design problem
 * [All problems are timely]({% post_url 2025-01-08-pregnant-problems %}): Our problems often have a very specific time-window in which they appear
+* [Good design flows from the 7 stages of action]({% post_url 2025-04-06-a-model-for-the-7-stages-of-action-inn-product-design %}): Good product design flows from the 7 stages of action
 
 # Career
 

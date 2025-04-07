@@ -16,14 +16,14 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
-All good product design flows from these 7 stages of actions and the 3 principles of discoverability, feedback, and the conceptual model.
+All good design flows from these 7 stages of actions and the 3 principles of discoverability, feedback, and the conceptual model:
 
-* A user will want to achieve something (goal) against the state of the world
-* To do this, she will need to a) figure out what is possible and b) figure out how to do this (discoverability)
-* Then, she will take action on this and get feedback on it (feedback)
-* Finally, she will need to interpret this feedback and incorporate it into her conceptual model of how the product works (model) 
+* A user wants to achieve something (goal) against a state of the world   
+* To do this, the user needs to a) figure out what is possible and b) figure out how to do this (discoverability)
+* Then, the user takes action on this and gets feedback on these actions (feedback)
+* Finally, the user interprets this feedback and incorporates it into her conceptual model of how the product works (model)
 
-And the cycle repeats.
+And the cycle repeats, starting with new goal-setting.
 
 ![](/../assets/2025-04-06-a-model-for-the-7-stages-of-action-inn-product-design/2025-04-06-19-44-48.png)
 
