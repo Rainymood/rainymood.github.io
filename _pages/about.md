@@ -5,36 +5,35 @@ title: "About Jan"
 
 <img src="/assets/images/bio-photo5.jpg" style="max-height: 500px">{: .align-center}
 
-
 Hi 👋
 
-My name is Jan Meppe and it is my mission to **change the way that people learn**.
+My name is Jan Meppe and welcome to my blog! I care deeply about **education** and it's my personal mission to change the way that people learn!
 
-To work on that mission I currently work at [Snappet](https://www.snappet.org/), an edtech startup where I'm leading the machine learning platform infrastructure team.
+Right now I'm a **senior machine learning engineer** at [Snappet](https://www.snappet.org/) where I work on the ML infrastructure team, building tools and platforms that power personalized education.
 
-Before that, I worked as a data science consultant for the global IT consulting firm [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
+Before that, I worked as a data science consultant at [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-Interested in working with me? View my resume [here](/assets/cv/2024-03-28-jan-meppe-resume.pdf).
-
+Before that, I studied econometrics with a focus on applying machine learning to econometrics. I hold an MPhil in Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home), BSc and MSc degrees in Financial Econometrics from the [University of Amsterdam](https://www.uva.nl/en).
 
 💡 New here? Go to [**Start Here**]({% link _pages/start.md %}) to view a curated list of my favourite posts organised by theme! 
 {: .notice--info}
 
-I love building and scaling machine learning systems in [Python](https://www.python.org/) and [AWS](https://aws.amazon.com/) and in my spare time I'm learning a bit of [Rust](https://www.rust-lang.org).
-
-I am interested in and hence write about the following four things:
-- **Machine learning system design**: How do we design and build great (machine learning) systems?
+I write about four main things:
+- **(ML) system design**: How do we build robust, scalable, and maintainable (ML) systems?
 - **Software**: How do we build great software?
 - **Learning**: How do we learn and get better at learning?
-- **Product**: How do we build great digital products?
+- **Product**: How do we craft products that people love?
 
-Next to that, my blog is a collection of short personal rants and sometimes informative how-to guides, so feel free to browse around!
+You can also explore by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
 
-Otherwise you can also  browse by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
+Connect with me at `{first_name}{last_name}@gmail.com`. 
+
+I love connecting with people who read my blog!
+
+<img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center}
 
 
-
-## I wrote some popular tech blog articles
+<!-- ## I wrote some popular tech blog articles
 
 Three popular (>20.000 reads) blogs that I wrote are:
 
@@ -114,7 +113,7 @@ I studied econometrics (financial engineering) with a focus on machine learning:
 * Email me on `{first_name}{last_name}@gmail.com`
   * I love sending emails to people with personal blogs, so I also love getting emails from people that read my stuff!
 
-<img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center}
+<img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center} -->
 
 <!-- Here are some of my blog posts loosely organised by topic.
 
