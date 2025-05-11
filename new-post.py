@@ -21,6 +21,7 @@ tags:
 # Blog or how-to
 - blog
 - tutorial
+- recently
 
 # Work or personal?
 - work
@@ -93,12 +94,22 @@ toc_sticky: false
 header:
     teaser: "/../assets/{asset_dirname}/thumbnail.png"
 ---
-<!-- ctrl + alt + v -->
+<!-- ctrl + alt + v --> (win)
+<!-- cmd + alt + v --> (mac)
 
-<!-- Checklist:
-Title = insight
-Interesting 1st sentence
-Short and concise -->
+<!-- Do the most annoying thing first: thumbnail creation -->
+
+Tips for good writing:
+- make it come alive! (boggle)
+- use visual and visceral language to hook them
+- it is your job to make it sexy enough for people to continue reading
+- drop value continuously
+- pyramid structure: then fractical. Drop everything in the intro and then zoom in!
+
+Target audience:
+1. You! Have fun. This is your little corner of the internet :)
+2. Your team and people close to you. Can you help someone on your team?
+
 
 <!-- Do the most annoying thing first: thumbnail creation -->
 
@@ -106,16 +117,7 @@ https://app.bannerbear.com/projects/POobgvMNDkxzxAYW70/templates/3g8zka5Y2OlaDEJ
 
 https://www.photopea.com/
 
-<!-- 1. interesting hook -->
 
-YOU ARE NOT FAMOUS. So do whatever you want :)
-
-SP001: Establish yourself as an expert in the following fields: systems, learning, career, product, software.
-
-* What do I want to say
-* Why do I want to say it?
-* How does this make a better product?
-* How does this make a better org?
 
 """
 
