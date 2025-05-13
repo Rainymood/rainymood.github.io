@@ -16,13 +16,13 @@ header:
 ---
 <!-- ctrl + alt + v -->
 
-[Taiko no Tatsujin](https://en.wikipedia.org/wiki/Taiko_no_Tatsujin) is a japanese arcade video game that is really fun to play if you know how to decipher the menu in japanese.
+[Taiko no Tatsujin](https://en.wikipedia.org/wiki/Taiko_no_Tatsujin) is a Japanese arcade video game that is really fun to play if you know how to decipher the menu in Japanese.
 
-This is how the game works: You play a drummer and get two sticks and one giant drum. Notes fly towards you on the beat and you need to smack the center of the drum (red note) or the rim of the drum (blue note). That's it. 
+This is how the game works: You play as a drummer and get two sticks and one giant drum. Notes fly towards you on the beat and you need to smack the center of the drum (red note) or the rim of the drum (blue note). That's it. 
 
 What I want to look at now is everything around this core mechanic. The game feels alive and I want to understand *why* it feels alive. The core mechanic itself is simple, but all the juice around it makes the game *pop* and come alive. When you look at the screen everything and I mean *everything* is alive. 
 
-Just look at the bottom half of this animated gif.
+Just look at the bottom half of this animated GIF.
 
 ![](/../assets/2025-05-13-taiko-no-tatsujin-game-juice/104b9cce0cc54646b2a2615da92e7f27.gif)
 
@@ -34,7 +34,7 @@ Zooming out to the full screen we see even more things that are alive.
 
 The scrolling background, the cheering mascot that is bobbing up and down, the notes literally flying across the screen. Heck, when the notes fly to right side of the screen and they land they explode *again*! How awesome is that. It feels alive.
 
-I think this is an ode to simple mechanics but heavy polish.
+I think this is an ode to simple mechanics with heavy polish.
 
 [YouTube video source](https://www.youtube.com/watch?v=bseaEgtbD44). 
 
