@@ -36,6 +36,7 @@ tags:
 # Gamedev
 - unity
 - gamedev
+- juice
 
 # Big themes that I write about
 - recently
@@ -47,11 +48,6 @@ tags:
 - productivity
 - lean
 - memory palace
-
-# gaming/ui/ux design
-- juice
-- game design
-
 
 # Programming languages/Cloud
 - advent of code
