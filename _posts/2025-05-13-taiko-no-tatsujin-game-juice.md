@@ -18,7 +18,7 @@ header:
 
 [Taiko no Tatsujin](https://en.wikipedia.org/wiki/Taiko_no_Tatsujin) is a japanese arcade video game that is really fun to play if you know how to decipher the menu in japanese.
 
-This is how the game works: You are a drummer and get two stick and one giant drum. Notes fly towards you on the beat and you need to smack the center of the drum (red note) or the rim of the drum (blue note). That's it. 
+This is how the game works: You play a drummer and get two sticks and one giant drum. Notes fly towards you on the beat and you need to smack the center of the drum (red note) or the rim of the drum (blue note). That's it. 
 
 What I want to look at now is everything around this core mechanic. The game feels alive and I want to understand *why* it feels alive. The core mechanic itself is simple, but all the juice around it makes the game *pop* and come alive. When you look at the screen everything and I mean *everything* is alive. 
 
