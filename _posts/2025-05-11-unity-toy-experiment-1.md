@@ -36,7 +36,7 @@ Reflection
 * This project was tiny and well-scoped which made it actually easy to finish which I think is underrated maybe
 
 [Simon Willison](https://simonwillison.net/2022/Nov/6/what-to-blog-about/#projects) advises to write about your projects, so here I am.
-
+    
 # Subscribe
 
 <!-- Begin Mailchimp Signup Form -->
