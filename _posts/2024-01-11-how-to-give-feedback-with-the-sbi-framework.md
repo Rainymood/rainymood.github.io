@@ -33,6 +33,9 @@ Giving and receiving feedback is incredibly important. Here I want to share with
 
 First things first. A guiding principle should be that you should **always give feedback on things that people can change**. It doesn’t make sense to give feedback on the colour of someone’s eyes because they can’t change that, but it does make sense to give feedback on something that someone did that you found commendable. 
 
+💡 **Ask for consent!** (Added on 2025-05-29): Make sure you ask for consent first before giving feedback. Especially constructive feedback. For example, "Hey do you have the mental headspace for some feedback right now?"
+{: .notice--info}
+
 The framework I want to share is the **SBI framework** which stands for Situation, Behaviour, and Impact. 
 
 The framework has three simple steps:

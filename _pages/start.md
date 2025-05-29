@@ -10,13 +10,19 @@ I write about [system design](#system-design), [software](#software), [learning 
 
 Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
 
+# How to
+
+*Practical blog posts I often find myself sharing with teammates*
+
+* [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): In your career you often do not take decisions alone. Use this framework to structure group decision making meetings.
+* [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): In your career you will need to give peer feedback to your colleagues. Use this framework to structure your feedback to make it more effective.
+* [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): In your career there will be times where you simply do not now what to do. Use this framework to figure out what to do.
+* [How to: Speed up your code]({% post_url 2024-01-11-how-to-speed-up-your-code %}): In your career you will work with slow code. Use this guide as a starting point on how to make it faster.
+* [How to: Write better in 3 simple steps]({% post_url 2025-05-29-how-to-write-better-writing-in-3-simple-steps-using-the-write-streamline-sexify-framework %}): In your career you will have to write alot. Use this framework to increase the impact of your writing by making it both more concise and engaging.
+
 # System Design
 
-*How do we build great (machine learning and software) systems?* [(mega-post draft)]({% link _essays/system.md %})
-
-[//]: # (**READ THIS**: [How to build great systems &#40;draft&#41;]&#40;{% link _essays/system.md %}&#41;: Practical tips on building software and machine learning systems for the intermediate to advanced practitioner. Draft version.)
-
-[//]: # ({: .notice--info})
+*How do we build great (machine learning and software) systems?*
 
 * [Summary of a Philosophy of Software Design - John Ousterhout]({% post_url 2025-01-05-a-philosophy-of-software-design-john-ousterhout %}): Practical tips about software design that also apply to system design ⭐️⭐️⭐️ (personal favourite)
 * [Key concepts for scaling systems]({% post_url 2024-09-18-key-concepts-for-scaling-systems %}): The 4 most important techniques for scaling software systems
@@ -31,11 +37,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 # Software
 
-*How do we write great software?* [(mega-post draft)]({% link _essays/software.md %})
-
-[//]: # (**READ THIS**: [How to write great software &#40;draft&#41;]&#40;{% link _essays/software.md %}&#41;: My ultimate blog post with everything I know about how to write great software for intermediate to advanced programmers)
-
-[//]: # ({: .notice--info})
+*How do we write great software?*
 
 * [Summary of a Philosophy of Software Design - John Ousterhout]({% post_url 2025-01-05-a-philosophy-of-software-design-john-ousterhout %}): The most important and practical tips from my favourite book about software design ⭐️⭐️⭐️ (personal favourite)
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Bullet note summary of the same book
@@ -68,7 +70,7 @@ I make small tutorials on how to do things on AWS sometimes:
 
 # Learning
 
-*How do we learn and get better at learning?* [(mega-post draft)]({% link _essays/learning-how-to-learn.md %})
+*How do we learn and get better at learning?*
 
 * [Memorising the first 18 digits of pi]({% post_url 2024-09-09-impressing-myself-with-memorising-the-first-18-digits-of-pi %}): Memory works better when you link it to vivid mental imagery
 * [To learn, retrieve]({% post_url 2024-05-28-to-learn-retrieve %}): Retrieval is important in learning
@@ -92,10 +94,3 @@ I make small tutorials on how to do things on AWS sometimes:
 * [All problems are timely]({% post_url 2025-01-08-pregnant-problems %}): Our problems often have a very specific time-window in which they appear
 * [Good design flows from the 7 stages of action]({% post_url 2025-04-06-a-model-for-the-7-stages-of-action-inn-product-design %}): Good product design flows from the 7 stages of action
 
-# Career
-
-*Practices that work well for me and other generic advice*
-
-* [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): In your career you often do not take decisions alone. Use this framework to structure group decision making meetings.
-* [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): In your career you will need to give peer feedback to your colleagues. Use this framework to structure your feedback to make it more effective.
-* [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): In your career there will be times where you simply do not now what to do. Use this framework to figure out what to do.
