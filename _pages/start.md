@@ -14,11 +14,11 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 *Practical blog posts I often find myself sharing with teammates*
 
-* [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): In your career you often do not take decisions alone. Use this framework to structure group decision making meetings.
-* [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): In your career you will need to give peer feedback to your colleagues. Use this framework to structure your feedback to make it more effective.
-* [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): In your career there will be times where you simply do not now what to do. Use this framework to figure out what to do.
-* [How to: Speed up your code]({% post_url 2024-01-11-how-to-speed-up-your-code %}): In your career you will work with slow code. Use this guide as a starting point on how to make it faster.
-* [How to: Write better in 3 simple steps]({% post_url 2025-05-29-how-to-write-better-writing-in-3-simple-steps-using-the-write-streamline-sexify-framework %}): In your career you will have to write alot. Use this framework to increase the impact of your writing by making it both more concise and engaging.
+* [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): You won't always make decisions alone. Use this framework to structure group decision making meetings.
+* [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): You'll need to give feedback to peers. Use this framework to structure your feedback and make it more effective.
+* [How to: Speed up your code]({% post_url 2024-01-11-how-to-speed-up-your-code %}): Slow code is part of the job. Use this framework to make your code faster.
+* [How to: Write better in 3 simple steps]({% post_url 2025-05-29-how-to-write-better-writing-in-3-simple-steps-using-the-write-streamline-sexify-framework %}): You'll write a lot in your career. Use this framework to make your writing clearer and more engaging.
+* [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): Sometimes you just won't know what to do next. Use this framework to figure out what to do.
 
 # System Design
 
