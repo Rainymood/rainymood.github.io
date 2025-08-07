@@ -61,6 +61,7 @@ tags:
 - documentation
 
 # Smaller themes
+- book summary
 - writing
 - product
 - design
@@ -94,28 +95,11 @@ header:
     teaser: "/../assets/{asset_dirname}/thumbnail.png"
 ---
 <!-- ctrl + alt + v -->
-
-<!-- Checklist:
-Title = insight
-Interesting 1st sentence
-Short and concise -->
-
-<!-- Do the most annoying thing first: thumbnail creation -->
+<!-- cmd + alt + v -->
 
 https://app.bannerbear.com/projects/POobgvMNDkxzxAYW70/templates/3g8zka5Y2OlaDEJXBY
 
 https://www.photopea.com/
-
-<!-- 1. interesting hook -->
-
-YOU ARE NOT FAMOUS. So do whatever you want :)
-
-SP001: Establish yourself as an expert in the following fields: systems, learning, career, product, software.
-
-* What do I want to say
-* Why do I want to say it?
-* How does this make a better product?
-* How does this make a better org?
 
 """
 
