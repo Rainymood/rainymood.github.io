@@ -41,6 +41,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 
 * [Summary of a Philosophy of Software Design - John Ousterhout]({% post_url 2025-01-05-a-philosophy-of-software-design-john-ousterhout %}): The most important and practical tips from my favourite book about software design ⭐️⭐️⭐️ (personal favourite)
 * [Book notes: A philosophy of software design]({% post_url 2024-05-03-book-notes-a-philosophy-of-software-design %}): Bullet note summary of the same book
+* [The Magic Secrets of System Design]({% post_url 2025-09-05-the-magic-secrets-of-system-design %})
 * [A tale of two values]({% post_url 2024-01-19-a-tale-of-two-values %}): What is more important: something that works or something that we can change?
 * [How to scale up your code]({% post_url 2022-03-01-how-to-scale-up-your-code %}): Tips and tricks for scaling
 * [Your argparse is not the interface of your application]({% post_url 2023-02-18-your-argparse-is-not-the-interface-of-your-application %}): Anything (also the CLI) should be able to drive your program
