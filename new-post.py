@@ -18,10 +18,6 @@ def header(title: str, date, asset_dirname: str) -> str:
 title: "{title}"
 date: {date.strftime("%Y-%m-%d")}
 tags:
-# Blog or how-to
-- blog
-- tutorial
-
 # Work or personal?
 - work
 - personal
@@ -33,13 +29,11 @@ tags:
 - product
 - career
 
-# Gamedev
-- unity
-- gamedev
-- juice
+# Series
+- recently
+- practical-advice
 
 # Big themes that I write about
-- recently
 - complexity
 - engineering
 - software architecture
@@ -77,16 +71,18 @@ tags:
 - show-your-work
 - tip
 - athena
-
 - flashcards
 - projects
 - startups
-
 - domain driven design
-
 - story
 - lessons learned
 - video games
+
+# Gamedev
+- unity
+- gamedev
+- juice
 
 categories: blog
 toc: false
