@@ -17,8 +17,8 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [How to: Shared decision making]({% post_url 2024-01-07-how-to-shared-decision-making %}): You won't always make decisions alone. Use this framework to structure group decision making meetings.
 * [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): You'll need to give feedback to peers. Use this framework to structure your feedback and make it more effective.
 * [How to: Speed up your code]({% post_url 2024-01-11-how-to-speed-up-your-code %}): Slow code is part of the job. Use this framework to make your code faster.
-* [How to: Write better in 3 simple steps]({% post_url 2025-05-29-how-to-write-better-writing-in-3-simple-steps-using-the-write-streamline-sexify-framework %}): You'll write a lot in your career. Use this framework to make your writing clearer and more engaging.
 * [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): Sometimes you just won't know what to do next. Use this framework to figure out what to do.
+* [How to: Report a screw-up without losing trust]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): Inevitably you will screw up. What matters is how you deal with it and what you do that people will remember you by.
 
 # System Design
 
@@ -82,7 +82,7 @@ I make small tutorials on how to do things on AWS sometimes:
 * [Freedom is not free (2 lessons from 2 years of working)]({% post_url 2021-02-01-3-most-important-lessons-from-2-years-of-working %}): Reflecting on data science consulting
 * [A tool addresses human problems by amplifying human capabilities]({% post_url 2020-10-23-definition-of-tool %}): What exactly is a tool?
 
-# Product
+# Product-building
 
 *How do we build a great product?*
 
@@ -95,3 +95,14 @@ I make small tutorials on how to do things on AWS sometimes:
 * [All problems are timely]({% post_url 2025-01-08-pregnant-problems %}): Our problems often have a very specific time-window in which they appear
 * [Good design flows from the 7 stages of action]({% post_url 2025-04-06-a-model-for-the-7-stages-of-action-inn-product-design %}): Good product design flows from the 7 stages of action
 
+# Team-building
+
+*How do we build teams that feel safe and do great work?*
+
+...
+
+# Company-building
+
+*What makes a company great? How do we build great companies?*
+
+...
