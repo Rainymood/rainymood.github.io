@@ -32,8 +32,10 @@ tags:
 # Series
 - recently
 - practical-advice
+- how-I-use-AI
 
 # Big themes that I write about
+- artificial intelligence
 - complexity
 - engineering
 - software architecture
@@ -170,7 +172,7 @@ if __name__ == "__main__":
 
     # Create thumbnail
     default_thumbnail_path = os.path.join(ASSET_DIR, "images","default-thumbnail.png")
-    post_thumbnail_path = os.path.join(ASSET_DIR, asset_dirname, "thumbnail.png")
+    post_thumbnail_path = os.path.join(ASSET_DIR, asset_dirname, "default-thumbnail.png")
     print(f"\tCopying {default_thumbnail_path} -> {post_thumbnail_path}")
     shutil.copy(default_thumbnail_path, post_thumbnail_path)
 
