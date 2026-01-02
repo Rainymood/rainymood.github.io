@@ -95,6 +95,11 @@ header:
 <!-- ctrl + alt + v -->
 <!-- cmd + alt + v -->
 
+checklist:
+- thumbnail
+- tags
+- content
+
 https://app.bannerbear.com/projects/POobgvMNDkxzxAYW70/templates/3g8zka5Y2OlaDEJXBY
 
 https://www.photopea.com/
