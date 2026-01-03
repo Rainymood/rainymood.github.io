@@ -18,7 +18,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [How to: Give better feedback with the SBI-framework]({% post_url 2024-01-11-how-to-give-feedback-with-the-sbi-framework %}): You'll need to give feedback to peers. Use this framework to structure your feedback and make it more effective.
 * [How to: Speed up your code]({% post_url 2024-01-11-how-to-speed-up-your-code %}): Slow code is part of the job. Use this framework to make your code faster.
 * [How to: Figure out what to do]({% post_url 2024-01-07-how-to-figure-out-what-to-do %}): Sometimes you just won't know what to do next. Use this framework to figure out what to do.
-* [How to: Report a screw-up without losing trust]({% post_url 2026-01-02-how-to-report-screw-ups-without-losing-trust %}): Inevitably you will screw up. What matters is how you deal with it and what you do that people will remember you by.
+* [How to: Report a screw-up without losing trust]({% post_url 2026-01-02-how-to-report-screw-ups-without-losing-trust %}): Inevitably you will screw up. What you say matters. Say the right thing.
 
 # System Design
 
