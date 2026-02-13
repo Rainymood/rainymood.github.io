@@ -10,7 +10,6 @@ import shutil
 def header(title: str, date, asset_dirname: str) -> str:
     """Returns the header to be written to the md file"""
 
-    # TODO: fix https://stackoverflow.com/questions/2504411/proper-indentation-for-multiline-strings
     assert len(title) > 0
     assert len(asset_dirname) > 0
 

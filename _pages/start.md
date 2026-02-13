@@ -88,21 +88,10 @@ I make small tutorials on how to do things on AWS sometimes:
 
 * [What is a startup?]({% post_url 2021-07-08-what-is-a-startup %}): Notes on a Paul Graham essay
 * [Transform waste]({% post_url 2021-07-14-product-thinking-framework-waste %}): Ideation framework for startup ideas
+* [The cache as a product category]({% post_url 2026-02-13-the-cache-as-a-product-category %}): Products that make things instantly available at the push of a button
 * [You can always kill the feature]({% post_url 2021-07-15-you-can-always-kill-the-feature %}): It is OK to kill your darlings
 * [Why are instagram, facebook, and twitter so damn addicting?]({% post_url 2020-10-25-addicting-tech %}): How big tech got us hooked
 * [The Juiciness of Slay The Spire]({% post_url 2024-05-01-the-juiciness-of-slay-the-spire %}): Juice and game design
-* [Why I Can’t Remember Locking My Door: The Case for Better Design]({% post_url 2024-05-30-why-i-cant-remember-locking-my-door-the-case-for-better-design %}): Feedback is a design problem
+* [Why I Can't Remember Locking My Door: The Case for Better Design]({% post_url 2024-05-30-why-i-cant-remember-locking-my-door-the-case-for-better-design %}): Feedback is a design problem
 * [All problems are timely]({% post_url 2025-01-08-pregnant-problems %}): Our problems often have a very specific time-window in which they appear
 * [Good design flows from the 7 stages of action]({% post_url 2025-04-06-a-model-for-the-7-stages-of-action-inn-product-design %}): Good product design flows from the 7 stages of action
-
-# Team-building
-
-*How do we build teams that feel safe and do great work?*
-
-...
-
-# Company-building
-
-*What makes a company great? How do we build great companies?*
-
-...

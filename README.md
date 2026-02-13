@@ -33,8 +33,6 @@ Run the blog with
 make blog
 ```
 
-
-
 ## Running the blog (Mac)
 
 Run the blog with
@@ -108,4 +106,55 @@ The `--incremental` flag is a lifesaver.
 
 ```
 bundle exec jekyll serve --livereload -o --incremental
+```
+
+## Vibe coding?
+
+Tag generation
+
+```
+Given the blog post above
+
+Select 0-2 most relevant tags from the start here themes:
+
+# Start here themes
+- systems
+- software
+- learning
+- product
+- career
+
+Select 0-5 most relevant tags from this available tags list:
+
+available_tags = [
+    "work", "blog", "python", "engineering", "systems", "programming",
+    "tutorial", "code", "software architecture", "productivity", "software",
+    "lessons learned", "sql", "learning", "personal", "tip", "life",
+    "jekyll", "testing", "product", "leadership", "career", "aws",
+    "writing", "video games", "machine learning", "domain driven design",
+    "design", "complexity", "advent of code", "story", "show-your-work",
+    "rust", "meta programming", "juice", "inversion of control", "golang",
+    "gamedev", "cosmicpython", "athena", "unity", "tensorflow", "startups",
+    "reading notes", "pytorch", "procrastination", "problem solving",
+    "practical-advice", "postgres", "overwatch", "mlflow", "memory palace",
+    "management", "machine-learning", "lean", "infra", "how-I-use-AI",
+    "habits", "game design", "flask", "feedback", "elon musk",
+    "documentation", "devops", "cookbook", "consulting", "book summary"
+]
+
+Return ONLY the tags as a yaml list, nothing else."""
+
+give list with - item so i can copy into yaml frontheader
+```
+
+```
+Add @2026-02-13-the-cache-as-a-product-category.md post to the product section of @start.md 
+```
+
+Thumbnail generation
+
+```python
+    prompt = f"""Create a minimalist, modern blog post thumbnail for: "{title}"
+
+Style: Clean, professional, tech blog aesthetic with bold typography. Use a simple color palette with high contrast. The image should be suitable for a software engineering/tech blog."""
 ```
