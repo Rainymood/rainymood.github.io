@@ -158,3 +158,5 @@ Thumbnail generation
 
 Style: Clean, professional, tech blog aesthetic with bold typography. Use a simple color palette with high contrast. The image should be suitable for a software engineering/tech blog."""
 ```
+
+conda activate blog
