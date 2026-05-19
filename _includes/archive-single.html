@@ -10,6 +10,8 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -17,16 +19,18 @@
         <img src="{{ teaser | relative_url }}" alt="">
       </div>
     {% endif %}
-    <h4 class="archive__item-title no_toc" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-      <!-- "Recent posts are not post.links turns out" -->
-        <!-- <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }} {% include date.html %}</a> -->
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+    <div class="archive__item-row">
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2>
+      {% if post.date %}
+        <span class="archive__item-date">{{ post.date | date: date_format }}</span>
       {% endif %}
-    </h4>
-    {% include page__meta.html type=include.type %}
+    </div>
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>

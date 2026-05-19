@@ -7,28 +7,32 @@ title: "About Jan"
 
 Hi 👋
 
-My name is Jan Meppe and welcome to my blog! I care deeply about **education** and it's my personal mission to change the way that people learn!
+My name is Jan Meppe and welcome to my blog! 
 
-Right now I'm a **senior machine learning engineer** at [Snappet](https://www.snappet.org/) where I work on the ML infrastructure team, building tools and platforms that power personalized education.
+I care deeply about **education**. It's my personal mission to change the way that people learn.
+
+Right now I'm a **senior machine learning engineer** at [Snappet](https://www.snappet.org/). Here, I work on the machine learning infrastructure (inference) team, building tools and platforms that power personalized education.
+
+💡 New here? Go to [**Start Here**]({% link _pages/start.md %}) to view a curated list of my favourite posts organised by theme!
+{: .notice--info}
 
 Before that, I worked as a data science consultant at [Cognizant](https://en.wikipedia.org/wiki/Cognizant).
 
-Before that, I studied econometrics with a focus on applying machine learning to econometrics. I hold an MPhil in Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home), BSc and MSc degrees in Financial Econometrics from the [University of Amsterdam](https://www.uva.nl/en).
+Before that, I studied econometrics with a focus on applying machine learning to econometrics. 
 
-💡 New here? Go to [**Start Here**]({% link _pages/start.md %}) to view a curated list of my favourite posts organised by theme! 
-{: .notice--info}
+- I hold an MPhil in Econometrics from the [Tinbergen Institute](https://www.tinbergen.nl/home), 
+- I hold a BSc and MSc degrees in Financial Econometrics from the [University of Amsterdam](https://www.uva.nl/en).
 
-I write about four main things:
-- **(ML) system design**: How do we build robust, scalable, and maintainable (ML) systems?
+I enjoy writing about four main topics:
+
+- **System design**: How do we build robust, scalable, and maintainable (machine learning) systems?
 - **Software**: How do we build great software?
 - **Learning**: How do we learn and get better at learning?
 - **Product**: How do we craft products that people love?
 
 You can also explore by [tag]({% link _pages/tag-archive.md %}), browse the [grid]({% link _pages/year-archive-wide-grid.md %}), view the [archive]({% link _pages/year-archive.md %}), or search in the top right.
 
-Connect with me at `{first_name}{last_name}@gmail.com`. 
-
-I love connecting with people who read my blog!
+I love connecting with people who read my blog and have met some great people this way. This is an open invitation to shoot me an email at `{first_name}{last_name}@gmail.com` if anything I say inspires you or resonates with you.
 
 <img src="/assets/images/bio-photo6.png" style="max-height: 500px">{: .align-center}
 

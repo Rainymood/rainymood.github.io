@@ -5,11 +5,11 @@ main:
   #   url: /essays/
   # - title: Work
   #   url: /work/
-  - title: Blog
-    url: /posts-grid/
+#  - title: Blog
+#    url: /posts-grid/
+  - title: Tags
+    url: /tags/
   - title: Archive
     url: /posts/
   - title: About
     url: /about/
-  # - title: Resume
-  #   url: /assets/cv/2024-03-28-jan-meppe-resume.pdf

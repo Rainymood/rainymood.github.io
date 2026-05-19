@@ -4,57 +4,85 @@
 
 @charset "utf-8";
 
-// https://github.com/KrisvanderMast/KrisvanderMast.github.io/blob/master/assets/_scss/_variables.scss
+// ==========================================================================
+// NOTION × APPLE — warm, spacious, blue-accented, content-first
+// 2026-05-19 v2: pushed further — more air, blue accent throughout
+// ==========================================================================
 
-/* paragraph indention */
-$paragraph-indent           : false; // true, false (default)
+// ---------------------------------------------------------------------------
+// Design tokens
+// ---------------------------------------------------------------------------
+$text-primary:              #37352f;   // Notion's warm near-black
+$text-secondary:            #787774;   // captions, meta, dates
+$text-tertiary:             #a8a29e;   // placeholders, very light UI text
+$surface:                   #ffffff;   // page background
+$surface-raised:            #f7f6f3;   // code blocks, card hovers
+$surface-hover:             #f1f1ef;   // hover states
+$border-subtle:             #e8e7e4;   // dividers, table borders
+$border-strong:             #d4d3d0;   // when you need more contrast
+
+// Blue accent — your brand blue, used for links & interactive elements
+$accent:                    #0d5884;   // your dark blue
+$accent-light:              #e0f2fe;   // your light blue (backgrounds)
+$accent-hover:              #0a4a72;   // darker on hover
+$accent-focus:              rgba(#0d5884, 0.2);  // focus rings
+
+// Tag pill colors (preserved)
+$lightgreen: #dcfce7;
+$darkgreen: #166534;
+$lightyellow: #fef9c3;
+$darkyellow: #854d0e;
+$lightblue: #e0f2fe;
+$darkblue: #0d5884;
+
+// ---------------------------------------------------------------------------
+// Minimal Mistakes variable overrides (MUST be before @import)
+// ---------------------------------------------------------------------------
+
+$paragraph-indent           : false;
 $indent-var                 : 1.3em;
 
-/* system typefaces */
+// Apple's SF stack → Notion's system stack
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
-
-/* sans serif typefaces */
+$sans-serif                 : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif;
+$monospace                  : "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
 $sans-serif-narrow          : $sans-serif;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
-
-/* serif typefaces */
-$georgia                    : Georgia, serif;
-$times                      : Times, serif;
-$bodoni                     : "Bodoni MT", serif;
-$calisto                    : "Calisto MT", serif;
-$garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
 $header-font-family         : $sans-serif;
-$caption-font-family        : $serif;
+$caption-font-family        : $sans-serif;
 
-$quote-blue-color           : #1da1f2;
-$primary-cream              : #b2d9f1;
-$cream-color                : #f4f4f4;
+// Feed MM variables with our tokens
+$text-color                 : $text-primary;
+$muted-text-color           : $text-secondary;
+$background-color           : $surface;
+$border-color               : $border-subtle;
+$code-background-color      : $surface-raised;
+$link-color                 : $accent;
+$link-color-hover           : $accent-hover;
+$masthead-link-color        : $text-primary;
+$masthead-link-color-hover  : $accent;
+$footer-background-color    : $surface;
+$primary-color              : $accent;
+$info-color                 : $accent;
 
-// https://stackoverflow.com/questions/73789719/how-to-override-theme-defaults-for-minimal-mistakes-theme
-// $info-color                 : $quote-blue-color;
-// $link-color                 : $info-color;
+// Type scale — tighter, Apple-like clarity
+$type-size-1: 2.25em;
+$type-size-2: 1.75em;
+$type-size-3: 1.375em;
+$type-size-4: 1.125em;
+$type-size-5: 1em;
+$type-size-6: 0.8em;
+$type-size-7: 0.75em;
+$type-size-8: 0.625em;
 
-/* type scale */
-$type-size-1: 2.441em !default;
-$type-size-2: 1.953em !default;
-$type-size-3: 1.563em !default;
-$type-size-4: 1.25em !default;
-$type-size-5: 1.1em !default;
-$type-size-6: 0.8em !default;
-$type-size-7: 0.8em !default;
-$type-size-8: 0.625em !default;
-
-/* headline scale */
-$h-size-1: 1.563em !default;
-$h-size-2: 1.25em !default;
-$h-size-3: 1.125em !default;
-$h-size-4: 1.0625em !default;
-$h-size-5: 1.03125em !default;
-$h-size-6: 1em !default;
+// Headline scale
+$h-size-1: 1.75em;
+$h-size-2: 1.375em;
+$h-size-3: 1.175em;
+$h-size-4: 1.05em;
+$h-size-5: 1em;
+$h-size-6: 1em;
 
 // *************************************************************
 // !! ALL VARIABLE DECLARATIONS MUST BE BEFORE THIS STATEMENT !!
@@ -62,58 +90,179 @@ $h-size-6: 1em !default;
 
 @import "minimal-mistakes";
 
-// https://github.com/mmistakes/minimal-mistakes/discussions/1352#discussioncomment-2074482
-// If you adjust your /assets/css/main.scss like suggested in #1219:
-// You'll have to first set variables (like those in _variables.scss), then import minimal mistakes, and finally write the html code.
-// The html part will set the default font size (i.e. the text font size within your posts). The type-size variables on the other hand will set font size for other elements like table of content etc., relative to the default size specified in the html block.
-// As an example here's my /assets/css/main.css:
+// ==========================================================================
+// POST-IMPORT: the actual design
+// ==========================================================================
 
-// 2025-01-03 Took some time to fix this... Thanks MoritzLange :)
+// ---------------------------------------------------------------------------
+// Global: smooth rendering, selection color, transitions
+// ---------------------------------------------------------------------------
 html {
-    font-size: 14px; // change to whatever
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 
-    @include breakpoint($medium) {
-      font-size: 14px; // change to whatever
+  @include breakpoint($medium) { font-size: 15px; }
+  @include breakpoint($large)  { font-size: 16px; }
+  @include breakpoint($x-large){ font-size: 16px; }
+}
+
+body {
+  color: $text-primary;
+  background: $surface;
+}
+
+::selection {
+  background: $accent-light;
+  color: $accent;
+}
+
+// ---------------------------------------------------------------------------
+// Content typography — generous, readable, Notion-level spacing
+// ---------------------------------------------------------------------------
+.page__content {
+  p, li, dl {
+    line-height: 1.6;
+    letter-spacing: -0.003em;
+  }
+
+  p {
+    margin-bottom: 0.9em;
+  }
+
+  // More breathing room between list items (Notion does this)
+  ul, ol {
+    li {
+      margin-bottom: 0.2em;
     }
 
-    @include breakpoint($large) {
-      font-size: 15px; // change to whatever
-    }
-
-    @include breakpoint($x-large) {
-      font-size: 16px; // change to whatever
+    li > ul, li > ol {
+      margin-top: 0.2em;
     }
   }
 
-// 2023-12-12: Still don't really understand scss... oh well
-// 2022-05-17: This changes the code box. Do you wonder how you can find this out yourself?
-// Use the inspect tool and look at which class you are selecting. This one
-// highlights pre.highlight and class=highlight! YES YES YES YES I FINALLY
-// FIGURED THIS OUT I feel so stupid that it took me so long but I
-// can finally style the code box, lol.
-.highlight {
-  margin: 0;
-  padding: 0.2em;
-  font-family: $monospace;
-  // font-size: $type-size-5b;
-  font-size: 0.9em;
-  line-height: 1.5;
+  // Bold text — slightly heavier, like Notion
+  strong, b {
+    font-weight: 650;
+    color: $text-primary;
+  }
 }
 
+// ---------------------------------------------------------------------------
+// Headings — bold, tight, spacious above (like opening a new Notion block)
+// ---------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  color: $text-primary;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+h1 { margin-top: 1.8em; margin-bottom: 0.35em; }
+h2 { margin-top: 1.5em; margin-bottom: 0.3em; }
+h3 { margin-top: 1.2em; margin-bottom: 0.25em; }
+h4 { margin-top: 1em; margin-bottom: 0.2em; }
+
+.page__content > h1:first-child,
+.page__content > h2:first-child {
+  margin-top: 0.5em;
+}
+
+// ---------------------------------------------------------------------------
+// Links — BLUE. Apple-blue for inline links, clean and confident
+// ---------------------------------------------------------------------------
+.page__content a:not(.btn):not(.btn-green):not(.btn-blue):not(.btn-yellow) {
+  color: $accent;
+  text-decoration: underline;
+  text-decoration-color: rgba($accent, 0.35);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+  &:hover {
+    color: $accent-hover;
+    text-decoration-color: $accent-hover;
+  }
+
+  &:visited {
+    color: $accent;
+  }
+}
+
+// Non-content links: navigation, UI — no underline, subtle
+.masthead a,
+.pagination a,
+.taxonomy__index a,
+.author__urls a,
+.nav__list a,
+.toc a,
+.page__footer a {
+  text-decoration: none;
+  color: $text-primary;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+// Archive/post list links — blue, no underline
+.archive__item-title a {
+  text-decoration: none;
+  color: $accent;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $accent-hover;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Code blocks — warm surface, rounded, Notion-style
+// ---------------------------------------------------------------------------
+.highlight {
+  margin: 0;
+  padding: 1em 1.2em;
+  font-family: $monospace;
+  font-size: 0.85em;
+  line-height: 1.65;
+  background-color: $surface-raised;
+  border-radius: 6px;
+  border: 1px solid $border-subtle;
+}
+
+// Inline code — Notion's pink/red on warm bg
+code.highlighter-rouge,
+p code,
+li code {
+  background-color: $surface-raised;
+  border-radius: 4px;
+  padding: 0.15em 0.45em;
+  font-size: 0.85em;
+  font-family: $monospace;
+  color: #c9415a;
+  border: none;
+}
+
+// ---------------------------------------------------------------------------
+// Blockquotes — Notion-style: black left border, no bg, not italic
+// ---------------------------------------------------------------------------
 blockquote {
-  margin: 0em; // Remove all margin (push on the left)
-  margin-block: 2em; // Used to be 20www0ww
-  margin-inline-end: 1em;
-  padding-inline: 0.5em;
-  font-style: italic;
-  border-inline-start: 0.25em solid $quote-blue-color;
-  background-color: $cream-color;
-  border-top-right-radius: 8px; // Rounded top-right corner
-  border-bottom-right-radius: 8px; // Rounded bottom-right corner
+  margin: 1.2em 0;
+  padding: 0.1em 0 0.1em 1.2em;
+  font-style: normal;
+  color: $text-primary;
+  border-left: 3px solid $text-primary;
+  background-color: transparent;
+  border-radius: 0;
+
+  p {
+    margin-bottom: 0.5em;
+  }
 
   cite {
     font-style: italic;
-
     &::before {
       content: "\2014";
       padding-inline-end: 5px;
@@ -121,23 +270,294 @@ blockquote {
   }
 }
 
-// Change the table of contents on the right hand side
-// Set toc_label in the header to change contents
-// .toc .nav__title {
-//   background: dodgerblue;
-// }
+// ---------------------------------------------------------------------------
+// Masthead — Apple-clean: airy, no visual noise
+// ---------------------------------------------------------------------------
+.masthead {
+  border-bottom: 1px solid $border-subtle;
+  background: $surface;
+}
 
-// Change the table of contents on the right hand side
-.h1 {
-  text-decoration: underline;
-  text-decoration-color: dodgerblue; // Specify the underline color
+.greedy-nav {
+  background: $surface;
+
+  a {
+    color: $text-primary;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+
+    &:hover {
+      color: $accent;
+    }
   }
 
-// Change the image on the left hand side
+  .visible-links a:before {
+    background: $accent; // active underline in blue
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Page title — BIG. Notion's unmistakable large bold title
+// ---------------------------------------------------------------------------
+.page__title {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin-bottom: 0.2em;
+  color: $text-primary;
+}
+
+// ---------------------------------------------------------------------------
+// Page meta — light, out of the way
+// ---------------------------------------------------------------------------
+.page__meta {
+  color: $text-secondary;
+  font-size: $type-size-6;
+  letter-spacing: 0;
+}
+
+// ---------------------------------------------------------------------------
+// Archive / post list — title left, date right, like Notion's page list
+// ---------------------------------------------------------------------------
+.archive__item {
+  padding: 0.15em 0;
+  transition: background-color 0.15s ease;
+  border-radius: 6px;
+}
+
+.archive__item-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.archive__item-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  flex: 1;
+  min-width: 0; // allow text to truncate if needed
+}
+
+.archive__item-date {
+  color: $text-secondary;
+  font-size: 0.8em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.archive__item-excerpt {
+  color: $text-secondary;
+  font-size: 0.88em;
+  line-height: 1.55;
+  margin-top: 0.1em;
+}
+
+// ---------------------------------------------------------------------------
+// Images — clean, slightly rounded
+// ---------------------------------------------------------------------------
+.page__content img:not(.author__avatar img) {
+  border-radius: 6px;
+  margin: 0.5em 0;
+}
+
+// ---------------------------------------------------------------------------
+// Horizontal rule — barely there
+// ---------------------------------------------------------------------------
+hr {
+  border: 0;
+  border-top: 1px solid $border-subtle;
+  margin: 2em 0;
+}
+
+// ---------------------------------------------------------------------------
+// Tables — clean Notion grid
+// ---------------------------------------------------------------------------
+table {
+  font-size: 0.9em;
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    background-color: $surface-raised;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  th, td {
+    border: 1px solid $border-subtle;
+    padding: 0.6em 0.85em;
+  }
+
+  tr:hover td {
+    background-color: $surface-hover;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Footer — quiet, out of the way
+// ---------------------------------------------------------------------------
+.page__footer {
+  border-top: 1px solid $border-subtle;
+  color: $text-tertiary;
+  background: $surface;
+
+  a {
+    color: $text-secondary;
+    &:hover { color: $accent; }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Sidebar / author — refined
+// ---------------------------------------------------------------------------
 .author__avatar img {
-  max-width: 110px;
-  border-radius: 15%; // 50 is circle
-  // border-width:5px;
-  // border-color: dodgerblue;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
   padding: 0;
+}
+
+.sidebar {
+  opacity: 1;
+}
+
+.author__name {
+  font-weight: 600;
+  color: $text-primary;
+  font-size: 1.05em;
+}
+
+.author__bio {
+  color: $text-secondary;
+  font-size: 0.88em;
+  line-height: 1.55;
+}
+
+.author__urls {
+  .author__urls-wrapper {
+    a {
+      color: $text-secondary;
+      font-size: 0.88em;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Pagination — Apple-style rounded buttons
+// ---------------------------------------------------------------------------
+.pagination--pager {
+  border-radius: 8px;
+  border: 1px solid $border-subtle;
+  color: $text-primary;
+  font-weight: 500;
+  transition: all 0.15s ease;
+
+  &:hover {
+    background-color: $accent;
+    color: white;
+    border-color: $accent;
+  }
+
+  &.disabled {
+    color: $text-tertiary;
+    border-color: $border-subtle;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// TOC — cleaner, blue active state
+// ---------------------------------------------------------------------------
+.toc {
+  .nav__title {
+    background: $accent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  a {
+    font-size: 0.88em;
+
+    &.active {
+      color: $accent;
+      font-weight: 600;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Focus states — Apple-style blue ring for accessibility
+// ---------------------------------------------------------------------------
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+// ---------------------------------------------------------------------------
+// Numbered/ordered lists — Notion-style: secondary color numbers
+// ---------------------------------------------------------------------------
+.page__content ol > li::marker {
+  color: $text-secondary;
+  font-weight: 600;
+}
+
+// ---------------------------------------------------------------------------
+// Tag buttons (preserved from STYLING.md, refined corners)
+// ---------------------------------------------------------------------------
+.btn-green, .btn-blue, .btn-yellow {
+  display: inline-block;
+  margin-bottom: 0.25em;
+  padding: 0.1em 0.7em;
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none !important;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+
+  &:hover { opacity: 0.85; }
+}
+
+.btn-green {
+  background-color: $lightgreen;
+  color: $darkgreen;
+  &:visited, &:hover { color: $darkgreen; }
+}
+
+.btn-blue {
+  background-color: $lightblue;
+  color: $darkblue;
+  &:visited, &:hover { color: $darkblue; }
+}
+
+.btn-yellow {
+  background-color: $lightyellow;
+  color: $darkyellow;
+  &:visited, &:hover { color: $darkyellow; }
+}
+
+// ---------------------------------------------------------------------------
+// Search — rounded, Apple-style
+// ---------------------------------------------------------------------------
+.search-content .search-input {
+  border-radius: 8px;
+  border: 1px solid $border-subtle;
+
+  &:focus {
+    border-color: $accent;
+    box-shadow: 0 0 0 3px $accent-focus;
+  }
 }
