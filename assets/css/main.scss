@@ -219,29 +219,90 @@ h4 { margin-top: 1em; margin-bottom: 0.2em; }
 }
 
 // ---------------------------------------------------------------------------
-// Code blocks — warm surface, rounded, Notion-style
+// Code blocks — GitHub-style
 // ---------------------------------------------------------------------------
-.highlight {
-  margin: 0;
-  padding: 1em 1.2em;
-  font-family: $monospace;
-  font-size: 0.85em;
-  line-height: 1.65;
-  background-color: $surface-raised;
+div.highlighter-rouge,
+figure.highlight {
+  margin: 1em 0;
   border-radius: 6px;
-  border: 1px solid $border-subtle;
+  border: 1px solid #d0d7de;
+  background-color: #f6f8fa;
+  overflow: hidden;
 }
 
-// Inline code — Notion's pink/red on warm bg
+.highlight {
+  margin: 0;
+  padding: 16px;
+  font-family: $monospace;
+  font-size: 13.6px;
+  line-height: 1.45;
+  background-color: #f6f8fa !important;
+  border-radius: 6px;
+  overflow-x: auto;
+  color: #24292f !important;
+
+  pre {
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    border: none;
+    color: #24292f !important;
+    word-wrap: normal;
+    white-space: pre;
+  }
+
+  code {
+    background: transparent !important;
+    color: #24292f !important;
+    padding: 0;
+    border: none;
+    font-size: inherit;
+  }
+
+  pre.highlight {
+    margin: 0;
+    padding: 0;
+  }
+
+  // GitHub syntax highlighting colors (with !important to beat theme defaults)
+  .c, .cd, .cm, .c1, .cs { color: #6e7781 !important; font-style: italic; }  // comments
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #cf222e !important; }           // keywords
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1, .ss { color: #0a3069 !important; } // strings
+  .nf, .fm { color: #8250df !important; }                                     // function names
+  .nb { color: #953800 !important; }                                           // builtins
+  .nc, .nn { color: #953800 !important; }                                      // class/module names
+  .no { color: #0550ae !important; }                                           // constants
+  .ni { color: #24292f !important; }                                           // entities
+  .na { color: #116329 !important; }                                           // attributes
+  .nt { color: #116329 !important; }                                           // tags (HTML)
+  .nv, .vi, .vg, .vc { color: #953800 !important; }                           // variables
+  .o, .ow { color: #cf222e !important; }                                      // operators
+  .m, .mf, .mh, .mi, .mo, .mb, .mx { color: #0550ae !important; }            // numbers
+  .n { color: #24292f !important; }                                            // names
+  .p { color: #24292f !important; }                                            // punctuation
+  .gi { color: #116329 !important; background-color: #dafbe1 !important; }    // git inserted
+  .gd { color: #82071e !important; background-color: #ffebe9 !important; }    // git deleted
+  .gh { color: #0550ae !important; font-weight: 600; }                        // git header
+  .ge { font-style: italic; }                                                  // emphasis
+  .gs { font-weight: 600; }                                                    // strong
+  .err { color: #cf222e !important; background-color: transparent !important; } // errors
+  .nx { color: #24292f !important; }                                           // other names
+  .nl { color: #0550ae !important; }                                           // label names
+  .bp { color: #953800 !important; }                                           // builtin pseudo
+  .nd { color: #8250df !important; }                                           // decorators
+  .w { color: #24292f !important; }                                            // whitespace
+}
+
+// Inline code — GitHub-style
 code.highlighter-rouge,
 p code,
 li code {
-  background-color: $surface-raised;
-  border-radius: 4px;
-  padding: 0.15em 0.45em;
-  font-size: 0.85em;
+  background-color: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
   font-family: $monospace;
-  color: #c9415a;
+  color: #1f2328;
   border: none;
 }
 
