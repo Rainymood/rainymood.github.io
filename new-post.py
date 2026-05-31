@@ -79,6 +79,8 @@ tags:
 - story
 - lessons learned
 - video games
+- toyota
+- lean
 
 # Gamedev
 - unity
