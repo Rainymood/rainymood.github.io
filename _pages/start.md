@@ -34,6 +34,7 @@ Alternatively, browse by [tag]({% link _pages/tag-archive.md %}), browse the [gr
 * [Unlocking the Secret to Never-ending Clean Dishes]({% post_url 2023-04-10-rates-of-flow-are-more-important-than-current-counts %}): Advice on where to intervene in systems
 * [System bottlenecks explained with water pipes]({% post_url 2024-01-02-system-bottlenecks-explained-with-water-pipes %}): Always try to optimize the system bottleneck for maximum impact
 * [Depending on things make them harder to change]({% post_url 2024-01-09-depending-on-things-make-them-harder-to-change %}): A real world example showing how dependencies drive system complexity
+* [What people get wrong copying Toyota]({% post_url 2026-05-31-what-people-get-wrong-copying-toyota %}): Copy the things you don't see, instead of the things you see.
 
 # Software
 
