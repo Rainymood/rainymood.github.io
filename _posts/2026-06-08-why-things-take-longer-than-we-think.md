@@ -2,75 +2,15 @@
 title: "Why things take longer than we think"
 date: 2026-06-08
 tags:
-# Work or personal?
 - work
-- personal
-
-# Start here themes
-- systems
-- software
-- learning
-- product
-- career
-
-# Series
-- recently
-- practical-advice
-- how-I-use-AI
-
-# Big themes that I write about
-- artificial intelligence
-- complexity
-- engineering
-- software architecture
-- management
-- leadership
 - productivity
+- engineering
+- software
 - lean
-- memory palace
-
-# Programming languages/Cloud
-- advent of code
-- rust
-- golang
-- python
-- sql
-- javascript
-- aws
-- testing
-- documentation
-
-# Smaller themes
-- book summary
-- writing
-- product
-- design
-- tools
-- advent of code
-- aws 
-- docker
-- machine learning
-- programming
-- pytorch
-- tensorflow
-- code
-- show-your-work
-- tip
-- athena
-- flashcards
-- projects
-- startups
-- domain driven design
-- story
+- management
 - lessons learned
-- video games
-- toyota
-- lean
-
-# Gamedev
-- unity
-- gamedev
-- juice
+- practical-advice
+- story
 
 categories: blog
 toc: false
@@ -81,15 +21,48 @@ header:
 <!-- ctrl + alt + v -->
 <!-- cmd + alt + v -->
 
-checklist:
-- thumbnail
-- tags
-- content
+Why do things always take longer than we think? 
 
-https://app.bannerbear.com/projects/POobgvMNDkxzxAYW70/templates/3g8zka5Y2OlaDEJXBY
+How can we always tend to underestimate the time it takes to just get stuff done? I don’t have the answer for you in this blog post, but I do have something else.
 
-https://www.photopea.com/
+Here’s what I did.
 
+For 3 weeks I paid close attention why things took longer than we expected them in our team’s day to day project work. 
+
+Here’s what I found.
+
+The results will shock you. (Narrator: No they won’t)
+
+Without further ado. The list of “why things take longer than we think”:
+
+- We spent a lot of time waiting
+    - Waiting for CloudFormation to deploy (!!)
+    - Waiting for CloudFormation to fail creating resources after moving them
+    - Waiting for slow integration tests to finish
+    - Waiting for code to finish running (slow profiling code)
+    - Waiting for tests to run to completion
+    - Waiting for other teams and/or bug fixes to be merged in
+    - Waiting for clarity on what to work on (tickets not workable/scoped yet)
+    - Waiting for other ticket to merge in first
+    - Waiting for sign-off from other team
+    - Waiting for other team on a bug fix
+- We did not follow the process and that resulted in some waste:
+    - One ticket turned out to be not necessary
+    - One ticket turned out more difficult than anticipated
+    - One ticket turned out to need more clarification and discussion
+- Things “suddenly” started breaking
+    - S3 starts failing (403 access denied in end-to-end tests)
+    - Service connections start failing (can not assume role)
+    - Python environments breaking after doing a fresh install (docker not building on mac, etc.)
+    - Master deployments breaking (deployments randomly fails)
+    - Tests failing because they were skipped in the pipeline and now diverged
+    - Having to update team dependencies (changing contracts)
+    - Selections package didn’t work, thought it was fixed, broke again
+- We spent time debugging
+    - Debugging inside docker containers (trial and error)
+    - Debugging in the wrong place (docker errors were too obscure)
+- We missed unforeseen work
+    - New work validation (compression algorithm analysis)
 
 # Subscribe
 
